@@ -1,8 +1,11 @@
 ---
-title: "Configuring ESP32 with Arduino IDE"
-layout: page
+title: "Configue ESP32 with arduino IDE"
+collection: teaching
+type: "Undergraduate course"
+venue: "American University of Phnom Penh"
+date: 01/01/2026
+location: "Phnom Penh, Cambodia"
 ---
-
 ## ⚙️ Configuring ESP32 with Arduino IDE
 
 This guide explains how to configure and program an **ESP32** using the **Arduino IDE**. It is intended for beginners and students who are starting embedded systems or robotics projects.
