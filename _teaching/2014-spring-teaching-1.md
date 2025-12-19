@@ -92,6 +92,7 @@ Students may use the following tools and platforms:
 
 | Topic | Lab | Solution | Remark |
 |------|-----|----------|--------|
+| [Install Arduino & Configure ESP32](/robotics/ArduinoESP32) | Installaion & Configuration |----------|--------|
 | [Motor Control](/robotics/Motor_Control/) | Lab 1 | Solution 1 | …Loading |
 | [Sensors & Distance Measurement](./robotics/sensors-distance/) | Lab 2 | Solution 2 | …Loading |
 | [Motor Control & PWM](./robotics/motor-control-pwm/) | Lab 3 | Solution 3 | …Loading |
