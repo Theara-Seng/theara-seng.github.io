@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "Introduction to Robotic"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "American University of Phnom Penh"
+date: 01/01/2026
+location: "Phnom Penh, Cambodia"
 ---
 ![AUPP](/images/logo.png)
 
