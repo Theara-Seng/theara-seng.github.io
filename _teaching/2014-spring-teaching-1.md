@@ -92,14 +92,13 @@ Students may use the following tools and platforms:
 
 | Topic | Lab | Solution | Remark |
 |------|-----|----------|--------|
-| [Motor Control](./topics/Motor_Control/) | Lab 1 | Solution 1 | …Loading |
-| [Sensors & Distance Measurement](./topics/sensors-distance/) | Lab 2 | Solution 2 | …Loading |
-| [Motor Control & PWM](./topics/motor-control-pwm/) | Lab 3 | Solution 3 | …Loading |
-| [Line Following Robot](./topics/line-following/) | Lab 4 | Solution 4 | …Loading |
-| [Obstacle Avoidance](./topics/obstacle-avoidance/) | Lab 5 | Solution 5 | …Loading |
-| [PID Control (Intro)](./topics/pid-control/) | Lab 6 | Application | …Loading |
-| [Autonomous Robot Project](./topics/autonomous-project/) | Lab 7 | Final Demo | …Loading |
----
+| [Introduction to Robotics](./robotics/Motor_Control/) | Lab 1 | Solution 1 | …Loading |
+| [Sensors & Distance Measurement](./robotics/sensors-distance/) | Lab 2 | Solution 2 | …Loading |
+| [Motor Control & PWM](./robotics/motor-control-pwm/) | Lab 3 | Solution 3 | …Loading |
+| [Line Following Robot](./robotics/line-following/) | Lab 4 | Solution 4 | …Loading |
+| [Obstacle Avoidance](./robotics/obstacle-avoidance/) | Lab 5 | Solution 5 | …Loading |
+| [PID Control (Intro)](./robotics/pid-control/) | Lab 6 | Application | …Loading |
+| [Autonomous Robot Project](./robotics/autonomous-project/) | Lab 7 | Final Demo | …Loading |
 
 ## 📄 Midterms, Exams and Projects
 
