@@ -7,7 +7,7 @@ venue: "American University of Phnom Penh"
 date: 01/01/2026
 location: "Phnom Penh, Cambodia"
 ---
-![AUPP](/images/logo.png)
+
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
