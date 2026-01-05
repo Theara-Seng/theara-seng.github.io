@@ -2,7 +2,7 @@
 title: "Introduction to Internet of Things"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2026-spring-teaching-iot
+permalink: /teaching/2015-spring-teaching-2
 venue: "American University of Phnom Penh"
 date: 01/01/2026
 location: "Phnom Penh, Cambodia"
