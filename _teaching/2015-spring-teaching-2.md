@@ -106,7 +106,7 @@ Students may use the following tools and platforms:
 
 | Topic | Lab | Solution | Remark |
 |------|-----|----------|--------|
-| [IoT Overview & ESP32 Setup](/iot/esp32-setup/) | Lab 1 | – | …Loading |
+| [IoT Overview & ESP32 Setup]({{ site.baseurl }}/Slides/iot/esp32-setup/) | Lab 1 | – | …Loading |
 | [Sensor Reading & Data Acquisition](/iot/sensors/) | Lab 2 | – | …Loading |
 | [ESP32 Web Server](/iot/web-server/) | Lab 3 | – | …Loading |
 | [Telegram Bot Integration](/iot/telegram-bot/) | Lab 4 | – | …Loading |
