@@ -109,7 +109,7 @@ Students may use the following tools and platforms:
 
 | Topic | Lab | Solution | Remark |
 |------|-----|----------|--------|
-| [IoT Overview & ESP32 Setup]({{ site.baseurl }}/Slides/iot/esp32-setup/) | | – | …Loading |
+| [IoT Overview & ESP32 Setup]({{ site.baseurl }}/Slides/iot/esp32_setup/) | | – | …Loading |
 | [Telegram Bot Integration]({{ site.baseurl }}/Slides//iot/telegram_control/) | Lab 1 | – | …Loading |
 | [ESP32 Web Server]({{ site.baseurl }}/Slides/iot/Webserver_control/) | Lab 2 | – | …Loading |
 | [Blynk IoT Platform]({{ site.baseurl }}/Slides/iot/esp32_setup/) | Lab 3 | – | …Loading |
