@@ -67,10 +67,12 @@ By the end of this course, students will be able to design, build, and program a
 
 | Criteria | Percentage |
 |--------|------------|
-| Attendance | 10% |
-| Participation & Quizzes | 30% |
-| Midterm Exam | 30% |
-| Final Project & Presentation / Practical Labs | 30% |
+| Lab | 30% |
+| Quizzes | 10% |
+| Assignment | 10% |
+| Midterm Exam | 15% |
+| Mini Project | 15% | 
+| Final Project & Presentation / Practical Labs | 20% |
 
 ---
 
