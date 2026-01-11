@@ -7,8 +7,8 @@ venue: "American University of Phnom Penh"
 date: 01/01/2026
 location: "Phnom Penh, Cambodia"
 ---
-
-Introduction to Internet of Things introduces students to the design and implementation of connected systems using sensors, actuators, embedded devices, cloud platforms, and user interfaces. The course emphasizes hands-on labs and real-world IoT applications such as smart homes, environmental monitoring, and industrial automation.
+## Course Syllabus 
+You can find the course Syllabus in here: [IOT Course Syllabus](/files/IOT/IOT_Course_Sylabus_2026.pdf)
 
 ## 👋 Introduction
 
@@ -76,11 +76,11 @@ By the end of this course, students will be able to design, implement, and deplo
 
 | Criteria | Percentage |
 |--------|------------|
-| Lab | 30% |
+| Lab | 20% |
 | Quizzes | 10% |
-| Assignment | 10% |
-| Midterm Exam | 15% |
-| Mini Project | 15% | 
+| Assignment | 15% |
+| Midterm Exam | 10% |
+| Mini Project | 20% | 
 | Final Project & Presentation / Practical Labs | 20% |
 
 
@@ -102,7 +102,21 @@ Students may use the following tools and platforms:
 - Arduino IDE / Thonny / PlatformIO  
 
 ---
+## Component 
 
+You can find all the components which are used in the course in here: [Components for IOT Class](/files/IOT/Component%20for%20IOT.xlsx)
+
+## Classroom Rules
+
+- No later than 15 minutes after the class start time.
+- No work for other classes during this class.
+- No gaming (mobile, laptop, or browser games).
+- Do not use equipment without permission.
+- Follow lab instructions and safety rules carefully.
+- Listen respectfully when others are speaking.
+- Respect classmates and the instructor at all times
+- Be open to feedback and constructive criticism.
+- No cheating.
 ## 🗺️ Course Progress
 
 > **Note:** The following content will be updated progressively as the course advances.
