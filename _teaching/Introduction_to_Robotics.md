@@ -11,6 +11,9 @@ location: "Phnom Penh, Cambodia"
 
 Introduction to Robotics introduces students to the fundamentals of robot systems, including sensors, actuators, embedded controllers, and basic robot programming. The course emphasizes hands-on labs and real-world applications, enabling students to design, build, and control simple robotic systems.
 
+## Course Syllabus 
+You can find the course Syllabus in here: [IOT Course Syllabus](/files/Robotic/Intro_robotic_2026_Syllabus.pdf)
+
 ## 👋 Introduction
 
 Welcome to the **Introduction to Robotics** course!
@@ -67,11 +70,11 @@ By the end of this course, students will be able to design, build, and program a
 
 | Criteria | Percentage |
 |--------|------------|
-| Lab | 30% |
+| Lab | 15% |
 | Quizzes | 10% |
-| Assignment | 10% |
-| Midterm Exam | 15% |
-| Mini Project | 15% | 
+| Assignment | 20% |
+| Midterm Exam | 10% |
+| Mini Project | 25% | 
 | Final Project & Presentation / Practical Labs | 20% |
 
 ---
@@ -87,7 +90,18 @@ Students may use the following tools and platforms:
 - Basic robotics kits and sensors  
 
 ---
-
+## Classroom Rules
+- No food or Drink inside the Lab
+- No later than 15 minutes after the class start time.
+- No work for other classes during this class.
+- No gaming (mobile, laptop, or browser games).
+- Do not use equipment without permission.
+- Follow lab instructions and safety rules carefully.
+- Listen respectfully when others are speaking.
+- Respect classmates and the instructor at all times
+- Be open to feedback and constructive criticism.
+- No cheating.
+-
 ## 🗺️ Course Progress
 
 > **Note:** The following content will be updated progressively as the course advances.
