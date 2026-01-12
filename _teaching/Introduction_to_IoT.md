@@ -16,7 +16,7 @@ Introduction to Internet of Things introduces students to the design and impleme
 
 
 ## Course Syllabus 
-You can find the course Syllabus in here: [IOT Course Syllabus](/files/IOT/IOT_Course_Sylabus_2026.pdf)
+You can find the course Syllabus in here: [IOT Course Syllabus](/files/IOT/IOT_Couse_Sylabus_2026.pdf)
 
 ## 👋 Introduction
 
