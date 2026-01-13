@@ -2,7 +2,7 @@
 title: "Introduction to Robotic"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/Introduction_to_Robotics
 venue: "American University of Phnom Penh"
 date: 01/01/2026
 location: "Phnom Penh, Cambodia"
