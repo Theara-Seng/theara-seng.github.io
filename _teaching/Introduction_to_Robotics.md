@@ -75,7 +75,7 @@ By the end of this course, students will be able to design, build, and program a
 | Assignment | 20% |
 | Midterm Exam | 10% |
 | Mini Project | 25% | 
-| Final Project & Presentation / Practical Labs | 20% |
+| Final Project & Presentation | 20% |
 
 ---
 
@@ -108,12 +108,24 @@ Students may use the following tools and platforms:
 
 | Topic | Lab | Solution | Remark |
 |------|-----|----------|--------|
-| [Install Arduino & Configure ESP32](/robotics/ArduinoESP32) | Installaion & Configuration |----------|--------|
-| [Motor Control]({{ site.baseurl }}/Slides/robotics/motor_control/) | [Assignment1](/files/assignment/Assignment1.pdf) | Solution 1 | …Loading |
-| [Remote Control]({{ site.baseurl }}/Slides/robotics/Remote_Control/) | Lab 2 | Solution 2 | …Loading |
-| [Motor Control & PWM](./robotics/motor-control-pwm/) | Lab 3 | Solution 3 | …Loading |
-| [Line Following Robot](./robotics/line-following/) | Lab 4 | Solution 4 | …Loading |
-| [Obstacle Avoidance](./robotics/obstacle-avoidance/) | Lab 5 | Solution 5 | …Loading |
-| [PID Control (Intro)](./robotics/pid-control/) | Lab 6 | Application | …Loading |
-| [Autonomous Robot Project](./robotics/autonomous-project/) | Lab 7 | Final Demo | …Loading |
+| [ESP32 Setup & Arduino Environment](/robotics/esp32-setup/) | Installation & LED Blink | — | Board setup & first test |
+| [Motor & Servo Control](/robotics/motor-servo-control/) | Lab 1 – Motor & Servo | Solution 1 | PWM speed & position |
+| [Remote Control (Joystick & Button)](/robotics/remote-control/) | Lab 2 – Joystick Control | Solution 2 | Basic navigation logic |
+| [IR Remote Control](/robotics/ir-remote/) | Lab 3 – IR Control | Solution 3 | Command decoding |
+| [Dabble Mobile App Control](/robotics/dabble-app/) | Lab 4 – Mobile Control | Solution 4 | Wireless robot control |
+| [Ultrasonic Radar System](/robotics/radar-system/) | Lab 5 – Radar Scan | Solution 5 | Servo + distance mapping |
+| [Web Server Robotics](/robotics/web-server/) | Lab 6 – Web Control | Solution 6 | Real-time browser control |
+| [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing |
+| **Midterm Assessment** | Practical Test | — | Core skills evaluation |
+| [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment |
+| [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Lab 7 – Gesture Control | Solution 7 | Vision-based navigation |
+| [Line Detection using HSV](/robotics/line-detection/) | Practice Lab | — | Robust color detection |
+| [Mini Project – Line Following](/robotics/line-following/) | Mini Project 1 | Demo | Control tuning & testing |
+| [Target Detection Basics](/robotics/target-detection/) | Guided Lab | — | Object localization |
+| [YOLOv8-lite on Raspberry Pi](/robotics/yolov8-lite/) | Lab 8 – Object Detection | Solution 8 | Performance trade-offs |
+| [Mini Project – Vision Robot](/robotics/vision-robot/) | Mini Project 2 | Demo | Line + vision fusion |
+| [Prototype Verification](/robotics/prototype-testing/) | System Testing | — | Stability & robustness |
+| [Final Project Testing](/robotics/final-project/) | Design Studio | — | Full system integration |
+| **Final Project Presentation** | Final Demo | — | Design reflection |
+
 
