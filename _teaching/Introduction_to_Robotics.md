@@ -108,10 +108,10 @@ Students may use the following tools and platforms:
 
 | Topic | Lab | Solution | Remark |
 |------|-----|----------|--------|
-| [ESP32 Setup & Arduino Environment](/robotics/esp32-setup/) | Installation & LED Blink | — | Board setup & first test |
-| [Motor & Servo Control](/robotics/motor-servo-control/) | Lab 1 – Motor & Servo | Solution 1 | PWM speed & position |
-| [Remote Control (Joystick & Button)](/robotics/remote-control/) | Lab 2 – Joystick Control | Solution 2 | Basic navigation logic |
-| [IR Remote Control](/robotics/ir-remote/) | Lab 3 – IR Control | Solution 3 | Command decoding |
+| [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/robotics/esp32_setup) | Installation & LED Blink | — | Board setup & first test |
+| [Motor & Servo Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Lab 1 – Motor & Servo | Solution 1 | PWM speed & position |
+| [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/robotics/Remote_control)  | Lab 2 – Joystick Control | Solution 2 | Basic navigation logic |
+| [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | Lab 3 – IR Control | Solution 3 | Command decoding |
 | [Dabble Mobile App Control](/robotics/dabble-app/) | Lab 4 – Mobile Control | Solution 4 | Wireless robot control |
 | [Ultrasonic Radar System](/robotics/radar-system/) | Lab 5 – Radar Scan | Solution 5 | Servo + distance mapping |
 | [Web Server Robotics](/robotics/web-server/) | Lab 6 – Web Control | Solution 6 | Real-time browser control |
