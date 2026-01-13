@@ -12,7 +12,7 @@ location: "Phnom Penh, Cambodia"
 Introduction to Robotics introduces students to the fundamentals of robot systems, including sensors, actuators, embedded controllers, and basic robot programming. The course emphasizes hands-on labs and real-world applications, enabling students to design, build, and control simple robotic systems.
 
 ## Course Syllabus 
-You can find the course Syllabus in here: [IOT Course Syllabus](/files/Robotic/Intro_robotic_2026_Syllabus.pdf)
+You can find the course Syllabus in here: [Robotic Course Syllabus](/files/Robotic/Intro_robotic_2026_Syllabus.pdf)
 
 ## 👋 Introduction
 
