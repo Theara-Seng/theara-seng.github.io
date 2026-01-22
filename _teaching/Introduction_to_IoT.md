@@ -129,10 +129,10 @@ You can find all the components which are used in the course in here: [Component
 
 > **Note:** The following content will be updated progressively as the course advances.
 
-| Topic | Lab | Solution | Remark |
+| Topic | Lab | Assignment | Remark |
 |------|-----|----------|--------|
 | [IoT Overview & ESP32 Setup]({{ site.baseurl }}/Slides/iot/esp32_setup/) | | – | …Loading |
-| [Telegram Bot Integration]({{ site.baseurl }}/Slides/iot/telegram_control/) | [Lab 1](/files/IOT/lab1.pdf) | – | …Loading |
+| [Telegram Bot Integration]({{ site.baseurl }}/Slides/iot/telegram_control/) | [Lab 1](/files/IOT/lab1.pdf) | [ESP32-Camera Setup]({{ site.baseurl }}/Slides/iot/esp32Arduino_camera_setup/) | …Loading |
 | [ESP32 Web Server]({{ site.baseurl }}/Slides/iot/Webserver_control/) | Lab 2 | – | …Loading |
 | [Blynk IoT Platform]({{ site.baseurl }}/Slides/iot/Blynk_esp32/) | Lab 3 | – | …Loading |
 | [Mini Project]({{ site.baseurl }}/Slides//iot/mqtt-nodered/) |  | – | …Loading |
