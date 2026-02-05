@@ -68,16 +68,16 @@ Students may use the following tools and platforms:
 
 > **Note:** The following content will be updated progressively as the course advances.
 
-| Topic | Lab | Assignment | Remark |
+| Topic | Video | Practice | Remark |
 |------|-----|----------|--------|
-| [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/robotics/esp32_setup) | Installation & LED Blink | — | Board setup & first test |
-| [Motor & Servo Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Lab 1 – Motor & Servo | Solution 1 | PWM speed & position |
-| [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/robotics/Remote_Control)   | Lab2 | [Assignment 1](https://github.com/Theara-Seng/Robotic_Spring_2026/tree/main/Finger_counter) | Basic navigation logic |
-| [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | Lab 3 – IR Control | Solution 3 | Command decoding |
-| [Dabble Mobile App Control](/robotics/dabble-app/) | Lab 4 – Mobile Control | Solution 4 | Wireless robot control |
-| [Ultrasonic Radar System](/robotics/radar-system/) | Lab 5 – Radar Scan | Solution 5 | Servo + distance mapping |
-| [Web Server Robotics](/robotics/web-server/) | Lab 6 – Web Control | Solution 6 | Real-time browser control |
-| [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing |
-| [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Lab 7 – Gesture Control | Solution 7 | Vision-based navigation |
+| [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/robotics/esp32_setup) | Installation & LED Blink | - | Board setup & first test |
+| [Motor & Servo Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Motor Control | Practice 1 | PWM speed & position |
+| [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/robotics/Remote_Control)   | Remote Control | Practice 2 | Basic navigation logic |
+| [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | IR Remote Control | Practice 3 | Command decoding |
+| [Dabble Mobile App Control](/robotics/dabble-app/) | Mobile Control | Practice 4 | Wireless robot control |
+| [Ultrasonic Radar System](/robotics/radar-system/) | Radar Scan |Practice 5 | Servo + distance mapping |
+| [Web Server Robotics](/robotics/web-server/) | Web Control | Practice 6 | Real-time browser control |
+| [Serial Monitor Control](/robotics/serial-control/) | Serial Monitor | - | Debug & command parsing |
+| [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Finger Count Detection | Practice 7 | Vision-based navigation |
 
 | **Final Project Presentation** | Final Demo | — | Design reflection |

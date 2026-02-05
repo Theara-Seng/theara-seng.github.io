@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "IR Remote Control_UYFC"}' />
+		<title>IR Remote Control_UYFC</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ded2d9fdb101fea93d9e6894b065db5f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 98.5px; top: 85px; height: auto;" data-block-id="0fc705c272150f7b2c82975095be3720" data-name="text-06e6d3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>IR Remote Control</h1></div></div>
+
+
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 195.5px; top: 516.64px;" data-block-id="80331c911739fce968e6266e4fb25f5c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="308f16247089422fa0ca6dd2360bf9bb" style="width: 806.4px; height: 161.28px; left: 83.8px; top: 269.36px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="400" data-natural-height="80" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/1b79e39285ef15161e403044c56c8e25.png"></div></div></section><section data-id="520b72e5ea57e87633f03b6dc1b74e68" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="9678d50bfa8b72ca2a2bc3142e75ff56" data-name="text-552c39"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" style="height: auto; width: 744.805px; left: -72px; top: 81px;" data-block-id="88f9c18da0e951bcf862c23d2770fb7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" style="height: auto; width: 813.226px; left: -62.226px; top: 81px;" data-block-id="ab7c6695edd9e2a1126e68fbb438e47f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353; font-size: 1%;" data-has-line-height=""><ul>
+	<li>
+	<p>Understand how a joystick works electrically</p>
+	</li>
+	<li>
+	<p>Explain pull-up button logic</p>
+	</li>
+	<li>
+	<p>Read analog and digital signals</p>
+	</li>
+	<li>
+	<p>Map controller inputs to robot movements</p>
+	</li>
+	<li>
+	<p>Design basic control logic for robots</p>
+	</li>
+</ul></div></div></section><section data-auto-animate="" data-id="bcc7bec89b114a872c83c55c43ea46b1" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: -138px; top: 70px; height: auto;" data-name="text-552c39" data-block-id="370996ce596882a242ac2775c25571dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" data-block-id="658e7cb3ebc977ba538536d686874764" style="height: auto; width: 762px; left: -50px; top: 186.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 105%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" data-block-id="da180f3cb97e7bd4e18be8ffa2213f65" style="height: auto; width: 832px; left: 38px; top: 263px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353;" data-has-line-height=""><ul>
+	<li>
+	<p>Understand how IR remote communication works</p>
+	</li>
+	<li>
+	<p>Identify IR remote hardware components</p>
+	</li>
+	<li>
+	<p>Interface an IR receiver with ESP32</p>
+	</li>
+	<li>
+	<p>Decode IR remote button values</p>
+	</li>
+	<li>
+	<p>Control LEDs, motors, or robots using IR remote</p>
+	</li>
+</ul></div></div></section><section data-id="7e8ef8632861c76c991988a1e4182c83" data-auto-animate="" data-auto-animate-restart="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 958px; left: -19px; top: 321px; height: auto;" data-block-id="3e268b780133460bb9facfc950341cd9" data-name="text-336e72"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>What is an IR Remote?</h1></div></div>
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 674.333px; top: 345px;" data-block-id="633d23b43795a224a5ac1b504040db74"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="47" height="207" viewbox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="86e67a139abafe44e2f5b1da5f417c51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="1cd9ad746dcff55a1c8738b9f85dcf31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 277.833px; top: 408px;" data-name="line-f904e0" data-block-id="49b556c2a0048182e40541b9cbad4205"><div class="sl-block-style" style="z-index: 15; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="25" height="159.5" viewbox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div></section><section data-auto-animate="" data-id="17fa923dbee23717d18979036f4e3883" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 561px; left: -2.667px; top: 0px; height: auto;" data-name="text-336e72" data-block-id="bb6739cb0f792bf9a7410cebefcb0b4e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 61%;"><h1>What is an IR Remote?</h1></div></div>
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-456cae" data-block-id="95926b55d3cd54ca1719de385cf0253c" style="height: auto; width: 921px; left: 19.5px; top: 128.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 81%;"><p><span style="color:rgb(30, 30, 30); text-align:start">An IR (</span><strong>Infrared</strong><span style="color:rgb(30, 30, 30); text-align:start">) remote control is a device that uses infrared light to transmit signals to control electronic devices. It uses an </span><strong>IR Transmitter </strong><span style="color:rgb(30, 30, 30); text-align:start">and an </span><strong>IR LED</strong><span style="color:rgb(30, 30, 30); text-align:start"> to send </span><strong>IR signals</strong><span style="color:rgb(30, 30, 30); text-align:start"> to an </span><strong>IR Receiver</strong><span style="color:rgb(30, 30, 30); text-align:start">:</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4892e5" data-block-id="a9fc974e246dc8ce77d9dd3a9d6a2d60" style="width: 793.41px; height: 319px; left: 78.295px; top: 272.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="873" data-natural-height="351" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/b3f32db6e192460f7fc9bf86fb9116a0.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="5a7abc100a463cd67b6ddeed13634cc8"><div class="sl-block" data-block-type="text" style="width: 541px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="93e04ccf982523735f6c191f051d7acd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Infrared Light</h1></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-d9f4d5" style="width: 1.36519px; height: 1px; left: 216px; top: 630px; min-width: 1px; min-height: 1px;" data-block-id="615e6b908483ad92c1cad655c236a18d"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="400" data-natural-height="293" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/82a7ca0d6f135f6a692348f32795e1ae.jpg"></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-206c97" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 217.988px; top: 630px;" data-block-id="22dfa9ebcfe53c7f14bab5275f1fb140"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="4.26036153106611" data-line-y1="0" data-line-x2="0" data-line-y2="0.7342798550321277" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="4.26036153106611" height="1" viewbox="0 0 4.26036153106611 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M4.26 0 L1.971 0.395"></path><path stroke="#000000" stroke-width="2" d="M 7.673 5.5 L 0.741 0.607 L 5.635 -6.325 L 0.741 0.607" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M4.26 0 L0 0.734"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M4.26 0 L0 0.734"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c38a04" data-block-id="9ddaebb0eee91d7b6ad009fa873ae2a9" style="height: auto; width: 853px; left: 53.5px; top: 114.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 80%;"><p><a href="https://en.wikipedia.org/wiki/Infrared" target="_blank">Infrared light</a><span style="color:rgb(30, 30, 30); text-align:start">  is part of the electromagnetic spectrum, just like visible light, radio waves, and microwaves. However, it has a longer wavelength than visible light, making it invisible to the human eye.</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-79866a" data-block-id="4ef90aac7c80cd2db71e3cc26ad6d8b4" style="width: 569.927px; height: 305px; left: 180px; top: 235.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="768" data-natural-height="411" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/8bb8d7343ff28444081fcaddb1b79ac1.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-5425d4" data-block-id="8884fc9afacacd900c553e3fd6bf93cb" style="height: auto; width: 600px; left: 387px; top: 547.5px;"><div class="sl-block-style" style="z-index: 15; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 80%; border-style: solid; border-width: 1px;"><p><span style="color:rgb(30, 30, 30); text-align:start">Infrared light is often used for communication purposes due to its low interference with other electronic devices.</span></p></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-a82103" data-block-id="873a469d7b21872bdb391772429bb6ad" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 445.333px; top: 344px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="191" data-line-y2="196.5" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="191" height="196.5" viewbox="0 0 191 196.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L189.606 195.066"></path><path stroke="#000000" stroke-width="2" d="M 190.596 187.476 L 190.476 195.961 L 181.992 195.84 L 190.476 195.961" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L191 196.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L191 196.5"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="1c8b47d15751bdadeac7fd8e68757e9d"><div class="sl-block" data-block-type="text" style="width: 564px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="eeb6340cff24c3b2f63525f15cdbc072"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>IR Transmitter</h1></div></div>
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-eb19c3" data-block-id="b21d5c3ed96f2a604aee8f6573e9a1d3" style="height: auto; width: 768px; left: 223px; top: 126.499px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 80%;"><p><span style="color:rgb(30, 30, 30); text-align:start">The <strong>IR transmitter</strong> is hidden in the remote control itself. It creates signals in a specific pattern to communicate with the IR receiver. The signals are converted to IR light with an<strong> IR LED.</strong> If you look closely you usually can see a clear LED at the front of the remote. That is the IR LED that emits the IR signal.</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b52cb3" data-block-id="b9c3ac32beafd4bc70438523d1408d68" style="width: 176px; height: 205.333px; left: -38px; top: 179.833px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1001" data-natural-height="1001" data-crop-x="0.160656" data-crop-y="0.12459" data-crop-width="0.629508" data-crop-height="0.734426" style="left: -45px; top: -35px; width: 280px; height: 280px;" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/8fa8e4777a6094931aed81bcb4266940.jpg"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-7cb554" data-block-id="ed0abb590515578682b791d45e37818c" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: -58.667px; top: 367.5px;"><div class="sl-block-content" data-line-x1="148" data-line-y1="0" data-line-x2="0" data-line-y2="102" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="148" height="102" viewbox="0 0 148 102"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M148 0 L1.647 100.865"></path><path stroke="#000000" stroke-width="2" d="M 8.964 103.109 L 0.619 101.573 L 2.155 93.228 L 0.619 101.573" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M148 0 L0 102"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M148 0 L0 102"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d737fd" data-block-id="98c5bc4adb4243fa7044b21412a62662" style="height: auto; width: 197px; left: -157.167px; top: 480.166px;"><div class="sl-block-style" style="z-index: 14; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; border-style: solid; border-width: 1px;"><p>IR LED</p></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-13d34e" data-block-id="7a56252cf7fd1155c9a44579290799ea" style="height: auto; width: 819px; left: 206.5px; top: 367.5px;"><div class="sl-block-style" style="z-index: 15; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 80%;"><p><span style="color:rgb(30, 30, 30); text-align:start">The most common protocol used for IR communication is the <strong>NEC (Nihon Electronics Corporation) protocol</strong>.</span></p></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-4e4da2" data-block-id="7263c11fa1aee9e52d83aac6c0ccfdb7" style="height: auto; width: 914px; left: 150px; top: 520.166px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 80%;"><p><span style="color:rgb(30, 30, 30); text-align:start">The </span><a href="https://www.sbprojects.net/knowledge/ir/nec.php" target="_blank">NEC protocol</a><span style="color:rgb(30, 30, 30); text-align:start"> defines a standard way of encoding and decoding data transmitted via infrared signals. This protocol is commonly used in consumer electronics, and The NEC protocol uses a carrier frequency of 38 kHz, which means the infrared signal is modulated at this frequency</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="07f15c261da385a4c8fa217d0200c751"><div class="sl-block" data-block-type="text" style="width: 480px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="3a2678fbd7140813731a524a20c933a6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>IR Receiver</h1></div></div>
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-af60e3" data-block-id="4265637a6028b70f7185edfdc5bda6bd" style="height: auto; width: 828px; left: 54px; top: 123.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 80%;"><p><span style="color:rgb(30, 30, 30); text-align:start">The <strong>IR receiver</strong> is the component that receives the infrared signals from the remote control. It consists of a photodiode that detects the incoming infrared light and converts it into electrical signals</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-2c463d" data-block-id="7e78a71d15b535df40117315636aed94" style="width: 329.333px; height: 247px; left: -130.333px; top: 266px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1200" data-natural-height="900" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/43da35019561850fc143aa1372bcf7e3.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-0113aa" data-block-id="52ea5fc395e8c08d1c77cbc5a5ffb2c4" style="height: auto; width: 902px; left: 188px; top: 421.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 80%;"><p><span style="color:rgb(30, 30, 30); text-align:start">In order to receive and decode the NEC protocol, the IR receiver needs to be connected to a microcontroller capable of reading and interpreting the incoming signals. This allows the microcontroller to understand the button presses and perform the desired actions</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="1fa7c878fbdc4b4dbdcff8a8ef8b81f3"><div class="sl-block" data-block-type="text" style="width: 617px; left: -13px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="02272193c0c2139c33738fec83653782"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>IR Receiver Pin</h1></div></div>
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-6ef570" style="width: 1px; height: 1px; left: 1030.5px; top: 502.061px;" data-block-id="8b96f8857519c36454a64023377a79f9"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;" class="none"><code data-line-numbers="">void setup() {
+  pinMode(16, INPUT);
+  Serial.begin(115200);
+}
+
+void loop() {
+  int button_up = digitalRead(16);
+  if (button_up == LOW){
+    Serial.println("Button Up is pressed");
+  }else{
+    Serial.println("Button Up isn't pressed");
+  }
+
+  delay(200);
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1bcba6" data-block-id="7eee2108fef205435d6f67ff52d2c9aa" style="width: 727.692px; height: 473px; left: -80.4615px; top: 139px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-f520e3" data-block-id="1219a5aa3af88469711b601521c17080" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 627.333px; top: 172px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="173" data-line-x2="137" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="137" height="173" viewbox="0 0 137 173"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 173 L135.758 1.568"></path><path stroke="#000000" stroke-width="2" d="M 128.105 1.568 L 136.533 0.589 L 137.512 9.018 L 136.533 0.589" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 173 L137 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 173 L137 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-1f0d96" data-block-id="fb7d0fc194635d3c50a834d16a0c402f" style="height: auto; width: 189px; left: 744px; top: 119.5px;"><div class="sl-block-style" style="z-index: 14; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; border-style: solid; border-width: 1px;"><p>IR Receiver</p></div></div></div>
+<div class="sl-block" data-block-type="table" data-name="table-9e1c57" data-block-id="2b8fa53271ab15c0e1deeb7169948995" style="height: auto; min-width: 80px; width: 237.167px; left: 677.833px; top: 325px;"><div class="sl-block-content" style="z-index: 15;" data-table-cols="2" data-table-rows="1"><table><tbody><tr>
+<th>PIN</th>
+<th>36</th>
+</tr></tbody></table></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="3e6a7cca02a1c1813087d15e70d4dc8b"><div class="sl-block" data-block-type="text" style="width: 555px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="b41c1f532ab3056c1e9efbcd64ae93ab"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Library install</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-7fae94" data-block-id="529a30ba828cd9bbf97ae61035da7d08" style="height: auto; width: 381px; left: 397px; top: 109.5px;"><div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px); opacity: 0;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%; border-style: solid; border-width: 1px;"><p>Declare pin 16 as INPUT because the esp32 read from the button</p></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-9b128d" data-block-id="d593228b35feed9784d4f1252f19728c" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 564.333px; top: 221px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L0.05 0"></path><path stroke="#000000" stroke-width="2" d="M -6.652 -6 L -0.652 0 L -6.652 6 L -0.652 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L0.1 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L0.1 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-f1f3ed" data-block-id="8f600059315b653b9528ede82db21d10" style="width: 771.801px; height: 518px; left: 143.1px; top: 145.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1633" data-natural-height="1096" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/9c38703201b1507f77a7f7502e1c8af0.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-17142d" data-block-id="0aa13a56ba19a74ed5a97588e02643d8" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 39.333px; top: 410px;"><div class="sl-block-content" data-line-x1="192" data-line-y1="0" data-line-x2="0" data-line-y2="56" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="192" height="56" viewbox="0 0 192 56"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M192 0 L1.92 55.44"></path><path stroke="#000000" stroke-width="2" d="M 8.162 59.87 L 0.722 55.789 L 4.802 48.349 L 0.722 55.789" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M192 0 L0 56"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M192 0 L0 56"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d1cb4b" data-block-id="ee6305e27723513885c78a7f61d92137" style="height: auto; width: 320px; left: -203px; top: 475.5px;"><div class="sl-block-style" style="z-index: 15; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; border-style: solid; border-width: 1px;"><p>Install the IRremote Library</p></div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="51da015e0558c16f7d212df18841a886"><div class="sl-block" data-block-type="text" style="width: 302px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="7452c6676f6164c67cf430afa40f905f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Coding</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 309px; left: 792px; top: 109.5px;" data-block-id="bb4925059b7337c81969ef4308ea6b1d" data-name="text-b73bbd"><div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px); opacity: 0;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%; border-style: solid; border-width: 1px;"><p>Using baudrate of 115200</p></div></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-93e415" data-block-id="07bfac83fd969954042ce0538953abd9" style="width: 613px; height: 379px; left: 252px; top: 211px;"><div class="sl-block-content notranslate" data-highlight-theme="solarized-light" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;IRrecv.h&gt;
+#include &lt;IRremoteESP8266.h&gt;
+#include &lt;IRutils.h&gt;
+
+const uint16_t RECV_PIN = 36;
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup() {
+  Serial.begin(115200);
+  irrecv.enableIRIn();  // Start receiver
+}
+
+void loop() {
+  if (irrecv.decode(&amp;results)) {
+    Serial.println(resultToHumanReadableBasic(&amp;results));
+    irrecv.resume();
+  }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-fba9c1" data-block-id="7cef7b89cf287a0c129e02566b6efc19" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 480.333px; top: 98px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="130" data-line-x2="154" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="154" height="130" viewbox="0 0 154 130"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 130 L152.472 1.29"></path><path stroke="#000000" stroke-width="2" d="M 144.97 -0.229 L 153.425 0.485 L 152.711 8.94 L 153.425 0.485" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 130 L154 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 130 L154 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-ddca1e" data-block-id="f383c4cd63560b19bff030d9b81bdc72" style="height: auto; width: 346px; left: 508.5px; top: 49px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>Include the library of IR</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 567.5px; top: 192px;" data-block-id="ac83f73b3ad978688bcdd8b9ef677668" data-name="line-67f40b"><div class="sl-block-content" data-line-x1="0" data-line-y1="104" data-line-x2="187.5" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="187.5" height="104" viewbox="0 0 187.5 104"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 104 L185.751 0.97"></path><path stroke="#000000" stroke-width="2" d="M 178.685 -1.972 L 186.842 0.365 L 184.506 8.522 L 186.842 0.365" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 104 L187.5 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 104 L187.5 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c57b10" data-block-id="5da3a25d7532c5fb6c9b2107e6a7c26b" style="height: auto; width: 316px; left: 762px; top: 121px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; border-style: solid; border-width: 1px;"><p>Using pin 36 from IR to esp32</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-68436d" data-block-id="cc1052466e2af9a848c947008a29c7e2" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 143.333px; top: 340px;"><div class="sl-block-content" data-line-x1="141" data-line-y1="0" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="141" height="1" viewbox="0 0 141 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M141 0 L2 0"></path><path stroke="#000000" stroke-width="2" d="M 6.752 6 L 0.752 0 L 6.752 -6 L 0.752 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M141 0 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M141 0 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-4a2e81" data-block-id="eae683c1bdd7628da2fb77dfcf37805f" style="height: auto; width: 298.5px; left: -60px; top: 265px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 80%; border-style: solid; border-width: 1px;"><p>Create decode result object from NEC Protocol</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298.5px; left: -109px; top: 409px;" data-block-id="8f0fb8129717b9014e425a126c4ae8ed" data-name="text-2cae34"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 80%; border-style: solid; border-width: 1px;"><p>Checks if a <strong>complete IR signal</strong> has been received</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-c3bfbf" data-block-id="ebe2735d967ac73de56222040346abdb" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 196.333px; top: 462.5px;"><div class="sl-block-content" data-line-x1="109" data-line-y1="28" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="109" height="28" viewbox="0 0 109 28"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M109 28 L1.937 0.498"></path><path stroke="#000000" stroke-width="2" d="M 5.047 7.491 L 0.728 0.187 L 8.032 -4.131 L 0.728 0.187" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M109 28 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M109 28 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298.5px; left: -109px; top: 484px;" data-block-id="01afa9b33c9b2fcd6ee8ad7938a3e235" data-name="text-069f20"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; font-size: 80%; border-style: solid; border-width: 1px;"><p>if Successful store the data in the results</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-ec011d" data-block-id="b8a3b38f41d75195afc86544dd7c9296" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 188.333px; top: 498.5px;"><div class="sl-block-content" data-line-x1="119" data-line-y1="0" data-line-x2="0" data-line-y2="20" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="119" height="20" viewbox="0 0 119 20"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M119 0 L1.972 19.669"></path><path stroke="#000000" stroke-width="2" d="M 7.653 24.798 L 0.741 19.875 L 5.664 12.964 L 0.741 19.875" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M119 0 L0 20"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M119 0 L0 20"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 298.5px; left: 689px; top: 564px;" data-block-id="e6751cf0b8816d6f27a91419d6bda512" data-name="text-4d541c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; font-size: 80%; border-style: solid; border-width: 1px;"><p>Print the result in Human Readable Text</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-4e5889" data-block-id="3a1a948a034528fbc417db47ecbb1066" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 542.333px; top: 518.5px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="151" data-line-y2="71" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="151" height="71" viewbox="0 0 151 71"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L149.19 70.149"></path><path stroke="#000000" stroke-width="2" d="M 147.443 62.697 L 150.32 70.68 L 142.337 73.557 L 150.32 70.68" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L151 71"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L151 71"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 372.5px; left: 64.583px; top: 624.5px;" data-block-id="98df9fed57b3b1915dc8e8bbef833d02" data-name="text-630d12"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 25; font-size: 80%; border-style: solid; border-width: 1px;"><p>Clear the current ir data and wait for the next IR button</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-caeb72" data-block-id="49c6d9acc0ee8bd7fa7cce147d1cb10f" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 244.333px; top: 536px;"><div class="sl-block-content" data-line-x1="110" data-line-y1="0" data-line-x2="0" data-line-y2="85" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="110" height="85" viewbox="0 0 110 85"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M110 0 L1.583 83.777"></path><path stroke="#000000" stroke-width="2" d="M 9.011 85.619 L 0.595 84.54 L 1.674 76.124 L 0.595 84.54" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M110 0 L0 85"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M110 0 L0 85"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="3f1a88266229ca3660dc743e6f0a63c7"><div class="sl-block" data-block-type="text" style="width: 881px; left: -2px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="927d79e828fee3fdac67f72ec457d47f"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Testing with IR button</h1></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-b40ec8" data-block-id="284079addfbc8168803eefcdaa2162ca" style="width: 380px; height: 380px; left: -171px; top: 242.921px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1001" data-natural-height="1001" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/999050e3b5edbca858d552079de61d7f.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-43d41c" data-block-id="6324f279053dde7289ab1ef5d31ef694" style="width: 552.227px; height: 252.027px; left: 278.8px; top: 416.987px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="940" data-natural-height="429" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/91d0fdacfc76f37193eb6c54433b9d5e.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-05a5a1" data-block-id="5278f6e9e4e1ddb1c7c8ffd9bfd4e05d" style="width: 601.4px; height: 214.157px; left: 277.6px; top: 135.843px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="820" data-natural-height="292" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/a6c01426f77d863823fdfada4f1e795d.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-713666" data-block-id="ddfe324493f7e5f2f448a9db33668e40" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 120.333px; top: 335px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="58" data-line-x2="341" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="341" height="58" viewbox="0 0 341 58"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 58 L339.028 0.335"></path><path stroke="#000000" stroke-width="2" d="M 333.338 -4.783 L 340.259 0.126 L 335.35 7.047 L 340.259 0.126" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 58 L341 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 58 L341 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-528031" data-block-id="90621666071b94aa3e656c46b841b765" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 120.333px; top: 434px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="299" data-line-y2="215" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="299" height="215" viewbox="0 0 299 215"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L297.376 213.832"></path><path stroke="#000000" stroke-width="2" d="M 297.021 206.187 L 298.39 214.561 L 290.015 215.93 L 298.39 214.561" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L299 215"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L299 215"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="29e913904dca0af2bc2f00d737917fe4"><div class="sl-block" data-block-type="text" style="width: 947.5px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="14d0a46b34ea54b1d01098afad3051a1"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 72%;"><h1>Turn led on and off from IR Button</h1></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-99e72e" data-block-id="d18c8e36dd91b44604fcf1932f4b5506" style="width: 662px; height: 506px; left: -195px; top: 161.656px;"><div class="sl-block-content notranslate" data-highlight-theme="solarized-light" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;IRrecv.h&gt;
+#include &lt;IRremoteESP8266.h&gt;
+#include &lt;IRutils.h&gt;
+
+const uint16_t RECV_PIN = 36;   
+const uint8_t LED_PIN = 12;      // LED pin
+
+IRrecv irrecv(RECV_PIN);
+decode_results results;
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);   
+
+  irrecv.enableIRIn();         
+}
+
+void loop() {
+  if (irrecv.decode(&amp;results)) {
+
+    uint32_t irCode = results.value;   // Get IR code
+    Serial.println(irCode, HEX);       // Print code in HEX
+
+    if (irCode == 0xFFA25D) {
+      digitalWrite(LED_PIN, HIGH);     // LED ON
+      Serial.println("LED ON");
+    }
+    else if (irCode == 0xFF629D) {
+      digitalWrite(LED_PIN, LOW);      // LED OFF
+      Serial.println("LED OFF");
+    }
+
+    irrecv.resume(); 
+  }
+}
+</code></pre></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-19ddd2" data-block-id="49d31ed84ed9705529e9ab0d421035c9" style="min-width: 30px; min-height: 30px; width: 479.679px; height: 257.311px; left: 534.994px; top: 429.345px;"><div class="sl-block-content" style="z-index: 12;" data-media-id="12596688" data-video-thumb="3-ir-remote-control-804ad0/f6543a53a8508c5862ffd38aba745e2d.jpg"><video playsinline="" controls="controls" poster="3-ir-remote-control-804ad0/f6543a53a8508c5862ffd38aba745e2d.jpg" data-autoplay="" muted="" data-paused-by-reveal="" loop="loop" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/3dd9a9207e4cbac0860e86544840908a.mp4"></video></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-7789a9" data-block-id="02cd083b951e6fc9d20cec3463309b05" style="min-width: 30px; min-height: 30px; width: 202.667px; height: 360px; left: 692.417px; top: 54.656px;"><div class="sl-block-content" style="z-index: 13;" data-media-id="12596689" data-video-thumb="3-ir-remote-control-804ad0/6991885c8842f45364f5c3682d6a71ac.jpg"><video playsinline="" controls="controls" poster="3-ir-remote-control-804ad0/6991885c8842f45364f5c3682d6a71ac.jpg" data-autoplay="" muted="" data-paused-by-reveal="" loop="loop" data-lazy-loaded="" data-src="3-ir-remote-control-804ad0/f4fa742f3fb621e4ed277097a0087ce2.mp4"></video></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3532880,"slug":"3-ir-remote-control-804ad0","title":"IR Remote Control_UYFC","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/997747fd23ce6e768ada4ee69f087bd8/thumb.jpg?1769919859","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":13,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1770281588088,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
