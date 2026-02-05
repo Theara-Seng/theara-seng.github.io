@@ -632,13 +632,1136 @@ while True:
 
 <div class="sl-block" data-block-type="shape" data-name="shape-d821d7" data-block-id="ec0d326ed6e0d8846bbdff43b01d88e3" style="width: 165px; height: 93px; left: 748.329px; top: 627px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 165 93"><rect width="165" height="93" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
 
-<div class="sl-block" data-block-type="video" data-name="video-ce7022" data-block-id="0e433eec365a952cd777dc0454901428" style="min-width: 30px; min-height: 30px; width: 769.326px; height: 464px; left: 16.555px; top: 141px;"><div class="sl-block-content" data-media-id="12603009" data-video-thumb="webserver_control/70abf563029a92425dcf5d429da06e67.jpg" style="z-index: 12;"><video playsinline="" controls="controls" poster="webserver_control/70abf563029a92425dcf5d429da06e67.jpg" muted="" data-autoplay="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="webserver_control/533029caae1915540a3bdf1347d2c5a2.mp4"></video></div></div>
-<div class="sl-block" data-block-type="video" data-name="video-c743a4" data-block-id="144df41a8832eaf62350e8659c04e983" style="min-width: 30px; min-height: 30px; width: 259.526px; height: 461px; left: 897.829px; top: 144px;"><div class="sl-block-content" data-media-id="12603002" data-video-thumb="webserver_control/10766073fde664f8e86c24750b4baab9.jpg" style="z-index: 13;"><video playsinline="" controls="controls" poster="webserver_control/10766073fde664f8e86c24750b4baab9.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="webserver_control/dfad9db1097e2a798d57471b5c88835d.mp4"></video></div></div></section><section data-background-color="rgb(6, 6, 19)" data-id="eb715a72ee50144c71385b1367495623"><div class="sl-block" data-block-type="image" style="width: 1278.32px; height: 720px; left: 0px; top: 0px; min-width: 1px; min-height: 1px;" data-name="image-ae8aa9" data-block-id="f15840b834ccb0fa12a32777c788e75f"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="506" data-natural-height="285" data-lazy-loaded="" data-src="webserver_control/083f90d348b3df2901f65dfd194fdf99.gif"></div></div></section>
+<div class="sl-block" data-block-type="video" data-name="video-ce7022" data-block-id="0e433eec365a952cd777dc0454901428" style="min-width: 30px; min-height: 30px; width: 769.326px; height: 464px; left: 15.555px; top: 142px;"><div class="sl-block-content" data-media-id="12603009" data-video-thumb="webserver_control/70abf563029a92425dcf5d429da06e67.jpg" style="z-index: 12;"><video playsinline="" controls="controls" poster="webserver_control/70abf563029a92425dcf5d429da06e67.jpg" muted="" data-autoplay="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="webserver_control/533029caae1915540a3bdf1347d2c5a2.mp4"></video></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-c743a4" data-block-id="144df41a8832eaf62350e8659c04e983" style="min-width: 30px; min-height: 30px; width: 259.526px; height: 461px; left: 897.829px; top: 144px;"><div class="sl-block-content" data-media-id="12603002" data-video-thumb="webserver_control/10766073fde664f8e86c24750b4baab9.jpg" style="z-index: 13;"><video playsinline="" controls="controls" poster="webserver_control/10766073fde664f8e86c24750b4baab9.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="webserver_control/dfad9db1097e2a798d57471b5c88835d.mp4"></video></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="a467c39d8a48aad5e7ad73c077cb999f"><div class="sl-block" data-block-type="text" style="width: 290px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="76378d4e37b0a38ed6a23501f9f4d0b5">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1>IR Sensor</h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="8cf16a3708e5ad5ce9adc1c49f147084">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="86c77237d524f95894008ee880489eb8"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="bee3afe5bf65ffd2a77ba129c2fb6520" style="width: 1192.47px; height: auto; left: 17.8929px; top: 119.033px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>IR Sensor is an electronic device, that emits the light in order to sense some object of the surrounding. An IR sensor can measure the heat of an object as well as detects the motion.</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="096099f8b8fd3f8166faccb4cb645834" style="width: 404.128px; height: 404.128px; left: 0px; top: 243.561px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="768" data-natural-height="768" data-lazy-loaded="" data-src="webserver_control/8918985036fd8117e04d6933acd7bc12.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="688f33225bca9987c249d12196081f95" style="width: 807.807px; height: 173.686px; left: 423.796px; top: 374.053px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Usually, in the infrared spectrum, all the objects radiate some form of thermal radiation. <span style="color:rgb(51, 62, 72)">These types of radiations are invisible to our eyes, but infrared sensor can detect these radiations.</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="e05778c4a27e655802418a3c279aa355"><div class="sl-block" data-block-type="text" style="width: 839px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="5f71560bc602935d9507a3bf8dcf51b0">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>IR Sensor Working Principle</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="95f151e2e5cd352f593d7486dc958d49">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="a9154a4b724a313ef885615114c0834c"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1259.11px; height: auto; left: 10.445px; top: 99.5px;" data-block-id="9eb24070ae8a7263669f3cd66f2bc84b"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><span style="color:rgb(51, 62, 72)">There are different types of infrared transmitters depending on their wavelengths, output power and response time. An IR sensor consists of an IR LED and an IR Photodiode, together they are called as PhotoCoupler or OptoCoupler.</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="dfaa8820f1f5dae7128064eb95bd7eca" style="width: 184px; height: 184px; left: 180px; top: 517px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="342" data-natural-height="342" data-lazy-loaded="" data-src="webserver_control/d41ba16a167cf6a6f08d32f516dbffb9.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="0a3f4c7a3ae430f0daf995e886955fa7" style="width: 182px; height: 182px; left: 876px; top: 526px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="800" data-natural-height="800" data-lazy-loaded="" data-src="webserver_control/458d17c3f49d5d46a7984afa633fc567.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="ef8495c9006176a83c5575c474cada90" style="width: 390px; height: auto; left: 99.5px; top: 266.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><strong>IR Transmitter or IR LED</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="b63f92ebd6d387a80646e25c98bcdd03" style="width: 508px; height: auto; left: 18px; top: 338.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p><span style="font-size:0.6em"><span style="color:rgb(51, 62, 72)">Infrared Transmitter is a light emitting diode (LED) which emits infrared radiations called as IR LED’s. Even though an IR LED looks like a normal LED, the radiation emitted by it is invisible to the human eye.</span></span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 390px; height: auto; left: 760px; top: 266.5px;" data-block-id="27d915f0df85caea8597a7a1d937cee7"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p style="color:rgb(51, 62, 72)"><strong>IR Receiver or Photodiode</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="66dad4192d0fcb40c73a620f9fd2feff" style="width: 569px; height: auto; left: 670.5px; top: 338.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19;" data-placeholder-text="Text"><p><span style="font-size:0.6em"><span style="color:rgb(51, 62, 72)">Infrared receivers or infrared sensors detect the radiation from an IR transmitter. IR receivers come in the form of photodiodes and phototransistors. Infrared Photodiodes are different from normal photo diodes as they detect only infrared radiation.</span></span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="53f8ede14bdd2f12641c9533c3d69947"><div class="sl-block" data-block-type="text" style="width: 839px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="72077ceb8b83242e6f57e2e8b45d82d1">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>IR Sensor Working Principle</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="b681bc52a9e65d9acd2e67be6c156ab0">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="7a11cbaef3be3d7000d5b305a1861477"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="61f5495687df236c0d4e187e1d80cb2f" style="width: 716px; height: 361px; left: 282px; top: 128.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="568" data-natural-height="313" data-crop-x="0" data-crop-y="0.042524" data-crop-width="1" data-crop-height="0.914952" style="left: 0px; top: -17px; width: 716px; height: 395px;" data-lazy-loaded="" data-src="webserver_control/efb970b0263d52b8430e1855b7dfb34d.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="f8f2914934ff69c9eab82b16bdb9b185" style="width: 1138px; height: auto; left: 71px; top: 517px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: center; z-index: 14;" data-placeholder-text="Text"><p><span style="color:rgb(51, 62, 72)">When the IR transmitter emits radiation, it reaches the object and some of the radiation reflects back to the IR receiver. Based on the intensity of the reception by the IR receiver, the output of the sensor </span><span style="color:rgb(51, 62, 72)">defines.</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="12ea93b92a4458d7bb1c331b643f8154"><div class="sl-block" data-block-type="text" style="width: 750px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="ffca8ae914aab32ea5e223b6d84ae5be">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Applications of IR Sensor</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="ff41a816f02b56c7f1152bcc907a00d1">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="719a0415a895530249ddcdce2ae51d5a"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 983px; height: 78px; left: 130px; top: 116.062px;" data-block-id="8b05a363a709aaae5828e7a817c6be99" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: center; z-index: 13;" data-placeholder-text="Text"><p><span style="color:rgb(51, 62, 72); text-align:left">IR sensors use in various projects and also in various electronic devices. They all are as follow,</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="dd4db3d922ee09f3b73af662533251e8" style="width: 281.662px; height: 245.75px; left: 72.802px; top: 333.75px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="400" data-natural-height="349" data-lazy-loaded="" data-src="webserver_control/f43e104e8680625375190b462172e99a.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="8b1558cc263b6d71936758a47dc7950d" style="width: 374px; height: auto; left: 57px; top: 579.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><span style="font-size:0.6em"><span style="color:rgb(51, 62, 72)">An Infrared technology implemented in</span><a href="https://robu.in/product/5mp-ov5647-sensor-adjustable-wide-angle-fish-eye-lens-night-vision-camera-for-raspberry-pi-3-b/" target="_blank"><strong> night vision equipment</strong></a><span style="color:rgb(51, 62, 72)"> if there is not enough visible light available to see</span></span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="977f839aac9ea0c4c75856d249b9f815" style="width: 271.5px; height: auto; left: 72.802px; top: 277.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><h3 style="color:rgb(51, 62, 72); font-size:calc(1.27812rem + 0.3375vw)"><strong>Night Vision Devices</strong></h3></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="20a9b936da595fb609d3ba1b4d93e5f1" style="width: 328.226px; height: 248.875px; left: 473.8px; top: 319.629px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="462" data-natural-height="462" data-crop-x="0" data-crop-y="0.120879" data-crop-width="1" data-crop-height="0.758242" style="left: 0px; top: -40px; width: 328px; height: 328px;" data-lazy-loaded="" data-src="webserver_control/fc54a656c356968799f4f9c4d3d9ef9b.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="adb77c8f2fdb105d84d5327e5140a9b4" style="width: 326px; height: auto; left: 467px; top: 278.504px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><h3 style="color:rgb(51, 62, 72); font-size:calc(1.27812rem + 0.3375vw)"><strong>Radiation Thermometers</strong></h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="72e00432a0e1647334b43457decc33a8" style="width: 398px; height: auto; left: 431px; top: 580.504px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19;" data-placeholder-text="Text"><p><span style="font-size:0.6em"><span style="color:rgb(51, 62, 72)">IR sensos uses in radiation </span><strong><a href="https://robu.in/product/gm320-non-contact-laser-lcd-display-digital-infraredir-thermometer-temperature-meter-gun-50%e2%84%83-330%e2%84%83/" target="_blank">thermometers</a> </strong><span style="color:rgb(51, 62, 72)">to measure the temperature depend upon the temperature and the material of the object</span></span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" data-block-id="ed621b1dc5374f1e180fe8b9fe9b66b4" style="width: 346.429px; height: 194px; left: 877.285px; top: 352.062px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 20;"><img class="" data-natural-width="300" data-natural-height="168" data-lazy-loaded="" data-src="webserver_control/ca5a7610e470c0434095dc29aee9c81f.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="210183c60f646fc365325baf61bddcae" style="width: 231px; height: auto; left: 935px; top: 277.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 21;" data-placeholder-text="Text"><h3 style="color:rgb(51, 62, 72); font-size:calc(1.27812rem + 0.3375vw)"><strong>Infrared Tracking</strong></h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 7" data-block-id="314f8778d11d8cbadeb2de1517e0d2af" style="width: 415px; height: auto; left: 855.285px; top: 560px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 22;" data-placeholder-text="Text"><p><span style="font-size:0.6em"><span style="color:rgb(51, 62, 72)">An Infrared tracking or Infrared homing, is a missile guidance system which operates using the infrared</span><strong><a href="https://en.wikipedia.org/wiki/Electromagnetic_radiation" target="_blank"> electromagnetic radiation</a></strong><span style="color:rgb(51, 62, 72)"> emitted from a target to track it.</span></span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="735131caccec241259fb7d455c439f3f"><div class="sl-block" data-block-type="text" style="width: 1054px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="86fb6e93b4b7b3b48bc2c98b2f89d358">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Connection of IR Sensor with ESP32</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="b3b559a105f032e11f35f34c8e037abb">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="78d796644ddc23f7ab77996568ee7e7c"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="9fe047927f6a9711268a2c4ed2f462c8" style="width: 953.463px; height: 407.274px; left: 137px; top: 112.363px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1812" data-natural-height="774" data-lazy-loaded="" data-src="webserver_control/b5e9b6205a47eed621126e7cab941092.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="27fb6ac52f5861dddce7b611fb3573b2" style="width: 135px; height: 45px; left: 278.976px; top: 540.637px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p><span style="font-size:1.4em"><strong>Note*</strong></span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="25a01a0413cf035c4cb667a9d5d698ba" style="width: 740px; height: auto; left: 437px; top: 557.637px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>The <strong>IR sensor</strong> is active-LOW, which means that when it detects an obstacle, the output is <strong>0</strong>. When no obstacle is detected, the output is <strong>1</strong>.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="88364b366c20bed6612a613d7f9d2eea"><div class="sl-block" data-block-type="text" style="width: 1054px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="08a713201ac212aea6783783271f1855">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Connection of IR Sensor with ESP32</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="8ae510f5dc854aa8737cc1b54044d3b0">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="17b1c8a7302dc93f72d57c0130613641"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 725.463px; height: 309.883px; left: 15px; top: 170.059px; min-width: 1px; min-height: 1px;" data-block-id="4bf50edf95a5c10c9361adb5f6393ff0"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1812" data-natural-height="774" data-lazy-loaded="" data-src="webserver_control/b5e9b6205a47eed621126e7cab941092.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 135px; height: 45px; left: 15px; top: 517.137px;" data-text-layout="fixed" data-block-id="e95871284e231bc51284d3261dcc2170"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p><span style="font-size:1.4em"><strong>Note*</strong></span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 341px; height: auto; left: 150px; top: 532.137px;" data-block-id="c791d3e6e4ac5be3cb28a9a8b2f7a092"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15; font-size: 69%;" data-placeholder-text="Text"><p>The <strong>IR sensor</strong> is active-LOW, which means that when it detects an obstacle, the output is <strong>0</strong>. When no obstacle is detected, the output is <strong>1</strong>.</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 509px; height: 468px; left: 751.5px; top: 213.5px;" data-block-id="a5584fa09e634ac3a54cfbed4b0c2460"><div class="sl-block-content notranslate" data-highlight-theme="ir-black" data-code-frame="none" style="z-index: 16;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from machine import Pin
+import time
+
+ir = Pin(12, Pin.IN)
+
+while True:
+    value = ir.value()
+    
+    if value == 0:
+        print("Obstacle detected")
+    else:
+        print("No obstacle")
+    
+    time.sleep(0.2)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="f9d29273104d2b253bb6fd3fc7981011" style="width: 88px; height: auto; left: 751.5px; top: 161.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p><strong>Code</strong></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="0738236c92eb9a249fd5d56478f037d8"><div class="sl-block" data-block-type="text" style="width: 662px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="c50ad9e445c046776c94e59f00d743d1">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Testing with IR Sensor</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="ca170829dda7e113310befa02dcc286a">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="a04c595410892385927d391101282a80"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="Video 1" data-block-id="298bb674fb1bd77b8e22938f69753b34" style="min-width: 30px; min-height: 30px; width: 754.283px; height: 489px; left: 43.35px; top: 128px;"><div class="sl-block-content" data-media-id="12658165" data-video-thumb="webserver_control/89a29bbd0460cab164608692bc47dfa5.jpg" style="z-index: 14;"><video playsinline="" controls="controls" poster="webserver_control/89a29bbd0460cab164608692bc47dfa5.jpg" data-paused-by-reveal="" data-lazy-loaded="" muted="" loop="loop" data-autoplay="" data-src="webserver_control/1a5a0255b92624359279621ec8e431b1.mp4"></video></div></div>
+<div class="sl-block" data-block-type="video" data-name="Video 2" data-block-id="c2f718bcdd36567937a7cd2f0ce2e02f" style="min-width: 30px; min-height: 30px; width: 275.289px; height: 489px; left: 877.667px; top: 128px;"><div class="sl-block-content" data-media-id="12658166" data-video-thumb="webserver_control/49a673822f1ea2bbf28d5a631f21bf2e.jpg" style="z-index: 15;"><video playsinline="" controls="controls" poster="webserver_control/49a673822f1ea2bbf28d5a631f21bf2e.jpg" data-paused-by-reveal="" data-lazy-loaded="" data-autoplay="" muted="" loop="loop" data-src="webserver_control/7e09fce2ea729a714eade9512918fc22.mp4"></video></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="7cfcd356e024df6546d69df3711f17dc"><div class="sl-block" data-block-type="text" style="width: 857px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="90f5f22134441568fece50f81d454059">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Introduction to Servo Motor</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="005f32c5b68707769121970bda2be6d1">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="3d5bde8078332da65456bf40a30911ff"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="643064a2aa4445ccc2fbe3e5c8407bfa" style="width: 1206px; height: auto; left: 31px; top: 109.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><span style="color:rgb(18, 18, 18); text-align:justify">A </span><strong>servo motor</strong><span style="color:rgb(18, 18, 18); text-align:justify"> is a precision motor that uses a servo motor working principle based on closed-loop feedback control, which can rotate to specific angles with exceptional accuracy</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="c5b614491494818077f23b8cf54797e5" style="width: 504px; height: 320.799px; left: 48px; top: 298.6px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1080" data-natural-height="720" data-crop-x="0.171464" data-crop-y="0.247655" data-crop-width="0.630788" data-crop-height="0.602251" style="left: -137px; top: -132px; width: 799px; height: 533px;" data-lazy-loaded="" data-src="webserver_control/b4d24f5e3574b307541e67148222862e.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="a8d5a39b1dbcad42bca49fbfa1d6a798" style="width: 634px; height: auto; left: 585px; top: 282px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: center; z-index: 15;" data-placeholder-text="Text"><p><span style="color:rgb(18, 18, 18); text-align:justify">If you want to rotate an object to specific angles or distances, servo motors are the ideal choice due to their </span><strong>servo mechanism</strong><span style="color:rgb(18, 18, 18); text-align:justify"> with built-in position feedback.</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="8707a16877951c7c1a26f5acd5d861ba" style="width: 685px; height: auto; left: 577px; top: 527px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><span style="color:rgb(18, 18, 18); text-align:justify">Servo motors are usually rated in kg/cm. For example, a 6kg/cm servo can lift 6kg when the load is 1cm from the motor shaft.</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="391062f2d7d3f3790851e7611eb04e02"><div class="sl-block" data-block-type="text" style="width: 857px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="c9232846e02ed3bcc29a163931994ea3">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>How to control Servo Motor</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="79f4d9aef7cb1a789f62453f97409a3c">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="cb00645adf15933b7047ca4dc2fa3ab8"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="70333d14cfd95ac914065a08dda37846" style="width: 762px; height: 448px; left: 508px; top: 176.5px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; line-height: 1.846;" data-has-line-height="" data-placeholder-text="Text">
+<h4 style="color:rgb(0, 0, 0)"><strong>PWM Control Signal Specifications</strong></h4>
+
+<ul style="color:rgb(18, 18, 18)">
+	<li style="text-align:justify">
+	<p><strong>Pulse Period:</strong> 20ms (50Hz frequency)</p>
+	</li>
+	<li style="text-align:justify">
+	<p><strong>0.5 ms pulse width:</strong> Servo rotates to 0° position</p>
+	</li>
+	<li style="text-align:justify">
+	<p><strong>1.5ms pulse width:</strong> Servo moves to 90° (neutral position)</p>
+	</li>
+	<li style="text-align:justify">
+	<p><strong>2.5ms pulse width:</strong> Servo rotates to 180° position</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="e1f76ff793e6cf61dec6f0bce7d87e37" style="width: 470.879px; height: 318.8px; left: 0px; top: 229.6px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1994" data-natural-height="1350" data-lazy-loaded="" data-src="webserver_control/d27fc7eb7a7ec6cf301f520c99851bc5.jpg"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="2658c9250360130dff902703bddd2fc4"><div class="sl-block" data-block-type="text" style="width: 1127px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="e44edba3024f5228250ca6c572d07604">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Connection of Servo Motor with ESP32</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="30543b10ddc905f0fdc6ea727ad728f8">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="8cd4e3af8853a3021934501dedc0a0ae"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="44614d2a1125c0f050c2ee6549169168" style="width: 952.671px; height: 404.307px; left: 147.244px; top: 178.846px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1812" data-natural-height="769" data-lazy-loaded="" data-src="webserver_control/9102ad5d176a08d6f64e84aec75e03dd.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="acf0fa186fcd923edca5393f185d37e8"><div class="sl-block" data-block-type="text" style="width: 354px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="b735019e9d83aa5abe2954fdfefee0a5">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Coding</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="d837e170e51a6bff9753ca59b7c4b711">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="9f72ca2d7039686bed98194ab7ea8f62"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="2207f65bceaa733f923e395bf9952e0c" style="width: 463px; height: 267px; left: 14px; top: 183px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 13;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from machine import Pin, PWM
+from time import sleep
+
+servo = PWM(Pin(13), freq=50)
+
+while True:
+    servo.duty(26)  # set servo to 0 degree
+    sleep(2)
+    servo.duty(77) # set servo to 90 degree
+    sleep(2)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="37fd5ee57a07c8804e34b2be51fbbb3e" style="width: 770px; height: auto; left: 510px; top: 74px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; color: rgb(204, 0, 0);" data-placeholder-text="Text"><p><strong>Why servo.duty(26), the servo move to 0 degree?</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="42c61c726526a864db44f09a17fb6ca0" style="width: 728px; height: 89px; left: 510px; top: 163px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text">
+<p>We know that 0.5ms pwm servo move to 0 degree.</p>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 728px; height: 89px; left: 510px; top: 252px;" data-text-layout="fixed" data-block-id="bf739e9f5758ee87f6039df00043213c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>PWM Period 50Hz =20ms </p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 728px; height: 89px; left: 510px; top: 334px;" data-text-layout="fixed" data-block-id="1c8d756a3411c383da5ddd75b6f065d4"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>PWM value 0-&gt;1023</p></div></div>
+<div class="sl-block" data-block-type="math" data-name="Math 1" data-block-id="43d917fb6af33835526763b37885d70e" style="width: auto; height: auto; left: 540px; top: 394.004px;"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 18;"><div class="math-input">\begin{aligned}
+\text{duty} &amp;= \frac{t_{\text{pulse}}}{T_{\text{period}}} \times \text{PWM}_{\max} \\
+            &amp;= \frac{0.5\,\text{ms}}{20\,\text{ms}} \times 1023 \\
+            &amp;= 25.575  \approx 26
+           
+\end{aligned}</div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="d005b423a134c4ff777191fd9c305cd6"><div class="sl-block" data-block-type="text" style="width: 670px; left: 0px; top: 10px; height: auto;" data-name="text-4fd29b" data-block-id="070592ce416208be7fecd403010c4f3e">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Introduction to TM1637</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="a178f259332f9fdb791b2b4771acd7c3">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="d36fc9c1b52832087138942556e12643"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="71fc477d43e4f7e5a6e93be89383945e" style="width: 1222px; height: auto; left: 14px; top: 126px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p><span style="color:rgb(58, 58, 58)">The </span><a href="https://makeradvisor.com/tools/tm1637-4-digit-7-segment-display/" target="_blank">TM1637 4-Digit LED 7-Segment display</a><span style="color:rgb(58, 58, 58)"> is a display module that combines four 7-segment digits on a single display that can be controlled via the TM1637 driver.</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="33e6bfd5eb6c8659d8a7f694653a4dac" style="width: 750px; height: 422px; left: 250px; top: 246px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="750" data-natural-height="422" data-lazy-loaded="" data-src="webserver_control/a656978f66cd2dec526a28204f373d09.webp"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="c25f10d1ee93502d1689a5f68b314d0e"><div class="sl-block" data-block-type="text" style="width: 419px; left: 0px; top: 10px; height: auto;" data-name="text-4fd29b" data-block-id="4a709bd372ebd0a8b7d4ea1fbbc069f3">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Connection</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="d399117335762b43422c793ea689e567">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="ba2687eb5a8f56f128172ccf2483005e"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="b86224d81b98267ee520e442c71ae9f7" style="width: 1029.78px; height: 453.409px; left: 95.4px; top: 177.295px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1876" data-natural-height="826" data-src="webserver_control/4016696094f2e65d969f1911430bcc2c.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="9f0c7b94dd929bad480b021bfb592277"><div class="sl-block" data-block-type="text" style="width: 640px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="ef34f7f65683c9c6829d4fd85fa990c3">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Library Code TM1637</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="01ae7bf281b3b2948efce13a5eefca50">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="2bff1a9f65a1304f947c31b336b71e1c"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="2729867b236a38eee98d44931521c991" style="width: 919px; height: 536.004px; left: 151px; top: 140.996px;"><div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 13;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from machine import Pin
+from time import sleep_us
+
+# TM1637 commands
+CMD_DATA = 0x40      # auto increment
+CMD_ADDR = 0xC0      # start address
+CMD_CTRL = 0x80      # display control
+
+# Digit to 7-segment mapping (0–9)
+SEGMENTS = [
+    0x3F,  # 0
+    0x06,  # 1
+    0x5B,  # 2
+    0x4F,  # 3
+    0x66,  # 4
+    0x6D,  # 5
+    0x7D,  # 6
+    0x07,  # 7
+    0x7F,  # 8
+    0x6F   # 9
+]
+
+class TM1637:
+    def __init__(self, clk_pin, dio_pin, brightness=7):
+        self.clk = Pin(clk_pin, Pin.OUT, value=1)
+        self.dio = Pin(dio_pin, Pin.OUT, value=1)
+        self.brightness = brightness
+        self._update_display()
+
+    # ---------- Low-level protocol ----------
+    def _start(self):
+        self.dio.value(0)
+        sleep_us(10)
+        self.clk.value(0)
+
+    def _stop(self):
+        self.clk.value(1)
+        sleep_us(10)
+        self.dio.value(1)
+
+    def _write_byte(self, data):
+        for i in range(8):
+            self.dio.value(data &amp; 0x01)
+            data &gt;&gt;= 1
+            self.clk.value(1)
+            sleep_us(10)
+            self.clk.value(0)
+        # ignore ACK
+        self.clk.value(1)
+        sleep_us(10)
+        self.clk.value(0)
+
+    # ---------- Display control ----------
+    def _update_display(self):
+        self._start()
+        self._write_byte(CMD_CTRL | 0x08 | self.brightness)
+        self._stop()
+
+    def set_brightness(self, value):
+        self.brightness = max(0, min(value, 7))
+        self._update_display()
+
+    # ---------- High-level function ----------
+    def show_number(self, num):
+        num = max(0, min(num, 9999))
+        digits = [
+            num // 1000 % 10,
+            num // 100 % 10,
+            num // 10 % 10,
+            num % 10
+        ]
+
+        self._start()
+        self._write_byte(CMD_DATA)
+        self._stop()
+
+        self._start()
+        self._write_byte(CMD_ADDR)
+        for d in digits:
+            self._write_byte(SEGMENTS[d])
+        self._stop()
+
+        self._update_display()
+    def show_digit(self, num):
+        """
+        Display number (0–9999) with NO leading zeros.
+        Unused digits are blank.
+        Examples:
+          show_digit(4)    -&gt;    '   4'
+          show_digit(12)   -&gt;    '  12'
+          show_digit(123)  -&gt;    ' 123'
+          show_digit(1234) -&gt;    '1234'
+        """
+        if not 0 &lt;= num &lt;= 9999:
+            return
+
+        s = str(num)                  # convert number to string
+        data = [0x00, 0x00, 0x00, 0x00]  # blank display
+
+        start = 4 - len(s)            # right alignment
+        for i, ch in enumerate(s):
+            data[start + i] = SEGMENTS[int(ch)]
+
+        # send data to TM1637
+        self._start()
+        self._write_byte(CMD_DATA)
+        self._stop()
+
+        self._start()
+        self._write_byte(CMD_ADDR)
+        for seg in data:
+            self._write_byte(seg)
+        self._stop()
+
+        self._update_display()
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="bc6763c33136e7bcac9b591023421b5c" style="width: 549px; height: 88px; left: 707px; top: 44.5px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;"><p>save this code in micropython device with tm1637.py</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="f88b043ad1fefe1aaf7dd464d2dce0c4" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 499.333px; top: 99px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="79" data-line-x2="185" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="185" height="79" viewbox="0 0 185 79"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 79 L183.161 0.785"></path><path stroke="#000000" stroke-width="2" d="M 176.434 -2.866 L 184.309 0.295 L 181.147 8.17 L 184.309 0.295" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 79 L185 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 79 L185 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="606da1ba2c600f8679137ea97d74a38d"><div class="sl-block" data-block-type="text" style="width: 332px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="add8859996f1a894c034b70b2eaa0195">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Testing</strong></h1></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="code-5a4d66" style="width: 1px; height: 1px; left: 137px; top: 704.004px;" data-block-id="a8cb42eff46939bc765d64fdb2306629">
+    <div class="sl-block-style" style="z-index: 11; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);">
+        <div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 11; border-style: solid; border-width: 1px;">
+            <pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="|">from machine import Pin
+import time
+
+# Initialize relay pin (GPIO15 / D15)
+relay = Pin(15, Pin.OUT)
+
+print("Relay control started...")
+
+while True:
+    # Turn relay ON
+    relay.value(1)
+    print("Relay ON")
+    time.sleep(2)
+
+    # Turn relay OFF
+    relay.value(0)
+    print("Relay OFF")
+    time.sleep(2)
+</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="line" data-name="line-fe35e5" style="width: auto; height: auto; left: 137.636px; top: 704px;" data-block-id="0f9c4bcfbc670319602140736fcd0881"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0.6081999310730453" data-line-y1="0" data-line-x2="0" data-line-y2="0.38957475994516244" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="1" height="1" viewbox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0.608 0 L0.303 0.195"></path><path stroke="#000000" stroke-width="2" d="M 8.922 1.8 L 0.633 -0.016 L 2.449 -8.305 L 0.633 -0.016" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0.608 0 L0 0.39"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0.608 0 L0 0.39"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="aec7702b41b6a21f307386f24187d302" style="width: 530px; height: 433px; left: 24px; top: 178px;"><div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 13;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from tm1637 import TM1637
+import time
+
+tm = TM1637(clk_pin=17, dio_pin=16, brightness=5)
+
+count = 0
+while True:
+    tm.show_number(count)
+    count += 1
+    time.sleep(1)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 2" data-block-id="df6e15fc8433c4055fa73df0693a4bd4" style="width: 601px; height: 393px; left: 625px; top: 178px;"><div class="sl-block-content notranslate" data-highlight-theme="ascetic" data-code-frame="none" style="z-index: 14;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from tm1637 import TM1637
+import time
+
+tm = TM1637(clk_pin=17, dio_pin=16, brightness=5)
+
+while True:
+    tm.show_digit(4)
+    time.sleep(1)
+
+    tm.show_digit(12)
+    time.sleep(1)
+
+    tm.show_digit(123)
+    time.sleep(1)
+
+    tm.show_digit(1234)
+    time.sleep(1)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="88942943c74aef6b87c9e0220f5b87bb" style="width: 306px; height: auto; left: 101px; top: 118.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;"><p>Using show_number</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 306px; height: auto; left: 652px; top: 118.5px;" data-block-id="bd54f308110b380df5c8508b3cc968c5"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>Using show_number</p></div></div></section>
 			</div>
 		</div>
 
 		<script>
-			var SLConfig = {"deck": {"id":3519405,"slug":"webserver_control","title":"Intro_Blynk","description":"The Epic Stack is an opinionated project starter that allows teams to ship their ideas to production faster and on a more stable foundation based on the experience of Kent C. Dodds and contributors.","width":1280,"height":720,"margin":0.0,"visibility":"all","published_at":"2026-01-05T09:20:26.156Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/df7255cb075950350ea889ddf70ece7c/thumb.jpg?1767604865","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":20,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1767928875109,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{}}};
+			var SLConfig = {"deck": {"id":3519405,"slug":"webserver_control","title":"Intro_Blynk","description":"The Epic Stack is an opinionated project starter that allows teams to ship their ideas to production faster and on a more stable foundation based on the experience of Kent C. Dodds and contributors.","width":1280,"height":720,"margin":0.0,"visibility":"all","published_at":"2026-01-05T09:20:26.156Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/df7255cb075950350ea889ddf70ece7c/thumb.jpg?1767604865","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":34,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1770256088655,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{}}};
 
 
 			// Use local fonts
