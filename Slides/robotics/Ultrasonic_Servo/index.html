@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Ultrasonic-Servo"}' />
+		<title>Ultrasonic-Servo</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ded2d9fdb101fea93d9e6894b065db5f"><div class="sl-block" data-block-type="text" style="width: 896px; left: 64px; top: 87.5px; height: auto;" data-block-id="0fc705c272150f7b2c82975095be3720" data-name="text-06e6d3"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Ultrasonic-Servo Motor</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 37px; top: 218.5px;" data-block-id="3da7df1032c958cc5f5fe6935a93fd16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>ICT 361: Introduction to Robotics</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c4b797" style="width: 570.3px; height: 142.515px; left: 223.2px; top: 335.743px; min-width: 1px; min-height: 1px;" data-block-id="a080bfcb8f7c105714bb705ea5853f01"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2377" data-natural-height="594" data-lazy-loaded="" data-src="dabble-app-control-885a49/434a42285fc45e349f3f77541d9a16f9.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 201.5px; top: 535.5px;" data-block-id="80331c911739fce968e6266e4fb25f5c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div></section><section data-id="520b72e5ea57e87633f03b6dc1b74e68" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="9678d50bfa8b72ca2a2bc3142e75ff56" data-name="text-552c39"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" style="height: auto; width: 744.805px; left: -72px; top: 81px;" data-block-id="88f9c18da0e951bcf862c23d2770fb7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" style="height: auto; width: 813.226px; left: -62.226px; top: 81px;" data-block-id="ab7c6695edd9e2a1126e68fbb438e47f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353; font-size: 1%;" data-has-line-height=""><ul>
+	<li>
+	<p>Understand how a joystick works electrically</p>
+	</li>
+	<li>
+	<p>Explain pull-up button logic</p>
+	</li>
+	<li>
+	<p>Read analog and digital signals</p>
+	</li>
+	<li>
+	<p>Map controller inputs to robot movements</p>
+	</li>
+	<li>
+	<p>Design basic control logic for robots</p>
+	</li>
+</ul></div></div></section><section data-auto-animate="" data-id="bcc7bec89b114a872c83c55c43ea46b1" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: -187px; top: -25px; height: auto;" data-name="text-552c39" data-block-id="370996ce596882a242ac2775c25571dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" data-block-id="658e7cb3ebc977ba538536d686874764" style="height: auto; width: 762px; left: -72px; top: 90.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 105%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" data-block-id="da180f3cb97e7bd4e18be8ffa2213f65" style="height: auto; width: 980px; left: -37px; top: 177px;"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 12; line-height: 2.353;" data-has-line-height="" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Explain how ultrasonic distance sensing works</p>
+	</li>
+	<li>
+	<p>Calculate distance from echo time</p>
+	</li>
+	<li>
+	<p>Control a servo motor using PWM</p>
+	</li>
+	<li>
+	<p>Combine ultrasonic + servo for automation</p>
+	</li>
+	<li>
+	<p>Debug common timing and signal problems</p>
+	</li>
+</ul></div></div></section><section data-id="7e8ef8632861c76c991988a1e4182c83" data-auto-animate="" data-auto-animate-restart="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 674.333px; top: 345px;" data-block-id="633d23b43795a224a5ac1b504040db74"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="47" height="207" viewbox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="86e67a139abafe44e2f5b1da5f417c51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="1cd9ad746dcff55a1c8738b9f85dcf31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 277.833px; top: 408px;" data-name="line-f904e0" data-block-id="49b556c2a0048182e40541b9cbad4205"><div class="sl-block-style" style="z-index: 15; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="25" height="159.5" viewbox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: -87px; top: 296px; height: auto;" data-name="text-841241" data-block-id="58dfb365b464ea9a756c97a0e8f1a46b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;"><h1>Ultrasonic Sensor</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="99788477e92b42e77461b0857fd7f608">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 674.333px; top: 345px;" data-block-id="55abf92608c175042ed5a5481c6727ec"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="47" height="207" viewbox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="8989c641597ade8a9b6a98e1d459217c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="54c874688e0c9972b604369028cd9d90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 277.833px; top: 389px;" data-name="line-f904e0" data-block-id="1bc042563a8fafa7b518ec3a4ce1c6ab"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="25" height="159.5" viewbox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 369px; left: 0px; top: 0px; height: 52px;" data-name="text-841241" data-block-id="3573c28d6ff96a6e940a1da216ab22dd" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h3>Ultrasonic Sensor</h3></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="c53a8b2120d3b63394f99d9880efe29c" style="width: 518px; height: 322px; left: 221px; top: 83px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="1250" data-natural-height="1250" data-crop-x="0" data-crop-y="0.239382" data-crop-width="1" data-crop-height="0.621622" style="left: 0px; top: -124px; width: 518px; height: 518px;" data-lazy-loaded="" data-src="dabble-app-control-885a49/0d28cba2f336b79c71d0e98d232e0137.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="978a626c69f86a7afcb5ae067eebf68b" style="width: 922px; height: auto; left: 38px; top: 448.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><ul>
+	<li>
+<strong>Trigger pin(output)</strong> send ultrasonic sound signal to the object</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 922px; height: auto; left: 38px; top: 508px;" data-block-id="87508e12ec92089b3740ac15500d7b11"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><ul>
+	<li>
+<strong>Echo pin(Input)</strong> wait for ultrasound to reflect back from the object</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="72e6a529ec0426c00944f35e9708287c">
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 277.833px; left: 0px; top: 0px; height: 52px;" data-name="text-841241" data-text-layout="fixed" data-block-id="ac37678aa83869eb9a511b4c2a852382"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;"><h3>Connection </h3></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="b92175b8e10b2aaa0a8402aa5b0a2cd5" style="width: 960px; height: 545.882px; left: 0px; top: 105.059px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1632" data-natural-height="928" data-src="dabble-app-control-885a49/60acd0142804b141a7a3330bfed4039b.png"></div></div></section><section data-auto-animate="" data-id="17fa923dbee23717d18979036f4e3883" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 739px; left: -129px; top: -20.264px; height: auto;" data-name="text-841241" data-block-id="0c4c5a9e2b456005880d118067d3cdd2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Ultrasonic Sensor</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-54ff22" style="width: 1px; height: 1px; left: 499px; top: 631.736px; min-width: 1px; min-height: 1px;" data-block-id="9e19b068a1f17b085dec75eb0d1d78e9"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1000" data-natural-height="1000" data-lazy-loaded="" data-src="dabble-app-control-885a49/9aaf20327bd67bd289f2a8cbbc38f308.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-c59896" style="height: auto; width: 600px; left: 445.7px; top: 77.736px;" data-block-id="f04f3932344c6294099e60b94f5f5a6a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>Expansion Board or External Shield</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-3f8814" style="height: auto; width: 1194.91px; left: -89px; top: 87.236px;" data-block-id="fc4a4969dc7fd432ddaca94500c1390d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p style="text-align: start;"><strong>Ultrasonic </strong>refers to sound waves with frequencies that exceed the range of what human ears can hear. </p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-cdeb57" style="width: 147.8px; height: 147.8px; left: -49.235px; top: 183.836px; min-width: 1px; min-height: 1px;" data-block-id="af79fc58a1cb005196809888e03e6c62"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="700" data-natural-height="700" data-lazy-loaded="" data-src="dabble-app-control-885a49/be9200025a7f98501c59407506f63893.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-699b62" style="height: auto; width: 753px; left: 319.91px; top: 257.736px;" data-block-id="a8017f309bb30d6d71ec6e29458199ff"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 70%;"><p style="text-align:left">An <strong>ultrasonic sensor</strong> is an electronic device used to <strong>measure distance</strong> by sending out <strong>high-frequency sound waves</strong> (ultrasound) and calculating how long it takes for the sound to <strong>bounce back</strong> from an object.</p></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-1d96dd" style="min-width: 30px; min-height: 30px; width: 636.135px; height: 329.228px; left: 409.565px; top: 391.036px;" data-block-id="b945733fd6fb7d9f575d5fa9f9c12e3a"><div class="sl-block-content" data-media-id="12591457" data-video-thumb="dabble-app-control-885a49/c5f80cfb4754440dfa6e23a39a4338b2.jpg" style="z-index: 16;" data-preview-video="dabble-app-control-885a49/8995c83c4dc424ccff9a4f95e55640b9.mp4" data-preview-thumb="dabble-app-control-885a49/c5f80cfb4754440dfa6e23a39a4338b2.jpg" data-preview-fit="cover"><video playsinline="" controls="controls" poster="dabble-app-control-885a49/c5f80cfb4754440dfa6e23a39a4338b2.jpg" data-autoplay="" data-lazy-loaded="" data-paused-by-reveal="" loop="loop" data-src="dabble-app-control-885a49/8995c83c4dc424ccff9a4f95e55640b9.mp4"></video></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-0cc8ba" style="height: auto; width: 360px; left: -129px; top: 315.536px;" data-block-id="60cd8ddfeb39423d7fd774fa3fae5b88"><div class="sl-block-style" style="z-index: 17; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p><strong>Distance Formula</strong></p></div></div></div>
+<div class="sl-block" data-block-type="math" data-name="math-3ef478" style="width: auto; height: auto; left: -25px; top: 391.036px;" data-block-id="38708ca1abe8abb3f8ec850c396f1eaa"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 18; font-size: 58%;"><div class="math-input">\text{Distance} = \frac{t \times v}{2}
+</div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fafac2" style="height: auto; width: 108.91px; left: -16.79px; top: 477.736px;" data-block-id="7fedbd2e8f292a38810ccac3ecec8367"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 81%;"><p>Where</p></div></div>
+<div class="sl-block" data-block-type="math" data-name="math-3e2b66" style="width: auto; height: auto; left: -25px; top: 518.65px;" data-block-id="722f959b056fb751395bdf79f624a9aa"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 20; font-size: 49%;"><div class="math-input">\begin{aligned}
+t &amp;= \text{time of flight (seconds)} \\
+v &amp;= \text{speed of sound in air} \approx 343\,\text{m/s}
+\end{aligned}
+</div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2d8d9f" style="height: auto; width: 404px; left: -84.09px; top: 644.236px;" data-block-id="272552a5b5267f78ce67013af7fe8a4f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21; font-size: 48%;"><p>Divide by 2 because the sound travels <strong>to the object and back</strong></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-352607" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: -6.667px; top: 438.736px;" data-block-id="37bc17aac6bd613245604a6a6e52bbea"><div class="sl-block-content" data-line-x1="148" data-line-y1="0" data-line-x2="0" data-line-y2="204" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;" data-line-c="95"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="148" height="204" viewbox="0 0 148 204"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M148 0 A131.079 131.079 0 0 0 -1.221 202.416"></path><path stroke="#000000" stroke-width="2" d="M 0.767 195 L -0.45 203.398 L -8.847 202.18 L -0.45 203.398" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M148 0 A131.079 131.079 0 0 0 0 204"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M148 0 A131.079 131.079 0 0 0 0 204"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="f24b8594e7a25c7f8e93c2c1e10dd4f8"><div class="sl-block" data-block-type="text" style="width: 927px; left: -173px; top: -6px; height: 70px;" data-name="text-336e72" data-block-id="fbf8c4258af858175fd96e28ff396243" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 61%;" data-placeholder-text="Text">
+<h1>How Do We Start the Ultrasonic Sensor?</h1>
+
+<h2> </h2>
+</div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="395ea8056508c1fdc9d228ee9ab451f4" style="width: 922px; height: auto; left: -131px; top: 94.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>The ultrasonic sensor does <strong>nothing</strong> until we send a trigger pulse.</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="ed823de2640a5be1d61c6f8302911c64" style="width: 424.055px; height: 234.695px; left: 146px; top: 164.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="700" data-natural-height="416" data-crop-x="0.021277" data-crop-y="0.021505" data-crop-width="0.968085" data-crop-height="0.901572" style="left: -9px; top: -6px; width: 438px; height: 260px;" data-lazy-loaded="" data-src="dabble-app-control-885a49/3ec03efefa1dc4335eff6ee0f19a12fe.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="48d26d3c516ebe1f180daee5971a119f" style="width: 600px; height: auto; left: -140px; top: 407.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>To start measurement:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="6fd26e12550d75983d3b28d469e357cd" style="width: 385px; height: auto; left: -72.756px; top: 513.538px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Set TRIG = LOW (2µs)</p>
+	</li>
+	<li>
+	<p>Set TRIG = HIGH (10µs)</p>
+	</li>
+	<li>
+	<p>Set TRIG = LOW again</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="8a88f0382e9c28f1f053743e02009876" style="width: 600px; height: auto; left: 445px; top: 407.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;"><p><strong>After trigger:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="e445ca5da6095e9ac841db1b299a186d" style="width: 687px; height: auto; left: 385px; top: 466px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;"><ul>
+	<li>
+	<p>Sensor sends 8 ultrasonic pulses at 40 kHz</p>
+	</li>
+	<li>
+	<p>Sound travels forward</p>
+	</li>
+	<li>
+	<p>Sound reflects from object</p>
+	</li>
+	<li>
+	<p>ECHO pin goes HIGH</p>
+	</li>
+	<li>
+	<p>ECHO stays HIGH until wave returns</p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="5a7abc100a463cd67b6ddeed13634cc8"><div class="sl-block" data-block-type="text" style="width: 293px; left: -114px; top: -13px; height: auto;" data-name="text-861a76" data-block-id="93e04ccf982523735f6c191f051d7acd"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;"><h1> Coding</h1></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-d9f4d5" style="width: 1.36519px; height: 1px; left: 216px; top: 630px; min-width: 1px; min-height: 1px;" data-block-id="615e6b908483ad92c1cad655c236a18d"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="400" data-natural-height="293" data-lazy-loaded="" data-src="dabble-app-control-885a49/82a7ca0d6f135f6a692348f32795e1ae.jpg"></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-206c97" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 217.988px; top: 630px;" data-block-id="22dfa9ebcfe53c7f14bab5275f1fb140"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="4.26036153106611" data-line-y1="0" data-line-x2="0" data-line-y2="0.7342798550321277" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="4.26036153106611" height="1" viewbox="0 0 4.26036153106611 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M4.26 0 L1.971 0.395"></path><path stroke="#000000" stroke-width="2" d="M 7.673 5.5 L 0.741 0.607 L 5.635 -6.325 L 0.741 0.607" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M4.26 0 L0 0.734"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M4.26 0 L0 0.734"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="2f185297daa5a628f8f3e4133a514f29" style="width: 669px; height: 596px; left: 80px; top: 104px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#define TRIG_PIN 13
+#define ECHO_PIN 39
+
+long duration;
+float distance;
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+}
+
+void loop() {
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+
+  duration = pulseIn(ECHO_PIN, HIGH, 30000);
+  if (duration == 0) {
+    Serial.println("No echo");
+  } else {
+    distance = (duration * 0.0343) / 2.0;
+    Serial.print(distance);
+    Serial.println(" cm");
+  }
+
+  delay(500);
+}</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="917c6012c446400d81b3150c018a0554"><div class="sl-block" data-block-type="text" style="width: 738px; left: -216px; top: -30px; height: auto;" data-name="text-861a76" data-block-id="bdf9b9af671fa83d33c75aabd4a2306d"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;"><h1> Coding &amp; Testing</h1></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-d9f4d5" style="width: 1.36519px; height: 1px; left: 216px; top: 630px; min-width: 1px; min-height: 1px;" data-block-id="0dedb2af89809bd9fe8ea0e63e149ae5"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="400" data-natural-height="293" data-lazy-loaded="" data-src="dabble-app-control-885a49/82a7ca0d6f135f6a692348f32795e1ae.jpg"></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-206c97" style="width: auto; height: auto; left: 217.988px; top: 630px;" data-block-id="4db39aadd8ae6a1e4801b6f659a09c78"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="4.26036153106611" data-line-y1="0" data-line-x2="0" data-line-y2="0.7342798550321277" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="4.26036153106611" height="1" viewbox="0 0 4.26036153106611 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M4.26 0 L1.971 0.395"></path><path stroke="#000000" stroke-width="2" d="M 7.673 5.5 L 0.741 0.607 L 5.635 -6.325 L 0.741 0.607" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M4.26 0 L0 0.734"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M4.26 0 L0 0.734"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 535px; height: 596px; left: -127px; top: 91px;" data-block-id="a0792222f3de1b62bbdac161e10700f9"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#define TRIG_PIN 13
+#define ECHO_PIN 39
+
+long duration;
+float distance;
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(TRIG_PIN, OUTPUT);
+  pinMode(ECHO_PIN, INPUT);
+}
+
+void loop() {
+  digitalWrite(TRIG_PIN, LOW);
+  delayMicroseconds(2);
+  digitalWrite(TRIG_PIN, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(TRIG_PIN, LOW);
+
+  duration = pulseIn(ECHO_PIN, HIGH, 30000);
+  if (duration == 0) {
+    Serial.println("No echo");
+  } else {
+    distance = (duration * 0.0343) / 2.0;
+    Serial.print(distance);
+    Serial.println(" cm");
+  }
+
+  delay(500);
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="video" data-name="Video 1" data-block-id="d3500d204cc0d529cddaedb42064cb2a" style="min-width: 30px; min-height: 30px; width: 539.879px; height: 489px; left: 533px; top: 121px;"><div class="sl-block-content" data-media-id="12686342" data-video-thumb="dabble-app-control-885a49/7fe021cba25658a134d06108fbf30f71.jpg" style="z-index: 14;"><video playsinline="" controls="controls" poster="dabble-app-control-885a49/7fe021cba25658a134d06108fbf30f71.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-src="dabble-app-control-885a49/7f06383850485ab1c19c75a420e0572c.mp4"></video></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="018af902e7d200017286ff4bada0e2f4">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 674.333px; top: 345px;" data-block-id="487b71dfc1ee46c9328745122646b04c"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="47" height="207" viewbox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="eb9aab5ad8b2f22884fd1eb93c42d560"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="acfcf8d4a72bb8d4598630938d848019"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 277.833px; top: 408px;" data-name="line-f904e0" data-block-id="93cc5c061daefe856905397658d1969a"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="25" height="159.5" viewbox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: -87px; top: 296px; height: auto;" data-name="text-841241" data-block-id="4a010113dbbb7fb87f4543f14532f3cb"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;"><h1>Servo Motor</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="4c5e5341ff2732b4a82dd0175c2997a9">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 674.333px; top: 345px;" data-block-id="b55258489f5b84e7559dbf5351bce605"><div class="sl-block-style" style="z-index: 10; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="47" height="207" viewbox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="2c1fb07f5dd7c72fc89699389bb42534"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="180bafd09c8b49e91180ed49230e3335"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 277.833px; top: 408px;" data-name="line-f904e0" data-block-id="02c790f42a1d3f85a2bbe86319e218e9"><div class="sl-block-style" style="z-index: 13; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="25" height="159.5" viewbox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 857px; left: -157px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="3e887c79ec33719ad0c8cff3b06a1560">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 14; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Introduction to Servo Motor</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1206px; height: auto; left: -126px; top: 109.5px;" data-block-id="d48e460a828f768badfd4ff3b771f61b"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><span style="color:rgb(18, 18, 18); text-align:justify">A </span><strong>servo motor</strong><span style="color:rgb(18, 18, 18); text-align:justify"> is a precision motor that uses a servo motor working principle based on closed-loop feedback control, which can rotate to specific angles with exceptional accuracy</span></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 504px; height: 320.799px; left: -109px; top: 298.6px; min-width: 1px; min-height: 1px;" data-block-id="76184d247d7642506b1d2873608d484c"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1080" data-natural-height="720" data-crop-x="0.171464" data-crop-y="0.247655" data-crop-width="0.630788" data-crop-height="0.602251" style="left: -137px; top: -132px; width: 799px; height: 533px;" data-lazy-loaded="" data-src="dabble-app-control-885a49/b4d24f5e3574b307541e67148222862e.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 634px; height: auto; left: 428px; top: 282px;" data-block-id="1c011c863a6f9908ea9dfb4afa28c628"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: center; z-index: 17;" data-placeholder-text="Text"><p><span style="color:rgb(18, 18, 18); text-align:justify">If you want to rotate an object to specific angles or distances, servo motors are the ideal choice due to their </span><strong>servo mechanism</strong><span style="color:rgb(18, 18, 18); text-align:justify"> with built-in position feedback.</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 685px; height: auto; left: 420px; top: 527px;" data-block-id="ae4a8e6aad5886322932f0f4be15452e"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p><span style="color:rgb(18, 18, 18); text-align:justify">Servo motors are usually rated in kg/cm. For example, a 6kg/cm servo can lift 6kg when the load is 1cm from the motor shaft.</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="a927a78e09ce2ba53b58b85afbacc768">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 674.333px; top: 345px;" data-block-id="2c33161f39b71cc23f8cebffe66995c5"><div class="sl-block-style" style="z-index: 10; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="47" height="207" viewbox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="70315490cf5c40d03261c37e0b59cf5f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="1c92deee6852345486d478f761f67d70"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 277.833px; top: 408px;" data-name="line-f904e0" data-block-id="a7d8392f69ed0ce6d424cfc62fc4adca"><div class="sl-block-style" style="z-index: 13; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="25" height="159.5" viewbox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 857px; left: -140px; top: 12px; height: auto;" data-name="text-4fd29b" data-block-id="f4f276a3b70bc4a6eb9e35bc9aa7163c">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 14; font-size: 76%;" data-placeholder-text="Text"><h1><strong>How to control Servo Motor</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 762px; height: 448px; left: 368px; top: 188.5px;" data-text-layout="fixed" data-block-id="971388da93a69bc6c6662fc5e70af4d1"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15; line-height: 1.846;" data-has-line-height="" data-placeholder-text="Text">
+<h4 style="color:rgb(0, 0, 0)"><strong>PWM Control Signal Specifications</strong></h4>
+
+<ul style="color:rgb(18, 18, 18)">
+	<li style="text-align:justify">
+	<p><strong>Pulse Period:</strong> 20ms (50Hz frequency)</p>
+	</li>
+	<li style="text-align:justify">
+	<p><strong>0.5 ms pulse width:</strong> Servo rotates to 0° position</p>
+	</li>
+	<li style="text-align:justify">
+	<p><strong>1.5ms pulse width:</strong> Servo moves to 90° (neutral position)</p>
+	</li>
+	<li style="text-align:justify">
+	<p><strong>2.5ms pulse width:</strong> Servo rotates to 180° position</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 470.879px; height: 318.8px; left: -140px; top: 241.6px; min-width: 1px; min-height: 1px;" data-block-id="165e1e7d09371b4114dc73c38115ee29"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1994" data-natural-height="1350" data-lazy-loaded="" data-src="dabble-app-control-885a49/d27fc7eb7a7ec6cf301f520c99851bc5.jpg"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="b19dc162bf84fa02749ce3d44828011d">
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 430.333px; left: -140px; top: 12px; height: auto;" data-name="text-4fd29b" data-block-id="282b0e4d0a219f294ae9fe72fb93cb5d">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Connection</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="5f2e3fedf0935cd65cf8e37963e4cab7" style="width: 1163.99px; height: 524.969px; left: -132px; top: 138.515px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2031" data-natural-height="916" data-src="dabble-app-control-885a49/d4288c3eac5f7702e6f090258b3de79d.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="dd9b8eda2199da168e16b954fd7ce8fb">
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 529.333px; left: -184.333px; top: -11px; height: auto;" data-name="text-4fd29b" data-block-id="b6561443b2ac2997f4e121bdb4dd2394">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Library Install</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="72ce00f9e2543ccf31f1329267ac4f07" style="width: 402.997px; height: 505px; left: 260.333px; top: 111.5px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="723" data-natural-height="906" data-src="dabble-app-control-885a49/cc65ba6b974e4185f7024ccd94104654.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="3b677b3e859d106359ee5a78540cdbb8" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 75.333px; top: 351px;"><div class="sl-block-content" data-line-x1="185" data-line-y1="0" data-line-x2="0" data-line-y2="96" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="185" height="96" viewbox="0 0 185 96"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M185 0 L1.775 95.079"></path><path stroke="#000000" stroke-width="2" d="M 8.757 98.216 L 0.667 95.654 L 3.229 87.564 L 0.667 95.654" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M185 0 L0 96"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M185 0 L0 96"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" data-block-id="d51edc107004f4e72ebb905332c2a4b7" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 75.333px; top: 390.5px;"><div class="sl-block-content" data-line-x1="256" data-line-y1="0" data-line-x2="0" data-line-y2="64" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="256" height="64" viewbox="0 0 256 64"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M256 0 L1.94 63.515"></path><path stroke="#000000" stroke-width="2" d="M 8.005 68.183 L 0.729 63.818 L 5.095 56.542 L 0.729 63.818" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M256 0 L0 64"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M256 0 L0 64"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="f7c86fa7f1bfee8c92731440225c4207" style="width: 354px; height: auto; left: -143px; top: 466.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;"><p>Go to Library Manager and Install ESP32 Servo </p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="1f7a6a2ec7c009e13b87338ca18dc84b">
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 379.333px; left: -122.036px; top: -12px; height: auto;" data-name="text-4fd29b" data-block-id="77cc3852b35c025d7340a581eeee8318">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Coding</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 518px; height: 425px; left: 20px; top: 158px;" data-block-id="916f213775544391f154cd2026dfd40c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;ESP32Servo.h&gt;
+
+Servo myServo;
+
+void setup() {
+  myServo.attach(17);
+}
+
+void loop() {
+  myServo.write(0);
+  delay(1000);
+
+  myServo.write(90);
+  delay(1000);
+
+  myServo.write(180);
+  delay(1000);
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="e9c953e4aa8fdcfa846d9b788a6268b8" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 243.333px; top: 243px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="100" data-line-x2="448" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="448" height="100" viewbox="0 0 448 100"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 100 L446.048 0.436"></path><path stroke="#000000" stroke-width="2" d="M 440.103 -4.385 L 447.266 0.164 L 442.717 7.327 L 447.266 0.164" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 100 L448 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 100 L448 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" data-block-id="a9aec0f2e504de68475a1c8af476480c" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 252.333px; top: 264px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="132" data-line-x2="440" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="440" height="132" viewbox="0 0 440 132"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 132 L438.084 0.575"></path><path stroke="#000000" stroke-width="2" d="M 431.809 -3.807 L 439.28 0.216 L 435.257 7.687 L 439.28 0.216" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 132 L440 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 132 L440 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" data-block-id="eee5a7c2902f2c6421fb53260ce9cf90" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 258.333px; top: 284px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="176" data-line-x2="437" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="437" height="176" viewbox="0 0 437 176"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 176 L435.145 0.747"></path><path stroke="#000000" stroke-width="2" d="M 428.495 -3.043 L 436.303 0.281 L 432.979 8.088 L 436.303 0.281" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 176 L437 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 176 L437 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="bf64d6f883c119e96d32a241286d348a" style="width: 373px; height: auto; left: 706px; top: 175.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;"><p>From this code, you will see your servo moves from <strong>0</strong> degree to <strong>90 </strong>degree and then <strong>180 </strong>degree</p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3538507,"slug":"dabble-app-control-885a49","title":"Ultrasonic-Servo","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/a7c0d3fbabda9d4c71db5642f1771bbf/thumb.jpg?1770920572","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":16,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1770956614757,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
