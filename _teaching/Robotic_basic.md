@@ -72,7 +72,7 @@ Students may use the following tools and platforms:
 |------|-----|----------|--------|
 | [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/basic_robotic/esp32_setup) | Installation & LED Blink | - | Board setup & first test |
 | [Motor & Servo Control]({{ site.baseurl }}/Slides/basic_robotic/motor_control)  | Motor Control | [Practice 1](/files/basic_robotic/Practice1.pdf) | PWM speed & position |
-| [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/basic_robotic/Remote_Control)   | Remote Control | Practice 2 | Basic navigation logic |
+| [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/basic_robotic/Remote_Control)   | Remote Control | [Practice 2](/files/basic_robotic/Practice2.pdf) | Basic navigation logic |
 | [IR Remote Control]({{ site.baseurl }}/Slides/basic_robotic/IR_Remote) | IR Remote Control | Practice 3 | Command decoding |
 | [Dabble Mobile App Control](/robotics/dabble-app/) | Mobile Control | Practice 4 | Wireless robot control |
 | [Ultrasonic Radar System](/robotics/radar-system/) | Radar Scan |Practice 5 | Servo + distance mapping |
