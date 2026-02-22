@@ -53,14 +53,22 @@ Node-RED is a flow-based tool for wiring together hardware, APIs, and online ser
 1. Open **Terminal** (macOS/Linux) or **PowerShell** (Windows).
 2. Install Node-RED globally:
    ```bash
+
    npm install -g --unsafe-perm node-red
+
+   ```
 3. Start Node-RED
    ```bash
+
    node-red
+
+   ```
 4. Once started, open your browser and go to:
    ```bash
+
    http://localhost:1880
 
+    ```
 ## 🗄️ Installing InfluxDB (v1.x)
 
 InfluxDB is a time-series database used to store sensor and IoT data efficiently.
