@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Grafana Dashboard"}' />
+		<title>Grafana Dashboard</title>
+
+		<meta name="description" content="The Epic Stack is an opinionated project starter that allows teams to ship their ideas to production faster and on a more stable foundation based on the experience of Kent C. Dodds and contributors.">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+		<!-- User CSS -->
+		<style id="user-css-output" type="text/css">
+			.reveal .invert {
+  filter: invert(100%);
+}
+
+		</style>
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="80a9494fa9a7b8d2017e23424b0ada80">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 880px; left: 200px; top: 87px; height: auto;" data-name="text-06e6d3" data-block-id="14d5dec8e51be1d16a400cfb2af87d3c"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Grafana Dashboard</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 165px; top: 222.5px;" data-block-id="ba10b12a17171c1d0f1ed07dcab270bc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>ICT 360: Introduction to IoT</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c4b797" style="width: 570.3px; height: 142.515px; left: 351.2px; top: 339.743px; min-width: 1px; min-height: 1px;" data-block-id="109284a25eaefb1dce8be7f8679acc4c"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2377" data-natural-height="594" data-lazy-loaded="" data-src="intro_blynk/434a42285fc45e349f3f77541d9a16f9.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 329.5px; top: 539.5px;" data-block-id="d0b02737f46fe79e24012e2948128d43"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div></section><section data-id="ce7cfdfd48cdf3ba38d0c56cf6366fb8" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)">
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 84px; top: 338px; height: auto;" data-block-id="4f8a2bbeaee98b34e3bc904d14897f38" data-name="text-841241"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 12;"><h1>Learning Objective</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="825612c828bb99e876319aefbf0057b7">
+<div class="sl-block" data-block-type="text" style="width: 776px; left: -6px; top: 13px; height: auto;" data-name="text-841241" data-block-id="e123cd3096fc418d1c28cc1ba635e01b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objectives</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-9d98d1" data-block-id="415d65b8f895187163f6ad4494ef1c31" style="height: auto; width: 1130px; left: 87px; top: 156.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; line-height: 2.899;" data-has-line-height="" data-placeholder-text="Text"><ul>
+	<li>
+	<p> Develop an IoT monitoring system using ESP32 and MQTT</p>
+	</li>
+	<li>
+	<p>Transmit and manage sensor data using a publish–subscribe architecture</p>
+	</li>
+	<li>
+	<p>Process and store time-series data using Node-RED and InfluxDB</p>
+	</li>
+	<li>
+	<p> Visualize real-time environmental data using Grafana dashboards</p>
+	</li>
+	<li>
+	<p> Apply MicroPython for cloud-integrated embedded systems</p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="aaab5600a0433bfcbc0dc344d78a5ae2">
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 86px; top: 338px; height: auto;" data-name="text-841241" data-block-id="3e5370f80ea4e8502438e05e1cf30b7d"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;"><h1>BMP280</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="87321ec54100cea3cf7105e27c80d7c6">
+<div class="sl-block" data-block-type="text" style="width: 369px; left: -34px; top: 0px; height: auto;" data-name="text-841241" data-block-id="698ddc5a297480fdc21bb353b19ea0fb"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>BMP280</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="1cd9e8b4e92bab7c8137534608f3e18c" style="width: 416px; height: 416px; left: 696px; top: 111px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="550" data-natural-height="550" data-lazy-loaded="" data-src="intro_blynk/d8459a007743a79e60b2d4ae3cd2229e.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="6063c825e0ac2319f8cfaee839c9dba2" style="width: 600px; height: auto; left: 16px; top: 188.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>BMP280 is a digital sensor that measures:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="0ca599480c323d56fadfce61592f9729" style="width: 639px; height: 237px; left: 96px; top: 273px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; line-height: 1.885; font-size: 133%;" data-placeholder-text="Text" data-has-line-height=""><ul>
+	<li>
+	<p>🌡 Temperature</p>
+	</li>
+	<li>
+	<p>🌬 Air Pressure</p>
+	</li>
+	<li>
+	<p>🏔 Altitude (calculated)</p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="c0d953d757a061fd1b79d274ac4a50c9">
+<div class="sl-block" data-block-type="text" style="width: 369px; left: -34px; top: 0px; height: auto;" data-name="text-841241" data-block-id="47efa6322956011d0314bb03a50ea4d0"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>BMP280</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 31.5px; top: 155.5px;" data-block-id="3a18eab15980e813d0d4e95ff7b9c81a"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>We can build a simple weather prediction system using only BMP280 but has limitation</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="29e3530f1fbb331efef46be05e714cc3" style="width: 133px; height: auto; left: 55px; top: 275.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p><strong>We can:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 247px; height: auto; left: 590px; top: 287px;" data-block-id="9b25ec4acf26fdce7831f37236c34848"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>Limitation</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="0c020e7b0d34c69fadc62c5d997858bb" style="width: 600px; height: auto; left: 55px; top: 360px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Monitor pressure trend</p>
+	</li>
+	<li>
+	<p>Detect pressure drop</p>
+	</li>
+	<li>
+	<p>Estimate altitude</p>
+	</li>
+	<li>
+	<p>Log temperature</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="767d2efb3f341eef632c0d1c45d7ede4" style="width: 600px; height: auto; left: 581px; top: 306.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text">
+<p> </p>
+
+<ul>
+	<li>
+	<p>No humidity data</p>
+	</li>
+	<li>
+	<p>No wind speed</p>
+	</li>
+	<li>
+	<p>No rainfall detection</p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="3287dda3e50c92c2838661108fd7eead">
+<div class="sl-block" data-block-type="text" style="width: 369px; left: -34px; top: 0px; height: auto;" data-name="text-841241" data-block-id="e99fb6e94873b6804ce7079d7ae144fa"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>BMP280</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 26px; top: 175.5px;" data-block-id="72dd059cc942720c7e09b1dc2a27f956"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>We can build a simple weather prediction system using only BMP280 but has limitation</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 133px; height: auto; left: 55px; top: 275.5px;" data-block-id="d5a9c46a682a0742d2f8617120e4de87"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p><strong>We can:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 247px; height: auto; left: 590px; top: 287px;" data-block-id="a60de315035694974b709674d492f7b9"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>Limitation</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 600px; height: auto; left: 55px; top: 360px;" data-block-id="867594cd7df1fb36e803167b36dd8e98"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Monitor pressure trend</p>
+	</li>
+	<li>
+	<p>Detect pressure drop</p>
+	</li>
+	<li>
+	<p>Estimate altitude</p>
+	</li>
+	<li>
+	<p>Log temperature</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 600px; height: auto; left: 581px; top: 306.5px;" data-block-id="441294dc378094ddada76ab009d73dc9"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text">
+<p> </p>
+
+<ul>
+	<li>
+	<p>No humidity data</p>
+	</li>
+	<li>
+	<p>No wind speed</p>
+	</li>
+	<li>
+	<p>No rainfall detection</p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="82892d0da2d58916ce244ba8fcb6bba4">
+<div class="sl-block" data-block-type="text" style="width: 517px; left: -8px; top: 0px; height: auto;" data-name="text-841241" data-block-id="9d3627a6a1159dc173a80e10bc0e5e0f"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Air Pressure</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 15px; top: 123.5px;" data-block-id="3c40c3ea8fe9b470e2b85357025f5978"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Atmospheric or Air pressure is the force per unit area exerted by the weight of air molecules in the Earth's atmosphere.</p></div></div>
+<div class="sl-block" data-block-type="math" data-name="Math 1" data-block-id="c30fff09b496d9226a62d015b9699b2c" style="width: auto; height: auto; left: 267px; top: 316px;"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 12;"><div class="math-input">P = \frac{F}{A}</div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="9433ac607b135714c4ad21d4d7d19713" style="width: 600px; height: auto; left: 518px; top: 264px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text">
+<p>Where:</p>
+
+<ul>
+	<li>
+	<p><span class="katex"><span class="katex-mathml">PP</span><span class="katex-html"><span class="base"><span class="mathnormal mord">P</span></span></span></span> = Pressure</p>
+	</li>
+	<li>
+	<p><span class="katex"><span class="katex-mathml">FF</span><span class="katex-html"><span class="base"><span class="mathnormal mord">F</span></span></span></span> = Force</p>
+	</li>
+	<li>
+	<p><span class="katex"><span class="katex-mathml">AA</span><span class="katex-html"><span class="base"><span class="mathnormal mord">A</span></span></span></span> = Area</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="3617250fb419fb80573e710566c0b3e8" style="width: 716px; height: auto; left: 10px; top: 533px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>At sea level, average atmospheric pressure is:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="3f6c5480205ecf06f9dd83e642fc06dc" style="width: 600px; height: auto; left: 670px; top: 533px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><strong><span class="mord">1013.25</span><span class="mord text"> hPa or </span><span class="mord">101</span><span class="mpunct">,</span><span class="mord">325</span><span class="mord text"> Pa</span></strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="10107d5738185846113975e6edbb605a" style="width: 240px; height: auto; left: 1021px; top: 459px;"><div class="sl-block-style" style="z-index: 16; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16; border-style: solid; border-width: 1px;" data-placeholder-text="Text"><p><strong>*1 hPa = 100 Pa</strong></p></div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="025d655388f1c0349f560b7b44678272">
+<div class="sl-block" data-block-type="text" style="width: 517px; left: -8px; top: 0px; height: auto;" data-name="text-841241" data-block-id="fa0b55d8aab7e6626894b3dc063d2bcb"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Air Pressure</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 31.5px; top: 121.5px;" data-block-id="eaab53733ebb3afeb84e273311723107"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Atmospheric pressure exists because:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 663px; height: auto; left: 119px; top: 184.5px;" data-block-id="05e6bcf1d42dd1934f0b8bde211cc968"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12; line-height: 1.573;" data-has-line-height="" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Air has mass</p>
+	</li>
+	<li>
+	<p>Mass experiences gravitational acceleration</p>
+	</li>
+	<li>
+	<p>Gravity pulls air molecules toward Earth</p>
+	</li>
+	<li>
+	<p>Air molecules collide with surfaces</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="57f6f0b21e0407d907402e8f5a4b307b" style="width: 780px; height: auto; left: 31.5px; top: 445px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Pressure is not static. it changes continuously due to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="4312922767500193db940c71ba921d18" style="width: 600px; height: auto; left: 128px; top: 508.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Temperature</p>
+	</li>
+	<li>
+	<p>Altitude</p>
+	</li>
+	<li>
+	<p>Weather systems</p>
+	</li>
+	<li>
+	<p>Air movement</p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="80491123b44d62193f48c841bbe6b131">
+<div class="sl-block" data-block-type="text" style="width: 1206px; left: -83px; top: 0px; height: auto;" data-name="text-841241" data-block-id="0e34a239ac2a24f304b29b1f20175fa8"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 69%;" data-placeholder-text="Text"><h1>Temperature and Pressure Relationship</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 18.5px; top: 111.5px;" data-block-id="933ab7a5d9ac6d0e92400f27802f3108"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>From Ideal Gas Law:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 780px; height: auto; left: 18.5px; top: 352px;" data-block-id="3f79732cd1da470b177fbdd6df3bb91a"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>If volume is constant:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 867px; height: auto; left: 118px; top: 437.5px;" data-block-id="85d66677dd6ba26f0d6e1f6dd316a20c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Increasing temperature increases pressure.</p>
+	</li>
+	<li>
+	<p>Decreasing temperature decreases pressure.</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="math" data-name="Math 1" data-block-id="c6edcd7fcd46dc42d40e3b185d9d2a3c" style="width: auto; height: auto; left: 445px; top: 211px;"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 14;"><div class="math-input">PV=nRT</div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="01b6bdc585beb80d4eab505ec0d21cec" style="width: 1169px; height: auto; left: 42.5px; top: 569px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>In the atmosphere, this relationship is more complex due to air expansion and movement.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="dea2fd5068239b4dcdb53748eadb2bda">
+<div class="sl-block" data-block-type="text" style="width: 733px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="4855224b39ccdc538c8ab0a1c579620c"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 69%;" data-placeholder-text="Text"><h1>Resolution and Accuracy</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 42.5px; top: 104px;" data-block-id="c2dc2181bcf005190b57d418f51768a0"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Typical BMP280 specifications:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 1022px; height: auto; left: 42.5px; top: 360px;" data-block-id="88bc02b4ddd553d717bf65ca671be2ef"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>1 hPa difference corresponds to approx. 8 meters altitude difference.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 867px; height: auto; left: 118px; top: 180px;" data-block-id="df4a15cbdfeb344f6940ee0c0350aa2d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Pressure resolution: 0.16 Pa</p>
+	</li>
+	<li>
+	<p>Absolute accuracy: ±1 hPa</p>
+	</li>
+	<li>
+	<p>Temperature resolution: 0.01°C</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 1169px; height: auto; left: 118px; top: 528px;" data-block-id="c8cd5735791e221dfdf1d651fd404b39"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Drone altitude measurement</p>
+	</li>
+	<li>
+	<p>Indoor floor detection</p>
+	</li>
+	<li>
+	<p>Environmental monitoring</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="4a9b59afa01b978462f24c1e4d77d5e5" style="width: 600px; height: auto; left: 51px; top: 439px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>This makes it useful for:</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="f4acbb6495d2b026110347d002f8abf2">
+<div class="sl-block" data-block-type="text" style="width: 378px; left: -8px; top: 0px; height: auto;" data-name="text-841241" data-block-id="02ff59cf6e47f7fbff3a61f40bad1806"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Altitude</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 31.5px; top: 121.5px;" data-block-id="4eb12248af5b7e9fe2c21235849139a6"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Altitude is the vertical distance of an object above a reference level.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 841.114px; height: auto; left: 151.417px; top: 289.843px;" data-block-id="a88463247f663bd3e319f69a6b43ad45"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12; line-height: 1.573;" data-has-line-height="" data-placeholder-text="Text">
+<p>Reason:</p>
+
+<ul>
+	<li>
+	<p>Air has mass.</p>
+	</li>
+	<li>
+	<p>Gravity pulls air downward.</p>
+	</li>
+	<li>
+	<p>Higher altitude → less air above.</p>
+	</li>
+	<li>
+	<p>Less air above → lower pressure.</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 1248.5px; height: auto; left: 31.5px; top: 202.016px;" data-block-id="0b4b566c253401371ac7b0bc55ab2cfb"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Pressure Can Measure Altitude Atmospheric pressure decreases as altitude increases.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="a603cac3d3502f3c879c1153b9a2cd8e" style="width: 866.662px; height: 2.35939px; left: 75.089px; top: 619.843px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p><span style="color:rgb(0, 0, 0)">So pressure and altitude are inversely related.</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="1441ba83773c04f9bda5a6f2ea48795c">
+<div class="sl-block" data-block-type="text" style="width: 733.803px; left: 0px; top: 37.016px; height: auto;" data-name="text-841241" data-block-id="952862f2236eec882a56dcb6007aad68"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Basic Relationship</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 49.3818px; top: 202.17px;" data-block-id="2d7cc4c8184f50078f221e01cf3984b3"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>1 hPa pressure decrease ≈ 8–9 meters altitude increase</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 1248.5px; height: auto; left: 58.5px; top: 280.016px;" data-block-id="831233f5933a8db2d44aeeabe230caa5"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Pressure Can Measure Altitude Atmospheric pressure decreases as altitude increases.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 866.662px; height: 2.35939px; left: 58.5px; top: 375.721px;" data-text-layout="fixed" data-block-id="01a57119107586b9b37da2edadbeea0d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Example:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="bad6c541b909df59ef631d35e3f2de0e" style="width: 600px; height: auto; left: 172.125px; top: 463.882px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; line-height: 2.08;" data-has-line-height="" data-placeholder-text="Text">
+<p>If pressure drops by 5 hPa:</p>
+
+<p>Altitude increase ≈ 40 meters.</p>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="9af13adbeade50b536d67b3f5f966190">
+<div class="sl-block" data-block-type="text" style="width: 957.8px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="6080f1f38caaeed4d3de2be03f9b8448"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 67%;" data-placeholder-text="Text"><h1>Applications of Barometric Altitude</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 130px; top: 122.17px;" data-block-id="ba2ed3b012f1b25ffb78057915cf293f"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11; line-height: 1.911;" data-has-line-height="" data-placeholder-text="Text">
+<p>Barometric altitude is used in:</p>
+
+<ul>
+	<li>
+	<p>Drones (height stabilization)</p>
+	</li>
+	<li>
+	<p>Aircraft altimeters</p>
+	</li>
+	<li>
+	<p>Hiking watches</p>
+	</li>
+	<li>
+	<p>Smartphone floor detection</p>
+	</li>
+	<li>
+	<p>Rocket experiments</p>
+	</li>
+	<li>
+	<p>Robotics navigation</p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="3910650835161383a471790e18757757">
+<div class="sl-block" data-block-type="text" style="width: 957.8px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="c8139e3a23079cdb2c3e9f1c3c712907"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 67%;" data-placeholder-text="Text"><h1>Applications of Barometric Altitude</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1217px; height: auto; left: 130px; top: 122.17px;" data-block-id="2635f0b937dc927b107a997f6dc8bc18"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11; line-height: 1.911;" data-has-line-height="" data-placeholder-text="Text">
+<p>Barometric altitude is used in:</p>
+
+<ul>
+	<li>
+	<p>Drones (height stabilization)</p>
+	</li>
+	<li>
+	<p>Aircraft altimeters</p>
+	</li>
+	<li>
+	<p>Hiking watches</p>
+	</li>
+	<li>
+	<p>Smartphone floor detection</p>
+	</li>
+	<li>
+	<p>Rocket experiments</p>
+	</li>
+	<li>
+	<p>Robotics navigation</p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="fa5cab8571bc8d1657772bbc912740bc">
+<div class="sl-block" data-block-type="text" style="width: 776.8px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="16d3edd77445f9e5fa9c179be83764e8"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 67%;" data-placeholder-text="Text"><h1>Testing BMP280 with ESP32</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="7b37d7d6a190e6e264f22522e9fcaef6" style="width: 1058.57px; height: 497.179px; left: 122.59px; top: 149.821px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1731" data-natural-height="813" data-lazy-loaded="" data-src="intro_blynk/e974657008d17e7c2ea4beeb49d9fad2.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="d7437670129810520b7fdac686ba32c1">
+<div class="sl-block" data-block-type="text" style="width: 776.8px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="f956ca83d60c71f55c207fd73c195787"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 67%;" data-placeholder-text="Text"><h1>Testing BMP280 with ESP32</h1></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 654.21px; height: 307.263px; left: 46.59px; top: 164.821px; min-width: 1px; min-height: 1px;" data-block-id="a04a1598b2db65e20dfa783ee388ad74"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1731" data-natural-height="813" data-lazy-loaded="" data-src="intro_blynk/e974657008d17e7c2ea4beeb49d9fad2.png"></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="31878aacabcb1068f7147993a7c83226" style="width: 560px; height: 598px; left: 720px; top: 102px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from machine import I2C
+import time
+
+class BMP280:
+    def __init__(self, i2c, addr=0x76):
+        self.i2c = i2c
+        self.addr = addr
+        self.sea_level_pressure = 1011.7
+
+        chip_id = self.i2c.readfrom_mem(self.addr, 0xD0, 1)
+        if chip_id[0] != 0x58:
+            raise Exception("BMP280 not found")
+
+        self.i2c.writeto_mem(self.addr, 0xE0, b'\xB6')
+        time.sleep(0.2)
+
+        calib = self.i2c.readfrom_mem(self.addr, 0x88, 24)
+
+        def to_signed(val):
+            if val &gt; 32767:
+                val -= 65536
+            return val
+
+        self.dig_T1 = calib[1] &lt;&lt; 8 | calib[0]
+        self.dig_T2 = to_signed(calib[3] &lt;&lt; 8 | calib[2])
+        self.dig_T3 = to_signed(calib[5] &lt;&lt; 8 | calib[4])
+
+        self.dig_P1 = calib[7] &lt;&lt; 8 | calib[6]
+        self.dig_P2 = to_signed(calib[9] &lt;&lt; 8 | calib[8])
+        self.dig_P3 = to_signed(calib[11] &lt;&lt; 8 | calib[10])
+        self.dig_P4 = to_signed(calib[13] &lt;&lt; 8 | calib[12])
+        self.dig_P5 = to_signed(calib[15] &lt;&lt; 8 | calib[14])
+        self.dig_P6 = to_signed(calib[17] &lt;&lt; 8 | calib[16])
+        self.dig_P7 = to_signed(calib[19] &lt;&lt; 8 | calib[18])
+        self.dig_P8 = to_signed(calib[21] &lt;&lt; 8 | calib[20])
+        self.dig_P9 = to_signed(calib[23] &lt;&lt; 8 | calib[22])
+
+        self.i2c.writeto_mem(self.addr, 0xF4, b'\x27')
+        self.i2c.writeto_mem(self.addr, 0xF5, b'\xA0')
+
+        self.t_fine = 0
+
+    def _read_raw(self):
+        data = self.i2c.readfrom_mem(self.addr, 0xF7, 6)
+        adc_p = (data[0] &lt;&lt; 12) | (data[1] &lt;&lt; 4) | (data[2] &gt;&gt; 4)
+        adc_t = (data[3] &lt;&lt; 12) | (data[4] &lt;&lt; 4) | (data[5] &gt;&gt; 4)
+        return adc_t, adc_p
+
+    def _compensate_temperature(self, adc_t):
+        var1 = (((adc_t &gt;&gt; 3) - (self.dig_T1 &lt;&lt; 1)) * self.dig_T2) &gt;&gt; 11
+        var2 = (((((adc_t &gt;&gt; 4) - self.dig_T1) *
+                  ((adc_t &gt;&gt; 4) - self.dig_T1)) &gt;&gt; 12) *
+                self.dig_T3) &gt;&gt; 14
+        self.t_fine = var1 + var2
+        T = (self.t_fine * 5 + 128) &gt;&gt; 8
+        return T / 100
+
+    def _compensate_pressure(self, adc_p):
+        var1 = self.t_fine - 128000
+        var2 = var1 * var1 * self.dig_P6
+        var2 = var2 + ((var1 * self.dig_P5) &lt;&lt; 17)
+        var2 = var2 + (self.dig_P4 &lt;&lt; 35)
+        var1 = ((var1 * var1 * self.dig_P3) &gt;&gt; 8) + ((var1 * self.dig_P2) &lt;&lt; 12)
+        var1 = (((1 &lt;&lt; 47) + var1) * self.dig_P1) &gt;&gt; 33
+        if var1 == 0:
+            return 0
+        p = 1048576 - adc_p
+        p = (((p &lt;&lt; 31) - var2) * 3125) // var1
+        var1 = (self.dig_P9 * (p &gt;&gt; 13) * (p &gt;&gt; 13)) &gt;&gt; 25
+        var2 = (self.dig_P8 * p) &gt;&gt; 19
+        p = ((p + var1 + var2) &gt;&gt; 8) + (self.dig_P7 &lt;&lt; 4)
+        return p / 256
+
+    def _read_all(self):
+        adc_t, adc_p = self._read_raw()
+        temp = self._compensate_temperature(adc_t)
+        pressure = self._compensate_pressure(adc_p)
+        return temp, pressure
+
+    @property
+    def temperature(self):
+        temp, _ = self._read_all()
+        return temp
+
+    @property
+    def pressure(self):
+        _, pressure = self._read_all()
+        return pressure
+
+    @property
+    def altitude(self):
+        pressure_hpa = self.pressure / 100
+        return 44330 * (1 - (pressure_hpa / self.sea_level_pressure) ** 0.1903)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="3e3e05dcd61853d042be96ef24d4f753" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 411.333px; top: 505px;"><div class="sl-block-content" data-line-x1="309" data-line-y1="0" data-line-x2="0" data-line-y2="35" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="309" height="35" viewbox="0 0 309 35"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M309 0 L1.987 34.775"></path><path stroke="#ff0000" stroke-width="2" d="M 7.384 40.202 L 0.747 34.915 L 6.034 28.278 L 0.747 34.915" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M309 0 L0 35"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M309 0 L0 35"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="0b28d35fe71fca19505e9f59a9037bcd" style="width: 600px; height: auto; left: 120px; top: 573px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>Save this as <strong>bmp280.py</strong> in <strong>micropython device</strong></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="09ae49e794e0dbc66b85cc1a379f7c18">
+<div class="sl-block" data-block-type="text" style="width: 776.8px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="4f5dc9a048ff09fc2cabb9b27452d9f0"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 67%;" data-placeholder-text="Text"><h1>Testing BMP280 with ESP32</h1></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="d2a76a66c10c11fcf0ded6d26da9ab47" style="width: 616px; height: 415px; left: 24px; top: 189.5px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from machine import Pin, I2C
+import bmp280
+import time
+
+i2c = I2C(0, scl=Pin(22), sda=Pin(21))
+sensor = bmp280.BMP280(i2c)
+
+while True:
+    print("Temperature:", sensor.temperature, "°C")
+    print("Pressure:", sensor.pressure / 100, "hPa")
+    print("Altitude:", sensor.altitude, "m")
+    print("---------------------------")
+    time.sleep(2)
+</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="1670d06c364c142a918a372ed07f026e" style="width: 519.33px; height: 481.059px; left: 760.67px; top: 138px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1167" data-natural-height="1081" data-lazy-loaded="" data-src="intro_blynk/568c988bf6af6f984560df9597f9289a.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="aa41042e8bf87a4ae0a4253ba5238a4e" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 638.333px; top: 387px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="2" data-line-x2="125" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="125" height="2" viewbox="0 0 125 2"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 2 L123 0.032"></path><path stroke="#ff0000" stroke-width="2" d="M 118.153 -5.891 L 124.248 0.012 L 118.345 6.107 L 124.248 0.012" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 2 L125 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 2 L125 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="777c2d47e58e6973b9887a9fc7139277">
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 85px; top: 338px; height: auto;" data-name="text-841241" data-block-id="eefd0bb90d23bdd1e211434197c6b530"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text">
+<h1>Modern IoT Data Architecture</h1>
+
+<p> </p>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="8f12313e31cbdcf11a9679ebd201532f">
+<div class="sl-block" data-block-type="text" style="width: 831px; left: -60px; top: -10.5px; height: 116px;" data-name="text-841241" data-block-id="1ddf605172676998e3d6b8729a2045fa" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text">
+<h1><span style="font-size:0.7em">Modern IoT Data Architecture</span></h1>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="9cf719925d7d2dfd25fadded5b0fff0f" style="width: 156.19px; height: 211.8px; left: 258.905px; top: 379.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="323" data-natural-height="438" data-lazy-loaded="" data-src="intro_blynk/dce914956bd2fdbc31e213b242000f65.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="154cfb24ab35f73f7fc1e5b77c70bc92" style="width: 138.675px; height: 184.9px; left: 0px; top: 406.4px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="270" data-natural-height="360" data-lazy-loaded="" data-src="intro_blynk/ea0593a26e0e92b55ceb38e6285c08cb.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" data-block-id="0713f1920fb842b8118e56a8672799cf" style="width: 141px; height: 141px; left: 586.5px; top: 230px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/bbcd4ff9ffbac1562f3792128a461d27.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" data-block-id="a430163874a7b3a8826195b2aa816ffa" style="width: 135px; height: 135px; left: 790.5px; top: 485.4px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/8069db640c7e5382db7889fcb8456935.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 5" data-block-id="98bedce034d23f8ac4bdce382631f034" style="width: 215.1px; height: 143.4px; left: 994.9px; top: 263px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="600" data-natural-height="400" data-lazy-loaded="" data-src="intro_blynk/1949976fecc5ade49b32ce265a85ebec.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="8f9b0b5bb86365da561e5ff82dda806a" style="width: 143px; height: auto; left: 14px; top: 360px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>BMP280</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="2b493b76199a3535f78af65823c86073" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 134.333px; top: 488px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="134" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="134" height="1" viewbox="0 0 134 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L132 0"></path><path stroke="#ff0000" stroke-width="2" d="M 127.248 -6 L 133.248 0 L 127.248 6 L 133.248 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L134 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L134 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="2aba83dcc4d8f8d05d4cc999d7a9dd38" style="width: 120.23px; height: auto; left: 148.103px; top: 498.85px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; line-height: 0.559;" data-has-line-height="" data-placeholder-text="Text">
+<p><span style="font-size:0.6em">Temperature</span></p>
+
+<p><span style="font-size:0.6em">Pressure</span></p>
+
+<p><span style="font-size:0.6em">Altitute</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" data-block-id="dbf908ad58f6527910dd32f3c76b4532" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 412.333px; top: 353px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="121" data-line-x2="151" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="151" height="121" viewbox="0 0 151 121"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 121 L149.439 1.251"></path><path stroke="#ff0000" stroke-width="2" d="M 141.979 -0.46 L 150.413 0.47 L 149.483 8.904 L 150.413 0.47" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 121 L151 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 121 L151 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" data-block-id="b3c538d3730d6a34336f4386996eb6da" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 715.333px; top: 369px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="109" data-line-y2="119" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="109" height="119" viewbox="0 0 109 119"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L107.649 117.525"></path><path stroke="#ff0000" stroke-width="2" d="M 108.864 109.968 L 108.492 118.446 L 100.015 118.074 L 108.492 118.446" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L109 119"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L109 119"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" data-block-id="935d972b9269d7647ff613af3dd390b5" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 876.333px; top: 360px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="133" data-line-x2="132" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="132" height="133" viewbox="0 0 132 133"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 133 L130.591 1.42"></path><path stroke="#ff0000" stroke-width="2" d="M 122.985 0.566 L 131.47 0.534 L 131.502 9.019 L 131.47 0.534" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 133 L132 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 133 L132 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="ad2b69b23372180753266d1140546a2b" style="width: 158px; height: auto; left: 429px; top: 417.139px;"><div class="sl-block-style" style="z-index: 23; transform: rotate(-39deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 23;" data-placeholder-text="Text"><p><span style="font-size:0.7em">MQTT Protocol</span></p></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="b6cc95afd97cf6c9e17b73db927e3774" style="width: 128px; height: auto; left: 794px; top: 636.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 24;" data-placeholder-text="Text"><p>InfluxDB</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 6" data-block-id="d6c438ced62a39037c1c775655065c89" style="width: 401.099px; height: 255.5px; left: 843.374px; top: 26.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 25;"><img class="" data-natural-width="1000" data-natural-height="637" data-lazy-loaded="" data-src="intro_blynk/68d5ab7df866402cbc665d8c65e27f9c.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 112px; height: auto; left: 289.333px; top: 349.5px;" data-block-id="ca3a2659200d9a9eb1efd1f0188850d5"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>ESP32</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="f496adbeb09b028d475d48b2b0a36b10">
+
+
+<div class="sl-block" data-block-type="text" data-name="text-c59896" data-block-id="3d5335bd842ef0e604b29f0de82ad395" style="height: auto; width: 600px; left: 574.7px; top: 84.1px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p>Expansion Board or External Shield</p></div></div>
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1225.39px; left: 1.065px; top: -0.9px; height: auto;" data-name="text-841241" data-block-id="92114b3f98e8f847ef984f523aad275b"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11; font-size: 87%;" data-placeholder-text="Text"><h1>Send data from esp32 to Node-RED</h1></div></div>
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="252426c1553e8f72c704364d70320179" style="width: 670px; height: 571px; left: 8.5px; top: 134px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">import network, time, ujson
+from umqtt.simple import MQTTClient
+from machine import Pin, I2C
+from bmp280 import BMP280
+
+SSID = "TP-LINK_56C612"
+PASSWORD = "06941314"
+
+BROKER = "test.mosquitto.org"
+PORT = 1883
+CLIENT_ID = b"esp32_bmp280_1"
+TOPIC = b"/aupp/esp32/bmp280"
+KEEPALIVE = 30
+
+
+def wifi_connect():
+    wlan = network.WLAN(network.STA_IF)
+    wlan.active(True)
+    if not wlan.isconnected():
+        print("Connecting to WiFi...")
+        wlan.connect(SSID, PASSWORD)
+        t0 = time.ticks_ms()
+        while not wlan.isconnected():
+            if time.ticks_diff(time.ticks_ms(), t0) &gt; 20000:
+                raise RuntimeError("Wi-Fi connect timeout")
+            time.sleep(0.3)
+    print("WiFi OK:", wlan.ifconfig())
+    return wlan
+
+
+def make_client():
+    return MQTTClient(client_id=CLIENT_ID, server=BROKER, port=PORT, keepalive=KEEPALIVE)
+
+
+def connect_mqtt(c):
+    time.sleep(0.5)
+    c.connect()
+    print("MQTT connected")
+
+
+def main():
+    wifi_connect()
+
+    # Setup BMP280
+    i2c = I2C(0, scl=Pin(22), sda=Pin(21))
+    sensor = BMP280(i2c)
+
+    client = make_client()
+
+    while True:
+        try:
+            connect_mqtt(client)
+            while True:
+                data = {
+                    "temperature": round(sensor.temperature, 2),
+                    "pressure": round(sensor.pressure / 100, 2),
+                    "altitude": round(sensor.altitude, 2)
+                }
+
+                msg = ujson.dumps(data)
+                client.publish(TOPIC, msg)
+
+                print("Sent:", msg)
+                time.sleep(5)
+
+        except OSError as e:
+            print("MQTT error:", e)
+            try:
+                client.close()
+            except:
+                pass
+            print("Retrying MQTT in 3s...")
+            time.sleep(3)
+
+
+main()
+</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="921c8604041054e2bcd43c900aaa19c3" style="width: 632.666px; height: 177.208px; left: 662.334px; top: 290.396px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="2467" data-natural-height="691" data-lazy-loaded="" data-src="intro_blynk/6ae121882075d2a0aa030cb2afad0277.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="055b136cf070ec596c2dde2345ddb337">
+<div class="sl-block" data-block-type="text" style="width: 524px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="fc8c0e85ddfbfc69d56c3cba95baf99c"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Node-RED</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 618px; top: 70.5px;" data-block-id="a0862302b4c9a31385ac8b9e68421eb4" data-name="line-86fac2"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="119.79999999999995" data-line-y1="0" data-line-x2="0" data-line-y2="43.30000000000001" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="119.79999999999995" height="43.30000000000001" viewbox="0 0 119.79999999999995 43.30000000000001"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M119.8 0 L1.881 42.62"></path><path stroke="#ff0000" stroke-width="2" d="M 8.389 46.648 L 0.707 43.044 L 4.31 35.362 L 0.707 43.044" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M119.8 0 L0 43.3"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M119.8 0 L0 43.3"></path></svg></div></div></div>
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 601.9px; top: 60.5px;" data-block-id="66a50d659cb88c68dc581c29e76c3e6c" data-name="line-190512"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="118.3" data-line-y1="0" data-line-x2="0" data-line-y2="10" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="118.3" height="10" viewbox="0 0 118.3 10"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M118.3 0 L1.993 9.832"></path><path stroke="#ff0000" stroke-width="2" d="M 7.233 15.41 L 0.749 9.937 L 6.222 3.453 L 0.749 9.937" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M118.3 0 L0 10"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M118.3 0 L0 10"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="63e778e27e128babb6762c09daec4742" style="width: 1168px; height: auto; left: 61.05px; top: 133.3px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>Node-RED</strong> is a <strong>flow-based programming tool</strong> for connecting hardware devices, APIs, and online services.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="3dddcaf3f96a15e55b2ec3f0a1ac8f4b" style="width: 777px; height: auto; left: 102px; top: 238px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14; line-height: 1.768;" data-has-line-height="" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Developed by <span class="align-baseline cursor-pointer entity-underline hover:entity-accent inline">IBM</span></p>
+	</li>
+	<li>
+	<p>Built on <span class="align-baseline cursor-pointer entity-underline hover:entity-accent inline">Node.js</span></p>
+	</li>
+	<li>
+	<p>Uses a <strong>browser-based visual editor</strong></p>
+	</li>
+	<li>
+	<p>Designed especially for <strong>IoT applications</strong></p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" style="width: 195px; height: 195px; left: 834.5px; top: 238px; min-width: 1px; min-height: 1px;" data-block-id="2f77494847d9df50592d99d4715c4183"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/bbcd4ff9ffbac1562f3792128a461d27.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="cbb01ab1c650248236d4fdc39a4e1613" style="width: 600px; height: auto; left: 61.05px; top: 507px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>Node-RED works by connecting:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="e7785b8147efaa3a12750ee22af54fad" style="width: 600px; height: auto; left: 102px; top: 565.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><ul>
+	<li>
+	<p><strong>Nodes</strong> (blocks of functionality)</p>
+	</li>
+	<li>
+	<p>With <strong>wires</strong></p>
+	</li>
+	<li>
+	<p>To create a <strong>flow</strong></p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="6233f5c9dc72702af7bcc09c5435df70">
+<div class="sl-block" data-block-type="text" style="width: 524px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="05ea075f481071762d77afdf9a05e5ed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Node-RED</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 618px; top: 70.5px;" data-name="line-86fac2" data-block-id="96f04585a59179b00ec0711d1537b7b8"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="119.79999999999995" data-line-y1="0" data-line-x2="0" data-line-y2="43.30000000000001" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="119.79999999999995" height="43.30000000000001" viewbox="0 0 119.79999999999995 43.30000000000001"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M119.8 0 L1.881 42.62"></path><path stroke="#ff0000" stroke-width="2" d="M 8.389 46.648 L 0.707 43.044 L 4.31 35.362 L 0.707 43.044" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M119.8 0 L0 43.3"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M119.8 0 L0 43.3"></path></svg></div></div></div>
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 601.9px; top: 60.5px;" data-name="line-190512" data-block-id="2d60fa31c996377cbeee76c4a6355251"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="118.3" data-line-y1="0" data-line-x2="0" data-line-y2="10" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="118.3" height="10" viewbox="0 0 118.3 10"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M118.3 0 L1.993 9.832"></path><path stroke="#ff0000" stroke-width="2" d="M 7.233 15.41 L 0.749 9.937 L 6.222 3.453 L 0.749 9.937" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M118.3 0 L0 10"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M118.3 0 L0 10"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 2" style="width: 156.19px; height: 211.8px; left: 495.655px; top: 338.5px; min-width: 1px; min-height: 1px;" data-block-id="26c1cd6ac6a32640347853ec6f26fc65"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="323" data-natural-height="438" data-lazy-loaded="" data-src="intro_blynk/dce914956bd2fdbc31e213b242000f65.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" style="width: 138.675px; height: 184.9px; left: 236.75px; top: 365.4px; min-width: 1px; min-height: 1px;" data-block-id="0831040af29191f97e2b62f5e25ac114"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="270" data-natural-height="360" data-lazy-loaded="" data-src="intro_blynk/ea0593a26e0e92b55ceb38e6285c08cb.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" style="width: 141px; height: 141px; left: 858.25px; top: 358px; min-width: 1px; min-height: 1px;" data-block-id="a25e0c8b3da848a7823593900d7ee017"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/bbcd4ff9ffbac1562f3792128a461d27.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 143px; height: auto; left: 250.75px; top: 319px;" data-block-id="c7f4397bd29ad5a41ec48ed2bb8e528c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>BMP280</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 371.083px; top: 447px;" data-block-id="ab3ff856d4ae90bbc8d4d7077348f48d"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="134" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="134" height="1" viewbox="0 0 134 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L132 0"></path><path stroke="#ff0000" stroke-width="2" d="M 127.248 -6 L 133.248 0 L 127.248 6 L 133.248 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L134 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L134 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 120.23px; height: auto; left: 384.853px; top: 457.85px;" data-block-id="75a590bb44e1684e4002580a81bb56ea"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; line-height: 0.559;" data-has-line-height="" data-placeholder-text="Text">
+<p><span style="font-size:0.6em">Temperature</span></p>
+
+<p><span style="font-size:0.6em">Pressure</span></p>
+
+<p><span style="font-size:0.6em">Altitute</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 649.083px; top: 433px;" data-block-id="85ba8e2ebcafb96f4c2373a4cc3f1fc9"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="209.16700000000003" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="209.16700000000003" height="1" viewbox="0 0 209.16700000000003 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L207.167 0"></path><path stroke="#ff0000" stroke-width="2" d="M 202.415 -6 L 208.415 0 L 202.415 6 L 208.415 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L209.167 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L209.167 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 158px; height: auto; left: 674.667px; top: 444.4px;" data-block-id="e851abd44dc3474310a766bd78670a8e"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 21;" data-placeholder-text="Text"><p><span style="font-size:0.7em">MQTT Protocol</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 112px; height: auto; left: 526.083px; top: 308.5px;" data-block-id="e565e1f7f31017b58a98694b06b89e00"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>ESP32</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="f3d532ee196f4241010fbd247936cd63" style="width: 1165px; height: auto; left: 69.345px; top: 159.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 22;" data-placeholder-text="Text"><p>So, from here the esp32 are reading the sensor value and send it to the Node-RED</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="8a07abc449b9f46dc54edb7b3917ad91">
+<div class="sl-block" data-block-type="text" style="width: 524px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="6b3244a97b0ca1099c7646fc39872dac"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Node-RED</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 618px; top: 70.5px;" data-name="line-86fac2" data-block-id="28ee0b12d1286ce762b882c6516eb054"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="119.79999999999995" data-line-y1="0" data-line-x2="0" data-line-y2="43.30000000000001" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="119.79999999999995" height="43.30000000000001" viewbox="0 0 119.79999999999995 43.30000000000001"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M119.8 0 L1.881 42.62"></path><path stroke="#ff0000" stroke-width="2" d="M 8.389 46.648 L 0.707 43.044 L 4.31 35.362 L 0.707 43.044" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M119.8 0 L0 43.3"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M119.8 0 L0 43.3"></path></svg></div></div></div>
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 601.9px; top: 60.5px;" data-name="line-190512" data-block-id="8da2995262e7184cbd5e958a934648d9"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="118.3" data-line-y1="0" data-line-x2="0" data-line-y2="10" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="118.3" height="10" viewbox="0 0 118.3 10"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M118.3 0 L1.993 9.832"></path><path stroke="#ff0000" stroke-width="2" d="M 7.233 15.41 L 0.749 9.937 L 6.222 3.453 L 0.749 9.937" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M118.3 0 L0 10"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M118.3 0 L0 10"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 828.701px; height: 450.907px; left: 357.649px; top: 202.093px; min-width: 1px; min-height: 1px;" data-block-id="e2081bbc9de9aa2f5cb70f63e22450b9"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1284" data-natural-height="672" data-crop-x="0.019066" data-crop-y="0" data-crop-width="0.961867" data-crop-height="1" style="left: -16px; top: 0px; width: 862px; height: 451px;" data-lazy-loaded="" data-src="intro_blynk/e3a3afeb9edb1b0c282aedc6eb65bdd2.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="b59b491ba9bbd14a8c6ba861d2e2a093" style="width: 1169px; height: auto; left: 76.55px; top: 117px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>In the Node-RED Block, we receive the sensor topic /aupp/esp32/bmp280 and then send it to the influxDB</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="b8614b97e735ebc1ebb2dbe76bd5471e" style="width: 506px; height: 225.454px; left: 18px; top: 427.546px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 15;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">msg.measurement = "bmp280";
+
+msg.payload = {
+    temperature: Number(msg.payload.temperature),
+    pressure: Number(msg.payload.pressure),
+    altitude: Number(msg.payload.altitude)
+};
+
+return msg;</code></pre></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="c859e3f7bbe01586d03d89265b162252" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 526.333px; top: 396px;"><div class="sl-block-content" data-line-x1="104" data-line-y1="0" data-line-x2="0" data-line-y2="48" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="104" height="48" viewbox="0 0 104 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M104 0 L1.816 47.162"></path><path stroke="#ff0000" stroke-width="2" d="M 8.645 50.618 L 0.683 47.685 L 3.616 39.723 L 0.683 47.685" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M104 0 L0 48"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M104 0 L0 48"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="c1acff9ca8ead62a106f5e7c6684de45">
+<div class="sl-block" data-block-type="text" style="width: 361px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="8b4d095d87f9983ae0e215ecf033cf6f"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>InfluxDB</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 618px; top: 70.5px;" data-name="line-86fac2" data-block-id="01a5193ecd338512fb383c2b528c321f"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="119.79999999999995" data-line-y1="0" data-line-x2="0" data-line-y2="43.30000000000001" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="119.79999999999995" height="43.30000000000001" viewbox="0 0 119.79999999999995 43.30000000000001"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M119.8 0 L1.881 42.62"></path><path stroke="#ff0000" stroke-width="2" d="M 8.389 46.648 L 0.707 43.044 L 4.31 35.362 L 0.707 43.044" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M119.8 0 L0 43.3"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M119.8 0 L0 43.3"></path></svg></div></div></div>
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 601.9px; top: 60.5px;" data-name="line-190512" data-block-id="fe9e0d6dfbcc15e7c3e564dfbe276ddb"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="118.3" data-line-y1="0" data-line-x2="0" data-line-y2="10" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="118.3" height="10" viewbox="0 0 118.3 10"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M118.3 0 L1.993 9.832"></path><path stroke="#ff0000" stroke-width="2" d="M 7.233 15.41 L 0.749 9.937 L 6.222 3.453 L 0.749 9.937" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M118.3 0 L0 10"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M118.3 0 L0 10"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 156.19px; height: 211.8px; left: 385.905px; top: 321.5px; min-width: 1px; min-height: 1px;" data-block-id="00b00a6b3e5228a4f3d92404ff41404f"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="323" data-natural-height="438" data-lazy-loaded="" data-src="intro_blynk/dce914956bd2fdbc31e213b242000f65.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" style="width: 138.675px; height: 184.9px; left: 127px; top: 348.4px; min-width: 1px; min-height: 1px;" data-block-id="5a19c6b30e3e66f5e8cb65c44dc179c9"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="270" data-natural-height="360" data-lazy-loaded="" data-src="intro_blynk/ea0593a26e0e92b55ceb38e6285c08cb.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" style="width: 141px; height: 141px; left: 713.5px; top: 172px; min-width: 1px; min-height: 1px;" data-block-id="804a94b660f56e16f0ae0ef9cccd8e68"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/bbcd4ff9ffbac1562f3792128a461d27.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" style="width: 135px; height: 135px; left: 917.5px; top: 427.4px; min-width: 1px; min-height: 1px;" data-block-id="4df24b14448bf0d4fd25b6fe5ea3cfad"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/8069db640c7e5382db7889fcb8456935.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 143px; height: auto; left: 141px; top: 302px;" data-block-id="664a0c77bd637af97bc04d7ac2164581"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>BMP280</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 261.333px; top: 430px;" data-block-id="c7f88de0308c3f70f550e174be9aaa80"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="134" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="134" height="1" viewbox="0 0 134 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L132 0"></path><path stroke="#ff0000" stroke-width="2" d="M 127.248 -6 L 133.248 0 L 127.248 6 L 133.248 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L134 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L134 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 120.23px; height: auto; left: 275.103px; top: 440.85px;" data-block-id="b0c225db45b3726182b38a959d247741"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20; line-height: 0.559;" data-has-line-height="" data-placeholder-text="Text">
+<p><span style="font-size:0.6em">Temperature</span></p>
+
+<p><span style="font-size:0.6em">Pressure</span></p>
+
+<p><span style="font-size:0.6em">Altitute</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 539.333px; top: 295px;" data-block-id="62e8f7a762119751b5bd62debce09baf"><div class="sl-block-content" data-line-x1="0" data-line-y1="121" data-line-x2="151" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="151" height="121" viewbox="0 0 151 121"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 121 L149.439 1.251"></path><path stroke="#ff0000" stroke-width="2" d="M 141.979 -0.46 L 150.413 0.47 L 149.483 8.904 L 150.413 0.47" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 121 L151 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 121 L151 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 842.333px; top: 311px;" data-block-id="0d71bf639157205fa377b670f1200d1b"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="109" data-line-y2="119" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="109" height="119" viewbox="0 0 109 119"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L107.649 117.525"></path><path stroke="#ff0000" stroke-width="2" d="M 108.864 109.968 L 108.492 118.446 L 100.015 118.074 L 108.492 118.446" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L109 119"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L109 119"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 158px; height: auto; left: 556px; top: 359.139px;" data-block-id="36433d5befeac26dd2083086d0e1e530"><div class="sl-block-style" style="z-index: 23; transform: rotate(-39deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 23;" data-placeholder-text="Text"><p><span style="font-size:0.7em">MQTT Protocol</span></p></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 128px; height: auto; left: 921px; top: 578.5px;" data-block-id="e745304bad5139b16767146028be8889"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 24;" data-placeholder-text="Text"><p>InfluxDB</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 112px; height: auto; left: 416.333px; top: 291.5px;" data-block-id="1bbff289752ad58e4f78a0faf3ee1d76"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>ESP32</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="b89696d286a9bb9297de1c9eff61c8f3" style="width: 806px; height: auto; left: 416.333px; top: 113.8px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 25;"><p>The Node-RED will send all the data to the influxDB</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="411107bce6b56b49efd916c62c0505de">
+<div class="sl-block" data-block-type="text" style="width: 361px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="4dc2a22b79dbb9e0e87d9a45d64472e0"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>InfluxDB</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 618px; top: 70.5px;" data-name="line-86fac2" data-block-id="fe8b43ce79489c8d713a46752349213d"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="119.79999999999995" data-line-y1="0" data-line-x2="0" data-line-y2="43.30000000000001" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="119.79999999999995" height="43.30000000000001" viewbox="0 0 119.79999999999995 43.30000000000001"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M119.8 0 L1.881 42.62"></path><path stroke="#ff0000" stroke-width="2" d="M 8.389 46.648 L 0.707 43.044 L 4.31 35.362 L 0.707 43.044" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M119.8 0 L0 43.3"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M119.8 0 L0 43.3"></path></svg></div></div></div>
+
+
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 601.9px; top: 60.5px;" data-name="line-190512" data-block-id="a203c0ad21a2f6519c62749f1020ee77"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="118.3" data-line-y1="0" data-line-x2="0" data-line-y2="10" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="118.3" height="10" viewbox="0 0 118.3 10"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M118.3 0 L1.993 9.832"></path><path stroke="#ff0000" stroke-width="2" d="M 7.233 15.41 L 0.749 9.937 L 6.222 3.453 L 0.749 9.937" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M118.3 0 L0 10"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M118.3 0 L0 10"></path></svg></div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 688.273px; height: 527px; left: 257.763px; top: 219px; min-width: 1px; min-height: 1px;" data-block-id="13837f73d71fe8178204e055fa5d512d"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="781" data-natural-height="598" data-lazy-loaded="" data-src="intro_blynk/8c44f6f441cb2b8342c3a5cb46fb2b6a.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1248px; height: auto; left: 32px; top: 120px;" data-block-id="9ad2a315a7098a248f1b906f8ca0067f"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>In InfluxDB, We create a database name aupp_lab and the image below shows all of the sensor data</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="ee5710ada72dc91656df25211bf190ef">
+<div class="sl-block" data-block-type="text" style="width: 600.9px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="eb9a686ab81435a7976ca385a90abf8d"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1>Grafana Dashboard</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 156.19px; height: 211.8px; left: 282.905px; top: 301.5px; min-width: 1px; min-height: 1px;" data-block-id="1598840a34bb2f2e769c77c7be32bb6a"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="323" data-natural-height="438" data-lazy-loaded="" data-src="intro_blynk/dce914956bd2fdbc31e213b242000f65.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" style="width: 138.675px; height: 184.9px; left: 24px; top: 328.4px; min-width: 1px; min-height: 1px;" data-block-id="e3144a1515e069cc73eb01dfa5f7b8f2"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="270" data-natural-height="360" data-lazy-loaded="" data-src="intro_blynk/ea0593a26e0e92b55ceb38e6285c08cb.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" style="width: 141px; height: 141px; left: 610.5px; top: 152px; min-width: 1px; min-height: 1px;" data-block-id="9aad4170be6667a9a1b0b8c777e423b7"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/bbcd4ff9ffbac1562f3792128a461d27.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" style="width: 135px; height: 135px; left: 814.5px; top: 407.4px; min-width: 1px; min-height: 1px;" data-block-id="937cb6abe3248d4d504f90294e29a1b3"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="intro_blynk/8069db640c7e5382db7889fcb8456935.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 5" style="width: 215.1px; height: 143.4px; left: 1018.9px; top: 185px; min-width: 1px; min-height: 1px;" data-block-id="43b58b5e8ef9d8fd7ee9f3ed452d4222"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="600" data-natural-height="400" data-lazy-loaded="" data-src="intro_blynk/1949976fecc5ade49b32ce265a85ebec.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 143px; height: auto; left: 38px; top: 282px;" data-block-id="5583f123ddf775e107ff5d08d016ef7c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>BMP280</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 158.333px; top: 410px;" data-block-id="e50000f668d1c304ec3ccac5a4766c7e"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="134" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="134" height="1" viewbox="0 0 134 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L132 0"></path><path stroke="#ff0000" stroke-width="2" d="M 127.248 -6 L 133.248 0 L 127.248 6 L 133.248 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L134 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L134 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 120.23px; height: auto; left: 172.103px; top: 420.85px;" data-block-id="b606923b1334a1c78f03726657be693b"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; line-height: 0.559;" data-has-line-height="" data-placeholder-text="Text">
+<p><span style="font-size:0.6em">Temperature</span></p>
+
+<p><span style="font-size:0.6em">Pressure</span></p>
+
+<p><span style="font-size:0.6em">Altitute</span></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 436.333px; top: 275px;" data-block-id="2b14660a8ef6781a0b2a5ab60f942894"><div class="sl-block-content" data-line-x1="0" data-line-y1="121" data-line-x2="151" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="151" height="121" viewbox="0 0 151 121"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 121 L149.439 1.251"></path><path stroke="#ff0000" stroke-width="2" d="M 141.979 -0.46 L 150.413 0.47 L 149.483 8.904 L 150.413 0.47" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 121 L151 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 121 L151 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 739.333px; top: 291px;" data-block-id="e0c85958336afb31960fa8952159c220"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="109" data-line-y2="119" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="109" height="119" viewbox="0 0 109 119"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 0 L107.649 117.525"></path><path stroke="#ff0000" stroke-width="2" d="M 108.864 109.968 L 108.492 118.446 L 100.015 118.074 L 108.492 118.446" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L109 119"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L109 119"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 900.333px; top: 282px;" data-block-id="52b1f542a45ec153e9fc51026640cd35"><div class="sl-block-content" data-line-x1="0" data-line-y1="133" data-line-x2="132" data-line-y2="0" data-line-color="#ff0000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="xMidYMid" width="132" height="133" viewbox="0 0 132 133"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#ff0000" stroke-width="2" stroke-linecap="round" d="M0 133 L130.591 1.42"></path><path stroke="#ff0000" stroke-width="2" d="M 122.985 0.566 L 131.47 0.534 L 131.502 9.019 L 131.47 0.534" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 133 L132 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 133 L132 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 158px; height: auto; left: 453px; top: 339.139px;" data-block-id="64d9ed6bc05390bbf8edb12b8957c3ad"><div class="sl-block-style" style="z-index: 23; transform: rotate(-39deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 23;" data-placeholder-text="Text"><p><span style="font-size:0.7em">MQTT Protocol</span></p></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 128px; height: auto; left: 818px; top: 558.5px;" data-block-id="1bedcc8465fb63d5241148ae57f2f761"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 24;" data-placeholder-text="Text"><p>InfluxDB</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 112px; height: auto; left: 313.333px; top: 271.5px;" data-block-id="5f81bdc0c7d936ebaee7cab230848435"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>ESP32</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="9114a3aaffb8bd4de8c63d008fc23914">
+<div class="sl-block" data-block-type="text" style="width: 600.9px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="fe464b48758e8f00b2cde8d581d2e1a2"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1>Grafana Dashboard</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 1110.56px; height: 498.131px; left: 61.4px; top: 203.869px; min-width: 1px; min-height: 1px;" data-block-id="61061f6f76844c4d3e2b0c4d1c586a1a"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2089" data-natural-height="937" data-lazy-loaded="" data-src="intro_blynk/f3fe57a4994530decd2a91d8af0deb9e.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="13f40b69afd3408a8d13f36153d92a77" style="width: 1079px; height: auto; left: 61.4px; top: 107px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;"><p>Below is the Grafana dashboard where we get it from the InfluxDB</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.175, 0.885, 0.320, 1.275)" data-auto-animate="" data-id="b112b6d3ff63979e0c533a9a3ed158a2">
+<div class="sl-block" data-block-type="text" style="width: 600.9px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="1d355c6acf5ffd0f3120ecdc5669a08f"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;" data-placeholder-text="Text"><h1>Grafana Dashboard</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 1110.56px; height: 498.131px; left: 61.4px; top: 203.869px; min-width: 1px; min-height: 1px;" data-block-id="17588313461edf0771d87060f6dc85bd"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2089" data-natural-height="937" data-lazy-loaded="" data-src="intro_blynk/f3fe57a4994530decd2a91d8af0deb9e.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1079px; height: auto; left: 61.4px; top: 107px;" data-block-id="e97d9dc8bd6b557afdbd2aed4d102053"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Below is the Grafana dashboard where we get it from the InfluxDB</p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3540092,"slug":"intro_blynk","title":"Grafana Dashboard","description":"The Epic Stack is an opinionated project starter that allows teams to ship their ideas to production faster and on a more stable foundation based on the experience of Kent C. Dodds and contributors.","width":1280,"height":720,"margin":0.0,"visibility":"all","published_at":"2026-02-18T04:19:12.510Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/43d639c65a7f9a8952f9bc231fd4d4d5/thumb.jpg?1771388378","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":29,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1772082241699,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.0,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
