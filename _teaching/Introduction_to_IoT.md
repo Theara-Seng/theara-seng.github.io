@@ -144,8 +144,8 @@ You can find all the components which are used in the course in here: [Component
 ---
 
 
-## Additional Documents
-
+## Additional Documentss
+s
 <!-- [Learn Micropython with ESP32](/files/IOT/LEARN%20MICROPYTHON%20WITH%20ESP3_%20(Z-Library)-1.pdf)
 [Micropython Programming with EPS32](/files/IOT/MicroPython%20Programming%20wit_%20(Z-Library)-1.pdf)
 [ESP32-CAM Project](/files/IOT/ESP32-CAM%20Projects%20\(Rui%20San_%20\(Z-Library\)-1.pdf)
