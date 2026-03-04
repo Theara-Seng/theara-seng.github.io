@@ -114,7 +114,7 @@ Students may use the following tools and platforms:
 | [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 3 – IR Control](/files/Robotic/Lab3_ESP32_IR_Remote_Robot_Control_CAPITAL_ROMAN.pdf) | Solution 3 | Command decoding |
 | [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | - | -| Wireless robot control |
 | [Ultrasonic-Servo Motor]({{ site.baseurl }}/Slides/robotics/Ultrasonic_Servo)  | [Lab4-Dabble_control](/files/Robotic/Lab4_Dabble_Robot_Control.pdf) | Solution 4 | Servo + distance mapping |
-| [Web Server Control]({{ site.baseurl }}/Slides/robotics/Web_server)| Lab 5 – Web Control | Solution 5 | Real-time browser control |
+| [Web Server Control]({{ site.baseurl }}/Slides/robotics/Web_server)| [Lab5-MIT_Web_Control](/files/Robotic/Lab5_mit_app_web.pdf) | Solution 5 | Real-time browser control |
 | [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing |
 | **Midterm Assessment** | Practical Test | — | Core skills evaluation |
 | [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment |
