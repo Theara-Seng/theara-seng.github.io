@@ -136,7 +136,7 @@ You can find all the components which are used in the course in here: [Component
 | [ESP32 Web Server]({{ site.baseurl }}/Slides/iot/Webserver_control/) |  [Lab 2](/files/IOT/LAB2_Webserver_LCD_Control.pdf) | – | …Loading |
 | [Blynk IoT Platform]({{ site.baseurl }}/Slides/iot/Blynk_esp32/) | [Lab 3](/files/IOT/LAB3_IoT_Blynk_IR_Servo_TM1637.pdf) | [Assignment2](/files/assignment/) | …Loading |
 | [Mini Project]({{ site.baseurl }}/Slides//iot/Grafana/) |  |  | …Loading |
-| [Grafana Dashboard]({{ site.baseurl }}/Slides/iot/Grafana/) | [Lab 4](/files/IOT/LAB4_Multi_Sensor_IoT_Grafana.pdf) [Installation & Configuration]({{ site.baseurl }}/IOT/grafana/) | …Loading |
+| [Grafana Dashboard]({{ site.baseurl }}/Slides/iot/Grafana/) | [Lab 4](/files/IOT/LAB4_Multi_Sensor_IoT_Grafana.pdf) | [Installation & Configuration]({{ site.baseurl }}/IOT/grafana/) | …Loading |
 | [MIT App Inventor IoT App]({{ site.baseurl }}/Slides/iot/blynk/) | Mini Project 2 | – | …Loading |
 | [Firebase with esp32]({{ site.baseurl }}/Slides/iot/mit-app/) | Lab 5 | – | …Loading |
 | [Final IoT Project]({{ site.baseurl }}/Slides/iot/final-project/) | Project | Demo | …Loading |
