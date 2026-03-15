@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Copy of 1. Motor Control"}' />
+		<title>Copy of 1. Motor Control</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="82158a16e6b5b7ef668220928f46e014"><div class="sl-block" data-block-type="text" style="width: 806px; left: 105.35px; top: 81px; height: auto;" data-block-id="929e8f1fdbe4f8506a053d79994e9ec5"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>MIT App Inventor</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-03b43f" data-block-id="b7ddf421e4383da389ed87e3f5a9d4f7" style="height: auto; width: 923px; left: 37px; top: 218.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>ICT 360: Introduction to IoT</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c4b797" data-block-id="ea4be4272fdb222779d277cf1eb32675" style="width: 570.3px; height: 142.515px; left: 223.2px; top: 335.743px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2377" data-natural-height="594" data-lazy-loaded="" data-src="1-motor-control-020f51/434a42285fc45e349f3f77541d9a16f9.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" data-block-id="2478c5d7036fc888bc7fd2c72fe47fa0" style="height: auto; width: 600px; left: 201.5px; top: 535.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div></section><section data-id="06ebaf2d57d8159bda9a0167a18493c8" data-background-color="rgba(171, 162, 162, 0)" data-auto-animate="" data-background-transition="convex" id="a" data-autoslide="4000" data-transition="default" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)">
+
+
+<div class="sl-block" data-block-type="text" data-name="text-b9367d" data-block-id="2dec5f82f24b4e987ae2337722795d81" style="height: auto; width: 495px; left: 190.063px; top: 207.527px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p><strong>DC Motor</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8d975b" data-block-id="294e828e036e370406b20abd8dff231d" style="height: auto; width: 693px; left: -0.9365px; top: 0px;"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 130%;"><p><strong>How to make the DC Motor rotate</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-6b11d9" data-block-id="5ed0c2394e903f2db01b360f9167e4f0" style="width: 358.195px; height: 212.179px; left: 267.898px; top: 266.659px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 12; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="628" data-natural-height="372" data-lazy-loaded="" data-src="1-motor-control-020f51/ed41ffa08c6b5cba77221bc6f44ed7ac.png"></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1dc2b0" style="width: 1px; height: 0.888298px; left: 202px; top: 464.863px; min-width: 1px; min-height: 1px;" data-block-id="9ed109b6984ac815ec6ddb40499fc375"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="376" data-natural-height="334" data-lazy-loaded="" data-src="1-motor-control-020f51/07f4770fa2a894379b016e1a2a98eadd.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1px; left: 202.124px; top: -714px;" data-name="text-93f021" data-block-id="ed28c3a681b19ff0973a61fb2ab8b851"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p><strong>Power Supply</strong></p></div></div></section><section data-autoslide="2000" data-transition="default" data-background-color="rgba(171, 162, 162, 0)" data-background-transition="none" data-auto-animate="" data-id="e540d4b4d7c12aa65bcf0bb206394b09" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)">
+
+
+<div class="sl-block" data-block-type="text" data-name="text-b9367d" style="height: auto; width: 495px; left: 634.5px; top: 159.159px;" data-block-id="fb77b694ff29520a0d293fe1a11800f7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;"><p><strong>DC Motor</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8d975b" style="height: auto; width: 693px; left: -0.9365px; top: 0px;" data-block-id="b9ebd04a8e355f56dbf0ea33affd00a8"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 130%;"><p><strong>How to make the DC Motor rotate</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-6b11d9" style="width: 358.195px; height: 212.179px; left: 720.898px; top: 236.659px; min-width: 1px; min-height: 1px;" data-block-id="904eea33c8b54959eedfc8fd3d86e64b"><div class="sl-block-style" style="z-index: 12; transform: rotate(0deg);"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="628" data-natural-height="372" data-lazy-loaded="" data-src="1-motor-control-020f51/ed41ffa08c6b5cba77221bc6f44ed7ac.png"></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1dc2b0" data-block-id="4daafae575e2adebacd20029c3ee9a10" style="width: 323.09px; height: 287px; left: -122.724px; top: 179.659px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="376" data-natural-height="334" data-lazy-loaded="" data-src="1-motor-control-020f51/07f4770fa2a894379b016e1a2a98eadd.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 218.73px; left: -82.544px; top: 128.527px;" data-block-id="1ae7b47550b4ec0b20ca162cbbefa948" data-name="text-93f021"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p><strong>Power Supply</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-2c1ab3" data-block-id="63bf8c7c91f18ad509a8adf6cf0a82a3" style="width: 2.13333px; height: 1px; left: 369.8px; top: 332px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="1248" data-natural-height="585" data-lazy-loaded="" data-src="1-motor-control-020f51/1624b064d516b9dd9cf0afaaa60b2749.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-718645" data-block-id="0514a31673b97a5580631c346709b65d" style="width: 2.15134px; height: 1px; left: 396.8px; top: 416.838px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1123" data-natural-height="522" data-lazy-loaded="" data-src="1-motor-control-020f51/a6e24ddbb32cc9453956c3bb417fa4f0.png"></div></div></section><section data-autoslide="2000" data-transition="default" data-background-color="rgba(171, 162, 162, 0)" data-background-transition="none" data-auto-animate="" data-id="21f41c8edfe765fc2d09cbb82d75114a" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)">
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-8d975b" style="height: auto; width: 693px; left: -0.9365px; top: 0px;" data-block-id="cd36021dbf1884401caff573f4d3d3bf"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 130%;"><p><strong>How to make the DC Motor rotate</strong></p></div></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-name="image-50b45a" data-block-id="4cebf686ac3042e64daf925ba3cc86e0" style="width: 578.133px; height: 271px; left: -149.6px; top: 214.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1248" data-natural-height="585" data-lazy-loaded="" data-src="1-motor-control-020f51/1624b064d516b9dd9cf0afaaa60b2749.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-940b1e" data-block-id="a3015de580416ec81f61ccab6161c8c6" style="width: 578.133px; height: 268.731px; left: 515.4px; top: 214.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1123" data-natural-height="522" data-lazy-loaded="" data-src="1-motor-control-020f51/a6e24ddbb32cc9453956c3bb417fa4f0.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-553022" data-block-id="693cdc8717979d38bdb5f60b52721e9a" style="height: auto; width: 224px; left: -26px; top: 164.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>Voltage 12V</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 224px; left: 643px; top: 164.5px;" data-block-id="6b24d657629eab712773a9bc0736acd6" data-name="text-6cb96d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>Voltage 6V</p></div></div></section><section data-autoslide="4000" data-transition="default" data-background-color="rgba(171, 162, 162, 0)" data-background-transition="convex" data-auto-animate="" data-id="c9e34ab4557f9c0eaab460143886214d" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)">
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-8d975b" style="height: auto; width: 693px; left: -0.9365px; top: 0px;" data-block-id="d7bcc1be666bfa5b56e85098afac878e"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 130%;"><p><strong>How to make the DC Motor rotate</strong></p></div></div></div>
+
+
+<div class="sl-block" data-block-type="video" data-name="video-75d1aa" data-block-id="7b33522e039295552e3ec5cae0f17c64" style="min-width: 30px; min-height: 30px; width: 618.93px; height: 235px; left: 480px; top: 164.5px;"><div class="sl-block-style" style="z-index: 12; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" style="z-index: 12;" data-media-id="12584608" data-video-thumb="1-motor-control-020f51/0f0c4c61c5fdcb13a8b28ce0e5e73b9a.jpg"><video playsinline="" controls="controls" poster="1-motor-control-020f51/0f0c4c61c5fdcb13a8b28ce0e5e73b9a.jpg" loop="loop" data-paused-by-reveal="" data-autoplay="" data-lazy-loaded="" data-src="1-motor-control-020f51/94d76001fbacc3c101bdf65534156fda.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-ac4809" data-block-id="0f3e189881bf1b9be326786d07e42f25" style="min-width: 30px; min-height: 30px; width: 645.494px; height: 235px; left: -177.474px; top: 164.5px;"><div class="sl-block-style" style="z-index: 13; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" style="z-index: 13;" data-media-id="12584609" data-video-thumb="1-motor-control-020f51/d9d0998deda6ae286161b862e9793df5.jpg"><video playsinline="" controls="controls" poster="1-motor-control-020f51/d9d0998deda6ae286161b862e9793df5.jpg" data-paused-by-reveal="" loop="loop" data-autoplay="" data-lazy-loaded="" data-src="1-motor-control-020f51/e2403c334e9b20bfc910c6a9b6a01bbc.mp4"></video></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d24ab1" data-block-id="d1e0fffbd8678e761f887e65f47fc20d" style="height: auto; width: 342px; left: -80px; top: 89.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p><strong>Forward Direction</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 342px; left: 630px; top: 89.5px;" data-block-id="01e04083ba7110b86d8cd1a5e4313b8d" data-name="text-fb4c07"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p><strong>Backward Direction</strong></p></div></div>
+<div class="sl-block" data-block-type="shape" data-name="shape-c63d57" data-block-id="2ca2e4ded50c81f8e38b3a51794c787b" style="width: 158px; height: 131px; left: 104px; top: 164.5px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 158 131"><rect width="158" height="131" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-c8b5e5" data-block-id="fc2fe5241973e6c553e244b088745503" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 104px; top: 245px;"><div class="sl-block-content" data-line-x1="104" data-line-y1="0" data-line-x2="0" data-line-y2="229.5" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="104" height="229.5" viewBox="0 0 104 229.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M104 0 L0.826 227.678"></path><path stroke="#000000" stroke-width="2" d="M 8.252 225.827 L 0.31 228.815 L -2.678 220.874 L 0.31 228.815" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M104 0 L0 229.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M104 0 L0 229.5"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-ebdc07" data-block-id="7b8c50f6b1974e3583bcc787f913221b" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 758.332px; top: 245px;"><div class="sl-block-content" data-line-x1="92.00049999999999" data-line-y1="0" data-line-x2="0" data-line-y2="229.5" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="92.00049999999999" height="229.5" viewBox="0 0 92.00049999999999 229.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M92 0 L0.744 227.644"></path><path stroke="#000000" stroke-width="2" d="M 8.082 225.466 L 0.28 228.802 L -3.057 221 L 0.28 228.802" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M92 0 L0 229.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M92 0 L0 229.5"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-ba8a12" data-block-id="68d29c926b7f91a26c51bcca01c2df1e" style="height: auto; width: 519.563px; left: -142px; top: 474.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; border-style: solid; border-width: 1px;"><ul>
+	<li>Red wire from power Supply to red wire of the dc motor</li>
+	<li>Black wire from power supply to black wire of the dc motor</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 519.563px; left: 498.551px; top: 474.5px;" data-block-id="fbaba79fbd2ed65277419e55cf6ebefa" data-name="text-a3e73e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; border-style: solid; border-width: 1px;"><ul>
+	<li>Red wire from power Supply to black wire of the dc motor</li>
+	<li>Black wire from power supply to red wire of the dc motor</li>
+</ul></div></div></section><section data-id="07a3393d9468643afd353161b9e3b750" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" data-block-id="717c22908e4bb0d02cbd6a3d0da87103" style="height: auto; width: 1073px; left: -92px; top: 282.5px;"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Why we can't use ESP32 to control DC Motor Directly?</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" data-block-id="5d561ca56f7f296fce86121db4c95f14" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -58.8219px; top: 416px;" data-block-id="d75bbf96fab3b094d65cff29477155e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" data-block-id="0322fa497d2933370f51794239771750" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div></section><section data-auto-animate="" data-id="9f541d840e1ca4c58ffd3edfc1edcd45" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1178px; left: -152px; top: 9.5px;" data-block-id="e59441a6b4853199f2bcdb1a7c25f2b4"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 144%; line-height: 1.924;" data-has-line-height=""><p><strong>Why we can't use ESP32 to control DC Motor Directly</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1832b3" style="width: 1.68817px; height: 1px; left: 641.801px; top: 599.838px; min-width: 1px; min-height: 1px;" data-block-id="cb66895b57beab7304b170f5ea73b160"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="628" data-natural-height="372" data-lazy-loaded="" data-src="1-motor-control-020f51/ed41ffa08c6b5cba77221bc6f44ed7ac.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-553022" style="height: auto; width: 224px; left: 673.022px; top: 375.5px;" data-block-id="ff0f567dfa88d57aff993853f6e8c9c2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>DC Motor</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 158px; height: 158px; left: -25px; top: 251.5px; min-width: 1px; min-height: 1px;" data-block-id="b174416ba83e754402d026e5184d97a7"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 224px; left: -58px; top: 205.5px;" data-block-id="653552595de8ccf4a24a0b4b6064b037" data-name="text-21902c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 535.5px; left: -164.75px; top: 416.5px;" data-block-id="d8015c1b68a4a620c6b8673a695bc6f4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 649.5px; left: 427.25px; top: 588.5px;" data-name="text-cc5a1f" data-block-id="0275d04e8bce35d79bc012b82ff59a8e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 1%;"><ul>
+	<li>DC Motor usually need 6V, 9V, 12V (more)</li>
+	<li>Needs hundreds of mA to several A</li>
+</ul></div></div></section><section data-auto-animate="" data-id="4b7b6aa54eb924e83c00f33abbfebc9c" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1178px; left: -152px; top: 9.5px;" data-block-id="9ad610a881cdb558900b94f104ffe7ab"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 144%; line-height: 1.924;" data-has-line-height=""><p><strong>Why we can't use ESP32 to control DC Motor Directly</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1832b3" style="width: 242.442px; height: 143.612px; left: 576px; top: 251.5px; min-width: 1px; min-height: 1px;" data-block-id="25ed22a358c7e44bb1cde740559776a9"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="628" data-natural-height="372" data-lazy-loaded="" data-src="1-motor-control-020f51/ed41ffa08c6b5cba77221bc6f44ed7ac.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-553022" style="height: auto; width: 189.592px; left: 602.425px; top: 205.5px;" data-block-id="37c77a82744459cb82765d455ef24888"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><strong>DC Motor</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 158px; height: 158px; left: -25px; top: 251.5px; min-width: 1px; min-height: 1px;" data-block-id="c744479765d1aa129689e9b744fa9cfe"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 224px; left: -58px; top: 205.5px;" data-name="text-21902c" data-block-id="5e8889ec892866e5631c87dca9ca2d5b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 535.5px; left: -164.75px; top: 416.5px;" data-block-id="000f3181e1d9286f45c31083e9942e97"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 649.5px; left: 425.25px; top: 416.5px;" data-block-id="a513ad6ed332b40d36bd48fb64be3f5b" data-name="text-cc5a1f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><ul>
+	<li>DC Motor usually need 6V, 9V, 12V (more)</li>
+	<li>Needs hundreds of mA to several A</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8c0417" style="height: auto; width: 600px; left: 85px; top: 515.5px;" data-block-id="96312870e38374bee3e04cebef8442a2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(255, 0, 0); font-size: 1%;"><p><strong>Result</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 911.5px; left: 0px; top: 568.5px;" data-name="text-ddb83d" data-block-id="46be68d7c35f60b2c63c14113cf02ed2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 1%;"><ul>
+	<li>ESP32 may <strong>reset, overheat, or get permanently damaged</strong>
+</li>
+	<li>Motor won’t spin or spin slowly</li>
+</ul></div></div></section><section data-auto-animate="" data-id="9ec4e3582b158dbe99f5447b70a1438d" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1178px; left: -152px; top: 9.5px;" data-block-id="275ff9157a42bc98249a7b8833bcdda8"><div class="sl-block-style" style="z-index: 10; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 144%; line-height: 1.924;" data-has-line-height=""><p><strong>Why we can't use ESP32 to control DC Motor Directly</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1832b3" style="width: 242.442px; height: 143.612px; left: 576px; top: 251.5px; min-width: 1px; min-height: 1px;" data-block-id="f0c1ddee009748709b69019adeb5534e"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="628" data-natural-height="372" data-lazy-loaded="" data-src="1-motor-control-020f51/ed41ffa08c6b5cba77221bc6f44ed7ac.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-553022" style="height: auto; width: 189.592px; left: 602.425px; top: 205.5px;" data-block-id="9ab4e7b2c73de23d28c392ceaea4cf10"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p><strong>DC Motor</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 158px; height: 158px; left: -25px; top: 251.5px; min-width: 1px; min-height: 1px;" data-block-id="a065ab831b6cdddb695c4bd55b5c3730"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 224px; left: -58px; top: 205.5px;" data-name="text-21902c" data-block-id="f595705899e50aa1a64c350f8777a9b0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 535.5px; left: -164.75px; top: 416.5px;" data-block-id="b9d3bd7cabbc2e8f7081abde687f1f2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 649.5px; left: 425.25px; top: 416.5px;" data-name="text-cc5a1f" data-block-id="0cbfea61543ac4935790fef1d9715f1b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><ul>
+	<li>DC Motor usually need 6V, 9V, 12V (more)</li>
+	<li>Needs hundreds of mA to several A</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-8c0417" data-block-id="aa77b5f52be3b0971a64e73f982e849d" style="height: auto; width: 600px; left: 94px; top: 515.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(255, 0, 0);"><p><strong>Result</strong></p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 911.5px; left: -30px; top: 582.5px;" data-block-id="2da3a33af82f867bc383a00619731171" data-name="text-ddb83d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;">
+<p>ESP32 may <strong>reset, overheat, or get permanently damaged</strong></p>
+
+<p>Motor won’t spin or spin slowly</p>
+</div></div></section><section data-auto-animate="" data-id="693dfc647d8de650a34114bad89b2a98" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -73px; top: 287.5px;" data-block-id="fd0cc70216f55e7bca4d8bd7fd988de0"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="8eba5b4ea796311b9294fbf1bd62b8e9"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -58.8219px; top: 416px;" data-block-id="93637d4f78f44ee990354a1a5ef4fe8a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="d2a81c638630f293722b717b8acd1c8c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" style="height: auto; width: 600px; left: 174px; top: 18.5px;" data-block-id="3dce006581eaab66b03605119e5c5af4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p><strong>Motor Driver</strong></p></div></div></section><section data-auto-animate="" data-id="9d023d9ad3bc7ac0d4ca575b6ad78b3a" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -74px; top: -17.5px;" data-block-id="20d553adcd2db58596b3c6cd22583ab4"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="b0d47438701c3e587f294eb98ef2b6aa"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -58.8219px; top: 416px;" data-block-id="94533d82773308e0797dc8167f987f51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="c789c263f18559ed558b2d487b7b66ef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" data-block-id="6e908b7b1f0496f579f286b9e9761028" style="height: auto; width: 600px; left: 180px; top: 97.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 181%;"><p><strong>Motor Driver</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b1fc30" data-block-id="a92dd2066bd1b86c92809b7037cb6aab" style="width: 1.00222px; height: 1px; left: 104.153px; top: 334.854px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 73.5px; top: 353px;" data-block-id="00ca27a2fdf7c71c6e3cc308ae8744b3" data-name="text-35f291"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 1%;"><p><strong>TB6612</strong></p></div></div></section><section data-auto-animate="" data-id="ec93c4561774af0126c57d389b99d158" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -73px; top: -21.5px;" data-block-id="343d310ad2f08a597fee93933859cb38"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="2cf6bf05ce3831f9f06c74561cfd0914"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -58.8219px; top: 416px;" data-block-id="882eedc746943d0048d63f7e9281c102"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="c507a57ab9c487b6f146003b6544ff21"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" style="height: auto; width: 600px; left: 178px; top: 66.5px;" data-block-id="5ffea9a0e70fa96dea7b890fc2f8be86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 181%;"><p><strong>Motor Driver</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b1fc30" style="width: 166.076px; height: 165.708px; left: -94.891px; top: 184.292px; min-width: 1px; min-height: 1px;" data-block-id="b5aef5dfbf9c3a16abb6097aaf654509"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: -123.353px; top: 362px;" data-name="text-35f291" data-block-id="97b6af00292f4fe5a2136df15529c86b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 118%;"><p><strong>TB6612</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-8f74d4" style="width: 1px; height: 1.14679px; left: 242.152px; top: 527.853px; min-width: 1px; min-height: 1px;" data-block-id="a4779ba94c2e35e7ae9df15ed1cb0105"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="872" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/02e6100c73204a2a2ba6ac819e0e1c1b.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 242.152px; top: 244.146px;" data-name="text-cd78c9" data-block-id="b7f6647000e5831e3a132f37951a99b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 1%;"><p><strong>L298N</strong></p></div></div></section><section data-auto-animate="" data-id="2580dcf606d67b8dfd2c77babee50cb7" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -73px; top: -21.5px;" data-block-id="9af2b8d2b4440e6633c739ad6802696d"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="18f30813f0addf744ffead726ea018af"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -58.8219px; top: 416px;" data-block-id="6efd803e337cc628a116f4543c1acbe0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="d21b3f7e93339a1f41df1644d4d3023f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" style="height: auto; width: 600px; left: 178px; top: 66.5px;" data-block-id="ec89106fd9d31118cf89e301a778466f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 181%;"><p><strong>Motor Driver</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b1fc30" style="width: 166.076px; height: 165.708px; left: -94.891px; top: 184.292px; min-width: 1px; min-height: 1px;" data-block-id="4d38eb5d12925618ab6f960665fde7af"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: -123.353px; top: 362px;" data-name="text-35f291" data-block-id="184b0a43cef4f6d738a46ac32d0451a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 118%;"><p><strong>TB6612</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-8f74d4" data-block-id="0291291d8ae459236ee320829294bd7b" style="width: 195.328px; height: 224px; left: 170.152px; top: 290px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="872" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/02e6100c73204a2a2ba6ac819e0e1c1b.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 170.152px; top: 229.146px;" data-block-id="1909fc4ee1a4da35c89f9f3f53c178f7" data-name="text-cd78c9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 118%;"><p><strong>L298N</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e43bb5" data-block-id="0111f1fe23d4fe330599d0d799fdd841" style="width: 1px; height: 1px; left: 480px; top: 384px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/34db0fd886d3b253a60ae2a0c1082d08.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 487.5px; top: 370px;" data-block-id="be3655d30a2e4700e1ef8422383a87bc" data-name="text-14b2af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 1%;"><p><strong>L293D</strong></p></div></div></section><section data-auto-animate="" data-id="f566fdfa2826df95aeeb988cffdfbed3" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -73px; top: -21.5px;" data-block-id="a015e0724ca4f4ed32b95f3c83ae964e"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="17bd01fbb24e5b73a58b6212b6734fcc"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -58.8219px; top: 416px;" data-block-id="bff18b03cb4821efdf85370b4bbb8cec"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="faf6a4f268b219e0965832164c3f4e6c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" style="height: auto; width: 600px; left: 178px; top: 66.5px;" data-block-id="f8758ad25d9d6f634cab24ce0cdbca2a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 181%;"><p><strong>Motor Driver</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b1fc30" style="width: 166.076px; height: 165.708px; left: -94.891px; top: 184.292px; min-width: 1px; min-height: 1px;" data-block-id="0ef9e039e35e8ce984127a64b9d36554"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: -123.353px; top: 362px;" data-name="text-35f291" data-block-id="8630ff01ac1f503ce4909441bb95519f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 118%;"><p><strong>TB6612</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-8f74d4" style="width: 195.328px; height: 224px; left: 170.152px; top: 290px; min-width: 1px; min-height: 1px;" data-block-id="9e70d1d4b12de49db8fb340a6eef3768"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="872" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/02e6100c73204a2a2ba6ac819e0e1c1b.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 170.152px; top: 229.146px;" data-name="text-cd78c9" data-block-id="9c6e2f0a73ae3a5f639fb2282b847038"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 118%;"><p><strong>L298N</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e43bb5" style="width: 216.5px; height: 216.5px; left: 480px; top: 168.5px; min-width: 1px; min-height: 1px;" data-block-id="670d95af6bfcf7298e48b45a530a712a"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/34db0fd886d3b253a60ae2a0c1082d08.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 487.5px; top: 370px;" data-name="text-14b2af" data-block-id="497bf8e48231f5ba8beea292d5b3f17c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 118%;"><p><strong>L293D</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-9d4af2" data-block-id="ad75976a2d4f857e127cd0ef41abff08" style="width: 1px; height: 1.07066px; left: 786.248px; top: 525.444px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 21;"><img class="" data-natural-width="934" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/04fe3dcc4a90b86291a1280fbd30dee2.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 786.248px; top: 253.75px;" data-block-id="6c6367276b754ea4ab5fbeaf06419cfc" data-name="text-d1cede"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; font-size: 1%;"><p><strong>BTS7960</strong></p></div></div></section><section data-auto-animate="" data-id="24b39dc60abe23e7f80b4217dea29f2e" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -73px; top: -21.5px;" data-block-id="13818bbe602f7d7dc2bbe99886eec688"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="b686aa73f4f9695d04299baa227ddc58"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -67.8219px; top: 349.5px;" data-block-id="77af7502d0e697c96571e3af8ce4d0af"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="8a40ad374e1650ff9a136b44536b1c86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" style="height: auto; width: 600px; left: 178px; top: 66.5px;" data-block-id="2bbb4f3b06c1b3b50fd30673983a97de"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 181%;"><p><strong>Motor Driver</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b1fc30" style="width: 166.076px; height: 165.708px; left: -103.891px; top: 149.131px; min-width: 1px; min-height: 1px;" data-block-id="f91f21ea7ee3cfe403efb1609a9d3fde"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: -132.353px; top: 326.839px;" data-name="text-35f291" data-block-id="977ad579c1cf0fedc4bfca1ee9b993d6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 118%;"><p><strong>TB6612</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-8f74d4" style="width: 195.328px; height: 224px; left: 161.152px; top: 223.5px; min-width: 1px; min-height: 1px;" data-block-id="5e189a432e6d1f3c2d3356d2bb2d7db1"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="872" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/02e6100c73204a2a2ba6ac819e0e1c1b.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 161.152px; top: 162.646px;" data-name="text-cd78c9" data-block-id="cd737a641ff09cf9656a72a3c8860ebe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 118%;"><p><strong>L298N</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e43bb5" style="width: 216.5px; height: 216.5px; left: 480px; top: 167px; min-width: 1px; min-height: 1px;" data-block-id="2a85f0b8c4a8902fee952c416282bebe"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/34db0fd886d3b253a60ae2a0c1082d08.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 486.5px; top: 360.5px;" data-name="text-14b2af" data-block-id="07b107f6df9321137d02e0138705680e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 118%;"><p><strong>L293D</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-9d4af2" style="width: 185.894px; height: 199.03px; left: 777.248px; top: 260.985px; min-width: 1px; min-height: 1px;" data-block-id="818989139b91dd96e77dd084046c31e8"><div class="sl-block-content" style="z-index: 21;"><img class="" data-natural-width="934" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/04fe3dcc4a90b86291a1280fbd30dee2.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 777.248px; top: 187.25px;" data-name="text-d1cede" data-block-id="e410fd5c90f5a8c6b0cd54c3b1d08f3e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; font-size: 118%;"><p><strong>BTS7960</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-39dc8c" data-block-id="92302f8a898436cd5b8ea0d0eb4a9d28" style="height: auto; width: 600px; left: -175.75px; top: 491.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23; font-size: 1%;">
+<p style="text-align:left">These drivers:</p>
+
+<ul>
+	<li>
+	<p><strong>Supply high current</strong></p>
+	</li>
+	<li>
+	<p><strong>Protect ESP32</strong></p>
+	</li>
+	<li>
+	<p><strong>Allow speed &amp; direction control</strong></p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate="" data-id="696e8d29bbfe1cecd7a879348fbf2d10" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)"><div class="sl-block" data-block-type="text" data-name="text-06a573" style="height: auto; width: 1073px; left: -73px; top: -21.5px;" data-block-id="24e96368f5af61a385f07168633573eb"><div class="sl-block-style" style="z-index: 11; transform: rotate(0deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 133%; line-height: 1.924;" data-has-line-height=""><p><strong>Correct Way to Control a DC Motor with ESP32</strong></p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-4f6757" style="width: 1px; height: 1px; left: 22.5282px; top: 555.168px; min-width: 1px; min-height: 1px;" data-block-id="4ecd0d3e3a675bb410073a3eea5f3326"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b99002" style="height: auto; width: 246.013px; left: -67.8219px; top: 349.5px;" data-block-id="93cfeb14a99f45fbd2001e6a70cd315b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; font-size: 1%;"><p><strong>ESP32</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d66a61" style="height: auto; width: 492.5px; left: -106px; top: 562.5px;" data-block-id="92eee920bddad6e9d4d7501acdb7af9a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><ul>
+	<li>Output Voltage is only 3.3V</li>
+	<li>Max Current from the pin ~12mA</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f54b0a" style="height: auto; width: 600px; left: 178px; top: 66.5px;" data-block-id="a61f9524939b680a8826074a638eeca9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 181%;"><p><strong>Motor Driver</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b1fc30" style="width: 166.076px; height: 165.708px; left: -103.891px; top: 149.131px; min-width: 1px; min-height: 1px;" data-block-id="1a805110b589a96458c4247959f13c58"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: -132.353px; top: 326.839px;" data-name="text-35f291" data-block-id="542ac1b0e941923042fede9305bab082"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 118%;"><p><strong>TB6612</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-8f74d4" style="width: 195.328px; height: 224px; left: 161.152px; top: 223.5px; min-width: 1px; min-height: 1px;" data-block-id="f56367839fe73620564edfa51c543f7d"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="872" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/02e6100c73204a2a2ba6ac819e0e1c1b.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 161.152px; top: 162.646px;" data-name="text-cd78c9" data-block-id="54f0a8201287484d0358fd87ae28458e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; font-size: 118%;"><p><strong>L298N</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e43bb5" style="width: 216.5px; height: 216.5px; left: 480px; top: 167px; min-width: 1px; min-height: 1px;" data-block-id="d3778a46e57722d9cf80f62372897362"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/34db0fd886d3b253a60ae2a0c1082d08.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 486.5px; top: 360.5px;" data-name="text-14b2af" data-block-id="4fd3b94acf6d57486e1608a374b09104"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 118%;"><p><strong>L293D</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-9d4af2" style="width: 185.894px; height: 199.03px; left: 777.248px; top: 260.985px; min-width: 1px; min-height: 1px;" data-block-id="e7f20d1280f0d68576ad10029a20401b"><div class="sl-block-content" style="z-index: 21;"><img class="" data-natural-width="934" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/04fe3dcc4a90b86291a1280fbd30dee2.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 209px; left: 777.248px; top: 187.25px;" data-name="text-d1cede" data-block-id="68b2328f0ae6cfd65609f464baf57e11"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 22; font-size: 118%;"><p><strong>BTS7960</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-39dc8c" style="height: auto; width: 600px; left: -170.75px; top: 498.5px;" data-block-id="4b681721abb803421e3bee0faf07a064"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 23;">
+<p style="text-align:left">These drivers:</p>
+
+<ul>
+	<li>
+	<p><strong>Supply high current</strong></p>
+	</li>
+	<li>
+	<p><strong>Protect ESP32</strong></p>
+	</li>
+	<li>
+	<p><strong>Allow speed &amp; direction control</strong></p>
+	</li>
+</ul>
+</div></div></section><section data-id="c2615b97e8499d69403598b7422b0a8c" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)" data-auto-animate-restart=""><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 301px; height: auto;" data-block-id="5c7c596d5d88901080ffb65a028a43eb" data-name="text-8925fe"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Speed and Direction Control of Dc Motor</h1></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-name="image-b520bc" data-block-id="681bf9771a0761682414a42a922adc27" style="width: 1.53846px; height: 1px; left: 780.77px; top: 543px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="1-motor-control-020f51/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-f3aafa" style="width: 1px; height: 0.997783px; left: -1px; top: 556.002px; min-width: 1px; min-height: 1px;" data-block-id="3aa9d99e2227e934bddb7de15a35c703"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="902" data-natural-height="900" data-lazy-loaded="" data-src="1-motor-control-020f51/501cdd91fba660fc9c4330f886f0680e.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-cd986d" style="width: 1px; height: 1px; left: 75.6147px; top: 659.529px; min-width: 1px; min-height: 1px;" data-block-id="3ee955182a82feee956eaf8ef99e9320"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-4f332b" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 75.9512px; top: 659.531px;" data-block-id="7c04e388f4925935e1b881e56ff57dda"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="0.38533173138728216" data-line-y2="0.00015374637143850123" data-line-color="#0000ff" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="1" height="1" viewBox="0 0 1 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="1" stroke-linecap="round" d="M0 0 L0.193 0"></path><path stroke="#0000ff" stroke-width="1" d="M -6.612 -6.003 L -0.615 0 L -6.617 5.997 L -0.615 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L0.385 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L0.385 0"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-988934" style="width: 2.44438px; height: 1.59074px; left: 100.211px; top: 658px; min-width: 1px; min-height: 1px;" data-block-id="068b09a23a6128e2cb5b9779b73ea9db"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="1489" data-natural-height="969" data-lazy-loaded="" data-src="1-motor-control-020f51/c1a0be52625981d56f89b896d5d520e4.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-001e32" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 50px; top: 658.826px;" data-block-id="50f4184cc56684a35d113d6c47046f1d"><div class="sl-block-style" style="z-index: 16; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="20.041939808677" data-line-y2="0.3777232144017262" data-line-color="#0000ff" data-line-width="11px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="20.041939808677" height="1" viewBox="0 0 20.041939808677 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="11" stroke-linecap="round" d="M0 0 L10.041 0.189"></path><path stroke="#0000ff" stroke-width="11" d="M -9.005 -24.924 L 15.274 0.288 L -9.938 24.567 L 15.274 0.288" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L20.042 0.378"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L20.042 0.378"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-7cac59" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 50.5539px; top: 658.771px;" data-block-id="2f373e3b08ee41b1200027f0b7b23eb8"><div class="sl-block-style" style="z-index: 17; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="40.939942373000996" data-line-y2="0.4268579414784881" data-line-color="#0000ff" data-line-width="11px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="40.939942373000996" height="1" viewBox="0 0 40.939942373000996 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="11" stroke-linecap="round" d="M0 0 L29.941 0.312"></path><path stroke="#0000ff" stroke-width="11" d="M 11.681 -24.629 L 36.171 0.377 L 11.165 24.868 L 36.171 0.377" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L40.94 0.427"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L40.94 0.427"></path></svg></div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)" data-auto-animate="" data-id="e50029f23ed1908dd557e464a1a8f061">
+
+
+<div class="sl-block" data-block-type="text" style="width: 1350px; left: -218px; top: 8px; height: auto;" data-name="text-8925fe" data-block-id="a97ebdc5e548f139a5d2b9ab70195a5a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 70%;"><h1>Driver Motor which is used in this class</h1></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-cd986d" data-block-id="db960bc91900bece55c9df36e0e6e653" style="width: 1.29669px; height: 1.29669px; left: 558px; top: 639px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="600" data-natural-height="600" data-lazy-loaded="" data-src="1-motor-control-020f51/85a08698934efea0bd485b2f2ceb46f7.webp"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-4f332b" data-block-id="51c2cc6144540d6910d92fe92ea8dedd" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 564.681px; top: 639.268px;"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="7.652055168119659" data-line-y2="0.05006524079919927" data-line-color="#0000ff" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="7.652055168119659" height="1" viewBox="0 0 7.652055168119659 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="1" stroke-linecap="round" d="M0 0 L6.652 0.044"></path><path stroke="#0000ff" stroke-width="1" d="M 0.691 -5.996 L 6.652 0.044 L 0.613 6.004 L 6.652 0.044" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L7.652 0.05"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L7.652 0.05"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 598.267px; top: 650.365px;" data-block-id="81ba62fd28142fa08aaa69a70edab4ec" data-name="line-dd19f7"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="3.9643177377006396" data-line-y2="0.027535882439565285" data-line-color="#0000ff" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="3.9643177377006396" height="1" viewBox="0 0 3.9643177377006396 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="1" stroke-linecap="round" d="M0 0 L2.964 0.021"></path><path stroke="#0000ff" stroke-width="1" d="M -2.994 -6.021 L 2.964 0.021 L -3.077 5.979 L 2.964 0.021" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L3.964 0.028"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L3.964 0.028"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 554px; top: 690.67px;" data-block-id="c1f644992c5683a68c0db95968f3c99f" data-name="line-da66cb"><div class="sl-block-style" style="z-index: 13; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="3.9643177377006396" data-line-y2="0.027535882439565285" data-line-color="#0000ff" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;" data-line-c="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="3.9643177377006396" height="1" viewBox="0 0 3.9643177377006396 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="1" stroke-linecap="round" d="M0 0 L2.964 0.021"></path><path stroke="#0000ff" stroke-width="1" d="M -2.994 -6.021 L 2.964 0.021 L -3.077 5.979 L 2.964 0.021" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L3.964 0.028"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L3.964 0.028"></path></svg></div></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-name="image-8f74d4" style="width: 281.728px; height: 323.082px; left: 79.254px; top: 259.959px; min-width: 1px; min-height: 1px;" data-block-id="ac76c4696d1550e1f21e11f9021603c2"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="872" data-natural-height="1000" data-lazy-loaded="" data-src="1-motor-control-020f51/02e6100c73204a2a2ba6ac819e0e1c1b.jpg"></div></div><div class="sl-block" data-block-type="text" style="height: 66.3473px; width: 325.529px; left: 255.738px; top: 142.573px;" data-name="text-cd78c9" data-block-id="b562d6e3e9d2814e7b4dcb28bfbb3216" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; font-size: 118%;"><p><strong>L298N</strong></p></div></div><div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="97bcc961daf63762a0d18c973990c84b" style="width: 335px; height: 335px; left: 526.767px; top: 254px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="1-motor-control-020f51/07082e07b295afc1ecfcb66ff2f34c04.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)" data-auto-animate="" data-id="940aa73da2057355560f5bf838d2f85e">
+
+
+<div class="sl-block" data-block-type="text" style="width: 1350px; left: -232px; top: 0px; height: auto;" data-name="text-8925fe" data-block-id="ccc1458485d57bfb6e2a5f7ccbadb0e3"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 70%;"><h1>ESP32 with Driver Motor</h1></div></div>
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="7c8b7cac7bd2b9e423751c645d3e9574" style="width: 546.31px; height: 553.868px; left: 169.845px; top: 135.066px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="506" data-natural-height="513" data-lazy-loaded="" data-src="1-motor-control-020f51/b8676acbc17e8c002b0c50e28f62664c.png"></div></div><div class="sl-block" data-block-type="shape" data-name="Shape 1" data-block-id="3788818b193b323769a4d9ed008515e9" style="width: 300px; height: 62px; left: 293px; top: 129px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 62"><rect width="300" height="62" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)"></rect></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)" data-auto-animate="" data-id="a8e7887330b06b21e73a23d9760b83ce">
+
+
+<div class="sl-block" data-block-type="text" style="width: 1350px; left: -218px; top: 8px; height: auto;" data-name="text-8925fe" data-block-id="a00e82ad5767fad5e1980a368a2fbd76"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 70%;"><h1>Speed and Direction Control of Dc Motor</h1></div></div>
+
+<div class="sl-block" data-block-type="table" data-name="table-ae4342" data-block-id="fd8b310bdf9828cb415cde6beffc29ed" style="height: auto; min-width: 254px; width: 445px; left: 114px; top: 156.874px;"><div class="sl-block-content" style="z-index: 11;" data-table-cols="2" data-table-rows="7"><table><tbody>
+<tr>
+<th style="width: 214px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Driver</th>
+<th>&nbsp; &nbsp; &nbsp; State</th>
+</tr>
+<tr>
+<td style="width: 214px;">IN1</td>
+<td>&nbsp; &nbsp; &nbsp; HIGH</td>
+</tr>
+<tr>
+<td style="width: 214px;">IN2</td>
+<td>&nbsp; &nbsp; &nbsp; LOW</td>
+</tr>
+<tr>
+<td style="width: 214px;">ENA</td>
+<td>10 bit (0-1023)</td>
+</tr>
+<tr>
+<td style="width: 214px;">IN3</td>
+<td>&nbsp; &nbsp; &nbsp; HIGH</td>
+</tr>
+<tr>
+<td style="width: 214px;">IN4</td>
+<td>&nbsp; &nbsp; &nbsp; LOW</td>
+</tr>
+<tr>
+<td style="width: 214px;">ENB</td>
+<td>10 bit (0-1023)</td>
+</tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="table" data-name="table-ef26e3" data-block-id="6e7b89f2f4d4d4cf838ae000be0842c2" style="height: auto; min-width: 40px; width: 159px; left: 559px; top: 156.874px;"><div class="sl-block-content" style="z-index: 12;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th>&nbsp; &nbsp; Motor</th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 159px; left: 559px; top: 206.874px;" data-block-id="21f37d5366592396043a656b24010223" data-name="table-7efb66"><div class="sl-block-content" style="z-index: 13; font-size: 228%;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th>&nbsp; &nbsp;&nbsp;</th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 159px; left: 559px; top: 305.874px;" data-block-id="97337af22a4cfa96d3016eb6f0637ff1" data-name="table-3ddd7f"><div class="sl-block-content" style="z-index: 14;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th></th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 159px; left: 559px; top: 454.874px;" data-block-id="0494347559efd120d7911d27d93ff06d" data-name="table-6b762d"><div class="sl-block-content" style="z-index: 15;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th></th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 159px; left: 559px; top: 354.874px;" data-block-id="0d598482cd637122365be150881dca2a" data-name="table-20577f"><div class="sl-block-content" style="z-index: 16; font-size: 228%;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th>&nbsp; &nbsp;&nbsp;</th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-34349a" data-block-id="9be78ed9ef78133029a91b2e563bab68" style="height: auto; width: 131px; left: 573px; top: 237.374px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>Forward</p></div></div>
+<div class="sl-block" data-block-type="math" data-name="math-171072" data-block-id="ec0ec06201bf1a7170e4a0c0623566b1" style="width: auto; height: auto; left: 565px; top: 310.126px;"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 18; font-size: 41%;"><div class="math-input">= \frac{12V \times \text{pwmA}}{1023}</div></div></div>
+<div class="sl-block" data-block-type="math" style="width: auto; height: auto; left: 566px; top: 458.874px;" data-block-id="4d446731f2ba9360b0eb9d0d3ad2a80a" data-name="math-00e11f"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 19; font-size: 41%;"><div class="math-input">= \frac{12V \times \text{pwmB}}{1023}</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 131px; left: 573px; top: 383.5px;" data-block-id="aa0882924fdfb81cd2ee549226c5cb11" data-name="text-22b673"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;"><p>Forward</p></div></div>
+<div class="sl-block" data-block-type="table" data-name="table-d6d540" data-block-id="d8a74d712b90fc5bb10a8bf074fb8580" style="height: auto; min-width: 40px; width: 250.636px; left: 718px; top: 157px;"><div class="sl-block-content" style="z-index: 21;" data-table-cols="1" data-table-rows="7"><table><tbody>
+<tr><th>&nbsp; &nbsp; &nbsp; &nbsp;State</th></tr>
+<tr><td>&nbsp; &nbsp; &nbsp; LOW</td></tr>
+<tr><td>&nbsp; &nbsp; &nbsp; HIGH</td></tr>
+<tr><td>10 bit (0-1023)</td></tr>
+<tr><td>&nbsp; &nbsp; &nbsp; LOW</td></tr>
+<tr><td>&nbsp; &nbsp; &nbsp; HIGH</td></tr>
+<tr><td>10 bit (0-1023)</td></tr>
+</tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 204.364px; left: 968.636px; top: 157px;" data-block-id="a1d1bc6c9752cad0af1d3af63127ca08" data-name="table-0fc743"><div class="sl-block-content" style="z-index: 22;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th>&nbsp; &nbsp; Motor</th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 204.364px; left: 968.636px; top: 207px;" data-block-id="8a6155b2990f612a678928679411db7c" data-name="table-960986"><div class="sl-block-content" style="z-index: 23; font-size: 228%;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th>&nbsp; &nbsp;&nbsp;</th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 204.364px; left: 968.636px; top: 306px;" data-block-id="60589723277967ac9b6282336d334e43" data-name="table-2b5129"><div class="sl-block-content" style="z-index: 24;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th></th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 204.364px; left: 968.636px; top: 455px;" data-block-id="a09d6a27366b6d52ebbbb7ccb6b4af2e" data-name="table-78499b"><div class="sl-block-content" style="z-index: 25;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th></th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="table" style="height: auto; min-width: 40px; width: 204.364px; left: 968.636px; top: 355px;" data-block-id="99d4ec30a2fefad39b71b3493ff34cb1" data-name="table-1b1ef1"><div class="sl-block-content" style="z-index: 26; font-size: 228%;" data-table-cols="1" data-table-rows="1"><table><tbody><tr><th>&nbsp; &nbsp;&nbsp;</th></tr></tbody></table></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 168.376px; left: 986.63px; top: 237.5px;" data-block-id="27b8a19fe0f96aedb603493672a3273e" data-name="text-de2085"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 27; font-size: 94%;"><p>Backward</p></div></div>
+<div class="sl-block" data-block-type="math" style="width: auto; height: auto; left: 976.99px; top: 310.126px;" data-block-id="3ecb3afa6beb788f0d8d6a602f778822" data-name="math-678340"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 28; font-size: 41%;"><div class="math-input">= \frac{12V \times \text{pwmA}}{1023}</div></div></div>
+<div class="sl-block" data-block-type="math" style="width: auto; height: auto; left: 976.99px; top: 459px;" data-block-id="59b9ec9ab52450cf97ea85f25d9b7c8d" data-name="math-b21204"><div class="sl-block-content notranslate" data-math-display="true" style="z-index: 29; font-size: 41%;"><div class="math-input">= \frac{12V \times \text{pwmB}}{1023}</div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 168.376px; left: 986.63px; top: 384.5px;" data-block-id="055b44e0b17f821e1a13473f504c5e15" data-name="text-7f7f8c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 30; font-size: 94%;"><p>Backward</p></div></div><div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 335px; height: 335px; left: -228px; top: 173px; min-width: 1px; min-height: 1px;" data-block-id="69be769b90df6a5f1d4b8333d2a0a976"><div class="sl-block-content" style="z-index: 31;"><img class="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="1-motor-control-020f51/07082e07b295afc1ecfcb66ff2f34c04.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)" data-auto-animate="" data-id="d1d86367a2f0525aaf0862bf5e374227">
+
+
+<div class="sl-block" data-block-type="text" style="width: 916px; left: 0px; top: 0px; height: auto;" data-name="text-8925fe" data-block-id="7f4ed23a6b823f7a0f632d05484c8a77"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 70%;" data-placeholder-text="Text"><h1>Coding one DC Motor</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="a4b8aad7b7d0fbdbbfb53ce04b240cf9" style="width: 745px; height: 454px; left: 126.5px; top: 100px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from machine import Pin, PWM
+import time
+
+# Motor direction pins
+IN1 = Pin(27, Pin.OUT)
+IN2 = Pin(26, Pin.OUT)
+
+# PWM pin for speed control
+ENA = PWM(Pin(14))
+ENA.freq(10000)
+
+def motor_forward(speed):
+    IN1.value(1)
+    IN2.value(0)
+    ENA.duty(speed)
+
+
+while True:
+
+    print("Forward slow")
+    motor_forward(300)
+    time.sleep(3)
+
+</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.600, -0.280, 0.735, 0.045)" data-auto-animate="" data-id="bf020c7f16b2f62dec300885106317e5">
+
+
+<div class="sl-block" data-block-type="text" style="width: 916px; left: 0px; top: 316px; height: auto;" data-name="text-8925fe" data-block-id="553a4ac58f05e924a0b6589354b4e38d"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 70%;"><h1>To Be Continued</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3550005,"slug":"1-motor-control-020f51","title":"Copy of 1. Motor Control","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/b0d35a76f068ebb50ab334498d8aa72e/thumb.jpg?1773618418","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":22,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1773624704546,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
