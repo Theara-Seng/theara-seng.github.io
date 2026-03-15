@@ -73,9 +73,9 @@ Students may use the following tools and platforms:
 | [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/basic_robotic/esp32_setup) | Installation & LED Blink | - | Board setup & first test |
 | [Motor & Servo Control]({{ site.baseurl }}/Slides/basic_robotic/motor_control)  | Motor Control | [Practice 1](/files/basic_robotic/Practice1.pdf) | PWM speed & position |
 | [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/basic_robotic/Remote_control)   | Remote Control | [Practice 2](/files/basic_robotic/Practice2.pdf) | Basic navigation logic |
-| [IR Remote Control]({{ site.baseurl }}/Slides/basic_robotic/IR_Remote) | IR Remote Control | Practice 3 | Command decoding |
-| [Dabble Mobile App Control](/robotics/dabble-app/) | Mobile Control | Practice 4 | Wireless robot control |
-| [Ultrasonic Radar System](/robotics/radar-system/) | Radar Scan |Practice 5 | Servo + distance mapping |
+| [IR Remote Control]({{ site.baseurl }}/Slides/basic_robotic/IR_Remote) | IR Remote Control | [Practice 3](/files/basic_robotic/Practice3.pdf) | Command decoding |
+| [Dabble Mobile App Control]({{ site.baseurl }}/Slides/basic_robotic/dabble_control)| Mobile Control | Practice 4 | Wireless robot control |
+| [Ultrasonic Radar System]({{ site.baseurl }}/Slides/basic_robotic/slides_ultrasonic_servo)| Radar Scan |Practice 5 | Servo + distance mapping |
 | [Web Server Robotics](/robotics/web-server/) | Web Control | Practice 6 | Real-time browser control |
 | [Serial Monitor Control](/robotics/serial-control/) | Serial Monitor | - | Debug & command parsing |
 | [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Finger Count Detection | Practice 7 | Vision-based navigation |

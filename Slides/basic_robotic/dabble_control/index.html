@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Dabble App Control UYFC"}' />
+		<title>Dabble App Control UYFC</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ded2d9fdb101fea93d9e6894b065db5f">
+
+
+<div class="sl-block" data-block-type="text" style="width: 802px; left: 99.5px; top: 108px; height: auto;" data-name="text-06e6d3" data-block-id="a64217d64ec8ad8bf7d87ea99772e2a0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Dabble Control</h1></div></div><div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 200.5px; top: 506.5px;" data-block-id="af29cf0f1b62eea188111028d6091bfc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div><div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 661.4px; height: 132.28px; left: 169.8px; top: 278.86px; min-width: 1px; min-height: 1px;" data-block-id="0b5059650a42857c1442581f868a272d"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="400" data-natural-height="80" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/1b79e39285ef15161e403044c56c8e25.png"></div></div></section><section data-id="520b72e5ea57e87633f03b6dc1b74e68" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="9678d50bfa8b72ca2a2bc3142e75ff56" data-name="text-552c39"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" style="height: auto; width: 744.805px; left: -72px; top: 81px;" data-block-id="88f9c18da0e951bcf862c23d2770fb7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" style="height: auto; width: 813.226px; left: -62.226px; top: 81px;" data-block-id="ab7c6695edd9e2a1126e68fbb438e47f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353; font-size: 1%;" data-has-line-height=""><ul>
+	<li>
+	<p>Understand how a joystick works electrically</p>
+	</li>
+	<li>
+	<p>Explain pull-up button logic</p>
+	</li>
+	<li>
+	<p>Read analog and digital signals</p>
+	</li>
+	<li>
+	<p>Map controller inputs to robot movements</p>
+	</li>
+	<li>
+	<p>Design basic control logic for robots</p>
+	</li>
+</ul></div></div></section><section data-auto-animate="" data-id="bcc7bec89b114a872c83c55c43ea46b1" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: -187px; top: -25px; height: auto;" data-name="text-552c39" data-block-id="370996ce596882a242ac2775c25571dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" data-block-id="658e7cb3ebc977ba538536d686874764" style="height: auto; width: 762px; left: -72px; top: 90.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 105%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" data-block-id="da180f3cb97e7bd4e18be8ffa2213f65" style="height: auto; width: 980px; left: 43px; top: 161px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353;" data-has-line-height=""><ul>
+	<li>
+	<p>Explain what <strong>Dabble</strong>&nbsp;is and why it is used</p>
+	</li>
+	<li>
+	<p>Understand <strong>Bluetooth communication</strong>&nbsp;between a smartphone and ESP32</p>
+	</li>
+	<li>
+	<p>Configure ESP32 to communicate with Dabble</p>
+	</li>
+	<li>
+	<p>Read joystick and button inputs from the Dabble app</p>
+	</li>
+	<li>
+	<p>Control hardware (LED, motor, robot) using a smartphone</p>
+	</li>
+	<li>
+	<p>Debug common Bluetooth and app-connection issues</p>
+	</li>
+</ul></div></div></section><section data-id="7e8ef8632861c76c991988a1e4182c83" data-auto-animate="" data-auto-animate-restart="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 958px; left: -19px; top: 321px; height: auto;" data-block-id="3e268b780133460bb9facfc950341cd9" data-name="text-336e72"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>What is Dabble?</h1></div></div>
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 674.333px; top: 345px;" data-block-id="633d23b43795a224a5ac1b504040db74"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 628.833px; top: 567.5px;" data-block-id="86e67a139abafe44e2f5b1da5f417c51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 162.833px; top: 567.5px;" data-name="text-e3e4a7" data-block-id="1cd9ad746dcff55a1c8738b9f85dcf31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 277.833px; top: 408px;" data-name="line-f904e0" data-block-id="49b556c2a0048182e40541b9cbad4205"><div class="sl-block-style" style="z-index: 15; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div></section><section data-auto-animate="" data-id="17fa923dbee23717d18979036f4e3883" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 402px; left: -2.667px; top: 0px; height: auto;" data-name="text-336e72" data-block-id="bb6739cb0f792bf9a7410cebefcb0b4e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 61%;"><h1>What is Dabble?</h1></div></div>
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-456cae" data-block-id="95926b55d3cd54ca1719de385cf0253c" style="height: auto; width: 903px; left: 46.5px; top: 86.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 81%; line-height: 1.794;" data-has-line-height=""><p><strong>Dabble</strong>&nbsp;is a <strong>smartphone app</strong>&nbsp;that allows you to control microcontrollers <strong>without building a custom mobile app</strong>.</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-64174a" data-block-id="87d213fa78476bf135db63190a96caef" style="width: 806.4px; height: 401.625px; left: 76.8px; top: 212.188px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2048" data-natural-height="1020" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/b5219b8edee94f7487c8d94e6984f6ac.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="f24b8594e7a25c7f8e93c2c1e10dd4f8"><div class="sl-block" data-block-type="text" style="width: 402px; left: -2.667px; top: 0px; height: auto;" data-name="text-336e72" data-block-id="fbf8c4258af858175fd96e28ff396243"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; font-size: 61%;"><h1>What is Dabble?</h1></div></div>
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-456cae" style="height: auto; width: 459.5px; left: 20.5px; top: 82.5px;" data-block-id="e79699af7ddca233803dab12833d93f7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 81%; line-height: 1.794;" data-has-line-height=""><p>Dabble provides ready-made <strong>modules</strong>:</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-1e0cc6" data-block-id="11549e5ae26e913ed8ca850307fd9bd3" style="width: 244.682px; height: 491px; left: 651.931px; top: 153.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="299" data-natural-height="600" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/e1325bd0b0b90b34dc1f5f6c09464d5e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-165cb4" data-block-id="b09c80cdc325377a349803fe4054cfb7" style="height: auto; width: 600px; left: 0px; top: 164.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; line-height: 2.275;" data-has-line-height=""><ul>
+	<li>
+	<p>🎮 <strong>Gamepad</strong>&nbsp;(joystick, buttons)</p>
+	</li>
+	<li>
+	<p>🔘 <strong>Digital buttons</strong></p>
+	</li>
+	<li>
+	<p>📈 <strong>Sensor dashboard</strong></p>
+	</li>
+	<li>
+	<p>🔊 <strong>Voice control</strong></p>
+	</li>
+	<li>
+	<p>🧭 <strong>Accelerometer &amp; gyroscope</strong></p>
+	</li>
+	<li>
+	<p>💬 <strong>Terminal</strong></p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="5a7abc100a463cd67b6ddeed13634cc8"><div class="sl-block" data-block-type="text" style="width: 367px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="93e04ccf982523735f6c191f051d7acd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Key Idea</h1></div></div>
+
+<div class="sl-block" data-block-type="image" data-name="image-d9f4d5" style="width: 1.36519px; height: 1px; left: 216px; top: 630px; min-width: 1px; min-height: 1px;" data-block-id="615e6b908483ad92c1cad655c236a18d"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="400" data-natural-height="293" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/82a7ca0d6f135f6a692348f32795e1ae.jpg"></div></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-206c97" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 217.988px; top: 630px;" data-block-id="22dfa9ebcfe53c7f14bab5275f1fb140"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="4.26036153106611" data-line-y1="0" data-line-x2="0" data-line-y2="0.7342798550321277" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="4.26036153106611" height="1" viewBox="0 0 4.26036153106611 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M4.26 0 L1.971 0.395"></path><path stroke="#000000" stroke-width="2" d="M 7.673 5.5 L 0.741 0.607 L 5.635 -6.325 L 0.741 0.607" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M4.26 0 L0 0.734"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M4.26 0 L0 0.734"></path></svg></div></div></div>
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-8515cb" data-block-id="bcc17de4f3baf0a130c57b42e0ef3111" style="width: 483.137px; height: 240.625px; left: -148.2px; top: 363px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="2048" data-natural-height="1020" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/b5219b8edee94f7487c8d94e6984f6ac.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-92553f" data-block-id="311512375464cbe184b8839bb294dd75" style="width: 407.154px; height: 264.65px; left: 480.333px; top: 121px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-1a31b2" data-block-id="c0543d4d7b857aa9cf39f3e7a3a91d28" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 308.333px; top: 228px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="167" data-line-x2="344" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="344" height="167" viewBox="0 0 344 167"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 167 L342.201 0.873"></path><path stroke="#0000ff" stroke-width="2" d="M 335.306 -2.449 L 343.324 0.328 L 340.546 8.346 L 343.324 0.328" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 167 L344 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 167 L344 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-fb9c67" data-block-id="4ea7625e7ff20dedf578df5543896a08" style="width: 337px; height: 337px; left: 575px; top: 408px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1000" data-natural-height="1000" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/7addd1e6c528be8e1c194f3394e7b724.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-274fd9" data-block-id="baf9cb550d87acb77dac21b2f68ba475" style="height: auto; width: 234px; left: -33.6315px; top: 305px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>Smartphone</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-2b164e" data-block-id="1a9cb8979ff95d2bcff161337cd95505" style="width: 62.4659px; height: 86.342px; left: 367px; top: 245.158px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="1140" data-natural-height="500" data-crop-x="0.401985" data-crop-y="0.183616" data-crop-width="0.203474" data-crop-height="0.641243" style="left: -123px; top: -25px; width: 307px; height: 135px;" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/0541ccdc63f52c8f22370809caedf625.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-625c46" data-block-id="238c651d265c0f6b08074614c459f3c6" style="height: auto; width: 328px; left: 519.91px; top: 60px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;"><p>ESP32</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-c5b135" data-block-id="aeb3b2b125da5a63d806c2733e2e13ec" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 772.333px; top: 318px;"><div class="sl-block-content" data-line-x1="76" data-line-y1="0" data-line-x2="0" data-line-y2="145" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="76" height="145" viewBox="0 0 76 145"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M76 0 L0.928 143.229"></path><path stroke="#0000ff" stroke-width="2" d="M 8.449 141.805 L 0.349 144.334 L -2.18 136.234 L 0.349 144.334" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M76 0 L0 145"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M76 0 L0 145"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-44d91d" data-block-id="001f862f87f8c9b4e826ab0106112485" style="height: auto; width: 187px; left: 538px; top: 433.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;"><p>Hardware</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="1c8b47d15751bdadeac7fd8e68757e9d"><div class="sl-block" data-block-type="text" style="width: 694px; left: 0px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="eeb6340cff24c3b2f63525f15cdbc072"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Dabble App Setup</h1></div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-393e6c" data-block-id="21bb7d983b3042ae77af5488a6dc4492" style="height: auto; width: 210.222px; left: 42px; top: 155px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 165%;"><p><strong>Steps</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-7631d3" data-block-id="38cc0ba0689ce460544b7274675505a8" style="height: auto; width: 637.037px; left: 178.963px; top: 302px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 1.95;" data-has-line-height=""><ul>
+	<li>
+	<p>Install <strong>Dabble</strong>&nbsp;on phone</p>
+	</li>
+	<li>
+	<p>Enable <strong>Bluetooth</strong></p>
+	</li>
+	<li>
+	<p>Open Dabble</p>
+	</li>
+	<li>
+	<p>Select <strong>Gamepad Module</strong></p>
+	</li>
+	<li>
+	<p>Connect to ESP32 Bluetooth name</p>
+	</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="07f15c261da385a4c8fa217d0200c751"><div class="sl-block" data-block-type="text" style="width: 1047px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="3a2678fbd7140813731a524a20c933a6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Install DabbleESP32 Library</h1></div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-fc6dfa" data-block-id="05eacf1d2ca364c929581f55daf7c938" style="width: 962.2px; height: 555.828px; left: -17.2px; top: 130.086px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="2337" data-natural-height="1350" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/6e5b596ebab88c0b8b96553654cc76fc.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="61d3dfba8cd85ad95165642bc11fcbea"><div class="sl-block" data-block-type="text" style="width: 713px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="c80393e3f7544fb69943813459cb893a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Gamepad Module</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-e7fbe9" style="width: 694.525px; height: 333.831px; left: 28.0755px; top: 198.332px; min-width: 1px; min-height: 1px;" data-block-id="6289e908d1ed0ef4a70db4196ac4782f"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1280" data-natural-height="591" data-lazy-loaded="" data-crop-x="0.037767" data-crop-y="0" data-crop-width="0.960591" data-crop-height="1" style="left: -27px; top: 0px; width: 723px; height: 334px;" data-src="dabble-app-control-a6f8c9/89ccc5b901a582b7af4beb178f4516b8.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bd9fa5" data-block-id="ab0e1a6350a8eee262e516fa1fb6651e" style="height: auto; width: 109.493px; left: 157.512px; top: 175.166px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>&nbsp;UP</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 109.493px; left: -59px; top: 342.082px;" data-block-id="196dabb4b15eb3c45545c52a33a53c4a" data-name="text-f3722a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>&nbsp;LEFT</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 151.371px; left: 149.161px; top: 549px;" data-block-id="f1922f36c5fc62e7860d5c8fa1f158f7" data-name="text-aeb6c8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p>DOWN</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 145.213px; left: 300.533px; top: 456.131px;" data-block-id="bb47dde7c1eaf2a5078da139def98d8b" data-name="text-0e2f9f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p>&nbsp;RIGHT</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 145.213px; left: 388.116px; top: 152px;" data-block-id="a724963933a35205633340074bde7463" data-name="text-4d8702"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>SQUARE</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 247.446px; left: 574.106px; top: 152px;" data-block-id="8083c851c7b6658b4bfcacae6f22d072" data-name="text-195b6c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;"><p>TRIANGLE</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 145.213px; left: 720.681px; top: 342.082px;" data-block-id="344bbae606aaa094d55577fafcff5aff" data-name="text-4675fe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;"><p>CIRCLE</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 145.213px; left: 511.288px; top: 518.501px;" data-block-id="187cf3be06f4a0f4a201a2f9ac74edfd" data-name="text-5bbca0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20;"><p>CROSS</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-9228c4" data-block-id="1b48b158599c315be492316953478330" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 206.1px; top: 217.935px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="79.59673024523161" data-line-x2="9.85379028198389" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="9.85379028198389" height="79.59673024523161" viewBox="0 0 9.85379028198389 79.59673024523161"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 79.597 L9.608 1.985"></path><path stroke="#0000ff" stroke-width="2" d="M 3.07 5.964 L 9.761 0.746 L 14.979 7.438 L 9.761 0.746" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 79.597 L9.854 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 79.597 L9.854 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-51467c" data-block-id="67da6838d252b84bb4a837c836cf6e33" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 42.2809px; top: 368.812px;"><div class="sl-block-content" data-line-x1="83.75721739686293" data-line-y1="0" data-line-x2="0" data-line-y2="2.376021798365173" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="83.75721739686293" height="2.376021798365173" viewBox="0 0 83.75721739686293 2.376021798365173"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M83.757 0 L1.999 2.319"></path><path stroke="#0000ff" stroke-width="2" d="M 6.919 8.182 L 0.752 2.355 L 6.579 -3.813 L 0.752 2.355" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M83.757 0 L0 2.376"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M83.757 0 L0 2.376"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-13d242" data-block-id="f94a464a8df6760d97cefd45803ac26b" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 204.868px; top: 450.785px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="4.926895140991917" data-line-y2="90.28882833787463" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="4.926895140991917" height="90.28882833787463" viewBox="0 0 4.926895140991917 90.28882833787463"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L4.818 88.292"></path><path stroke="#0000ff" stroke-width="2" d="M 10.55 83.22 L 4.886 89.538 L -1.432 83.874 L 4.886 89.538" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L4.927 90.289"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L4.927 90.289"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-31acaf" data-block-id="f4b202b329a31e152b604c6ca1b0d079" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 284.931px; top: 380.692px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="80.062046041119" data-line-y2="79.59673024523158" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="80.062046041119" height="79.59673024523158" viewBox="0 0 80.062046041119 79.59673024523158"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L78.644 78.187"></path><path stroke="#0000ff" stroke-width="2" d="M 79.504 70.581 L 79.529 79.067 L 71.044 79.091 L 79.529 79.067" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L80.062 79.597"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L80.062 79.597"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-2e1ecb" data-block-id="a11a86f63f7b7fe45c91de2a3d2b3e23" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 456.14px; top: 191.799px;"><div class="sl-block-content" data-line-x1="34.48826598694359" data-line-y1="150.8773841961853" data-line-x2="0" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="34.48826598694359" height="150.8773841961853" viewBox="0 0 34.48826598694359 150.8773841961853"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M34.488 150.877 L0.446 1.95"></path><path stroke="#0000ff" stroke-width="2" d="M -4.345 7.919 L 0.168 0.733 L 7.354 5.245 L 0.168 0.733" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M34.488 150.877 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M34.488 150.877 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d1c5fd" data-block-id="84c2f2bb00e8081d456ee3578e2f63ce" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 568.227px; top: 192.986px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="84.34877384196182" data-line-x2="71.43997954438294" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="71.43997954438294" height="84.34877384196182" viewBox="0 0 71.43997954438294 84.34877384196182"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 84.349 L70.147 1.526"></path><path stroke="#0000ff" stroke-width="2" d="M 62.498 1.274 L 70.954 0.574 L 71.655 9.03 L 70.954 0.574" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 84.349 L71.44 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 84.349 L71.44 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-dd1865" data-block-id="0df96bb3b48a98c0bb350abacc03decf" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 650.752px; top: 366.436px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="3.5640326975476455" data-line-x2="77.59859847062307" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="77.59859847062307" height="3.5640326975476455" viewBox="0 0 77.59859847062307 3.5640326975476455"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 3.564 L75.601 0.092"></path><path stroke="#0000ff" stroke-width="2" d="M 70.579 -5.684 L 76.848 0.035 L 71.129 6.303 L 76.848 0.035" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 3.564 L77.599 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 3.564 L77.599 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-b914f7" data-block-id="d509d123010a54330d2bce822b0372cf" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 569.459px; top: 450.785px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="2.463447570495873" data-line-y2="78.408719346049" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 28;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="2.463447570495873" height="78.408719346049" viewBox="0 0 2.463447570495873 78.408719346049"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L2.401 76.41"></path><path stroke="#0000ff" stroke-width="2" d="M 8.248 71.472 L 2.44 77.657 L -3.746 71.849 L 2.44 77.657" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L2.463 78.409"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L2.463 78.409"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="61f5847dadbfff4e23a2cfea894671f4"><div class="sl-block" data-block-type="text" style="width: 713px; left: -165.5px; top: -35px; height: auto;" data-name="text-861a76" data-block-id="015946408f955c18aa98ca09ed623d15"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Digital Mode Code</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-e7fbe9" style="width: 530.824px; height: 255.146px; left: 505.552px; top: 289.188px; min-width: 1px; min-height: 1px;" data-block-id="f35a89e3ebaeddc63f4557a0d456bb92"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1280" data-natural-height="591" data-lazy-loaded="" data-crop-x="0.037767" data-crop-y="0" data-crop-width="0.960591" data-crop-height="1" style="left: -21px; top: 0px; width: 553px; height: 255px;" data-src="dabble-app-control-a6f8c9/89ccc5b901a582b7af4beb178f4516b8.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-bd9fa5" style="height: auto; width: 83.6852px; left: 604.48px; top: 268.094px;" data-block-id="1b5b0dcacac56f96936098fb5a90bfd2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;"><p>&nbsp;UP</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 83.6852px; left: 439px; top: 420.079px;" data-name="text-f3722a" data-block-id="d86998a2b2376cd039a44d7d5e5c4697"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;"><p>&nbsp;LEFT</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 115.692px; left: 598.097px; top: 605px;" data-name="text-aeb6c8" data-block-id="a1481e90b05eea2aeb9f02a87c886ea0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>DOWN</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 110.986px; left: 713.79px; top: 523.927px;" data-name="text-0e2f9f" data-block-id="932881cb82987c9835a13482f3b0be06"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;"><p>&nbsp;RIGHT</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 142.986px; left: 761.227px; top: 244.239px;" data-name="text-4d8702" data-block-id="616343b6050c722a8e1b0ba989f17173"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p>SQUARE</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 189.122px; left: 922.881px; top: 247px;" data-name="text-195b6c" data-block-id="4e8419feecfea52332df3e04c4dc9e8d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>TRIANGLE</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 110.986px; left: 1034.91px; top: 420.079px;" data-name="text-4675fe" data-block-id="c65ad1a3514c70b140d2c3c61884bcd3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;"><p>CIRCLE</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 110.986px; left: 874.87px; top: 580.718px;" data-name="text-5bbca0" data-block-id="3274cf0555ddcce9a24d67b96bd7dd90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19;"><p>CROSS</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-9228c4" style="width: auto; height: auto; left: 643.027px; top: 307.037px;" data-block-id="9b7d7abdf67b8dd69d7534f4b308e0c4"><div class="sl-block-content" data-line-x1="0" data-line-y1="54.086814713896445" data-line-x2="6.118919084451363" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="6.118919084451363" height="54.086814713896445" viewBox="0 0 6.118919084451363 54.086814713896445"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 54.087 L5.894 1.987"></path><path stroke="#0000ff" stroke-width="2" d="M -0.602 6.035 L 6.034 0.747 L 11.322 7.384 L 6.034 0.747" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 54.087 L6.119 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 54.087 L6.119 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-51467c" style="width: auto; height: auto; left: 516.409px; top: 434.255px;" data-block-id="971793fb76be429eda994db1ee0cf050"><div class="sl-block-content" data-line-x1="54.015" data-line-y1="0" data-line-x2="0" data-line-y2="12.3264877384197" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="54.015" height="12.3264877384197" viewBox="0 0 54.015 12.3264877384197"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M54.015 0 L1.95 11.882"></path><path stroke="#0000ff" stroke-width="2" d="M 7.918 16.674 L 0.733 12.159 L 5.248 4.975 L 0.733 12.159" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M54.015 0 L0 12.326"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M54.015 0 L0 12.326"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-13d242" style="width: auto; height: auto; left: 641.615px; top: 493.059px;" data-block-id="54cc1981c2987ebbdf181736adea2da0"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="2.8246127229675153" data-line-y2="108.21253405994543" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="2.8246127229675153" height="108.21253405994543" viewBox="0 0 2.8246127229675153 108.21253405994543"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L2.772 106.213"></path><path stroke="#0000ff" stroke-width="2" d="M 8.646 101.306 L 2.805 107.461 L -3.349 101.619 L 2.805 107.461" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L2.825 108.213"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L2.825 108.213"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-31acaf" style="width: auto; height: auto; left: 698.866px; top: 443.08px;" data-block-id="227de0bf9b89686f4e8a0f465c7cf378"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="64.19120674822278" data-line-y2="84.63159536784735" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="64.19120674822278" height="84.63159536784735" viewBox="0 0 64.19120674822278 84.63159536784735"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L62.983 83.038"></path><path stroke="#0000ff" stroke-width="2" d="M 64.891 75.626 L 63.737 84.033 L 55.33 82.878 L 63.737 84.033" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L64.191 84.632"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L64.191 84.632"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-2e1ecb" style="width: auto; height: auto; left: 832.72px; top: 283.239px;" data-block-id="f0a318650ad9c1dba698309cedb06177"><div class="sl-block-content" data-line-x1="20.359" data-line-y1="116.381" data-line-x2="0" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 24;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="20.359" height="116.381" viewBox="0 0 20.359 116.381"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M20.359 116.381 L0.345 1.97"></path><path stroke="#0000ff" stroke-width="2" d="M -4.747 7.685 L 0.13 0.741 L 7.074 5.617 L 0.13 0.741" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M20.359 116.381 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M20.359 116.381 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-d1c5fd" style="width: auto; height: auto; left: 918.388px; top: 284.32px;" data-block-id="22c91a0dfedbf5c3544a7f512cdfce39"><div class="sl-block-content" data-line-x1="0" data-line-y1="76.80381471389643" data-line-x2="54.60138448302939" data-line-y2="0" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="54.60138448302939" height="76.80381471389643" viewBox="0 0 54.60138448302939 76.80381471389643"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 76.804 L53.443 1.63"></path><path stroke="#0000ff" stroke-width="2" d="M 45.799 2.026 L 54.166 0.613 L 55.579 8.98 L 54.166 0.613" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 76.804 L54.601 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 76.804 L54.601 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-dd1865" style="width: auto; height: auto; left: 972.989px; top: 420.62px;" data-block-id="7408625fd94b28df4694e50bf5727691"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="67.78101590370954" data-line-y2="21.634528610354266" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 26;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="67.78101590370954" height="21.634528610354266" viewBox="0 0 67.78101590370954 21.634528610354266"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L65.876 21.026"></path><path stroke="#0000ff" stroke-width="2" d="M 63.173 13.866 L 67.065 21.406 L 59.524 25.297 L 67.065 21.406" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L67.781 21.635"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L67.781 21.635"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-b914f7" style="width: auto; height: auto; left: 904.213px; top: 485.396px;" data-block-id="419eb68f17fdabb1d066e2be10d91d64"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="16.999806361483706" data-line-y2="105.05829768392363" data-line-color="#0000ff" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 27;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="16.999806361483706" height="105.05829768392363" viewBox="0 0 16.999806361483706 105.05829768392363"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#0000ff" stroke-width="2" stroke-linecap="round" d="M0 0 L16.68 103.084"></path><path stroke="#0000ff" stroke-width="2" d="M 21.844 97.435 L 16.88 104.316 L 9.998 99.352 L 16.88 104.316" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L17 105.058"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L17 105.058"></path></svg></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-f10dda" data-block-id="eb3cf958e67d5abe79c3921975655278" style="width: 587px; height: 648px; left: -155.591px; top: 110.255px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 28;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#define CUSTOM_SETTINGS
+#define INCLUDE_GAMEPAD_MODULE    
+
+#include &lt;DabbleESP32.h&gt;
+
+const char* BT_NAME = "Name";
+
+void setup() {
+  Serial.begin(115200);
+  Dabble.begin(BT_NAME);
+  Serial.println("Dabble Gamepad connected");
+}
+
+void loop() {
+  Dabble.processInput();
+
+  // Direction buttons
+  if (GamePad.isUpPressed()) {
+    Serial.println("UP pressed");
+  }
+  if (GamePad.isDownPressed()) {
+    Serial.println("DOWN pressed");
+  }
+  if (GamePad.isLeftPressed()) {
+    Serial.println("LEFT pressed");
+  }
+  if (GamePad.isRightPressed()) {
+    Serial.println("RIGHT pressed");
+  }
+
+  // Action buttons
+  if (GamePad.isSquarePressed()) {
+    Serial.println("SQUARE pressed");
+  }
+  if (GamePad.isTrianglePressed()) {
+    Serial.println("TRIANGLE pressed");
+  }
+  if (GamePad.isCirclePressed()) {
+    Serial.println("CIRCLE pressed");
+  }
+  if (GamePad.isCrossPressed()) {
+    Serial.println("CROSS pressed");
+  }
+
+  // Control buttons
+  if (GamePad.isStartPressed()) {
+    Serial.println("START pressed");
+  }
+  if (GamePad.isSelectPressed()) {
+    Serial.println("SELECT pressed");
+  }
+
+  delay(50);
+}
+</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="142bcfd0bf6704fe4716155e46a0bf17"><div class="sl-block" data-block-type="text" style="width: 713px; left: -165.5px; top: -35px; height: auto;" data-name="text-861a76" data-block-id="2158c15d05be0a196128e228cad2c82b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Digital Mode Test</h1></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-15bbbe" data-block-id="67ec30ab0fa2912307bfbcb3406fa8ff" style="min-width: 30px; min-height: 30px; width: 760.755px; height: 441px; left: 366.561px; top: 178px;"><div class="sl-block-content" data-media-id="12624351" data-video-thumb="dabble-app-control-a6f8c9/48be033ab1e6d7d088fdb4b0b733d3d2.jpg" style="z-index: 11;"><video playsinline="" controls="controls" poster="dabble-app-control-a6f8c9/48be033ab1e6d7d088fdb4b0b733d3d2.jpg" data-lazy-loaded="" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-src="dabble-app-control-a6f8c9/f40ebf38dfbb247f877e4e343a91e18b.mp4"></video></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-263073" data-block-id="4c94b82568b6104c2c3c0cb27503f1a3" style="min-width: 30px; min-height: 30px; width: 222.281px; height: 484px; left: -17.6405px; top: 150.474px;"><div class="sl-block-style" style="z-index: 12; transform: rotate(-90deg);"><div class="sl-block-content" data-media-id="12624367" data-video-thumb="dabble-app-control-a6f8c9/407c974f22bf8e7a3caa4733ab34bb9c.jpg" style="z-index: 12;"><video playsinline="" controls="controls" poster="dabble-app-control-a6f8c9/407c974f22bf8e7a3caa4733ab34bb9c.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/1a366ea232d79219e033e90e9b832c4a.mp4"></video></div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="aebde32a982ce3c69dc0fe997c95eaa0"><div class="sl-block" data-block-type="text" style="width: 713px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="823d6e6594c81dd0b380fcbdbd91f5a4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Gamepad Module</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-d86d53" style="height: auto; width: 400px; left: -168.5px; top: 134.5px;" data-block-id="5998fbad78ca3d896f76e9bdfcf5b2f3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 127%;"><p>Gamepad provides:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f8fa1d" style="height: auto; width: 600px; left: 106px; top: 195.5px;" data-block-id="805325b5b121dad64e0b2721345ab3b7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 199%;"><p>Joystick Mode</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-b60fbb" data-block-id="c0f91518e84595f551aef33bea991081" style="width: 630.969px; height: 291.33px; left: -168.5px; top: 364.835px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1280" data-natural-height="591" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/9f2b24141f507bf11bf20ba03ad9ce5d.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e5c60f" data-block-id="4d81bd748b45d96f677acbd8727b011b" style="width: 646.129px; height: 298.33px; left: 480px; top: 357.835px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1280" data-natural-height="591" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/9c1e12df2bb2e85a4604727f8cef9553.jpg"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="58ac3a71515f7bd860f8e636280ec0ce"><div class="sl-block" data-block-type="text" style="width: 713px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="67feb994d9ac823740d45984ffbb6ff7"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Joystick Mode</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-4cd020" data-block-id="6607cf3ca717585438c95aaaf71115d8" style="width: 772.698px; height: 372px; left: 252.8px; top: 216.835px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1280" data-natural-height="591" data-crop-x="0.040943" data-crop-y="0" data-crop-width="0.959057" data-crop-height="1" style="left: -33px; top: 0px; width: 806px; height: 372px;" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/9c1e12df2bb2e85a4604727f8cef9553.jpg"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-84266f" data-block-id="521051af81c146ee4cb44c1e9d84efc1" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 156.333px; top: 285px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="240" data-line-x2="1" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="1" height="240" viewBox="0 0 1 240"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 240 L0.992 2"></path><path stroke="#000000" stroke-width="2" d="M -5.028 6.727 L 0.997 0.752 L 6.972 6.777 L 0.997 0.752" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 240 L1 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 240 L1 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-223a65" data-block-id="25e0e7704909830f65266cac7e39dbcc" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 17.333px; top: 400px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="1" data-line-x2="278" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="278" height="1" viewBox="0 0 278 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 1 L276 0.007"></path><path stroke="#000000" stroke-width="2" d="M 271.227 -5.976 L 277.248 0.003 L 271.27 6.024 L 277.248 0.003" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 1 L278 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 1 L278 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-a52958" data-block-id="e5f120a91044b83b837da03e54911369" style="height: auto; width: 41px; left: 105px; top: 277.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 41px; left: 167.5px; top: 277.5px;" data-block-id="9c3bbc541c1d21eae405e3cec4cea31d" data-name="text-9fd7d5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 0, 0);"><p>Y</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 41px; left: 9px; top: 415.5px;" data-block-id="2e923ae20ded2892ea6e830c64dc1021" data-name="text-f3b012"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p>-7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 41px; left: 254.333px; top: 415.5px;" data-block-id="21e1da6bc22902ab32802f7f856c6b3e" data-name="text-39772c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 41px; left: 102px; top: 486px;" data-block-id="dd3865ad15434d7bc86ab28fcf9461c1" data-name="text-e80aef"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;"><p>-7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 41px; left: 246.5px; top: 346px;" data-block-id="6703e9b3056f616598fb64eea628807a" data-name="text-09871a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(255, 0, 0);"><p>X</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="3c042b256a6c5c2f28edf1a1a3de3135"><div class="sl-block" data-block-type="text" style="width: 713px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="cd02cd0d4c5d04ad2bd296bb899f2961"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Joystick Mode</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-4cd020" style="width: 380.786px; height: 183.322px; left: 653.712px; top: 285.854px; min-width: 1px; min-height: 1px;" data-block-id="ecae2205f0e25219eac15c30852270fc"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1280" data-natural-height="591" data-crop-x="0.040943" data-crop-y="0" data-crop-width="0.959057" data-crop-height="1" style="left: -16px; top: 0px; width: 397px; height: 183px;" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/9c1e12df2bb2e85a4604727f8cef9553.jpg"></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-84266f" style="width: auto; height: auto; left: 565.692px; top: 323.87px;" data-block-id="39996e4e630b3d32b82ed960f4a65aea"><div class="sl-block-content" data-line-x1="0" data-line-y1="132.01436531422416" data-line-x2="0.4610189005211396" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="1" height="132.01436531422416" viewBox="0 0 1 132.01436531422416"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 132.014 L0.454 2"></path><path stroke="#000000" stroke-width="2" d="M -5.563 6.731 L 0.458 0.752 L 6.437 6.773 L 0.458 0.752" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 132.014 L0.461 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 132.014 L0.461 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="line-223a65" style="width: auto; height: auto; left: 501.611px; top: 387.126px;" data-block-id="4c7eb5966eace72e30eb157e65f42ffd"><div class="sl-block-content" data-line-x1="0" data-line-y1="0.5500598554759222" data-line-x2="128.1632543449025" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="128.1632543449025" height="1" viewBox="0 0 128.1632543449025 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0.55 L126.163 0.009"></path><path stroke="#000000" stroke-width="2" d="M 121.386 -5.971 L 127.411 0.003 L 121.437 6.029 L 127.411 0.003" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0.55 L128.163 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0.55 L128.163 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-a52958" style="height: auto; width: 18.9018px; left: 532.575px; top: 284.87px;" data-block-id="fdd9d9ee2c79212b72226f2389c14aff"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;"><p>7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 18.9018px; left: 586.209px; top: 309.015px;" data-name="text-9fd7d5" data-block-id="584e7dfc9cc9a147eee96babc4312a58"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 0, 0);"><p>Y</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 41.0105px; left: 460.601px; top: 377.515px;" data-name="text-f3b012" data-block-id="c9528518bc436d8742e3fb18b96c7d81"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;"><p>-7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 23.9385px; left: 630.692px; top: 389.877px;" data-name="text-39772c" data-block-id="f2cb78c1f6c1aaf6109d849101895abd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;"><p>7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 42.8752px; left: 543.334px; top: 469.176px;" data-name="text-e80aef" data-block-id="80a345d1bfd7a63084b5fb492843c826"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;"><p>-7</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 23.9385px; left: 629.774px; top: 348.015px;" data-name="text-09871a" data-block-id="246d66c24f020155e0e65b29cfd29d08"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(255, 0, 0);"><p>X</p></div></div>
+<div class="sl-block" data-block-type="code" data-name="code-78b6b2" data-block-id="cb1571824a17d49e81fc1a9757ce2c12" style="width: 500px; height: 541px; left: -70.399px; top: 138.877px;"><div class="sl-block-content notranslate" data-highlight-theme="tomorrow" data-code-frame="none" style="z-index: 20;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#define CUSTOM_SETTINGS
+#define INCLUDE_GAMEPAD_MODULE    
+
+#include &lt;DabbleESP32.h&gt;
+
+const char* BT_NAME = "Name";
+
+int joyX = 0;
+int joyY = 0;
+
+void setup() {
+  Serial.begin(115200);
+  Dabble.begin(BT_NAME);
+  Serial.println("Dabble Gamepad - Joystick Mode");
+}
+
+void loop() {
+  Dabble.processInput();
+
+  // Read joystick values
+  joyX = GamePad.getXaxisData();   // -7 to +7
+  joyY = GamePad.getYaxisData();   // -7 to +7
+
+  Serial.print("Joystick X: ");
+  Serial.print(joyX);
+  Serial.print(" | Joystick Y: ");
+  Serial.println(joyY);
+
+
+  delay(100);
+}
+</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="36259d46a52c604ea13aafe42203ed33"><div class="sl-block" data-block-type="text" style="width: 713px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="164b979132420d89fbfbf324ea8742d4"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Joystick Mode</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="video" data-name="video-dfd5b0" data-block-id="0f8baebd0da2225df1f010e072640700" style="min-width: 30px; min-height: 30px; width: 631.233px; height: 360px; left: 433px; top: 207px;"><div class="sl-block-content" data-media-id="12624352" data-video-thumb="dabble-app-control-a6f8c9/cd41145d00fdfc4adb82980a9b42ad40.jpg" style="z-index: 11;"><video playsinline="" controls="controls" poster="dabble-app-control-a6f8c9/cd41145d00fdfc4adb82980a9b42ad40.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/f71a8a09daadd3bae5ec00fb1ef2d178.mp4"></video></div></div>
+<div class="sl-block" data-block-type="video" data-name="video-b11111" data-block-id="6a4354389661e6589fd43c5085197a8e" style="min-width: 30px; min-height: 30px; width: 564.068px; height: 260px; left: -154.068px; top: 247.5px;"><div class="sl-block-content" data-media-id="12624365" data-video-thumb="dabble-app-control-a6f8c9/266c2dd4a47b769af189882d2f9bd6dd.jpg" style="z-index: 12;"><video playsinline="" controls="controls" poster="dabble-app-control-a6f8c9/266c2dd4a47b769af189882d2f9bd6dd.jpg" data-autoplay="" muted="" loop="loop" data-paused-by-reveal="" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/49317577d27d6576b37930cff4e0288e.mp4"></video></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="9b00c1d08f38b844568305f25ea7c85c"><div class="sl-block" data-block-type="text" style="width: 713px; left: -168.5px; top: 0px; height: auto;" data-name="text-861a76" data-block-id="4e564b1047ff2e163ffec4230165a5e5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Gamepad Module</h1></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="text-d86d53" style="height: auto; width: 400px; left: -168.5px; top: 134.5px;" data-block-id="2ea006debe7d7fc37b7d8cd97284f5ae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 127%;"><p>Gamepad provides:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-f8fa1d" style="height: auto; width: 600px; left: 106px; top: 195.5px;" data-block-id="f07a9560d552ee68bdcd75a7f6fcc1f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 199%;"><p>Accelerometer Mode</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-43463b" data-block-id="811f51db9ad571d8c2ae575ff3e33093" style="width: 648.295px; height: 299.33px; left: -178.295px; top: 350px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="1280" data-natural-height="591" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/9d7c0bfddc218c6c070ab8c0f758d921.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-e22f96" data-block-id="e3554a5f5dab6258e8eb3b3cdb339680" style="width: 643.429px; height: 310px; left: 480px; top: 350px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1280" data-natural-height="591" data-crop-x="0.041667" data-crop-y="0" data-crop-width="0.958333" data-crop-height="1" style="left: -28px; top: 0px; width: 671px; height: 310px;" data-lazy-loaded="" data-src="dabble-app-control-a6f8c9/13e6436fc31dd6641d96bdb509ee4a49.jpg"></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3549826,"slug":"dabble-app-control-a6f8c9","title":"Dabble App Control UYFC","description":"","width":960,"height":700,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/06bd1055f30bbe1fee1db97dfc3829cf/thumb.jpg?1773553196","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":17,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1773553196228,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
