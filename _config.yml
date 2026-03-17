@@ -23,7 +23,7 @@ repository               : "Theara-Seng/theara-seng.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile2.jpg"
+  avatar           : "profile1.jpg"
   name             : "Theara Seng"
   pronouns         : # example: "she/her"  
   bio              : "Electronics, IoT, Robotics"
