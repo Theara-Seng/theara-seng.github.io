@@ -15,7 +15,10 @@ This master thesis presents a comprehensive study on **robot motion planning and
 The work was conducted as part of the **Master in Mobile, Autonomous and Robotic Systems** at Grenoble-INP ENSE3, under the supervision of *Thibault Neveu*.
 
 📄 **Full Report:** [Download Master Thesis (PDF)](/files/talk/Report_Theara_Seng.pdf)
+📄 **Slide Presentation:**  [Download Master Thesis Slide Presentation](/files/talk/main.pdf)
+## 🖼️ Research Poster
 
+![Master Thesis Poster](/files/talk/poster.jpg)
 ---
 
 ## 🎯 Objectives
