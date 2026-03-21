@@ -15,7 +15,9 @@ This master thesis presents a comprehensive study on **robot motion planning and
 The work was conducted as part of the **Master in Mobile, Autonomous and Robotic Systems** at Grenoble-INP ENSE3, under the supervision of *Thibault Neveu*.
 
 📄 **Full Report:** [Download Master Thesis (PDF)](/files/talk/Report_Theara_Seng.pdf)
+
 📄 **Slide Presentation:**  [Download Master Thesis Slide Presentation](/files/talk/main.pdf)
+
 ## 🖼️ Research Poster
 
 ![Master Thesis Poster](/files/talk/poster.jpg)
@@ -117,7 +119,17 @@ The system integrates multiple layers:
    - DWA (mobile robot)
 
 ---
+## 🎥 Demo Video
 
+👉 [Watch on YouTube](https://www.youtube.com/watch?v=6jSRM3O_Od8)
+
+<div style="text-align:center;">
+  <iframe width="800" height="450"
+    src="https://www.youtube.com/embed/6jSRM3O_Od8"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
 ## 🚀 Key Results
 
 - Successful **trajectory tracking of quadcopters using MPC**
