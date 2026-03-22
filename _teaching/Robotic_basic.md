@@ -76,7 +76,7 @@ Students may use the following tools and platforms:
 | [IR Remote Control]({{ site.baseurl }}/Slides/basic_robotic/IR_Remote) | IR Remote Control | [Practice 3](/files/basic_robotic/Practice3.pdf) | Command decoding |
 | [Dabble Mobile App Control]({{ site.baseurl }}/Slides/basic_robotic/dabble_control)| Mobile Control | Practice 4 | Wireless robot control |
 | [Ultrasonic Radar System]({{ site.baseurl }}/Slides/basic_robotic/slides_ultrasonic_servo)| Radar Scan |Practice 5 | Servo + distance mapping |
-| [Web Server Robotics](/robotics/web-server/) | Web Control | Practice 6 | Real-time browser control |
+| [Web Server Robotics]({{ site.baseurl }}/Slides/basic_robotic/web_server_robotic)| Web Control | Practice 6 | Real-time browser control |
 | [Serial Monitor Control](/robotics/serial-control/) | Serial Monitor | - | Debug & command parsing |
 | [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Finger Count Detection | Practice 7 | Vision-based navigation |
 

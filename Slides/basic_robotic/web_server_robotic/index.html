@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Web-Server_Robotic_UYFC"}' />
+		<title>Web-Server_Robotic_UYFC</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ded2d9fdb101fea93d9e6894b065db5f"><div class="sl-block" data-block-type="text" style="width: 896px; left: 224px; top: 97.5px; height: auto;" data-block-id="0fc705c272150f7b2c82975095be3720" data-name="text-06e6d3"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Web Server Robotic</h1></div></div>
+
+
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 361.5px; top: 452.5px;" data-block-id="576502f2af74a9e29a19e51823f41187"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div><div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 661.4px; height: 132.28px; left: 329.8px; top: 244.86px; min-width: 1px; min-height: 1px;" data-block-id="9dc884f7ce1d7b649d677e61a79c34cc"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="400" data-natural-height="80" data-lazy-loaded="" data-src="web-server_robotic/1b79e39285ef15161e403044c56c8e25.png"></div></div></section><section data-id="520b72e5ea57e87633f03b6dc1b74e68" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 276px; height: auto;" data-block-id="9678d50bfa8b72ca2a2bc3142e75ff56" data-name="text-552c39"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" style="height: auto; width: 744.805px; left: 88px; top: 91px;" data-block-id="88f9c18da0e951bcf862c23d2770fb7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" style="height: auto; width: 813.226px; left: 97.774px; top: 91px;" data-block-id="ab7c6695edd9e2a1126e68fbb438e47f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353; font-size: 1%;" data-has-line-height=""><ul>
+	<li>
+	<p>Understand how a joystick works electrically</p>
+	</li>
+	<li>
+	<p>Explain pull-up button logic</p>
+	</li>
+	<li>
+	<p>Read analog and digital signals</p>
+	</li>
+	<li>
+	<p>Map controller inputs to robot movements</p>
+	</li>
+	<li>
+	<p>Design basic control logic for robots</p>
+	</li>
+</ul></div></div></section><section data-auto-animate="" data-id="bcc7bec89b114a872c83c55c43ea46b1" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: -27px; top: -15px; height: auto;" data-name="text-552c39" data-block-id="370996ce596882a242ac2775c25571dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" data-block-id="658e7cb3ebc977ba538536d686874764" style="height: auto; width: 762px; left: 88px; top: 100.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 105%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" data-block-id="da180f3cb97e7bd4e18be8ffa2213f65" style="height: auto; width: 980px; left: 123px; top: 187px;"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 12; line-height: 2.353;" data-has-line-height="" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Explain what a web server is</p>
+	</li>
+	<li>
+	<p>Understand how ESP32 acts as a web server</p>
+	</li>
+	<li>
+	<p>Create a simple web page hosted by ESP32</p>
+	</li>
+	<li>
+	<p>Control robot movement from a browser</p>
+	</li>
+	<li>
+	<p>Understand HTTP request flow</p>
+	</li>
+	<li>
+	<p>Debug basic network problems</p>
+	</li>
+</ul></div></div></section><section data-id="7e8ef8632861c76c991988a1e4182c83" data-auto-animate="" data-auto-animate-restart="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 834.333px; top: 355px;" data-block-id="633d23b43795a224a5ac1b504040db74"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="86e67a139abafe44e2f5b1da5f417c51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="1cd9ad746dcff55a1c8738b9f85dcf31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="49b556c2a0048182e40541b9cbad4205"><div class="sl-block-style" style="z-index: 15; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="58dfb365b464ea9a756c97a0e8f1a46b"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11;" data-placeholder-text="Text"><h1>Big Picture</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="99788477e92b42e77461b0857fd7f608">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="55abf92608c175042ed5a5481c6727ec"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="54c874688e0c9972b604369028cd9d90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 399px;" data-name="line-f904e0" data-block-id="1bc042563a8fafa7b518ec3a4ce1c6ab"><div class="sl-block-style" style="z-index: 13; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 491.169px; left: -40.836px; top: 10px; height: 83.9837px;" data-name="text-841241" data-block-id="3573c28d6ff96a6e940a1da216ab22dd" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>Big Picture</h2></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="2bcf554791b5f9cf0676e3cda7b19b22" style="width: 343.577px; height: 86.855px; left: 35.387px; top: 415.072px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="447" data-natural-height="113" data-lazy-loaded="" data-src="web-server_robotic/7de5306c8ca16476f1eb0c328b2ed08d.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="7f29024789f0bc206a7f33a90b88fe91" style="width: 199.072px; height: 199.072px; left: 363.297px; top: 102px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="web-server_robotic/8d98ebd332ce33072b580e0f41ca2f6e.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" data-block-id="e580963e96c53007df309bcb6171f920" style="width: 339.309px; height: 220.551px; left: 578.036px; top: 337.949px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="web-server_robotic/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" data-block-id="f592b087b3a08b83dc47b9cc13799857" style="width: 223px; height: 223px; left: 1008.5px; top: 102px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="web-server_robotic/dd61f31743816ef03e03b12a1051621a.jpg"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="c45d7817c8e5ecb686ca5cbbdf4b304d" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 265.466px; top: 234.776px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="139.662" data-line-x2="149.257" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="149.257" height="139.662" viewBox="0 0 149.257 139.662"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 139.662 L147.797 1.366"></path><path stroke="#000000" stroke-width="2" d="M 140.227 0.232 L 148.708 0.514 L 148.426 8.994 L 148.708 0.514" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 139.662 L149.257 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 139.662 L149.257 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" data-block-id="808ed0980e7bf04aa579c42735a00db5" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 485.466px; top: 221.438px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="117.274" data-line-y2="118.34" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="117.274" height="118.34" viewBox="0 0 117.274 118.34"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L115.866 116.919"></path><path stroke="#000000" stroke-width="2" d="M 116.783 109.321 L 116.745 117.806 L 108.26 117.768 L 116.745 117.806" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L117.274 118.34"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L117.274 118.34"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" data-block-id="3f7460c970299959401a7ad4e25aacd1" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 865.466px; top: 280.608px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="82.83000000000001" data-line-x2="143.034" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="143.034" height="82.83000000000001" viewBox="0 0 143.034 82.83000000000001"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 82.83 L141.303 1.002"></path><path stroke="#000000" stroke-width="2" d="M 134.184 -1.809 L 142.383 0.377 L 140.198 8.576 L 142.383 0.377" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 82.83 L143.034 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 82.83 L143.034 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="65280af159f6c5b192f0075ec60c705e">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 771.935px; top: 277.171px;" data-block-id="a60ee90e4b410e90f6e64772a58bfeb3"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="36.46922238952345" data-line-y2="139.23084994753407" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="36.46922238952345" height="139.23084994753407" viewBox="0 0 36.46922238952345 139.23084994753407"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L35.962 137.296"></path><path stroke="#000000" stroke-width="2" d="M 40.563 131.179 L 36.279 138.504 L 28.954 134.22 L 36.279 138.504" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L36.469 139.231"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L36.469 139.231"></path></svg></div></div></div>
+
+<div class="sl-block" data-block-type="text" style="height: 1px; width: 143.549px; left: 375.041px; top: 426.5px;" data-name="text-e3e4a7" data-block-id="54e4052efb74abcfd5f3c2ba830194f2" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 464.275px; top: 306.766px;" data-name="line-f904e0" data-block-id="4794175f37eb91acfe70c74146cf8e5d"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="19.39852254761888" data-line-y1="0" data-line-x2="0" data-line-y2="107.28174186778591" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="19.39852254761888" height="107.28174186778591" viewBox="0 0 19.39852254761888 107.28174186778591"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M19.399 0 L0.178 106.298"></path><path stroke="#000000" stroke-width="1" d="M 7.15 101.461 L 0.178 106.298 L -4.659 99.326 L 0.178 106.298" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M19.399 0 L0 107.282"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M19.399 0 L0 107.282"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 491.169px; left: -18.251px; top: 10px; height: 83.9837px;" data-name="text-841241" data-text-layout="fixed" data-block-id="367302bc787c7fc9009d6e9521c1d931"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>Big Picture</h2></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 231.094px; height: 58.4198px; left: 152px; top: 317.576px; min-width: 1px; min-height: 1px;" data-block-id="35e00096e0d125c62cf8980823c8ee0d"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="447" data-natural-height="113" data-lazy-loaded="" data-src="web-server_robotic/7de5306c8ca16476f1eb0c328b2ed08d.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" style="width: 133.898px; height: 133.898px; left: 406.439px; top: 107px; min-width: 1px; min-height: 1px;" data-block-id="528713393a293eb7191e25a23b7d6498"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="225" data-natural-height="225" data-lazy-loaded="" data-src="web-server_robotic/8d98ebd332ce33072b580e0f41ca2f6e.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" style="width: 228.224px; height: 148.345px; left: 573.064px; top: 265.702px; min-width: 1px; min-height: 1px;" data-block-id="40e760539c3520e046e738931bebd7d3"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="web-server_robotic/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" style="width: 149.993px; height: 149.993px; left: 930.12px; top: 107px; min-width: 1px; min-height: 1px;" data-block-id="ea3ff9bd8c040f57f05ec51a1ed34efd"><div class="sl-block-content" style="z-index: 18;"><img class="" data-natural-width="1350" data-natural-height="1350" data-lazy-loaded="" data-src="web-server_robotic/dd61f31743816ef03e03b12a1051621a.jpg"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; left: 330.528px; top: 196.307px;" data-block-id="96883510b16482f2f0a1d6c00599ef85"><div class="sl-block-content" data-line-x1="0" data-line-y1="93.93844910807971" data-line-x2="115.81461119559776" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="115.81461119559776" height="93.93844910807971" viewBox="0 0 115.81461119559776 93.93844910807971"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 93.938 L114.261 1.26"></path><path stroke="#000000" stroke-width="2" d="M 106.791 -0.407 L 115.231 0.474 L 114.35 8.913 L 115.231 0.474" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 93.938 L115.815 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 93.938 L115.815 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; left: 501.235px; top: 187.336px;" data-block-id="52664065090b1b06c9e1578d5c907398"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="90.99769332997812" data-line-y2="79.59699895068209" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="90.99769332997812" height="79.59699895068209" viewBox="0 0 90.99769332997812 79.59699895068209"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L89.492 78.28"></path><path stroke="#000000" stroke-width="2" d="M 89.866 70.636 L 90.432 79.102 L 81.965 79.668 L 90.432 79.102" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L90.998 79.597"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L90.998 79.597"></path></svg></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" style="width: auto; height: auto; left: 796.093px; top: 227.134px;" data-block-id="e47ff4e9910cdf54499da5dfac128c65"><div class="sl-block-content" data-line-x1="0" data-line-y1="55.712518363063964" data-line-x2="110.98593096304455" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 21;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="110.98593096304455" height="55.712518363063964" viewBox="0 0 110.98593096304455 55.712518363063964"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 55.713 L109.198 0.897"></path><path stroke="#000000" stroke-width="2" d="M 102.26 -2.333 L 110.314 0.337 L 107.643 8.391 L 110.314 0.337" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 55.713 L110.986 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 55.713 L110.986 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" style="width: 247.603px; left: 127.438px; top: 433.5px; height: 68.9837px;" data-name="Text 2" data-text-layout="fixed" data-block-id="ed2e49644dc86dde3e1e4adec4a7e576"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11;" data-placeholder-text="Text"><h2><span style="font-size:0.7em">Example:</span></h2></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 1" data-block-id="dfa7199443899f6d20a3a1ff457f8380" style="width: 215.041px; height: 65.5px; left: 14.371px; top: 571.484px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 22;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 215 66"><defs><clipPath id="shape-mask-6-1771046315339"><rect width="215.041" height="65.5" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="215.041" height="65.5" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-6-1771046315339)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 2" style="width: 215.041px; height: 65.5px; left: 556.894px; top: 577.5px;" data-block-id="3112de17e0d7fb9b401ff8b834d827be"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 23;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 215 66"><defs><clipPath id="shape-mask-5-1771046315337"><rect width="215.041" height="65.5" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="215.041" height="65.5" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-5-1771046315337)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 3" style="width: 215.041px; height: 65.5px; left: 953.935px; top: 577.5px;" data-block-id="a0ff79271fad14689672d6c93bb3aa49"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 24;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 215 66"><defs><clipPath id="shape-mask-4-1771046315335"><rect width="215.041" height="65.5" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="215.041" height="65.5" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-4-1771046315335)"></rect></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="62a120824384ad75067b8b9a596671af" style="width: 162.438px; height: auto; left: 41.5px; top: 584.734px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 25;" data-placeholder-text="Text"><p><span style="font-size:0.8em">Web Browser</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 269.727px; height: 46.234px; left: 258.137px; top: 548.367px;" data-block-id="d3c6115144c0176a7f0f98f3b3781f68" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 28;" data-placeholder-text="Text"><p><span style="font-size:0.6em">Browser sends HTTP request.</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="9a8e0f157b4a670e5d7e11ec9948f56b" style="width: 179px; height: auto; left: 575.333px; top: 588.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 29;" data-placeholder-text="Text"><p><span style="font-size:0.7em">ESP32 receives it</span></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" data-block-id="6d519cbe6646a3f3f227e91a58ccae72" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 227.333px; top: 604px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="325" data-line-y2="0" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 34;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="325" height="1" viewBox="0 0 325 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M0 0 L324 0"></path><path stroke="#000000" stroke-width="1" d="M 318 -6 L 324 0 L 318 6 L 324 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L325 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L325 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 242px; height: auto; left: 559.288px; top: 532.484px;" data-block-id="5c6e8cdf7218c3e4f82664826bc27d9c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 31; color: rgb(255, 0, 0);" data-placeholder-text="Text"><p><span style="font-size:0.6em">ESP32 executes function</span></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 5" data-block-id="70ccbbb45efe88632a81e6aa4ba29b47" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 770.333px; top: 608px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="184" data-line-y2="0" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 35;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="184" height="1" viewBox="0 0 184 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M0 0 L183 0"></path><path stroke="#000000" stroke-width="1" d="M 177 -6 L 183 0 L 177 6 L 183 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L184 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L184 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" style="width: 79px; height: auto; left: 1021.96px; top: 588.5px;" data-block-id="394f9f43530ab55a4728b649127b84de"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 30;" data-placeholder-text="Text"><p><span style="font-size:0.7em">Robot</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 7" style="width: 107.52px; height: auto; left: 1005.12px; top: 532.484px;" data-block-id="58c953568deaf063ec83cfc49b53e34d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 33; color: rgb(255, 0, 0);" data-placeholder-text="Text"><p><span style="font-size:0.6em">Motor move</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 8" style="width: 153px; height: auto; left: 50.938px; top: 528.867px;" data-block-id="3791747f8b9f2b5bec58610c2b457518"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 32; color: rgb(255, 0, 0);" data-placeholder-text="Text"><p><span style="font-size:0.6em">You click button</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 9" style="width: 81.219px; height: auto; left: 203.938px; top: 263.347px;" data-block-id="9d12a932337782d6d7f97d2bbe63125f"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 26;" data-placeholder-text="Text"><p><span style="font-size:0.8em">Client</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 10" style="width: 81.219px; height: auto; left: 647.39px; top: 221.398px;" data-block-id="0a2ec2a93da6054528757260a11efb42"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 27;" data-placeholder-text="Text"><p><span style="font-size:0.8em">Server</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="45e0b9097cf5307f19d8b042bde57657">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="a2c9234a8d8157a7d770a5a203377de1"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="b25a208679cb227da17bf014062249e2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="50ead2ec7068d3fe702adb0fad0a797b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="781a461ada0f16b0aa26196be0be679f"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="2811570c3b8cb138a85beafb7a75c385"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>What is a Web Server?</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="b863dab79b5c64ab97473909e1580a0b">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="b6fcabcb14f41444f89de49b71ef20f3"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="07a36ce238867b782bdaa0642c23494b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="f2a9c20c31fe87fbb55bd4ddc094e40d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 399px;" data-name="line-f904e0" data-block-id="676580777dfc95757e319fb0912865e3"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 920px; left: -125px; top: 6px; height: 74px;" data-name="text-841241" data-block-id="a5d6ab238a525aee45673fe5a0a45746" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 75%;" data-placeholder-text="Text"><h1>What is a Web Server?</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="c7374553ed9f793c3f95cbfc333c3296" style="width: 527px; height: auto; left: 146.833px; top: 111px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><strong>A web server is a system that:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="37547a82e9867e62cf6324daf8a7d1f4" style="width: 600px; height: auto; left: 234.333px; top: 181px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Listens for requests from clients</p>
+	</li>
+	<li>
+	<p>Processes those requests</p>
+	</li>
+	<li>
+	<p>Sends back responses (usually HTML)</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="b700e0ba8dfd4db3a601646c7e0b4ba8" style="width: 503.333px; height: 210px; left: 363.5px; top: 352px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 17;"><img class="" data-natural-width="453" data-natural-height="189" data-lazy-loaded="" data-src="web-server_robotic/d1af2231c3cc87695a8c939d382524bd.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="bbfd74e591ce9f3a0100a4b402b7abe9" style="width: 1066px; height: auto; left: 140.833px; top: 578.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>A web server is simply a device that waits for someone to ask for something.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="9144aef6247e54befd143bad29d94594">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="9534fbe0c9947fae0c662761846268d0"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="b353685ff20ba1f62da8c05bb827e6fe"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="width: 920px; left: -126.5px; top: -2.5px; height: 74px;" data-name="text-841241" data-text-layout="fixed" data-block-id="1d4804d0e0aca570e3e0ce9a1001a975"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 75%;" data-placeholder-text="Text"><h1>What is a Web Server?</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 567px; height: 47px; left: 110.333px; top: 94.5px;" data-block-id="a9925407155e47fd7a3e728a4eabd937" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>&nbsp;A web server has 3 responsibilities:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="e26da67ebab53aec1d639bea61c653c8" style="width: 144px; height: auto; left: 57.5px; top: 184.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p><strong>1. Listen:</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 373px; height: auto; left: 57.5px; top: 375.5px;" data-block-id="4da036f47c057fcb800bccaa61b710b0"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><strong>2. Understand Request</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 276px; height: auto; left: 57.5px; top: 542.5px;" data-block-id="f1964516675462a85d02599cd306d8a0"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><strong>3. </strong>&nbsp;<strong>Send Response</strong></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="620e09056582e7ca6c79bd23a67f6fc5" style="width: 494.333px; height: auto; left: 210px; top: 184.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>It waits for incoming connections.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="fa8a183c4d15074df9f6b15b73b5b709" style="width: 319px; height: auto; left: 99.5px; top: 280.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>WiFiServer server(80);</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 7" data-block-id="0194e45e87736f0a3b2799d1a6a51c79" style="width: 346px; height: auto; left: 412px; top: 253.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Port 80 is opened</p>
+	</li>
+	<li>
+	<p>Server waits</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 8" data-block-id="b5d68672d6923e819ecbbda60758ff43" style="width: 590.25px; height: auto; left: 99.5px; top: 458.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20;" data-placeholder-text="Text"><p>When client sends: <em>GET /forward HTTP/1.1</em></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 9" data-block-id="0cd25d564dbe475c3dd84f23e0967b80" style="width: 428px; height: 134.5px; left: 788.833px; top: 402px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 21; border-style: solid; border-width: 1px;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>Read this text</p>
+	</li>
+	<li>
+	<p>Interpret it</p>
+	</li>
+	<li>
+	<p>Decide what to do</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 10" data-block-id="a51af4b37dc558afea12a187f4b0af8f" style="width: 106px; height: auto; left: 609px; top: 376.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 22;" data-placeholder-text="Text"><p><strong>Server</strong></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="bcfdbeddd4077026887b02cc54f6e1fc" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 706.333px; top: 413px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="78" data-line-y2="43" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="78" height="43" viewBox="0 0 78 43"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L76.249 42.034"></path><path stroke="#000000" stroke-width="2" d="M 74.984 34.486 L 77.342 42.637 L 69.19 44.995 L 77.342 42.637" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L78 43"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L78 43"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 11" data-block-id="a14d2d3084f2dfe9d9e6cc064570ec51" style="width: 600px; height: auto; left: 99.5px; top: 636.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 24;" data-placeholder-text="Text">
+<p>Server replies: <em>HTTP/1.1 200 OK</em></p>
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<em>Content-Type: text/html</em></p>
+</div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" data-block-id="2c306b03652c45f78aec82889d7f5221" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 634.333px; top: 680px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="131" data-line-y2="1" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 25;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="131" height="1" viewBox="0 0 131 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L129 0.985"></path><path stroke="#000000" stroke-width="2" d="M 124.294 -5.051 L 130.248 0.994 L 124.203 6.948 L 130.248 0.994" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L131 1"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L131 1"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 12" data-block-id="1e5b32128e681f4674d80a8dab7cd78e" style="width: 600px; height: auto; left: 765.333px; top: 661.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 26;" data-placeholder-text="Text"><p>Then sends HTML page.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="ead61293c808cb124e8618530c92ef35">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="c8bf9f9e07b70c2939c7bac4f378b23f"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="c59fb217b530d3cc104c03e8205f9165"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="b65670651ff8ea083c4f662567c135aa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="c5ee65743c753d9700b7e2c75fb8546d"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="96dc809d43ec2c7c163f594433391a4e"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>What is HTTP?</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="edcb80825699cae8df9d9564f458bd36">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="4f3bbe1140f698cba5874427724795d8"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="570e63aacfbe8ff414de4dc8cf1da1b8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="18b188010f7770ea709f851c6c76cfe6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 505.833px; top: 456px;" data-name="line-f904e0" data-block-id="d977e0b0945c6accf988a76a0cfedee9"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1076px; left: -307px; top: 10px; height: auto;" data-name="text-841241" data-block-id="9f22a04e9584d7748a5dcf02138f3547"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>What is HTTP?</h2></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="8a6c0881e4031628b5c90b63239b81a9" style="width: 947px; height: auto; left: 91px; top: 132.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>HTTP(HyperText Transfer Protocol) is a protocol that defines:&nbsp;</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="b2bf1af598c005e714deab042f2de149" style="width: 600px; height: auto; left: 368px; top: 219px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><ul>
+	<li>
+	<p>How a client sends a request</p>
+	</li>
+	<li>
+	<p>How a server sends a response</p>
+	</li>
+</ul></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="8e0d30fbb3250d59778dbfbebbe96cf1" style="width: 333px; height: auto; left: 121px; top: 383.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p>Client → HTTP Request</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="8c196bddd32d6f72c88cd14facab1c19" style="width: 600px; height: auto; left: 668px; top: 378.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>Server → HTTP Response</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="fbc7ccf119be0738bd7e4092df603e6a" style="width: 417.833px; height: auto; left: 113px; top: 496.75px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19;" data-placeholder-text="Text"><p><em><strong>GET /forward HTTP/1.1<br>
+Host: 192.168.1.105</strong></em></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="d0311930413af5fd560fd566e2a90180" style="width: 600px; height: auto; left: 668px; top: 496.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20;" data-placeholder-text="Text"><p><em><strong>HTTP/1.1 200 OK<br>
+Content-Type: text/html</strong></em></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="bcf5e168267337b3914e79a44cc90e9c">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1076px; left: -233px; top: 10.5px; height: auto;" data-name="text-841241" data-block-id="700db8aeafbe9d385b23fca0abc542dd"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>ESP32 Connect WIFI</h2></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="74a4523a4adb073db5e6c249d01e3c38" style="width: 364px; height: auto; left: 40px; top: 119.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>WiFi Connection Process:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="7ef4db39a30105c02286cbd850aeccad" style="width: 522px; height: auto; left: 31px; top: 200.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12; line-height: 2.002;" data-placeholder-text="Text" data-has-line-height="">
+<p>1. ESP32 starts WiFi<br>
+2. It tries to connect to your router</p>
+
+<p>3. Router checks password<br>
+4. Router assigns IP address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;automatically (DHCP)<br>
+5. ESP32 prints its IP</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="d34503fb0765fdff3864e11370b26fd6" style="width: 622px; height: 612px; left: 575px; top: 84.5px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;WiFi.h&gt;
+
+const char* ssid = "YOUR_WIFI_NAME";
+const char* password = "YOUR_WIFI_PASSWORD";
+
+void setup() {
+  Serial.begin(115200);
+
+  Serial.println("Connecting to WiFi...");
+
+  // Start WiFi connection
+  WiFi.begin(ssid, password);
+
+  // Wait until connected
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected to WiFi!");
+
+  // Print assigned IP address (DHCP)
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
+}
+
+void loop() {
+
+}</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="018af902e7d200017286ff4bada0e2f4">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="487b71dfc1ee46c9328745122646b04c"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="eb9aab5ad8b2f22884fd1eb93c42d560"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="acfcf8d4a72bb8d4598630938d848019"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="93cc5c061daefe856905397658d1969a"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="4a010113dbbb7fb87f4543f14532f3cb"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Creating a Web Page</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="047ee18a24b6a723b4739630ac781b8d">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 824.499px; top: 385px;" data-block-id="8477c7fd5789fabb5362b9e2924becec"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="6889a41de9ef64849e55793c4503819f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="aecb5cee2cff9170a8cc3107c20dacb3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="a45f0e5d3fdd5f758ffc75f7a439701c"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: -217.167px; top: 10px; height: auto;" data-name="text-841241" data-block-id="659d31ee19e7b86a767f64a50644a9a7"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>Creating a Web Page</h2></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="e28ca3ca23896d75d2bee6effd1e18cd" style="width: 870px; height: auto; left: 88px; top: 116px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>A web page is not magic. It is just text written in HTML.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="f28b75e66a44e61aa9034824a44fb1f6" style="width: 332px; height: auto; left: 65.833px; top: 242.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><strong>Basic HTML Structure</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="cc3bb3405a544769ae81aa89bcf6a1fc" style="width: 544px; height: 383px; left: 20.833px; top: 281.5px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 17;"><pre style="font-size: 24px; line-height: 29px; tab-size: 4;"><code data-line-numbers="" style="padding: 59px;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="3bec638cf9bae9eba9fdd2b1c3ed2c0e" style="width: 413px; height: auto; left: 591.166px; top: 272.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p><strong>Creating a Button in HTML</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 2" data-block-id="f53b2e4cf57ea2a1e9f970445cddfbb5" style="width: 500px; height: 52px; left: 630.166px; top: 333px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 19;"><pre style="font-size: 30px; line-height: 36px; tab-size: 4;"><code>&lt;button&gt;Turn ON&lt;/button&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="d1cff2e9fba61c2a008d0e24f416ed5b" style="width: 600px; height: auto; left: 571.5px; top: 390px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20;" data-placeholder-text="Text"><p><span style="font-size:0.7em">This only creates a visual button.It does NOT control LED yet.</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="8a2fa08fe91d7932e8e9e3d28a6a5e1f" style="width: 600px; height: auto; left: 591.166px; top: 483.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 21;" data-placeholder-text="Text"><p><strong>ESP32 Sends a Web Page</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 3" data-block-id="106bfef84e1a247a65e5dd0c9412bb1d" style="width: 580.333px; height: 46px; left: 601px; top: 542px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 22;"><pre style="font-size: 24px; line-height: 29px; tab-size: 4;"><code>server.send(200, "text/html", html);</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="c28fc82752cdb741b2190335fde27259">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="327b4cf7fd07240d7957038f99643fd1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="1a997ba78cf0134ddc00454882b7e96b"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 831px; left: -33.334px; top: 20px; height: auto;" data-name="text-841241" data-block-id="1209dd40608fcf684132825153d80981"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h3>Creating HTML Inside Arduino Code</h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 332px; height: auto; left: 50.166px; top: 127.5px;" data-block-id="679b9b0b79f298f7cc7c25ee0d39423d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><strong>HTML in arduino Code</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 544px; height: 248px; left: -6.167px; top: 187.5px;" data-block-id="f1b0a03bc2a767f4f8faee3bab70a4b7"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 16;"><pre style="font-size: 24px; line-height: 29px; tab-size: 4;"><code style="padding: 59px;" data-line-numbers="">String html = "&lt;html&gt;";
+html += "&lt;body&gt;";
+html += "&lt;h1&gt;ESP32 LED&lt;/h1&gt;";
+html += "&lt;/body&gt;";
+html += "&lt;/html&gt;";</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 413px; height: auto; left: 673.166px; top: 139.25px;" data-block-id="deee003f3a76fc2d094a9c91d1ece5f4"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p><strong>Adding Style (CSS)</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 2" style="width: 453px; height: 244px; left: 712.166px; top: 199.75px;" data-block-id="f2e853899cbb53b75120f805c5e9439c"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 18;"><pre style="font-size: 30px; line-height: 36px; tab-size: 4;"><code>&lt;style&gt;
+button {
+  padding: 15px;
+  font-size: 20px;
+}
+&lt;/style&gt;</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 600px; height: auto; left: 673.166px; top: 465.75px;" data-block-id="6b10dcd406a0a8245f8d4cb419dd4a7f"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19;" data-placeholder-text="Text"><p>CSS controls appearance.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="2cc6758a10a12e16011c3137d813853c" style="width: 600px; height: auto; left: -6.167px; top: 458.75px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 22;" data-placeholder-text="Text"><p><span style="font-size:0.8em">We build HTML like building a long text message.</span></p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="1bf74d5cf3063b381d345af7d52d32d5" style="width: 600px; height: auto; left: -6.167px; top: 520.75px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 23;" data-placeholder-text="Text"><p><span style="font-size:0.8em"><strong><code>+=</code></strong>&nbsp;means: Add more text to existing string.</span></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="b7f60775795f6844dd0f1c1e52e1f7c9">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="607bdbade76d522ea54a6eef63193cc0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="52c351de715deccffd93d36f2aafda21"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 831px; left: -33.334px; top: 20px; height: auto;" data-name="text-841241" data-block-id="47e149e5712137f0900147df645b83f1"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h3>Creating HTML Inside Arduino Code</h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 436px; height: auto; left: 121.833px; top: 95.5px;" data-block-id="ae97f76ed6e75fff49e9ce0c1a3ebb29"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>Create a simple Button</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 705px; height: 577px; left: -12.667px; top: 145.5px;" data-block-id="81c712b57efa7f76979dbae1da660c9d"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 14;"><pre style="font-size: 20px; line-height: 24px; tab-size: 4;"><code style="padding: 59px;" data-line-numbers="">#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+
+const char* ssid = "project";
+const char* password = "1234567890";
+
+WebServer server(80);
+
+
+void handleRoot() {
+  String html = "&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;body&gt;";
+  html += "&lt;h1&gt;ESP32 Web Page&lt;/h1&gt;";
+  html += "&lt;button&gt;Turn ON&lt;/button&gt;";
+  html += "&lt;button&gt;Turn OFF&lt;/button&gt;";
+  html += "&lt;/body&gt;&lt;/html&gt;";
+
+  server.send(200, "text/html", html);
+}
+void setup() {
+  Serial.begin(115200);
+
+  // Connect to WiFi
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting");
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected!");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
+
+  // Define route
+  server.on("/", handleRoot);
+
+  server.begin();
+  Serial.println("Web server started");
+}
+
+void loop() {
+  server.handleClient();
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="681238e2630f7e752733fdce7414a26b" style="width: 568px; height: 406px; left: 714px; top: 202.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="568" data-natural-height="406" data-lazy-loaded="" data-src="web-server_robotic/efffa474d05c424cbf1e61678b6d3f78.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="193d3fcf241650f3353b25c4fe092d2d">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="29ab38b2cc2d397da37755569974c3de"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="351dac25356b157344a3d1beb324019a"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 831px; left: -12.667px; top: 10px; height: auto;" data-name="text-841241" data-block-id="b1d7793717f9cd916da9606fc11e06c8"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h3>Creating HTML+CSS Inside Arduino Code</h3></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 436px; height: auto; left: 121.833px; top: 106.5px;" data-block-id="688ff4979e1ccfb8336b3535372d6725"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>Create a simple Button</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 847px; height: 577px; left: -43.667px; top: 145.5px;" data-block-id="de28cf612284aa611aff55f214009641"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 14;"><pre style="font-size: 20px; line-height: 24px; tab-size: 4;"><code style="padding: 59px;" data-line-numbers="">#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+// Replace with your WiFi credentials
+const char* ssid = "project";
+const char* password = "1234567890";
+
+WebServer server(80);
+
+
+void handleRoot() {
+
+  String html = "&lt;!DOCTYPE html&gt;&lt;html&gt;";
+  html += "&lt;head&gt;";
+  html += "&lt;meta name='viewport' content='width=device-width, initial-scale=1'&gt;";
+  html += "&lt;title&gt;ESP32 Button Page&lt;/title&gt;";
+  html += "&lt;style&gt;";
+  html += "body { font-family: Arial; text-align: center; margin-top: 50px; }";
+  html += "button { padding:15px 30px; font-size:20px; margin:10px; border:none; color:white; cursor:pointer; }";
+  html += ".blueButton { background-color: blue; }";
+  html += ".redButton { background-color: red; }";
+  html += "&lt;/style&gt;";
+  html += "&lt;/head&gt;";
+  html += "&lt;body&gt;";
+  html += "&lt;h1&gt;ESP32 Web Page&lt;/h1&gt;";
+  html += "&lt;button class='blueButton'&gt;Turn ON&lt;/button&gt;";
+  html += "&lt;button class='redButton'&gt;Turn OFF&lt;/button&gt;";
+  html += "&lt;/body&gt;";
+  html += "&lt;/html&gt;";
+
+  server.send(200, "text/html", html);
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  // Connect to WiFi
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting");
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected!");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
+
+  // Define route
+  server.on("/", handleRoot);
+
+  server.begin();
+  Serial.println("Web server started");
+}
+
+void loop() {
+  server.handleClient();
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="a72bf01cdbc9ae11b6cff57c3f5d957b" style="width: 484.852px; height: 247px; left: 801.333px; top: 294.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="742" data-natural-height="378" data-lazy-loaded="" data-src="web-server_robotic/00cca9295c4e74267091a22c87aad952.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="9f1f08d5337eaadbc4da650c50dca88d">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="5b7a83ad8ccc4dfc7ae10d93394b1d1e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="04fb7af4a7a36396cbe0061155d13bc9"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 964px; left: -19.167px; top: 10px; height: auto;" data-name="text-841241" data-block-id="37e2fa05b1dc46945b8129afc53af5c3"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h3>Creating Web Page to control LED on ESP32</h3></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 796px; height: 638.5px; left: 31.833px; top: 71.5px;" data-block-id="ba41c80c5eed10404835c1bb33827a10"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 20px; line-height: 24px; tab-size: 4;"><code style="padding: 59px;" data-line-numbers="">#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+const char* ssid = "project";
+const char* password = "1234567890";
+
+WebServer server(80);
+
+
+const int ledPin = 12; // LED pin
+
+
+void handleRoot() {
+  String html = "&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;";
+  html += "&lt;meta name='viewport' content='width=device-width, initial-scale=1'&gt;";
+  html += "&lt;style&gt;";
+  html += "body { font-family: Arial; text-align: center; margin-top: 50px; }";
+  html += "button { padding:15px 30px; font-size:20px; margin:10px; border:none; color:white; cursor:pointer; }";
+  html += ".blueButton { background-color: blue; }";
+  html += ".redButton { background-color: red; }";
+  html += "&lt;/style&gt;";
+  html += "&lt;/head&gt;&lt;body&gt;";
+
+  html += "&lt;h1&gt;ESP32 LED Control&lt;/h1&gt;";
+  html += "&lt;a href='/on'&gt;&lt;button class='blueButton'&gt;Turn ON&lt;/button&gt;&lt;/a&gt;";
+  html += "&lt;a href='/off'&gt;&lt;button class='redButton'&gt;Turn OFF&lt;/button&gt;&lt;/a&gt;";
+
+  html += "&lt;/body&gt;&lt;/html&gt;";
+
+  server.send(200, "text/html", html);
+}
+
+// -------- LED ON --------
+void handleOn() {
+  digitalWrite(ledPin, HIGH);
+  handleRoot();   // Refresh page
+}
+
+// -------- LED OFF --------
+void handleOff() {
+  digitalWrite(ledPin, LOW);
+  handleRoot();   // Refresh page
+}
+
+void setup() {
+  Serial.begin(115200);
+
+  pinMode(ledPin, OUTPUT);
+  digitalWrite(ledPin, LOW);
+
+  // Connect to WiFi
+  WiFi.begin(ssid, password);
+  Serial.print("Connecting");
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected!");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
+
+  // Routes
+  server.on("/", handleRoot);
+  server.on("/on", handleOn);
+  server.on("/off", handleOff);
+
+  server.begin();
+  Serial.println("Web server started");
+}
+
+void loop() {
+  server.handleClient();
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="f0bdfe19dabcad7d56f5e5482ecd2d58" style="width: 448.44px; height: 222px; left: 857.56px; top: 138px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="606" data-natural-height="300" data-lazy-loaded="" data-src="web-server_robotic/2327c0102e0bbbe85e8c8cf8e62788c9.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="4c5e5341ff2732b4a82dd0175c2997a9">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 307px; left: 414px; top: 104px; height: auto;" data-name="text-4fd29b" data-block-id="3e887c79ec33719ad0c8cff3b06a1560">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 14; font-size: 76%;" data-placeholder-text="Text"><h1><strong>Practice</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1030px; height: auto; left: 110.5px; top: 232px;" data-block-id="d48e460a828f768badfd4ff3b771f61b"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Design a web page hosted by the ESP32 that contains five control buttons to operate the robot. Create a web interface with the following five buttons: <strong>Forward, Backward, Left, Right, and Stop</strong></p></div></div>
+
+
+</section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="dfbf7c865b0a93f3b307169baa6fd391">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="883be1c4d633a65ea6b245827947e830"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="648353e0e7bcca334216372b87d5e9c1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="573955bcdcf3cf059011f23f1613db34"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="6e3f7d9d4cbf322b2f93fef000216f51"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="edb2ffb0696215702b4554199b58c816"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>&nbsp;From Control to Feedback</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="88d360601e19c8b757dbaee1779f3906">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="4283380b806dfb9397efbd0dc0eeb787"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="77afd8435bd1d15108ed5e57fd66e479"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="9775df4280277969a44b75fc9056b5c2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="7f69765861876de2c8c2534ccd9e1306"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1090px; left: -107.167px; top: -12px; height: 102px;" data-name="text-841241" data-block-id="51c6f2aaba51f5bfc8943d12bf9cc3a1" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1><span style="font-size:0.8em">&nbsp;From Control to Feedback</span></h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="616b1392f4c4a09926e5902b01cf913f" style="width: 1092px; height: auto; left: 69.833px; top: 120px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Right now, our webpage can control the LED. But it does not know whether the LED is ON or OFF. So in order to that, we can:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="27fdf2f1c762c3f3a6f11eac54b0d9f0" style="width: 339px; height: auto; left: 69.833px; top: 234.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><strong>1. Add a State Variable</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="e3b956226d8f6bafe27edae561eaf966" style="width: 500px; height: 32px; left: 482.833px; top: 238px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 19;"><pre style="font-size: 22px; line-height: 26px; tab-size: 4;"><code>String ledState = "OFF";</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 504px; height: auto; left: 69.833px; top: 368.5px;" data-block-id="23f0407fcc64a453fd1bf326aa765475"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p><strong>2. Update State Inside Handlers</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 2" data-block-id="60b3940ea525df029d0c2df9379c9227" style="width: 433px; height: 250px; left: 590.833px; top: 296.5px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 20;"><pre style="font-size: 18px; line-height: 22px; tab-size: 4;"><code>void handleOn() {
+  digitalWrite(ledPin, HIGH);
+  ledState = "ON";
+  handleRoot();
+}
+
+void handleOff() {
+  digitalWrite(ledPin, LOW);
+  ledState = "OFF";
+  handleRoot();
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 358px; height: auto; left: 69.833px; top: 589px;" data-block-id="3487d28d983fea3a0f0ec5ff0fb772e7"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p><strong>3. Modify the webpage</strong></p></div></div>
+<div class="sl-block" data-block-type="code" data-name="Code 3" data-block-id="3521c0335eb9a6d3b2071bf04af81816" style="width: 665px; height: 44px; left: 474.833px; top: 594.5px;"><div class="sl-block-content notranslate" data-highlight-theme="a11y-light" data-code-frame="none" style="z-index: 21;"><pre style="font-size: 22px; line-height: 26px; tab-size: 4;"><code>html += "&lt;h2&gt;LED State: " + ledState + "&lt;/h2&gt;";</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="74502a0f1404a0534816a9824034b059">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1090px; left: 81.833px; top: 317px; height: 102px;" data-name="text-841241" data-text-layout="fixed" data-block-id="9746f56b015ba19f1b777c9a342abf58"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1><span style="font-size:0.8em">MIT App Inventor Web Server</span></h1></div></div>
+
+
+
+
+
+
+</section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="4f55ba6a11e6435f967c591fcb3423d8">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 724px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="b35ec5df23f751a751fa840c2fd76302"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1><span style="font-size:0.8em">MIT App Inventor Web Server</span></h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1222px; height: 71px; left: 19px; top: 109px;" data-text-layout="fixed" data-block-id="b0d7ad15a54ef91c73ee47267866b8f5"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>MIT App Inventor is a block-based programming platform to create apps.</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 803px; height: auto; left: 99px; top: 425px;" data-block-id="89ad5bfa49a87710d90e039700df966b"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12; font-size: 118%;" data-placeholder-text="Text">
+<p>Features:</p>
+
+<ul>
+	<li>
+	<p>Drag and drop UI</p>
+	</li>
+	<li>
+	<p>Block programming (no complex syntax)</p>
+	</li>
+	<li>
+	<p>Works with Bluetooth / WiFi / IoT devices</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 375.54px; height: 263px; left: 374.46px; top: 171.5px; min-width: 1px; min-height: 1px;" data-block-id="9ebef4569e00f8b21338cf6f6b0f185d"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="614" data-natural-height="430" data-lazy-loaded="" data-src="web-server_robotic/dbe9dfc7f8bdb4e9d8519f135aef6ed7.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="0a602a74070ad9b4b1ef568d925d2bf1" style="width: 279px; height: auto; left: 902px; top: 240.5px;"><a class="sl-block-style" style="z-index: 15;" href="https://appinventor.mit.edu/" target="_blank"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>MIT App Inventor</p></div></a></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="aae87b1b68aec7167dab925cddbae774" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 645.333px; top: 264px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="46" data-line-x2="243" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="243" height="46" viewBox="0 0 243 46"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 46 L241.035 0.372"></path><path stroke="#000000" stroke-width="2" d="M 235.25 -4.64 L 242.261 0.14 L 237.482 7.151 L 242.261 0.14" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 46 L243 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 46 L243 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="c51e001e03fe4acfa7ac94483df8023a">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 841px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="c6a0ee2948485fa6f2bd95109efce4cd"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>MIT App Inventor Interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="9da5fd13e96aca7286a4452f3d4c7996" style="width: 1222px; height: 71px; left: 19px; top: 80px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>There are 3 mains part in the MIT App inventor</p></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 1" data-block-id="9f20b3bff0ff3d9933d25f16a7b8599f" style="width: 300px; height: 80px; left: 43px; top: 143px;"><div class="sl-block-style" style="z-index: 12; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 80"><defs><clipPath id="shape-mask-1-1772596136473"><rect width="300" height="80" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="300" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-1-1772596136473)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 2" style="width: 300px; height: 80px; left: 469px; top: 143px;" data-block-id="7f42fc374cd741a2fd81f0f800ca7f00"><div class="sl-block-style" style="z-index: 13; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 80"><defs><clipPath id="shape-mask-2-1772596144782"><rect width="300" height="80" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="300" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-2-1772596144782)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 3" style="width: 300px; height: 80px; left: 925px; top: 143px;" data-block-id="8017f49101e5fccf6be87ed0296b3aa4"><div class="sl-block-style" style="z-index: 14; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 80"><defs><clipPath id="shape-mask-3-1772596147526"><rect width="300" height="80" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="300" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-3-1772596147526)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="44a23699de792b1ebe163c0658786b57" style="width: 151px; height: auto; left: 117.5px; top: 163.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Designer</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="358832c2fee8c9845f74e4a5b06cf28f" style="width: 209.496px; height: 266px; left: 77.703px; top: 235px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="850" data-natural-height="414" data-crop-x="0.23545" data-crop-y="0" data-crop-width="0.383598" data-crop-height="1" style="left: -129px; top: 0px; width: 546px; height: 266px;" data-lazy-loaded="" data-src="web-server_robotic/21c1bd113a90956635e0f8908430e949.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="5c1dba9edaaf60694298de27ae2c80b7" style="width: 339px; height: auto; left: 43px; top: 523px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; font-size: 75%;" data-placeholder-text="Text">
+<p>Used to build the app interface</p>
+
+<p>Examples:</p>
+
+<ul>
+	<li>
+	<p>Buttons</p>
+	</li>
+	<li>
+	<p>Labels</p>
+	</li>
+	<li>
+	<p>Images</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="049d4f5f3c55dcb5e09ec2e81bbe3f12" style="width: 119px; height: auto; left: 559.5px; top: 163.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>Blocks</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="b372ab7c64606a65a9e2f3a2d341ada1" style="width: 311.766px; height: 245.6px; left: 457.234px; top: 255.4px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="1600" data-natural-height="819" data-crop-x="0.222656" data-crop-y="0.238168" data-crop-width="0.338281" data-crop-height="0.520611" style="left: -205px; top: -112px; width: 922px; height: 472px;" data-lazy-loaded="" data-src="web-server_robotic/fcd15ca3b3a8a38767c7e5981a5265b8.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="c598ae3b7d5253c0f130f497564baa16" style="width: 264px; height: auto; left: 475px; top: 523px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20; font-size: 75%;" data-placeholder-text="Text"><p>Used to create the logic</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="5c0725bdd23f0780b6d803a8716168b0" style="width: 219.5px; height: auto; left: 981px; top: 163.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 21;" data-placeholder-text="Text"><p>Components</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" data-block-id="808acf5106ef4acc7cc178d563154149" style="width: 187.422px; height: 103px; left: 881px; top: 316.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 22;"><img class="" data-natural-width="800" data-natural-height="800" data-crop-x="0" data-crop-y="0.22522" data-crop-width="1" data-crop-height="0.549561" style="left: 0px; top: -42px; width: 187px; height: 187px;" data-lazy-loaded="" data-src="web-server_robotic/354e078ebffeecee93c4154230726184.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" data-block-id="75ee0ee9dc9d0c16a6852aee911c3546" style="width: 150.311px; height: 152px; left: 1068.42px; top: 292px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 23;"><img class="" data-natural-width="624" data-natural-height="351" data-crop-x="0.290064" data-crop-y="0.111111" data-crop-width="0.427885" data-crop-height="0.769231" style="left: -102px; top: -22px; width: 351px; height: 198px;" data-lazy-loaded="" data-src="web-server_robotic/e8c57921622b40f149d59381a4898fcc.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 7" data-block-id="3e2f080649cad00e7d113b2b1ee8b249" style="width: 286px; height: auto; left: 932.731px; top: 523px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 24; font-size: 75%;" data-placeholder-text="Text">
+<p>Devices used by the app</p>
+
+<p>Examples:</p>
+
+<ul>
+	<li>
+	<p>Bluetooth</p>
+	</li>
+	<li>
+	<p>WiFi</p>
+	</li>
+	<li>
+	<p>Sensors</p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="dd433190c9adf5dbdf7d301021a6062c">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 841px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="6f1b15fcf6ad944bead847f45dc31aab"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>MIT App Inventor Interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 1222px; height: 71px; left: 19px; top: 80px;" data-text-layout="fixed" data-block-id="ac0b5431b467ef3e983e355d3ca7840d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>There are 3 mains part in the MIT App inventor</p></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 1" style="width: 300px; height: 80px; left: 43px; top: 143px;" data-block-id="2b7f0283fbadf716eba25dc009612f12"><div class="sl-block-style" style="z-index: 12; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 80"><defs><clipPath id="shape-mask-6-1772596599545"><rect width="300" height="80" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="300" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-6-1772596599545)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 2" style="width: 300px; height: 80px; left: 469px; top: 143px;" data-block-id="3eda8bb7486afafd2f54520a49a8f556"><div class="sl-block-style" style="z-index: 13; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 13;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 80"><defs><clipPath id="shape-mask-5-1772596599544"><rect width="300" height="80" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="300" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-5-1772596599544)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" data-name="Shape 3" style="width: 300px; height: 80px; left: 925px; top: 143px;" data-block-id="e62e205e40d778e0895eb9fb853f495d"><div class="sl-block-style" style="z-index: 14; filter: opacity(100%) drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 5px);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(255, 255, 255)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#000000" data-shape-stroke-width="1px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 300 80"><defs><clipPath id="shape-mask-4-1772596599543"><rect width="300" height="80" rx="0" ry="0" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2"></rect></clipPath></defs><rect width="300" height="80" rx="0" ry="0" class="shape-element" fill="rgb(255, 255, 255)" stroke="#000000" stroke-width="2" clip-path="url(#shape-mask-4-1772596599543)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 151px; height: auto; left: 117.5px; top: 163.5px;" data-block-id="9c25c5121ad74a86d1d8778e438b6530"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Designer</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 209.496px; height: 266px; left: 77.703px; top: 235px; min-width: 1px; min-height: 1px;" data-block-id="6c2a6372f8fb5b78d0458a852d3fa71a"><div class="sl-block-content" style="z-index: 16;"><img class="" data-natural-width="850" data-natural-height="414" data-crop-x="0.23545" data-crop-y="0" data-crop-width="0.383598" data-crop-height="1" style="left: -129px; top: 0px; width: 546px; height: 266px;" data-lazy-loaded="" data-src="web-server_robotic/21c1bd113a90956635e0f8908430e949.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 339px; height: auto; left: 43px; top: 523px;" data-block-id="25c0ad8398eda625ac2868eaaaa17a15"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; font-size: 75%;" data-placeholder-text="Text">
+<p>Used to build the app interface</p>
+
+<p>Examples:</p>
+
+<ul>
+	<li>
+	<p>Buttons</p>
+	</li>
+	<li>
+	<p>Labels</p>
+	</li>
+	<li>
+	<p>Images</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 119px; height: auto; left: 559.5px; top: 163.5px;" data-block-id="42aa59e79321fb86f18060e704aa133a"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>Blocks</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" style="width: 311.766px; height: 245.6px; left: 457.234px; top: 255.4px; min-width: 1px; min-height: 1px;" data-block-id="760b1b77705c1e98af4af20981d74d54"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="1600" data-natural-height="819" data-crop-x="0.222656" data-crop-y="0.238168" data-crop-width="0.338281" data-crop-height="0.520611" style="left: -205px; top: -112px; width: 922px; height: 472px;" data-lazy-loaded="" data-src="web-server_robotic/fcd15ca3b3a8a38767c7e5981a5265b8.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 5" style="width: 264px; height: auto; left: 475px; top: 523px;" data-block-id="0d4985e35e872a8c15895cd954405baf"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20; font-size: 75%;" data-placeholder-text="Text"><p>Used to create the logic</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 6" style="width: 219.5px; height: auto; left: 981px; top: 163.5px;" data-block-id="8edfdf99241c7c6303a901be98b5adf3"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 21;" data-placeholder-text="Text"><p>Components</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 3" style="width: 187.422px; height: 103px; left: 881px; top: 316.5px; min-width: 1px; min-height: 1px;" data-block-id="fccc709d3a0845c0947a94b1f426f1ae"><div class="sl-block-content" style="z-index: 22;"><img class="" data-natural-width="800" data-natural-height="800" data-crop-x="0" data-crop-y="0.22522" data-crop-width="1" data-crop-height="0.549561" style="left: 0px; top: -42px; width: 187px; height: 187px;" data-lazy-loaded="" data-src="web-server_robotic/354e078ebffeecee93c4154230726184.png"></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 4" style="width: 150.311px; height: 152px; left: 1068.42px; top: 292px; min-width: 1px; min-height: 1px;" data-block-id="e17c6322cee85106123016260dd8ebe7"><div class="sl-block-content" style="z-index: 23;"><img class="" data-natural-width="624" data-natural-height="351" data-crop-x="0.290064" data-crop-y="0.111111" data-crop-width="0.427885" data-crop-height="0.769231" style="left: -102px; top: -22px; width: 351px; height: 198px;" data-lazy-loaded="" data-src="web-server_robotic/e8c57921622b40f149d59381a4898fcc.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 7" style="width: 286px; height: auto; left: 932.731px; top: 523px;" data-block-id="b1e8dc9aae0902d06a0a8bbeae5066d0"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 24; font-size: 75%;" data-placeholder-text="Text">
+<p>Devices used by the app</p>
+
+<p>Examples:</p>
+
+<ul>
+	<li>
+	<p>Bluetooth</p>
+	</li>
+	<li>
+	<p>WiFi</p>
+	</li>
+	<li>
+	<p>Sensors</p>
+	</li>
+</ul>
+</div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="e069eab5024f0e851bf32e3a4a5d6a79">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 603px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="95c5619665236fada0fd2bcdf42f6e4c"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Designer Interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="18c95981976e4cfa4049f93761f028cf" style="width: 391.931px; height: 593px; left: 371.065px; top: 105px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="768" data-natural-height="1162" data-lazy-loaded="" data-src="web-server_robotic/312aafc7204fb41b84114ffd882900d5.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="bbaca6d13dba48ad1a33e29ef7d0f11d" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 296.333px; top: 182px;"><div class="sl-block-content" data-line-x1="140" data-line-y1="26" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="140" height="26" viewBox="0 0 140 26"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M140 26 L1.966 0.365"></path><path stroke="#000000" stroke-width="2" d="M 5.543 7.132 L 0.739 0.137 L 7.734 -4.666 L 0.739 0.137" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M140 26 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M140 26 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="b3da3d395d8cbaae6e35ab9acb56ff4c" style="width: 274px; height: auto; left: 9px; top: 130px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; font-size: 75%;" data-placeholder-text="Text"><p>We create 3 button in here to move <strong>backward, stop, and Forward</strong></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" data-block-id="b75fc0c6e8dd1b4b35d7b94cdd4de332" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 290.333px; top: 338px;"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="48" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="48" viewBox="0 0 158 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.914 47.419"></path><path stroke="#000000" stroke-width="2" d="M 8.204 51.778 L 0.719 47.781 L 4.716 40.296 L 0.719 47.781" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 48"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 48"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="08eb85bede4a8a99f8fe5a7ae4c406f8" style="width: 358px; height: auto; left: 11.333px; top: 401.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15; font-size: 75%;" data-placeholder-text="Text"><p>A slider here is used to adjust the speed</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" data-block-id="543fd52d3a8d8e6bb106abe8ddbb0150" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 278.333px; top: 278px;"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="23" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="23" viewBox="0 0 158 23"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.979 22.712"></path><path stroke="#000000" stroke-width="2" d="M 7.546 27.965 L 0.744 22.892 L 5.817 16.09 L 0.744 22.892" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 23"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 23"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="045ba5abaaefa2b822387964f5eda866" style="width: 190px; height: auto; left: 100.333px; top: 274px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; font-size: 75%;" data-placeholder-text="Text"><p>This horizontal Arrangement is just for spacing</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" data-block-id="52d273bb53550def0d511ebf39035506" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 524.333px; top: 154px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="64" data-line-x2="418" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="418" height="64" viewBox="0 0 418 64"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 64 L416.023 0.303"></path><path stroke="#000000" stroke-width="2" d="M 410.418 -4.909 L 417.257 0.114 L 412.234 6.953 L 417.257 0.114" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 64 L418 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 64 L418 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="77a05ca7903f9d546919735b34a8f5fe" style="width: 187.742px; height: 720px; left: 942.333px; top: 15px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 19;"><img class="" data-natural-width="291" data-natural-height="1116" data-lazy-loaded="" data-src="web-server_robotic/e2cefb499249d1cbe0e2f8a09e125241.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="5fd54d0f4139fd59e509b83e2fa04e5d" style="width: 203px; height: auto; left: 733.527px; top: 176px;"><div class="sl-block-style" style="z-index: 20; transform: rotate(-10deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20; font-size: 51%;" data-placeholder-text="Text"><p>Backward Appearance</p></div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="42fffdd1d5183bd06792970620a7686c">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 603px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="996b7aa12618e0330dfcd678b26fed01"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Designer Interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 391.931px; height: 593px; left: 371.065px; top: 105px; min-width: 1px; min-height: 1px;" data-block-id="ad1fa8a6a722f6642af6aa1a703418ed"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="768" data-natural-height="1162" data-lazy-loaded="" data-src="web-server_robotic/312aafc7204fb41b84114ffd882900d5.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; left: 296.333px; top: 182px;" data-block-id="33ea7249b2ca7a3f06c9d3ea5848fb15"><div class="sl-block-content" data-line-x1="140" data-line-y1="26" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="140" height="26" viewBox="0 0 140 26"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M140 26 L1.966 0.365"></path><path stroke="#000000" stroke-width="2" d="M 5.543 7.132 L 0.739 0.137 L 7.734 -4.666 L 0.739 0.137" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M140 26 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M140 26 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 274px; height: auto; left: 9px; top: 130px;" data-block-id="9f5b636f5515e0b9397ccbc1e5d23986"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; font-size: 75%;" data-placeholder-text="Text"><p>We create 3 button in here to move <strong>backward, stop, and Forward</strong></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; left: 290.333px; top: 338px;" data-block-id="e7831f7c1508bc1c77e8d29206b6ca21"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="48" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="48" viewBox="0 0 158 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.914 47.419"></path><path stroke="#000000" stroke-width="2" d="M 8.204 51.778 L 0.719 47.781 L 4.716 40.296 L 0.719 47.781" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 48"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 48"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 358px; height: auto; left: 11.333px; top: 401.5px;" data-block-id="1c446abf54738b19044275c75504163c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15; font-size: 75%;" data-placeholder-text="Text"><p>A slider here is used to adjust the speed</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" style="width: auto; height: auto; left: 278.333px; top: 278px;" data-block-id="5aa9fbf16e87df1c529d1eaf8e863640"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="23" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="23" viewBox="0 0 158 23"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.979 22.712"></path><path stroke="#000000" stroke-width="2" d="M 7.546 27.965 L 0.744 22.892 L 5.817 16.09 L 0.744 22.892" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 23"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 23"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 190px; height: auto; left: 100.333px; top: 274px;" data-block-id="603fccb41cb6cfe2c9bc940352ddef9e"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; font-size: 75%;" data-placeholder-text="Text"><p>This horizontal Arrangement is just for spacing</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" style="width: auto; height: auto; left: 592.333px; top: 154px;" data-block-id="aef4d3a2bdec3ef26861a038bedc58ac"><div class="sl-block-content" data-line-x1="0" data-line-y1="54" data-line-x2="350" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="350" height="54" viewBox="0 0 350 54"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 54 L348.023 0.305"></path><path stroke="#000000" stroke-width="2" d="M 342.412 -4.9 L 349.257 0.115 L 344.242 6.959 L 349.257 0.115" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 54 L350 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 54 L350 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 203px; height: auto; left: 733.527px; top: 176px;" data-block-id="f43808e2f63fd9141772647980785b83"><div class="sl-block-style" style="z-index: 19; transform: rotate(-10deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; font-size: 51%;" data-placeholder-text="Text"><p>Stop Appearance</p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="eadd581c718684fa520ccc7d59307ddc" style="width: 190.323px; height: 720.002px; left: 953.838px; top: 9px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 20;"><img class="" data-natural-width="295" data-natural-height="1116" data-lazy-loaded="" data-src="web-server_robotic/269635f07b3af0559fadccc2ff28fb0c.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="be753304d5e56f781026af10c9bb4ab8">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 603px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="1845c3fe01ae118bededcfeec0cd1999"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Designer Interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 391.931px; height: 593px; left: 371.065px; top: 105px; min-width: 1px; min-height: 1px;" data-block-id="99047f76d1c863926325f0b35c8c32a7"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="768" data-natural-height="1162" data-lazy-loaded="" data-src="web-server_robotic/312aafc7204fb41b84114ffd882900d5.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; left: 296.333px; top: 182px;" data-block-id="98327f4b984c8e433f4d08e238e72a2c"><div class="sl-block-content" data-line-x1="140" data-line-y1="26" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="140" height="26" viewBox="0 0 140 26"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M140 26 L1.966 0.365"></path><path stroke="#000000" stroke-width="2" d="M 5.543 7.132 L 0.739 0.137 L 7.734 -4.666 L 0.739 0.137" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M140 26 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M140 26 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 274px; height: auto; left: 9px; top: 130px;" data-block-id="e89c694addabcdda1fbea6213ca27d59"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; font-size: 75%;" data-placeholder-text="Text"><p>We create 3 button in here to move <strong>backward, stop, and Forward</strong></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; left: 290.333px; top: 338px;" data-block-id="a4b6bd3949a409c4cbffd75c7ea932a5"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="48" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="48" viewBox="0 0 158 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.914 47.419"></path><path stroke="#000000" stroke-width="2" d="M 8.204 51.778 L 0.719 47.781 L 4.716 40.296 L 0.719 47.781" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 48"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 48"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 358px; height: auto; left: 11.333px; top: 401.5px;" data-block-id="95729ca860e844fdbe37a053cf1a3145"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15; font-size: 75%;" data-placeholder-text="Text"><p>A slider here is used to adjust the speed</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" style="width: auto; height: auto; left: 278.333px; top: 278px;" data-block-id="3f0d8bbc36712a6f46e96e7ed18605a9"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="23" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="23" viewBox="0 0 158 23"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.979 22.712"></path><path stroke="#000000" stroke-width="2" d="M 7.546 27.965 L 0.744 22.892 L 5.817 16.09 L 0.744 22.892" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 23"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 23"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 190px; height: auto; left: 100.333px; top: 274px;" data-block-id="9a6f3115bd267f06c8dc03febb76d7b1"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; font-size: 75%;" data-placeholder-text="Text"><p>This horizontal Arrangement is just for spacing</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" style="width: auto; height: auto; left: 592.333px; top: 154px;" data-block-id="1ee5829233063f42f3abbe343cd0d526"><div class="sl-block-content" data-line-x1="0" data-line-y1="54" data-line-x2="350" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="350" height="54" viewBox="0 0 350 54"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 54 L348.023 0.305"></path><path stroke="#000000" stroke-width="2" d="M 342.412 -4.9 L 349.257 0.115 L 344.242 6.959 L 349.257 0.115" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 54 L350 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 54 L350 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 203px; height: auto; left: 733.527px; top: 176px;" data-block-id="6dc2f4a8ed87363bc22fa78b917a2d06"><div class="sl-block-style" style="z-index: 19; transform: rotate(-10deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; font-size: 51%;" data-placeholder-text="Text"><p>Forward Appearance</p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="2bd55e12d006fd665446a2558d1eac13" style="width: 186.452px; height: 720.001px; left: 950.333px; top: 8px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 20;"><img class="" data-natural-width="289" data-natural-height="1116" data-lazy-loaded="" data-src="web-server_robotic/d06ff74615cb9afb9061a7d38e27883e.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="626d5543122083ed833380820aea28ef">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 603px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="62765380164856ce2ced020fcf725efb"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Designer Interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 391.931px; height: 593px; left: 371.065px; top: 105px; min-width: 1px; min-height: 1px;" data-block-id="68960c324d554d824fdeea9d6a64980d"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="768" data-natural-height="1162" data-lazy-loaded="" data-src="web-server_robotic/312aafc7204fb41b84114ffd882900d5.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" style="width: auto; height: auto; left: 296.333px; top: 182px;" data-block-id="5bf65f1fdf8e19b9c99d0191f041283c"><div class="sl-block-content" data-line-x1="140" data-line-y1="26" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="140" height="26" viewBox="0 0 140 26"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M140 26 L1.966 0.365"></path><path stroke="#000000" stroke-width="2" d="M 5.543 7.132 L 0.739 0.137 L 7.734 -4.666 L 0.739 0.137" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M140 26 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M140 26 L0 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 274px; height: auto; left: 9px; top: 130px;" data-block-id="e933574c80bb74d01a57a8477739efa3"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; font-size: 75%;" data-placeholder-text="Text"><p>We create 3 button in here to move <strong>backward, stop, and Forward</strong></p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 2" style="width: auto; height: auto; left: 290.333px; top: 338px;" data-block-id="91581a5af25402064cea887a54e0e851"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="48" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="48" viewBox="0 0 158 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.914 47.419"></path><path stroke="#000000" stroke-width="2" d="M 8.204 51.778 L 0.719 47.781 L 4.716 40.296 L 0.719 47.781" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 48"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 48"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 358px; height: auto; left: 11.333px; top: 401.5px;" data-block-id="a3356a3c1e07d5f5512681aa3dc97464"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15; font-size: 75%;" data-placeholder-text="Text"><p>A slider here is used to adjust the speed</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 3" style="width: auto; height: auto; left: 278.333px; top: 278px;" data-block-id="568abe2f696e7f00175129e6746717e1"><div class="sl-block-content" data-line-x1="158" data-line-y1="0" data-line-x2="0" data-line-y2="23" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="158" height="23" viewBox="0 0 158 23"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M158 0 L1.979 22.712"></path><path stroke="#000000" stroke-width="2" d="M 7.546 27.965 L 0.744 22.892 L 5.817 16.09 L 0.744 22.892" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M158 0 L0 23"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M158 0 L0 23"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 3" style="width: 190px; height: auto; left: 100.333px; top: 274px;" data-block-id="d21674bfa89cd0bf794f5611347f0382"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17; font-size: 75%;" data-placeholder-text="Text"><p>This horizontal Arrangement is just for spacing</p></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 4" style="width: auto; height: auto; left: 522.333px; top: 246.527px;" data-block-id="ef0ba3f20a7d5a327dcb0d0dcf4a7d46"><div class="sl-block-content" data-line-x1="0" data-line-y1="86" data-line-x2="462" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="462" height="86" viewBox="0 0 462 86"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 86 L460.034 0.366"></path><path stroke="#000000" stroke-width="2" d="M 454.264 -4.663 L 461.261 0.138 L 456.46 7.134 L 461.261 0.138" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 86 L462 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 86 L462 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 4" style="width: 203px; height: auto; left: 718.527px; top: 291px;" data-block-id="af0486dfd8b100ffb1d25fa44e5b6189"><div class="sl-block-style" style="z-index: 19; transform: rotate(-10deg);"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19; font-size: 51%;" data-placeholder-text="Text"><p>Slider Appearance</p></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="6ea1a06939d667855e81a36dbdaaee2d" style="width: 217.064px; height: 720px; left: 992.468px; top: -27.473px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 20;"><img class="" data-natural-width="306" data-natural-height="1015" data-lazy-loaded="" data-src="web-server_robotic/75dd3197b3f6739947515ee34b8b89d7.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="62e95223ab5c5508a9be953f93441dbf">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 387px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="102b6e11aeff379ea53f25d51c9e8d24"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Component</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 391.931px; height: 593px; left: 158.065px; top: 102px; min-width: 1px; min-height: 1px;" data-block-id="00abe32d3ec60c70d3a2053815a40902"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="768" data-natural-height="1162" data-lazy-loaded="" data-src="web-server_robotic/312aafc7204fb41b84114ffd882900d5.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="d7a1d196abeed9499596d736024761ca" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 362.333px; top: 334px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="338" data-line-x2="343" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="343" height="338" viewBox="0 0 343 338"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 338 L341.575 1.404"></path><path stroke="#000000" stroke-width="2" d="M 333.979 0.465 L 342.464 0.528 L 342.402 9.013 L 342.464 0.528" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 338 L343 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 338 L343 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="57cdc41aff33e5d502b5cb68bda1189c" style="width: 600px; height: auto; left: 577px; top: 202.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>In here, we use the wifi component. You can actually use the bluetooth, but it supports only the android&nbsp;</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="5412eb03ea41b4bc3f0a2423915dbb82">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 217px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="11b9212cade3d98601b78e9ea3c1285c"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Block</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="1e278383f803fd3a003d1bbc99d17dc9" style="width: 831.015px; height: 539px; left: 42.5px; top: 120px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1218" data-natural-height="790" data-lazy-loaded="" data-src="web-server_robotic/ddb21cc1ab5d7eb1a66a0b6b13d3d6f3.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="38e7ee22fda2b2d09c9a37df31717d1d" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 580.333px; top: 123px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="94" data-line-x2="352" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="352" height="94" viewBox="0 0 352 94"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 94 L350.068 0.516"></path><path stroke="#000000" stroke-width="2" d="M 343.929 -4.055 L 351.274 0.194 L 347.025 7.539 L 351.274 0.194" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 94 L352 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 94 L352 0"></path></svg></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="30a9e3686143965cc3cdb9f975f2e2b6" style="width: 600px; height: auto; left: 696px; top: 34px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>You need to adjust this with your own IP from the esp32&nbsp;</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="372164c767b2bdc4b8ff342a86e8c7de">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 414px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="8ff23fc193a26cb857286737939328fc"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>ESP32 Code&nbsp;</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="b27f2034ff3e936d1191eb383692e6f7" style="width: 713px; height: 598px; left: 224.5px; top: 102px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+const char* ssid = "WIFI";
+const char* password = "Password";
+
+WebServer server(80);
+
+void forward() {
+  Serial.println("Command: FORWARD");
+  server.send(200, "text/plain", "Forward received");
+}
+
+void backward() {
+  Serial.println("Command: BACKWARD");
+  server.send(200, "text/plain", "Backward received");
+}
+
+
+void stopMotor() {
+  Serial.println("Command: STOP");
+  server.send(200, "text/plain", "Stop received");
+}
+
+void setSpeed() {
+
+  if (server.hasArg("value")) {
+    String speedValue = server.arg("value");
+
+    Serial.print("Speed value received: ");
+    Serial.println(speedValue);
+  }
+
+  server.send(200, "text/plain", "Speed received");
+}
+
+void setup() {
+
+  Serial.begin(115200);
+
+  WiFi.begin(ssid, password);
+
+  Serial.print("Connecting");
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println();
+  Serial.println("Connected!");
+  Serial.print("ESP32 IP: ");
+  Serial.println(WiFi.localIP());
+
+ 
+  server.on("/forward", forward);
+  server.on("/backward", backward);
+  server.on("/stop", stopMotor);
+  server.on("/speed", setSpeed);
+
+  server.begin();
+}
+
+void loop() {
+  server.handleClient();
+}</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="a0ebf540957ceec6897a05962fc37b14">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 414px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="345fc69e13d505c90a9603abc594b989"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Mobile Phone</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="c3a9874e10bec8791c8d3891cfdeca3a" style="width: 1074px; height: auto; left: 93px; top: 116px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Download the MIT App Inventor from your mobile phone and scan QR using MIT App Inventor <strong>AI Companion</strong>&nbsp;as shown below</p></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="3ece817f899352f67e11ddfeb5f775ce" style="width: 1280px; height: 308.087px; left: 12px; top: 275.956px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2310" data-natural-height="556" data-lazy-loaded="" data-src="web-server_robotic/fb2330b31f472b62c6d798ad52e4e0c8.png"></div></div>
+<div class="sl-block" data-block-type="line" data-name="Line 1" data-block-id="4eb104f8af2b5de9c5b3a0c39b4e326e" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 474.333px; top: 192px;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="280" data-line-y2="193" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="280" height="193" viewBox="0 0 280 193"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L278.353 191.865"></path><path stroke="#000000" stroke-width="2" d="M 277.846 184.228 L 279.381 192.573 L 271.036 194.108 L 279.381 192.573" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L280 193"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L280 193"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="0810533a279077a2b7999f6ca9edb04e">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 906px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="95e3362b1400ed6fe61a01c0cde70c90"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Radar Code for web interface</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="e99984e31a7a7b19b9528249575e8aaf" style="width: 652px; height: 617px; left: 0px; top: 93px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">#include &lt;WiFi.h&gt;
+#include &lt;WebServer.h&gt;
+
+const char* ssid = "project";
+const char* password = "1234567890";
+
+WebServer server(80);
+
+
+float getFakeDistance() {
+  return random(1, 100); 
+}
+
+
+String htmlPage() {
+  return R"rawliteral(
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Front Radar&lt;/title&gt;
+&lt;style&gt;
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;canvas id="radar"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+const canvas = document.getElementById("radar");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+let distance = 100;
+
+function drawRadar() {
+
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height * 0.95;
+  const maxRadius = canvas.height * 0.9;
+
+  ctx.strokeStyle = "lime";
+  ctx.lineWidth = 0.8;
+
+  let arcCount = 15;
+  for (let i = 1; i &lt;= arcCount; i++) {
+    let r = (maxRadius / arcCount) * i;
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, r, Math.PI, 2*Math.PI);
+    ctx.stroke();
+  }
+
+  let lineCount = 30;
+  for (let i = 0; i &lt;= lineCount; i++) {
+    let angle = Math.PI + (i / lineCount) * Math.PI;
+    let x = centerX + maxRadius * Math.cos(angle);
+    let y = centerY + maxRadius * Math.sin(angle);
+
+    ctx.beginPath();
+    ctx.moveTo(centerX, centerY);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  }
+
+
+  let scaled = (distance / 100) * maxRadius;
+  let objectY = centerY - scaled;
+
+
+  ctx.fillStyle = "red";
+  ctx.beginPath();
+  ctx.arc(centerX, objectY, 16, 0, 2*Math.PI);
+  ctx.fill();
+
+
+  ctx.fillStyle = "white";
+  ctx.font = "32px Arial";
+  ctx.fillText("Distance: " + distance.toFixed(1) + " cm", 30, 60);
+}
+
+function updateDistance() {
+  fetch("/distance")
+    .then(res =&gt; res.text())
+    .then(data =&gt; {
+      distance = parseFloat(data);
+    });
+}
+
+setInterval(drawRadar, 30);
+setInterval(updateDistance, 300);
+
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+)rawliteral";
+}
+
+void handleRoot() {
+  server.send(200, "text/html", htmlPage());
+}
+
+void handleDistance() {
+  float d = getFakeDistance();
+  server.send(200, "text/plain", String(d));
+}
+
+void setup() {
+  Serial.begin(115200);
+  randomSeed(analogRead(34));
+
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected!");
+  Serial.println(WiFi.localIP());
+
+  server.on("/", handleRoot);
+  server.on("/distance", handleDistance);
+  server.begin();
+}
+
+void loop() {
+  server.handleClient();
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="c78b5b0e8e684bcf66bd1933b36f92bd" style="width: 573.633px; height: 293.874px; left: 685.367px; top: 93px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2479" data-natural-height="1270" data-lazy-loaded="" data-src="web-server_robotic/eafeeaffb78f4ee0042c2270f2161f3c.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="983b6c2f0ade72b5f747c2946c18d12a" style="width: 600px; height: auto; left: 685.367px; top: 444.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>In here I just create a fake distance, you have to use the ultrasonic in here by changing the function <strong>getFakeDistance()</strong></p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3552482,"slug":"web-server_robotic","title":"Web-Server_Robotic_UYFC","description":"","width":1280,"height":720,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/f4478281eb698428f8a69f0560fb0ce5/thumb.jpg?1774153243","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":34,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1774153275033,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
