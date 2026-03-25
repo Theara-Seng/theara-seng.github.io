@@ -134,7 +134,7 @@ The system integrates multiple layers:
 
 - Successful **trajectory tracking of quadcopters using MPC**
 - Real-time **3D environment mapping**
-- Camera-based **depth estimation without expensive sensors**
+- Camera-based **depth estimation using Realsense Camera**
 - Fully functional **autonomous navigation system**
 
 ---

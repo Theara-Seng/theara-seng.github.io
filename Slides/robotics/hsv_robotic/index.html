@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "hsv_robotic"}' />
+		<title>hsv_robotic</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ded2d9fdb101fea93d9e6894b065db5f"><div class="sl-block" data-block-type="text" style="width: 896px; left: 224px; top: 97.5px; height: auto;" data-block-id="0fc705c272150f7b2c82975095be3720" data-name="text-06e6d3"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>HSV Camera Robotic</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 197px; top: 228.5px;" data-block-id="3da7df1032c958cc5f5fe6935a93fd16"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>ICT 361: Introduction to Robotics</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c4b797" style="width: 570.3px; height: 142.515px; left: 383.2px; top: 345.743px; min-width: 1px; min-height: 1px;" data-block-id="a080bfcb8f7c105714bb705ea5853f01"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2377" data-natural-height="594" data-lazy-loaded="" data-src="web-server_robotic-e41717/434a42285fc45e349f3f77541d9a16f9.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 361.5px; top: 545.5px;" data-block-id="80331c911739fce968e6266e4fb25f5c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div></section><section data-id="520b72e5ea57e87633f03b6dc1b74e68" data-auto-animate="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: 237px; top: 276px; height: auto;" data-block-id="9678d50bfa8b72ca2a2bc3142e75ff56" data-name="text-552c39"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" style="height: auto; width: 744.805px; left: 88px; top: 91px;" data-block-id="88f9c18da0e951bcf862c23d2770fb7f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" style="height: auto; width: 813.226px; left: 97.774px; top: 91px;" data-block-id="ab7c6695edd9e2a1126e68fbb438e47f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 2.353; font-size: 1%;" data-has-line-height=""><ul>
+	<li>
+	<p>Understand how a joystick works electrically</p>
+	</li>
+	<li>
+	<p>Explain pull-up button logic</p>
+	</li>
+	<li>
+	<p>Read analog and digital signals</p>
+	</li>
+	<li>
+	<p>Map controller inputs to robot movements</p>
+	</li>
+	<li>
+	<p>Design basic control logic for robots</p>
+	</li>
+</ul></div></div></section><section data-auto-animate="" data-id="bcc7bec89b114a872c83c55c43ea46b1" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)"><div class="sl-block" data-block-type="text" style="width: 806px; left: -27px; top: -15px; height: auto;" data-name="text-552c39" data-block-id="370996ce596882a242ac2775c25571dc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;"><h1>Learning Objective</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-6bb646" data-block-id="658e7cb3ebc977ba538536d686874764" style="height: auto; width: 762px; left: 88px; top: 100.5px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 105%;"><p>By the end of the lesson, student will be able to:</p></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-308f0b" data-block-id="da180f3cb97e7bd4e18be8ffa2213f65" style="height: auto; width: 980px; left: 114px; top: 188px;"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 12; line-height: 2.353;" data-has-line-height="" data-placeholder-text="Text"><ul>
+	<li>Explain the HSV color model and its advantage over RGB</li>
+	<li>Describe how a camera can replace manual control</li>
+	<li>Convert camera image to HSV using OpenCV</li>
+	<li>Apply thresholding to detect a line</li>
+	<li>Generate a binary mask from the image</li>
+	<li>Calculate line position (cx) from the mask</li>
+</ul></div></div></section><section data-id="7e8ef8632861c76c991988a1e4182c83" data-auto-animate="" data-auto-animate-restart="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 834.333px; top: 355px;" data-block-id="633d23b43795a224a5ac1b504040db74"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="86e67a139abafe44e2f5b1da5f417c51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="1cd9ad746dcff55a1c8738b9f85dcf31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="49b556c2a0048182e40541b9cbad4205"><div class="sl-block-style" style="z-index: 15; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="58dfb365b464ea9a756c97a0e8f1a46b"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11;" data-placeholder-text="Text"><h1>Big Picture</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="99788477e92b42e77461b0857fd7f608">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="54c874688e0c9972b604369028cd9d90"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>Joystick</p></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 491.169px; left: -40.836px; top: 10px; height: 83.9837px;" data-name="text-841241" data-block-id="3573c28d6ff96a6e940a1da216ab22dd" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>Big Picture</h2></div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="92178498fb7c4d406305799d7cedb3fa" style="width: 1119.1px; height: 298px; left: 71.5px; top: 166.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="875" data-natural-height="233" data-lazy-loaded="" data-src="web-server_robotic-e41717/596a84e9f219c3fbf2e5ed734ad08cd8.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="aa9c7d018474c4810fda6c28f2f3a29d">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 1076.5px;" data-name="text-e3e4a7" data-block-id="09c837f44e1c4548b43667c8718bce8d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>Joystick</p></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 791.169px; left: 0px; top: 0px; height: 83.9837px;" data-name="text-841241" data-text-layout="fixed" data-block-id="d3c8405bf235cf7787fbc57a3f3ad2bf"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>ROI (Region of Interest)</h2></div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" data-block-id="8c215565ffd115251ee963f13d732053" style="width: 796.32px; height: 475px; left: 205.806px; top: 129.5px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2025" data-natural-height="1350" data-crop-x="0" data-crop-y="0.05263" data-crop-width="1" data-crop-height="0.894741" style="left: 0px; top: -28px; width: 796px; height: 531px;" data-lazy-loaded="" data-src="web-server_robotic-e41717/bb7864fa16fd61d6f70940944a4c1890.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="deddebeaff898397bf0e71be41679698">
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 1076.5px;" data-name="text-e3e4a7" data-block-id="1050bfdf2bbe58dad23bdac4dfaf2722"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; font-size: 1%;"><p>Joystick</p></div></div>
+
+<div class="sl-block" data-block-type="text" style="width: 791.169px; left: 0px; top: 0px; height: 83.9837px;" data-name="text-841241" data-text-layout="fixed" data-block-id="8d002a96597869b534aea6f08af5988b"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>ROI (Region of Interest)</h2></div></div>
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 1" style="width: 551.556px; height: 329px; left: 68.806px; top: 181.5px; min-width: 1px; min-height: 1px;" data-block-id="f7753431de31cbd8b20c7a1a981c08dd"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2025" data-natural-height="1350" data-crop-x="0" data-crop-y="0.05263" data-crop-width="1" data-crop-height="0.894741" style="left: 0px; top: -19px; width: 552px; height: 368px;" data-lazy-loaded="" data-src="web-server_robotic-e41717/bb7864fa16fd61d6f70940944a4c1890.png"></div></div><div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 600px; height: auto; left: 680px; top: 181.5px;" data-block-id="3ecc5af3772513225d9fcc33cbe425e4"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13; font-size: 79%;" data-placeholder-text="Text"><p><strong>ROI helps the robot focus only on what matters.</strong></p>
+
+<p>In this image, the ROI is divided into three regions:<br>
+Left | Center | Right</p>
+
+<ul>
+	<li>If the black line is in the center → the robot moves straight</li>
+	<li>If the black line is in the left → the robot turns left</li>
+	<li>If the black line is in the right → the robot turns right</li>
+</ul>
+
+<p>&nbsp; &nbsp; &nbsp; Goal: Keep the line in the center region</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="45e0b9097cf5307f19d8b042bde57657">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="a2c9234a8d8157a7d770a5a203377de1"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="b25a208679cb227da17bf014062249e2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="50ead2ec7068d3fe702adb0fad0a797b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="781a461ada0f16b0aa26196be0be679f"><div class="sl-block-style" style="z-index: 14; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="2811570c3b8cb138a85beafb7a75c385"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>What is a HSV?</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="b863dab79b5c64ab97473909e1580a0b">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="b6fcabcb14f41444f89de49b71ef20f3"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="07a36ce238867b782bdaa0642c23494b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+
+
+<div class="sl-block" data-block-type="text" style="width: 447px; left: 0px; top: 5.5px; height: 74px;" data-name="text-841241" data-block-id="a5d6ab238a525aee45673fe5a0a45746" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 75%;" data-placeholder-text="Text"><h1>What is a HSV?</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="c7374553ed9f793c3f95cbfc333c3296" style="width: 777.333px; height: auto; left: 57px; top: 112px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>HSV (Hue, Saturation, Value) is like a color wheel + brightness control</p></div></div>
+
+
+<div class="sl-block" data-block-type="image" data-name="Image 2" data-block-id="cae30d2c4ecbc8c29bd65ddb2714a755" style="width: 345.236px; height: 305px; left: 873.097px; top: 50px; min-width: 1px; min-height: 1px;"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="695" data-natural-height="614" data-lazy-loaded="" data-src="web-server_robotic-e41717/243796f4872aed421c35594e0405fdf9.png"></div></div><div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="9985a55795c999ea058ee1af84807a26" style="width: 867.333px; height: auto; left: 22px; top: 221.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><strong>1. Hue (H) </strong>represent the type of color and measure in degree</p></div></div><div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="797130f141bfe093296aefb7ac3baadc" style="width: 155px; height: auto; left: 57px; top: 284.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><strong>Example:</strong></p></div></div><div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="a309377653753ce8b014ebab09fdd2d4" style="width: 279px; height: auto; left: 134.5px; top: 341px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><ul>
+	<li>0° → Red</li>
+	<li>60° → Yellow</li>
+	<li>120° → Green</li>
+	<li>240° → Blue</li>
+</ul></div></div><div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="04ad297d2b855862cd58aa7193971e9f" style="width: 859.333px; height: auto; left: 22px; top: 504.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p><strong>2. Saturation (S) </strong>represent controls <strong>color intensity</strong></p></div></div><div class="sl-block" data-block-type="table" data-name="Table 1" data-block-id="f4dbb397382dc043919b16f0f2df941e" style="height: auto; min-width: 80px; width: 800px; left: 134.5px; top: 551.5px;"><div class="sl-block-content" style="z-index: 19; text-align: center;" data-table-cols="2"><table><tbody><tr><th>Value</th><th>Meaning</th></tr><tr><td>0</td><td>Gray</td></tr><tr><td>255</td><td>Full Color</td></tr></tbody></table></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="067034db6d021ac681f8a7a657439bbf">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; left: 834.333px; top: 355px;" data-block-id="617db3525ac548e94f7bfae134770114"><div class="sl-block-style" style="z-index: 11; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="5c22214b57b1de651c7259ed3031b63c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 1%;"><p>4 Buttons</p></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 867.333px; height: auto; left: 14px; top: 42.5px;" data-block-id="653675d4d185583cb1ab0cbe2b146924"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>3. Value (V) </strong>represent the brightness</p></div></div><div class="sl-block" data-block-type="table" data-name="Table 1" style="height: auto; width: 800px; left: 73.5px; top: 153.5px; min-width: 80px;" data-block-id="c0fa7a433937fd26585808132e9a478a"><div class="sl-block-content" style="z-index: 14; text-align: center;" data-table-cols="2"><table><tbody><tr><th>Value</th><th>Meaning</th></tr><tr><td>0</td><td>Black</td></tr><tr><td>255</td><td>Bright</td></tr></tbody></table></div></div><div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="5ea9b03cd23547f76d6e072389ac64c4" style="width: 1246px; height: auto; left: 34px; top: 352px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><ul>
+	<li>HSV separates color from brightness. That means even if lighting changes, we can still detect the object</li>
+	<li>We are not detecting black by color. we are detecting it by LOW brightness.</li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="9144aef6247e54befd143bad29d94594">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 567.833px; left: 0px; top: 0px; height: 74px;" data-name="text-841241" data-text-layout="fixed" data-block-id="1d4804d0e0aca570e3e0ce9a1001a975"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 75%;" data-placeholder-text="Text"><h1>Black line Detection</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="Text 1" style="width: 567px; height: 47px; left: 12.333px; top: 94.5px;" data-block-id="a9925407155e47fd7a3e728a4eabd937" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p><strong>A black line has </strong></p></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="182c1a53f306feb1dc878144703942eb" style="width: 600px; height: auto; left: 40px; top: 162.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><ul>
+	<li>&nbsp;No color → Saturation (S) ≈ 0</li>
+	<li>&nbsp;No light &nbsp;→ &nbsp;Value (V) ≈ 0</li>
+</ul></div></div><div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="f193d6e01815ba235f19f96bdfa99083" style="width: 600px; height: auto; left: 597.5px; top: 102.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p><strong>HSV Threshold </strong></p></div></div><div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="7a57d5630e65890bc9621551978604dc" style="width: 600px; height: auto; left: 657px; top: 162.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>Lower = (0, 0, 0)<br>
+Upper = (180, 255, 80)</p></div></div><div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="0f734bc433e854123ec913fea0debc96" style="width: 600px; height: auto; left: 12.333px; top: 274.75px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p><strong>1. Hue (H)</strong></p></div></div><div class="sl-block" data-block-type="text" data-name="Text 6" data-block-id="9161f17b3558b8f931c76e1e67d62bfc" style="width: 1031px; height: auto; left: 63.833px; top: 325px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 18;" data-placeholder-text="Text"><p>We set H value range between 0 to 180 because we don't care about the color. Black has no color</p></div></div><div class="sl-block" data-block-type="text" data-name="Text 7" style="width: 600px; height: auto; left: 12.333px; top: 413.75px;" data-block-id="e1283c8df049a5a58d9c2241182a4b2c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p><strong>2. Saturation (S)</strong></p></div></div><div class="sl-block" data-block-type="text" data-name="Text 8" data-block-id="0fcfc7ed3f89fe621750f62d1937370a" style="width: 1133.67px; height: auto; left: 63.833px; top: 458.75px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 19;" data-placeholder-text="Text"><p>We set S in the range between 0 to 255. All saturation value allowed because black already has low S but lighting noise may change S slightly</p></div></div><div class="sl-block" data-block-type="text" data-name="Text 9" style="width: 600px; height: auto; left: 12.333px; top: 563.75px;" data-block-id="4d3399b0a1bca231b991faf6b0cbd6d5"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;" data-placeholder-text="Text"><p><strong>3. Value (V)</strong></p></div></div><div class="sl-block" data-block-type="text" data-name="Text 10" data-block-id="a8997cfa1d8acd8efdc8c7dfa1723156" style="width: 1088px; height: auto; left: 53.5px; top: 618px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 20;" data-placeholder-text="Text"><p>V is the most important which decide only the dark pixels are selected. We set V in the range of value between 0 to 80.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="3da96722f7ac1895b3c554ca2c6e45e3">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 6" style="width: 1209px; height: auto; left: 11px; top: 12.5px;" data-block-id="840932098db01c2d113fa35c18744638"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 10;" data-placeholder-text="Text"><ul>
+	<li>We set V in the range of value between 0 to 80 because if we do 50, the camera can miss the black line and if we do 150 it can detect other color as the black line as well.&nbsp;</li>
+</ul></div></div><div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="0edef24a542f8889c59cc0075557154d" style="width: 600px; height: auto; left: 11px; top: 402.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p><strong>Compare Different Objects</strong></p></div></div><div class="sl-block" data-block-type="table" data-name="Table 1" data-block-id="7ec620652ee91d443f7bfa039ae6cd95" style="height: auto; min-width: 898px; width: 1153px; left: 81.5px; top: 453.5px;"><div class="sl-block-content" style="z-index: 12; text-align: center;" data-table-cols="5" data-table-rows="5"><table><tbody><tr><th style="width: 238px;">Object</th><th style="width: 210px;">H</th><th style="width: 211px;">S</th><th style="width: 199px;">V</th><th>Why</th></tr><tr><td style="width: 238px;">black&nbsp;</td><td style="width: 210px;">Any</td><td style="width: 211px;">Low</td><td style="width: 199px;">Low</td><td>No light</td></tr><tr><td style="width: 238px;">white</td><td style="width: 210px;">Any</td><td style="width: 211px;">Low</td><td style="width: 199px;">High</td><td>Bright</td></tr><tr><td style="width: 238px;">Gray</td><td style="width: 210px;">Any</td><td style="width: 211px;">Low</td><td style="width: 199px;">Medium</td><td>Medium Brightness</td></tr><tr><td style="width: 238px;">Red&nbsp;</td><td style="width: 210px;">Low</td><td style="width: 211px;">High</td><td style="width: 199px;">High</td><td>Strong Color</td></tr></tbody></table></div></div><div class="sl-block" data-block-type="text" data-name="Text 2" data-block-id="80791344d8fa2dca7d72bfd139c25727" style="width: 1123px; height: auto; left: 11px; top: 129.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><ul>
+	<li>You must tune the HSV value because it is related to the condition of where the robot is used</li>
+</ul></div></div><div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="dc059a469d7ff15c596d1bb3b846dd25" style="width: 600px; height: auto; left: 58px; top: 216.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p><strong>For example</strong></p></div></div><div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="55e20c30a54ed072d8602f977459090d" style="width: 700px; height: 138px; left: 209px; top: 260px;" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><ul>
+	<li>Bright room set V to 60</li>
+	<li>Normal light set V to 80</li>
+	<li>Dark room you might set it to 100</li>
+</ul>
+
+<p>&nbsp;</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="edcb80825699cae8df9d9564f458bd36">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 851px; left: 0px; top: 0px; height: auto;" data-name="text-841241" data-block-id="9f22a04e9584d7748a5dcf02138f3547"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h2>Camera Image (RGB) to HSV</h2></div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="text" data-name="Text 1" data-block-id="83be333662dfb59d5488ab2625eb221a" style="width: 600px; height: auto; left: 53px; top: 98.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>when you do&nbsp;</p></div></div><div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="ca12d93986c2f4d8c061d3588734952c" style="width: 358px; height: 51px; left: 184px; top: 153.5px;"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 27px; line-height: 32px; tab-size: 4;"><code>frame = cap.read()</code></pre></div></div><div class="sl-block" data-block-type="text" data-name="Text 2" style="width: 1131px; height: auto; left: 53px; top: 220.5px;" data-block-id="e2306ba725a01559679f248f710ea43e"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>The image from the camera is BGR Format because of the openCV library.</p></div></div><div class="sl-block" data-block-type="text" data-name="Text 3" data-block-id="6ee993e30d9c1271eb5c748791e97fae" style="width: 1124px; height: auto; left: 53px; top: 291.5px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><ul>
+	<li>We cannot use BGR to detect the black line directly because of some reason</li>
+</ul></div></div><div class="sl-block" data-block-type="text" data-name="Text 4" data-block-id="3d85f57c49c575c2f7337aceeab63c4c" style="width: 803px; height: auto; left: 213.5px; top: 371px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><ol>
+	<li>when the light changes the BGR values change a lot</li>
+	<li>When there is shadow, the color become confusing</li>
+	<li>The BGR is hard to isolate the object</li>
+</ol></div></div><div class="sl-block" data-block-type="text" data-name="Text 5" data-block-id="7d1c0cff35f203447593d52b27184aa2" style="width: 1027px; height: auto; left: 69px; top: 519px;"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><ul>
+	<li>That is why the solution is convert it to HSV through the code below&nbsp;</li>
+</ul></div></div><div class="sl-block" data-block-type="code" data-name="Code 2" data-block-id="d0c26ba73adafb578d71f852224e062b" style="width: 1010px; height: 57px; left: 184px; top: 612px;"><div class="sl-block-content notranslate" data-highlight-theme="github-gist" data-code-frame="none" style="z-index: 17;"><pre style="font-size: 36px; line-height: 43px; tab-size: 4;"><code>hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)</code></pre></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="0810533a279077a2b7999f6ca9edb04e">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1263px; left: 0px; top: 0px; height: 80px;" data-name="text-841241" data-text-layout="fixed" data-block-id="95e3362b1400ed6fe61a01c0cde70c90"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 77%;" data-placeholder-text="Text"><h1>Code for the black line detection with ROI</h1></div></div>
+
+
+
+
+
+
+<div class="sl-block" data-block-type="code" data-name="Code 1" data-block-id="e99984e31a7a7b19b9528249575e8aaf" style="width: 652px; height: 617px; left: 326.5px; top: 93px;"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">from flask import Flask, Response
+import cv2
+import numpy as np
+
+app = Flask(__name__)
+
+
+cap = cv2.VideoCapture(0)
+cap.set(3, 640)
+cap.set(4, 480)
+
+
+def get_mask(roi):
+    hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
+    lower = (0, 0, 0)
+    upper = (180, 255, 80)
+
+    mask = cv2.inRange(hsv, lower, upper)
+
+    return mask
+
+def generate_frames():
+    while True:
+        ret, frame = cap.read()
+        if not ret:
+            break
+
+        h, w = frame.shape[:2]
+
+        top = int(0.6 * h)
+        roi = frame[top:h, :]
+
+        mask = get_mask(roi)
+
+        M = cv2.moments(mask)
+
+        decision = "NO LINE"
+
+        if M["m00"] &gt; 0:
+            cx = int(M["m10"] / M["m00"])
+
+            cv2.circle(roi, (cx, 50), 8, (0, 0, 255), -1)
+
+            # =========================
+            # 4. Decision
+            # =========================
+            if cx &lt; w // 3:
+                decision = "LEFT"
+            elif cx &gt; 2 * w // 3:
+                decision = "RIGHT"
+            else:
+                decision = "FORWARD"
+
+
+        cv2.rectangle(frame, (0, top), (w, h), (0, 255, 0), 2)
+
+        cv2.line(frame, (w//3, top), (w//3, h), (0, 0, 255), 2)
+        cv2.line(frame, (2*w//3, top), (2*w//3, h), (255, 0, 0), 2)
+        cv2.putText(frame, decision, (10, 40),
+                    cv2.FONT_HERSHEY_SIMPLEX, 1, (0,255,0), 2)
+
+        # =========================
+        # 6. Send to web
+        # =========================
+        _, buffer = cv2.imencode('.jpg', frame)
+        frame_bytes = buffer.tobytes()
+
+        yield (b'--frame\r\n'
+               b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+
+@app.route('/')
+def video():
+    return Response(generate_frames(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000)</code></pre></div></div>
+
+</section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3553262,"slug":"web-server_robotic-e41717","title":"hsv_robotic","description":"","width":1280,"height":720,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/15feed164534fd7f28c3201973a2d438/thumb.jpg?1774340146","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"pro","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":14,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1774414765833,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>

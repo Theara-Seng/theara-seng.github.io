@@ -119,7 +119,7 @@ Students may use the following tools and platforms:
 | **Midterm Assessment** | Practical Test | — | Core skills evaluation |
 | [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment |
 | [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Lab 7 – Gesture Control | Solution 7 | Vision-based navigation |
-| [Line Detection using HSV](/robotics/line-detection/) | Practice Lab | — | Robust color detection |
+| [Line Detection using HSV]({{ site.baseurl }}/Slides/robotics/hsv_robotic) | Practice Lab | — | Robust color detection |
 | [Mini Project – Line Following](/robotics/line-following/) | Mini Project 1 | Demo | Control tuning & testing |
 | [Target Detection Basics](/robotics/target-detection/) | Guided Lab | — | Object localization |
 | [YOLOv8-lite on Raspberry Pi](/robotics/yolov8-lite/) | Lab 8 – Object Detection | Solution 8 | Performance trade-offs |
