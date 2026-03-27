@@ -1,3 +1,7 @@
+---
+layout: default
+title: YOLOv8 Object Detection
+---
 #  YOLOv8 Red & Green Object Detection  
 ### Raspberry Pi Deployment Guide
 
