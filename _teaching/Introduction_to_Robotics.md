@@ -120,9 +120,7 @@ Students may use the following tools and platforms:
 | [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment |
 | [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Lab 7 – Gesture Control | Solution 7 | Vision-based navigation |
 | [Line Detection using HSV]({{ site.baseurl }}/Slides/robotics/hsv_robotic) | Practice Lab | — | Robust color detection |
-| [Mini Project – Line Following](/robotics/line-following/) | Mini Project 1 | Demo | Control tuning & testing |
-| [Target Detection Basics](/robotics/target-detection/) | Guided Lab | — | Object localization |
-| [YOLOv8-lite on Raspberry Pi](/robotics/yolov8-lite/) | Lab 8 – Object Detection | Solution 8 | Performance trade-offs |
+| [YOLOv8-lite on Raspberry Pi](/Slides/robotics/object_detection.md) | Lab 8 – Object Detection | Solution 8 | Performance trade-offs |
 | [Mini Project – Vision Robot](/robotics/vision-robot/) | Mini Project 2 | Demo | Line + vision fusion |
 | [Prototype Verification](/robotics/prototype-testing/) | System Testing | — | Stability & robustness |
 | [Final Project Testing](/robotics/final-project/) | Design Studio | — | Full system integration |
