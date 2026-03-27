@@ -1,8 +1,8 @@
 var addressPoints = [
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7879363,
-    -122.4075201
+    "First Price for Cambodian Robotic Olympiad and Represent Cambodia for the World Robotic Olympiad in Singapor<br />Ministry of Education, Youth and Sport; Phnom Penh, Cambodia",
+    11.5730391,
+    104.857807
   ],
   [
     "Bachelor Thesis: Indoor Localization and Autonomous Navigation of a Four-Wheeled Mobile Robot<br />Institute of Technology of Cambodia (ITC); Phnom Penh, Cambodia",
