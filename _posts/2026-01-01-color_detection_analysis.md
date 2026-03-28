@@ -43,7 +43,7 @@ Inside the training folder (`runs/detect/train/`), the most important files are:
 - `F1_curve.png` ✅
 - `weights/best.pt` ✅
 
-### 📊 results.png (Main Graph)
+## 📊 results.png (Main Graph)
 Shows:
 - Training & validation loss
 - Precision and recall
@@ -54,11 +54,11 @@ Shows:
 - mAP increases → performance improves
 
 
-[Result](/_posts/color_detection_image/results.png)
+![Result](/_posts/color_detection_image/results.png)
 
 Throught the Graph we can analyze
 
-#### TRAINING LOSS ANALYSIS
+### TRAINING LOSS ANALYSIS
 
 1. train/box_loss   
 - Decreases from ~0.75 → ~0.53  
@@ -67,7 +67,7 @@ Throught the Graph we can analyze
 **Interpretation:**
 - Model is improving bounding box localization 
 
-2. 🔹 train/cls_loss
+2. train/cls_loss
 
 - Drops rapidly from ~1.4 → ~0.28  
 **Interpretation:**
