@@ -336,9 +336,6 @@ Shows best balance between precision and recall.
 - Peak value → best performance  
 - Confidence at peak → optimal threshold  
 
-\[
-F1 = \frac{2 \cdot (Precision \cdot Recall)}{Precision + Recall}
-\]
 
 👉 It represents the **best balance between Precision and Recall**
 
@@ -384,3 +381,19 @@ Use it for inference:
 ```bash
 yolo detect predict model=weights/best.pt source=your_image.jpg conf=0.8
 ```
+
+
+##  1. Detection Output
+
+For example:
+
+```bash
+ yolo detect predict model=best.pt source=test/images/greenbox_0_jpg.rf.b7606581a957e3d3d3b8a36e5a4d82cb.jpg conf=0.8
+```
+
+![Detection](/images/color_detection_image/example.png)
+
+### Model detected:
+- 1 object
+- Class = greenbox
+- Inference time = 12.8 ms
