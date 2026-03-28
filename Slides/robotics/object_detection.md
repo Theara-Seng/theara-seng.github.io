@@ -1,6 +1,10 @@
 ---
-layout: default
-title: YOLOv8 Object Detection
+title: "Introduction to Robotic"
+collection: teaching
+type: "Undergraduate course"
+venue: "American University of Phnom Penh"
+date: 01/01/2026
+location: "Phnom Penh, Cambodia"
 ---
 
 #  YOLOv8 Red & Green Object Detection  
