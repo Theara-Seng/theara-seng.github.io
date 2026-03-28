@@ -54,20 +54,20 @@ Shows:
 - mAP increases → performance improves
 
 
-![Result](/_posts/color_detection_image/results.png)
+![Result](/images/color_detection_image/results.png)
 
 Throught the Graph we can analyze
 
 ### 1. TRAINING LOSS ANALYSIS
 
-1. train/box_loss   
+ 🔹  train/box_loss   
 - Decreases from ~0.75 → ~0.53  
 - Smooth and consistent  
 
-**Interpretation:**
+    **Interpretation:**
 - Model is improving bounding box localization 
 ---
-2. train/cls_loss
+ 🔹  train/cls_loss
 
 - Drops rapidly from ~1.4 → ~0.28  
 **Interpretation:**
@@ -75,7 +75,7 @@ Throught the Graph we can analyze
 - Task is relatively easy (distinct colors)  
 
 --- 
-3. train/dfl_loss
+ 🔹  train/dfl_loss
 - Gradual decrease  
 
 **Interpretation:**
@@ -85,14 +85,14 @@ Throught the Graph we can analyze
 
 ### 2. Validation Loss Analysis
 
-1. val/box_loss
+ 🔹  val/box_loss
 - Smooth decrease  
 
 **Interpretation:**
 - Good generalization to unseen validation data  
 
 ---
-2.  val/cls_loss
+ 🔹   val/cls_loss
 - Spike at early epoch (~3)  
 - Then decreases steadily  
 
@@ -102,14 +102,14 @@ Throught the Graph we can analyze
 
 ---
 
-3. val/dfl_loss
+ 🔹  val/dfl_loss
 - Smooth decreasing trend  
 
 **Interpretation:**
 - Bounding box quality improves on validation data  
 
 ---
-### 🚨 Key Concept: Overfitting Check
+#### 🚨 Key Concept: Overfitting Check
 
 | Training Loss | Validation Loss | Meaning |
 |--------------|----------------|--------|
@@ -149,7 +149,7 @@ Throught the Graph we can analyze
 
 ### 📊 5. mAP Analysis (Most Important Metric)
 
-1. mAP50
+ 🔹  mAP50
 - Final value ≈ 0.995  
 
 **Interpretation:**
@@ -157,7 +157,7 @@ Throught the Graph we can analyze
 
 ---
 
-2.  mAP50-95
+ 🔹   mAP50-95
 - Improves from ~0.81 → ~0.93  
 
 **Interpretation:**
