@@ -1,7 +1,7 @@
 ---
 title: "YOLOv8-lite on Raspberry Pi"
 collection: teaching
-permalink: /teaching/robotic/object_detection
+permalink: /teaching/robotic/object_detection/
 venue: "American University of Phnom Penh"
 date: 2026-01-01
 location: "Phnom Penh, Cambodia"
