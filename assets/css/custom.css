@@ -1,0 +1,32 @@
+.centered-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Improve readability */
+.centered-content p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Headings */
+.centered-content h1,
+.centered-content h2,
+.centered-content h3 {
+    margin-top: 30px;
+}
+
+/* Code blocks */
+.centered-content pre {
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+/* Tables */
+.centered-content table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
