@@ -78,13 +78,16 @@ This section explains how to prepare your environment on **Windows** for trainin
 ## 3. Train the YOLOv8 Model
 Train your YOLOv8 model using your Roboflow dataset.
 ```
-yolo detect train model=yolov8n.pt data=data.yaml imgsz=320 epochs=40 batch=16 device=0
+yolo detect train model=yolov8n.pt data=data.yaml imgsz=320 epochs=10 batch=16 device=0
 ```
+we use the device=0 to train using GPU. If your laptop doesn't have the gpu, you can train on google colab
 
 After training, your weights will be located at:
 ```
 runs\detect\train\weights\best.pt
 ```
+
+
 
 ## 4. Testing the model on Laptop
 Below code is used for testing model and detection with best.pt on laptop
@@ -320,8 +323,8 @@ After that You will see the output as shown in the image below
 
 -> Red Detection
 
-![Red Detection](Slides/robotics/image/red.png)
+![Red Detection](/Slides/robotics/image/red.png)
 
 -> Green Detection 
 
-![Green Detection](Slides/robotics/image//green.png)
+![Green Detection](/Slides/robotics/image//green.png)
