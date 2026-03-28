@@ -44,11 +44,14 @@ Inside the training folder (`runs/detect/train/`), the most important files are:
 - `weights/best.pt` ✅
 
 ## 📊 results.png (Main Graph)
+
 Shows:
 - Training & validation loss
 - Precision and recall
-- mAP50 and mAP50-95  
+- mAP50 and mAP50-95 
+
 ✔ What to check:
+
 - Loss decreases over time → model is learning
 - Validation follows training → no overfitting
 - mAP increases → performance improves
@@ -191,7 +194,7 @@ Observed at epoch ~3:
 ---
 
 
-### 📉 confusion_matrix.png
+## 📉 confusion_matrix.png
 
 Shows classification performance:
 
@@ -205,13 +208,124 @@ Shows classification performance:
 - Off-diagonal → classification errors  
 
 ---
+Below is the confusing matrix we get after the training
 
-### 📈 PR_curve.png (Precision–Recall Curve)
+![confusion matrix](/images/color_detection_image/confusion_matrix.png)
+
+
+### ✅ Correct Predictions (Diagonal)
+
+- greenbox → greenbox = **573**
+- redbox → redbox = **427**
+
+### 🎯 Interpretation:
+- Model correctly classifies almost all objects  
+- Very strong diagonal → excellent performance  
+
+---
+
+### ❌ Errors (Off-Diagonal)
+
+#### 🔹 False Positives (FP)
+- 1 background detected as redbox  
+
+👉 Meaning:
+- Model detected an object where there is none  
+
+---
+
+#### 🔹 False Negatives (FN)
+- 1 greenbox missed (predicted as background)  
+- 1 redbox missed (predicted as background)  
+
+👉 Meaning:
+- Model failed to detect some objects  
+
+---
+
+### 📊 Error Summary
+
+| Error Type | Count |
+|----------|------|
+| False Positive | 1 |
+| False Negative | 2 |
+
+👉 Total errors = **3 (very low)**
+
+---
+
+### 📈 Performance Interpretation
+
+#### ✅ Strengths
+- Nearly perfect classification between red and green  
+- Almost no confusion between classes  
+- Extremely high accuracy  
+
+---
+
+
+## 📈 PR_curve.png (Precision–Recall Curve)
 Shows tradeoff between precision and recall.
 
 **What to check:**
 - Curve near top-right → excellent model  
 - Large area under curve → high performance  
+
+---
+### ✅ 1. Precision–Recall (PR) Curve
+
+**Purpose:**
+- Shows overall model performance
+- Combines:
+  - Precision (accuracy)
+  - Recall (completeness)
+
+**Why important:**
+- Used to compute **mAP (main YOLO metric)**
+- Best indicator of model quality
+
+![PR Curve](/images/color_detection_image/BoxPR_curve.png)
+
+**Result:**
+- Curve near **top-right**
+- mAP ≈ **0.995**
+
+👉 **Conclusion: Excellent model**
+
+---
+### 📈 2. Precision–Confidence Curve (P Curve) 
+
+**Purpose:**
+- Shows how precision changes with confidence threshold
+
+**Interpretation:**
+- Higher confidence → fewer false positives
+- Model becomes more strict
+
+![P Curve](/images/color_detection_image/BoxP_curve.png)
+
+**Result:**
+- Precision quickly reaches **~1.0**
+- Very stable
+
+👉 **Conclusion: Predictions are highly accurate**
+
+---
+### 📉 3. Recall–Confidence Curve (R Curve) 
+
+**Purpose:**
+- Shows how many objects are detected as threshold changes
+
+**Interpretation:**
+- Higher confidence → more missed detections
+
+![R Curve](/images/color_detection_image/BoxR_curve.png)
+
+**Result:**
+- Recall ≈ **1.0 at low confidence**
+- Drops sharply after ~0.9
+
+👉 **Conclusion: High confidence may miss objects**
 
 ---
 
@@ -222,7 +336,45 @@ Shows best balance between precision and recall.
 - Peak value → best performance  
 - Confidence at peak → optimal threshold  
 
+\[
+F1 = \frac{2 \cdot (Precision \cdot Recall)}{Precision + Recall}
+\]
+
+👉 It represents the **best balance between Precision and Recall**
+
+![F1 Curve](/images/color_detection_image/BoxF1_curve.png)
+
+### 🔹 Shape:
+- F1 is **very high (~1.0)** across a wide range
+- Drops sharply after **~0.9 confidence**
+
+### 🔹 Key point:
+- **Best F1 ≈ 1.00 at confidence ≈ 0.799**
+
 ---
+### ✅ 1. Excellent Performance
+- F1 ≈ **1.0** → almost perfect balance
+- Means:
+  - Very few false positives
+  - Very few missed detections
+
+👉 Model is **extremely strong**
+
+---
+
+### ⚖️ 2. Optimal Threshold
+
+- Best confidence ≈ **0.8**
+
+👉 This is the **ideal operating point**
+
+At this point:
+- Precision is high
+- Recall is high
+- Overall performance is maximized
+
+---
+
 
 ### 🧠 weights/best.pt
 The final trained model.
