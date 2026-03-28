@@ -53,6 +53,28 @@ Shows:
 - Validation follows training → no overfitting
 - mAP increases → performance improves
 
+
+[Result](/_posts/color_detection_image/results.png)
+
+Throught the Graph we can analyze
+
+#### TRAINING LOSS ANALYSIS
+
+1. train/box_loss   
+- Decreases from ~0.75 → ~0.53  
+- Smooth and consistent  
+
+**Interpretation:**
+- Model is improving bounding box localization 
+
+2. 🔹 train/cls_loss
+
+- Drops rapidly from ~1.4 → ~0.28  
+**Interpretation:**
+- Model quickly learns to classify `redbox` vs `greenbox`  
+- Task is relatively easy (distinct colors)  
+
+
 ### 📉 confusion_matrix.png
 
 Shows classification performance:
@@ -93,3 +115,4 @@ Use it for inference:
 
 ```bash
 yolo detect predict model=weights/best.pt source=your_image.jpg conf=0.8
+```
