@@ -1,7 +1,7 @@
 ---
 title: 'YOLOv8 Red & Green Object Detection'
 date: 01-01-2026
-permalink: /posts/pbject_detection
+permalink: /posts/2026-01-01-object_detection
 tags:
   - cool posts
   - category1
