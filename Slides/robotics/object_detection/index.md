@@ -1,11 +1,6 @@
 ---
-title: "Introduction to Robotic"
-collection: teaching
-type: "Undergraduate course"
-permalink: /Slides/robotics/object_detection
-venue: "American University of Phnom Penh"
-date: 01/01/2026
-location: "Phnom Penh, Cambodia"
+layout: page
+title: YOLOv8 Object Detection
 ---
 
 #  YOLOv8 Red & Green Object Detection  
