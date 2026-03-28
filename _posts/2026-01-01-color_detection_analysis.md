@@ -58,7 +58,7 @@ Shows:
 
 Throught the Graph we can analyze
 
-### TRAINING LOSS ANALYSIS
+### 1. TRAINING LOSS ANALYSIS
 
 1. train/box_loss   
 - Decreases from ~0.75 → ~0.53  
@@ -66,13 +66,129 @@ Throught the Graph we can analyze
 
 **Interpretation:**
 - Model is improving bounding box localization 
-
+---
 2. train/cls_loss
 
 - Drops rapidly from ~1.4 → ~0.28  
 **Interpretation:**
 - Model quickly learns to classify `redbox` vs `greenbox`  
 - Task is relatively easy (distinct colors)  
+
+--- 
+3. train/dfl_loss
+- Gradual decrease  
+
+**Interpretation:**
+- Model is refining bounding box precision  
+
+---
+
+### 2. Validation Loss Analysis
+
+1. val/box_loss
+- Smooth decrease  
+
+**Interpretation:**
+- Good generalization to unseen validation data  
+
+---
+2.  val/cls_loss
+- Spike at early epoch (~3)  
+- Then decreases steadily  
+
+**Interpretation:**
+- Early training instability (normal)  
+- Model stabilizes afterward  
+
+---
+
+3. val/dfl_loss
+- Smooth decreasing trend  
+
+**Interpretation:**
+- Bounding box quality improves on validation data  
+
+---
+### 🚨 Key Concept: Overfitting Check
+
+| Training Loss | Validation Loss | Meaning |
+|--------------|----------------|--------|
+| ↓ | ↓ | ✅ Good (your case) |
+| ↓ | ↑ | ❌ Overfitting |
+| ↑ | ↑ | ❌ Poor training |
+
+
+**Conclusion:**
+- No overfitting observed  
+- Model generalizes well  
+
+---
+
+### 3. Precision Analysis
+
+- Starts ~0.94  
+- Drops briefly  
+- Converges to ~1.0  
+
+**Interpretation:**
+- Very few false positives  
+- Temporary fluctuation is normal  
+
+---
+
+### 4. Recall Analysis
+
+- Similar behavior to precision  
+- Ends near 1.0  
+
+**Interpretation:**
+- Model detects almost all objects  
+- Very few missed detections  
+
+---
+
+### 📊 5. mAP Analysis (Most Important Metric)
+
+1. mAP50
+- Final value ≈ 0.995  
+
+**Interpretation:**
+- Nearly perfect detection at IoU = 0.5  
+
+---
+
+2.  mAP50-95
+- Improves from ~0.81 → ~0.93  
+
+**Interpretation:**
+- Strong performance under stricter evaluation  
+- Indicates robust bounding box quality  
+
+---
+### ⚠️ 6. Early Epoch Instability
+
+Observed at epoch ~3:
+- Drop in precision, recall, and mAP  
+
+**Reason:**
+- Random weight initialization  
+- Learning adjustment phase  
+
+**Important:**
+- This is normal behavior in training  
+- Focus on overall trend, not individual fluctuations  
+
+---
+### 📉 7. Trend vs Raw Values
+
+- Blue line: actual values  
+- Orange line: smoothed trend  
+
+**Interpretation:**
+- Smoothed curve shows true learning behavior  
+- Model trend is stable and improving  
+
+---
 
 
 ### 📉 confusion_matrix.png
