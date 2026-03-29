@@ -97,12 +97,17 @@ You should see
 
     Python 3.11.9
 
+## Activate the virtual environment
+
+```bash
+.\myenv\Script\activate
+
 ## Install Required Python Libraries
 Ensure the virtual environment is activated before installing packages.
 
-    python3 -m pip install --upgrade pip
-    python3 -m pip install mediapipe==0.10.31 opencv-python
-
+```bash
+    pip install mediapipe==0.10.11 opencv-python
+```
 ## Run the program 
 The code for the finger Detection is below:
 
