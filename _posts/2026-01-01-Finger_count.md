@@ -101,6 +101,7 @@ You should see
 
 ```bash
 .\myenv\Script\activate
+```
 
 ## Install Required Python Libraries
 Ensure the virtual environment is activated before installing packages.
