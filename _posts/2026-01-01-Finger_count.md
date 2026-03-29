@@ -1,43 +1,72 @@
 ---
-title: 'Finger Count using Mediapipe'
+title: 'Finger Count using MediaPipe'
 date: 01-01-2026
 permalink: /posts/2026-01-01-Finger_count
 tags:
-  - cool posts
-  - category1
-  - category2
+  - computer vision
+  - mediapipe
+  - python
 ---
 
+# 🖐️ Finger Detection and Counting using MediaPipe
 
-# Finger Detection Using MediaPipe
+Real-time hand tracking and finger counting is one of the most engaging ways to introduce **computer vision** concepts. In this post, we will explore how to build a simple yet powerful system that detects hands and counts fingers using **MediaPipe** and **OpenCV** in Python.
 
-This repository contains the starter code and setup instructions for **Assignment 1**.  
-The goal of this assignment is to introduce students to **computer vision**, **real-time processing**, and **basic human–computer interaction** using **Python**, **MediaPipe**, and **OpenCV**.
-
----
-
-## Assignment Objectives
-
-By completing this assignment, students will be able to:
-- Set up a Python development environment using virtual environments
-- Run and understand a real-time hand and finger detection system
-- Modify detection logic and improve system stability
-- Optimize performance for real-time execution
-- Document and explain their work clearly
+This project demonstrates how modern AI libraries allow us to build interactive applications with minimal code while still understanding the underlying logic.
 
 ---
 
-## System Requirements
+## 🚀 What This Project Does
+
+The system uses your webcam (or IP camera) to:
+
+- Detect a human hand in real time  
+- Track key landmarks (finger joints)  
+- Count how many fingers are raised  
+- Display the result live on the screen  
+
+This can be extended into applications such as:
+
+- Gesture-based control systems  
+- Touchless interfaces  
+- Robotics control using hand gestures  
+- Interactive installations  
+
+---
+
+## 🧠 Key Concepts
+
+This project introduces several important ideas:
+
+### 1. Computer Vision
+Using cameras to extract meaningful information from images.
+
+### 2. Landmark Detection
+MediaPipe identifies **21 key points** on the hand, including fingertips and joints.
+
+### 3. Real-Time Processing
+Each frame from the camera is processed continuously to give instant feedback.
+
+### 4. Logic-Based Finger Counting
+Finger states are determined by comparing landmark positions.
+
+---
+
+## 🛠️ System Requirements
 
 ### Software
-- **Python 3.10 or 3.11** (recommended)
-- **Visual Studio Code**
-- **Git**
-- Webcam **OR** IP camera
+- Python **3.10 or 3.11**
+- Visual Studio Code (recommended)
+- Git (optional but useful)
 
-> ⚠️ Python 3.12+ is not recommended due to MediaPipe compatibility issues.
+> ⚠️ MediaPipe may not work properly with Python 3.12+
+
+### Hardware
+- Webcam (built-in or external)  
+- OR IP camera stream  
 
 ---
+
 
 ## 📂 Project Structure
 Finger_Detection_Assignment/
@@ -82,11 +111,11 @@ Go to the terminal(path to your code) and run:
 
 And you will see the camera open with the finger-count as below
 
-![Finger Counter number 2](/image/Finger_2.png)
+![Finger Counter number 2](/images/Finger_count/Finger_2.png)
 
 
 
 
-![Finger Counter number 5](/image/finger_5.png)
+![Finger Counter number 5](/images/Finger_count/finger_5.png)
 
 Testing
