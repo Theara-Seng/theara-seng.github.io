@@ -138,7 +138,7 @@ You can find all the components which are used in the course in here: [Component
 | [Mini Project]({{ site.baseurl }}/Slides//iot/Grafana/) |  |  | …Loading |
 | [Grafana Dashboard]({{ site.baseurl }}/Slides/iot/Grafana/) | [Lab 4](/files/IOT/LAB4_Multi_Sensor_IoT_Grafana.pdf) | [Installation & Configuration]({{ site.baseurl }}/IOT/grafana/) | …Loading |
 | [MIT App Inventor IoT App]({{ site.baseurl }}/Slides/iot/mit_app_inventor) | [Lab 5](/files/IOT/lab5_mit_app_inventor.pdf) | – | …Loading |
-| [Firebase with esp32]({{ site.baseurl }}/Slides/iot/mit-app/) | Lab 6 | – | …Loading |
+| [Firebase with esp32]({{ site.baseurl }}/Slides/iot/mit-app/) | Lab 6 | | …Loading |
 | [Final IoT Project]({{ site.baseurl }}/Slides/iot/final-project/) | Project | Demo | …Loading |
 
 ---
