@@ -70,11 +70,11 @@ By the end of this course, students will be able to design, build, and program a
 
 | Criteria | Percentage |
 |--------|------------|
-| Lab | 20% |
-| Quizzes | 10% |
-| Assignment | 10% |
+| Lab | 25% |
+| Quizzes | 20% |
+| Assignment | 5% |
 | Midterm Exam | 10% |
-| Mini Project | 30% | 
+| Mini Project | 20% | 
 | Final Project & Presentation | 20% |
 
 ---
