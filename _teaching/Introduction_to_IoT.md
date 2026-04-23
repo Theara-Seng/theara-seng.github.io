@@ -89,7 +89,7 @@ By the end of this course, students will be able to design, implement, and deplo
 | Assignment | 5% |
 | Midterm Exam | 10% |
 | Mini Project | 15% | 
-| Final Project & Presentation / Practical Labs | 25% |
+| Final Project & Presentation  | 25% |
 
 
 ---
