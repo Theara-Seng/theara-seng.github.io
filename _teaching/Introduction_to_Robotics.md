@@ -111,7 +111,7 @@ Students may use the following tools and platforms:
 | [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/robotics/esp32_setup) | Installation & LED Blink | — | Board setup & first test |
 | [Motor & Servo Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Lab 1 – Motor & Servo | Solution 1 | PWM speed & position |
 | [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/robotics/Remote_Control)   |  [Lab 1 - Remote Control](/files/Robotic/Lab1_Remote.pdf) | [Assignment 1](https://github.com/Theara-Seng/Robotic_Spring_2026/tree/main/Finger_counter) | Basic navigation logic |
-| [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 2 – IR Control](/files/Robotic/Lab3_ESP32_IR_Remote_Robot_Control_CAPITAL_ROMAN.pdf) | Solution 3 | Command decoding |
+| [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 2 – IR Control](/files/Robotic/Lab2_IR_Remote.pdf) | Solution 2 | Command decoding |
 | [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | - | -| Wireless robot control |
 | [Ultrasonic-Servo Motor]({{ site.baseurl }}/Slides/robotics/Ultrasonic_Servo)  | [Lab 3 - Dabble_control](/files/Robotic/Lab4_Dabble_Robot_Control.pdf) | Solution 4 | Servo + distance mapping |
 | [Web Server Control]({{ site.baseurl }}/Slides/robotics/Web_server)| [Lab4 - MIT_Web_Control](/files/Robotic/Lab5_mit_app_web.pdf) | Solution 5 | Real-time browser control |
