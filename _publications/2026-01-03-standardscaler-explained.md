@@ -1,6 +1,7 @@
 ---
 
 title: "Understanding StandardScaler: Why We Scale Input Features in Machine Learning"
+collection: publications
 date: 2026-01-03
 permalink: /publication/2026-01-03-standardscaler-explained
 tags:
