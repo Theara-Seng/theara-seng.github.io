@@ -5,12 +5,12 @@ date: 2026-01-03
 permalink: /publications/2026-01-03-standardscaler-explained/
 tags:
 
-* Machine Learning
-* Data Preprocessing
-* StandardScaler
-* Feature Scaling
-* Python
-* Scikit-learn
+    - Machine Learning
+    - Data Preprocessing
+    - StandardScaler
+    - Feature Scaling
+    - Python
+    - Scikit-learn
 
 ---
 
