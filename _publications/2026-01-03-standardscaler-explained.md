@@ -315,7 +315,7 @@ z < 0
 
 
 
-## 12. Explanation Under the Animation
+## 9. Explanation Under the Animation
 
 ![StandardScaler Animation](/gif/pytorch/standard_scaler_animation.gif)
 
@@ -353,7 +353,7 @@ This helps the model compare attendance with other features such as age, study h
 
 ---
 
-## 13. Why Scaling Helps Machine Learning Models
+## 11. Why Scaling Helps Machine Learning Models
 
 Many machine learning models train using optimization.
 
@@ -387,7 +387,7 @@ This helps the model train more smoothly.
 
 ---
 
-## 14. Important Rule: Save the Scaler
+## 12. Important Rule: Save the Scaler
 
 When we use StandardScaler, we should save it after training.
 
@@ -428,7 +428,7 @@ If the model was trained on scaled data but prediction uses unscaled data, the p
 
 ---
 
-## 15. Difference Between `fit_transform()` and `transform()`
+## 13. Difference Between `fit_transform()` and `transform()`
 
 This is one of the most important ideas.
 
@@ -463,7 +463,7 @@ This is important because prediction data must follow the same scaling rule as t
 
 ---
 
-## 16. Simple Summary
+## 14. Simple Summary
 
 StandardScaler is used to put input features on a similar scale.
 
