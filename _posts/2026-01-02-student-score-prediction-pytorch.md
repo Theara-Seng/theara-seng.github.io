@@ -2,7 +2,7 @@
 
 title: "Student Exam Score Prediction using PyTorch Linear Regression"
 date: 2026-01-02
-permalink: /posts/2026-01-02-student-score-prediction-pytorch/
+permalink: /posts/2026-01-02-student-score-prediction-pytorch
 tags:
 
 * PyTorch
