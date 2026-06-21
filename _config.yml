@@ -224,9 +224,9 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  # publications:
-  #   output: true
-  #   permalink: /:collection/:path/
+  project_audit:
+    output: true
+    permalink: /:collection/:path/
   # portfolio:
   #   output: true
   #   permalink: /:collection/:path/
@@ -267,7 +267,7 @@ defaults:
   # _publications
   - scope:
       path: ""
-      type: publications
+      type: project_audit
     values:
       layout: single
       author_profile: true
