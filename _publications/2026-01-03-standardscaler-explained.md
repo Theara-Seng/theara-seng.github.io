@@ -283,17 +283,7 @@ After standardization, the feature is centered around 0.
 
 A standard normal distribution looks like this:
 
-```text
-                    mean = 0
-                       |
-                       v
-                 ***********
-              ****         ****
-           ***                 ***
-        ***                       ***
-------|---------|---------|---------|------
-     -2        -1         0         1        2
-```
+![StandardScaler Probability Graph](/images/pytorch/standard_scaler_probability_graph.png)
 
 Most values are near the center.
 
@@ -323,26 +313,11 @@ z < 0
 
 
 
-```markdown
-![StandardScaler Probability Graph](/images/pytorch/standard_scaler_probability_graph.png)
-```
 
----
-
-
-```text
-/images/standardscaler/standard_scaler_animation.gif
-```
-
-Then insert it into your blog:
-
-```markdown
-![StandardScaler Animation](/gif/pytorch/standard_scaler_animation.gif)
-```
-
----
 
 ## 12. Explanation Under the Animation
+
+![StandardScaler Animation](/gif/pytorch/standard_scaler_animation.gif)
 
 The animation shows the transformation from the original value to the standardized value.
 
