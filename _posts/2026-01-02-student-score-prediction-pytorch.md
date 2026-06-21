@@ -5,12 +5,12 @@ date: 2026-01-02
 permalink: /posts/2026-01-02-student-score-prediction-pytorch
 tags:
 
-* PyTorch
-* Machine Learning
-* Linear Regression
-* Student Performance
-* Deep Learning
-* Python
+    - PyTorch
+    - Machine Learning
+    - Linear Regression
+    - Student Performance
+    - Deep Learning
+    - Python
 
 ---
 
