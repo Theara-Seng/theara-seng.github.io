@@ -448,6 +448,10 @@ standard deviation = 1
 
 This helps the model train more smoothly.
 
+For a more detailed explanation of `StandardScaler`, including the formula, z-score meaning, probability graph, and animation, you can read my detailed post here:
+
+[Understanding StandardScaler: Why We Scale Input Features in Machine Learning](/publications/2026-01-03-standardscaler-explained)
+
 ---
 
 ## 8. Model Training
