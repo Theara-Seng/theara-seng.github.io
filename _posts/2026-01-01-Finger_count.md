@@ -7,7 +7,7 @@ tags:
   - mediapipe
   - python
 ---
-
+<!-- This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.  -->
 # 🖐️ Finger Detection and Counting using MediaPipe
 
 Real-time hand tracking and finger counting is one of the most engaging ways to introduce **computer vision** concepts. In this post, we will explore how to build a simple yet powerful system that detects hands and counts fingers using **MediaPipe** and **OpenCV** in Python.

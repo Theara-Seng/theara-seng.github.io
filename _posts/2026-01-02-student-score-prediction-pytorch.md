@@ -1,5 +1,4 @@
 ---
-
 title: "Student Exam Score Prediction using PyTorch Linear Regression"
 date: 2026-01-02
 permalink: /posts/2026-01-02-student-score-prediction-pytorch
@@ -13,6 +12,7 @@ tags:
     - Python
 
 ---
+<!-- This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.  -->
 
 # Student Exam Score Prediction using PyTorch Linear Regression
 
