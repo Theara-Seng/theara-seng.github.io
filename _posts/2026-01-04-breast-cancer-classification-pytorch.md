@@ -1,9 +1,7 @@
 ---
 title: "Breast Cancer Classification using PyTorch: A Complete Binary Classification Project"
-collection: publications
-category: Audit
 date: 2026-01-04
-permalink: /publications/2026-01-04-breast-cancer-classification-pytorch
+permalink: /posts/2026-01-04-breast-cancer-classification-pytorch
 tags:
 
     - PyTorch
