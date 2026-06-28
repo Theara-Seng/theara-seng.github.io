@@ -1521,15 +1521,11 @@ plt.savefig(
 )
 ```
 
-In the blog, the image can be displayed like this:
 
-```markdown
-![Training Loss](/images/pytorch/breast_cancer_training_loss.png)
-```
 
 Example:
 
-![Training Loss](/images/pytorch/breast_cancer_training_loss.png)
+![Training Loss](/images/pytorch//lesson2/Figure_1.png)
 
 The expected shape is:
 
@@ -1734,15 +1730,10 @@ sns.heatmap(
 )
 ```
 
-In the blog, the image can be displayed like this:
-
-```markdown
-![Confusion Matrix](/images/pytorch/breast_cancer_confusion_matrix.png)
-```
 
 Example:
 
-![Confusion Matrix](/images/pytorch/breast_cancer_confusion_matrix.png)
+![Confusion Matrix](/images/pytorch/lesson2/Figure_2.png)
 
 A confusion matrix shows:
 
@@ -1792,15 +1783,10 @@ plt.savefig(
 )
 ```
 
-In the blog, the image can be displayed like this:
-
-```markdown
-![ROC Curve](/images/pytorch/breast_cancer_roc_curve.png)
-```
 
 Example:
 
-![ROC Curve](/images/pytorch/breast_cancer_roc_curve.png)
+![ROC Curve](/images/pytorch/lesson2/Figure_3.png)
 
 The ROC curve shows how well the model separates the two classes.
 
