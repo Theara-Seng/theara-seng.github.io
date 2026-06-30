@@ -4,7 +4,6 @@ date: 2026-01-05
 permalink: /posts/2026-01-05-muffin-chihuahua-cnn-pytorch
 tags:
 
-```
     - PyTorch
     - Deep Learning
     - CNN
@@ -13,9 +12,10 @@ tags:
     - Binary Classification
     - Python
     - Torchvision
-```
+
 
 ---
+<!-- This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.  -->
 
 # Muffin vs Chihuahua Image Classification using PyTorch: A Complete CNN Binary Classification Project
 
