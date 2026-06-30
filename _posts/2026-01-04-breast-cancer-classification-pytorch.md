@@ -14,6 +14,7 @@ tags:
     - Scikit-learn
 
 ---
+<!-- This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.  -->
 
 # Breast Cancer Classification using PyTorch: A Complete Binary Classification Project
 
