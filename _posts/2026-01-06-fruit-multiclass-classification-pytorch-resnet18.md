@@ -16,7 +16,9 @@ tags:
     - Torchvision
 
 ---
+    
 <!-- This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.  -->
+
 # Fruit Multiclass Classification using PyTorch and ResNet18: A Complete Image Classification Project
 
 ## 1. Introduction
