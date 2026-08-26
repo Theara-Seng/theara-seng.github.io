@@ -72,8 +72,8 @@ By the end of this course, students will be able to design, build, and program a
 |--------|------------|
 | Lab | 20% |
 | Quizzes | 10% |
-| Assignment | 10% |
-| Midterm Exam | 20% |
+| Assignment | 15% |
+| Midterm Exam | 15% |
 | Mini Project | 15% | 
 | Final Project & Presentation | 25% |
 
@@ -109,7 +109,7 @@ Students may use the following tools and platforms:
 | Topic | Lab | Assignment | Remark |
 |------|-----|----------|--------|
 | [ESP32 Setup & Arduino Environment]({{ site.baseurl }}/Slides/robotics/esp32_setup) | Installation & LED Blink | — | Board setup & first test |
-| [Motor & Servo Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Lab 1 – Motor & Servo | Solution 1 | PWM speed & position |
+| [Motor Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Practice 1| — | PWM speed & position |
 | [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/robotics/Remote_Control)   |  [Lab 1 - Remote Control](/files/Robotic/Lab1_Remote.pdf) | [Assignment 1](https://github.com/Theara-Seng/Robotic_Spring_2026/tree/main/Finger_counter) | Basic navigation logic |
 | [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 2 – IR Control](/files/Robotic/Lab2_IR_Remote.pdf) | Solution 2 | Command decoding |
 | [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | - | -| Wireless robot control |
