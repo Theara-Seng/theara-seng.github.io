@@ -133,7 +133,7 @@ You can find all the components which are used in the course in here: [Component
 |------|-----|----------|--------|
 | [IoT Overview & ESP32 Setup]({{ site.baseurl }}/Slides/iot/esp32_setup/) | | – | …Loading |
 | [Telegram Bot Integration]({{ site.baseurl }}/Slides/iot/telegram_control/) | [Lab 1](/files/IOT/lab1_telegram_bot_control.pdf) | [ESP32-Camera Setup]({{ site.baseurl }}/Slides/iot/esp32Arduino_camera_setup/) | …Loading |
-| [ESP32 Web Server]({{ site.baseurl }}/Slides/iot/Webserver_control/) |  [Lab 2](/files/IOT/LAB2_Webserver_LCD_Servo_Control.pdf) | - |  [Task 1&2]({{ site.baseurl }}/Slides/iot/Lab2/Task1)<br>[Task 3]({{ site.baseurl }}/Slides/iot/Lab2/Task3)<br>[Task 4]({{ site.baseurl }}/Slides/iot/Lab2/Task4) |
+| [ESP32 Web Server]({{ site.baseurl }}/Slides/iot/Webserver_control/) |  [Lab 2](/files/IOT/LAB2_Webserver_LCD_Servo_Control.pdf) | - |  [Task 1&2]({{ site.baseurl }}/Slides/iot/Lab2/Task1)<br>[Task 3]({{ site.baseurl }}/Slides/iot/Lab2/Task3)<br>[Task 4]({{ site.baseurl }}/Slides/iot/Lab2/task4) |
 | [Blynk IoT Platform]({{ site.baseurl }}/Slides/iot/Blynk_esp32/) | [Lab 3](/files/IOT/LAB3_IoT_Blynk_IR_Servo_TM1637.pdf) | [Assignment2](/files/assignment/) | …Loading |
 | [Mini Project]({{ site.baseurl }}/Slides//iot/Grafana/) |  |  | …Loading |
 | [Grafana Dashboard]({{ site.baseurl }}/Slides/iot/Grafana/) | [Lab 4](/files/IOT/LAB4_Multi_Sensor_IoT_Grafana.pdf) | [Installation & Configuration]({{ site.baseurl }}/IOT/grafana/) | …Loading |
