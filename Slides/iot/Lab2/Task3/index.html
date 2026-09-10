@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Web Server Control Lab"}' />
+		<title>Web Server Control Lab</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="4b7ad81c4695">
+					
+				<div class="sl-block" data-block-type="text" style="width: 940px; left: 170px; top: 57.5px; height: auto;" data-name="text-06e6d3" data-block-id="d023af4604b5"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Web Server Control Lab</h1></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 170px; top: 201.743px;" data-block-id="10fc5e3988e1"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 3 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 1053px; height: auto; left: 201px; top: 281px;" data-name="Text 1" data-block-id="6161849c5072"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p><strong>Task 3 - Web-Controlled Servo (20 pts)</strong></p>
+
+<p>•<span>&nbsp;</span>Connect an SG90 servo motor to the ESP32.</p>
+
+<p>•<span>&nbsp;</span>Add a slider to the web page with a range from 0 to 180 degrees.</p>
+
+<p>•<span>&nbsp;</span>Moving the slider must change the servo angle.</p>
+
+<p>•<span>&nbsp;</span>Display the selected angle on the web page.</p>
+
+<p>•<span>&nbsp;</span><strong>Evidence</strong>: Short video showing the web slider, servo movement.</p></div></div></section><section data-id="1dcdfc7d76c0"><div class="sl-block" data-block-type="text" style="width: 647.619px; height: auto; left: 285.609px; top: 54.5238px;" data-name="Text 1" data-block-id="f89d77f9ff50"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 10;" data-placeholder-text="Text"><p>The webpage should display similar to this&nbsp;</p></div></div><div class="sl-block" data-block-type="image" style="width: 558.819px; height: 482px; left: 295px; top: 140px;" data-name="Image 1" data-block-id="6ea00df7fb51"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="742" data-natural-height="640" data-src="web-server-control-lab-4dc982/72d07c875efe8a9ba3be9838444e7316.png"></div></div></section><section data-id="4bf6dffc2b3a"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="d93bfa1e24fa"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 3 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 281px; height: auto; left: 77px; top: 89.5px;" data-name="Text 1" data-block-id="d08eeb91802e"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Import the library</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 136px; left: 29px; top: 148px;" data-name="Code 1" data-block-id="d3e8966796ef"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">import network
+import socket
+import time
+
+from machine import Pin, PWM</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 238px; height: auto; left: 801px; top: 264.5px;" data-name="Text 2" data-block-id="9f8b9a32f1fd"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Wifi Setting</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 109px; left: 659px; top: 333px;" data-name="Code 2" data-block-id="df1c44a5953a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 14;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># WIFI SETTINGS
+
+ssid = "________"
+password = "________"</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 192px; height: auto; left: 178.5px; top: 422.5px;" data-name="Text 3" data-block-id="7c2a56e54cd1"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Servo Setup</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 152px; left: 63px; top: 478.5px;" data-name="Code 3" data-block-id="4578a35a509c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 16;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># SERVO SETUP
+
+servo = ________ ## add the pin that you use with the 50hz frequency
+
+servo_angle = 90  ## set servo angle to 90 degree
+</code></pre></div></div></section><section data-id="e786c4afbcbb"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="73e9b978d591"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 3 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 134px; top: 77.5px;" data-name="Text 1" data-block-id="12474c6bd9e6"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Create a move servo angle function&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 845px; height: 570px; left: 236.5px; top: 135.5px;" data-name="Code 1" data-block-id="bae05800da42"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def move_servo(angle):
+
+    # Keep the angle between 0 and 180 degrees
+    if angle &lt; ______:
+        angle = ______
+
+    if angle &gt; ______:
+        angle = ______
+
+
+    # Servo PWM duty range
+    duty_min = ______
+    duty_max = ______
+
+    # Convert angle 0-180 degrees servo duty
+    duty = int(
+        duty_min
+        + (angle / ______)
+        * (duty_max - duty_min)
+    )
+
+
+    # Send the calculated duty to the servo
+    servo.duty(________)
+
+
+    print("Servo angle:", angle)
+    print("PWM duty:", duty)</code></pre></div></div></section><section data-id="47c858f8ffaa"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="45b64d125cbf"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 3 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 311px; height: auto; left: 474px; top: 78.5px;" data-name="Text 1" data-block-id="c6e455869288"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Create a Webpage</p></div></div><div class="sl-block" data-block-type="code" style="width: 900px; height: 533px; left: 169px; top: 131px;" data-name="Code 1" data-block-id="1bfde884ba7a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def create_webpage(angle):
+
+    html = """
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;title&gt;ESP32 Servo Control&lt;/title&gt;
+
+    &lt;meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1"&gt;
+
+    &lt;style&gt;
+
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        h1 {
+            color: ________________;
+        }
+
+        .card {
+            background-color: white;
+            width: ________________;
+            margin: ________________ ________________;
+            padding: ________________;
+            border-radius: ________________;
+
+            box-shadow:
+                0 2px 8px
+                rgba(0, 0, 0, 0.2);
+        }
+
+        .angle {
+            color: ________________;
+            font-size: ________________;
+            font-weight: bold;
+        }
+
+        input[type="range"] {
+            width: 280px;
+            margin-top: 20px;
+        }
+
+    &lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;ESP32 Servo Control&lt;/h1&gt;
+
+    &lt;div class="card"&gt;
+
+        &lt;h2&gt;________________&lt;/h2&gt;
+
+        &lt;p 
+        		________________ ## Add the class angle here to display the angle value on the webpage
+
+        &lt;/p&gt;
+
+        &lt;input
+            type="range"
+            min="0"
+            max="180"
+            value="SERVO_ANGLE"
+
+            oninput="
+                document.getElementById(
+                    'angle-value'
+                ).innerHTML = this.value
+            "
+
+            onchange="
+                fetch(
+                    '/servo?angle=' + this.value
+                )
+            "
+        &gt;
+
+        &lt;p&gt;
+            Move the slider to control the servo.
+        &lt;/p&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+"""
+
+    html = html.replace(
+        "SERVO_ANGLE",
+        str(angle)
+    )
+
+    return html
+</code></pre></div></div></section><section data-id="698d4da2afc4"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="e039a4a86719"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 3 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 281px; height: auto; left: 487px; top: 87.5px;" data-name="Text 1" data-block-id="76a399966334"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>WIFI Connection&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 948px; height: 508px; left: 226px; top: 142.5px;" data-name="Code 1" data-block-id="800a15b43d94"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># CONNECT TO WIFI
+
+wifi = network.WLAN(
+    network.STA_IF
+)
+
+wifi.active(True)
+
+if not wifi.isconnected():
+
+    print("Connecting to Wi-Fi...")
+
+    wifi.connect(
+        ssid,
+        password
+    )
+
+    while not wifi.isconnected():
+        print(".", end="")
+        time.sleep(1)
+
+
+ip = wifi.ifconfig()[0]
+
+print()
+print("Wi-Fi connected!")
+print("ESP32 IP address:", ip)
+print("Open this address:")
+print("http://" + ip)
+
+
+# ==============================
+# START WEB SERVER
+# ==============================
+
+address = socket.getaddrinfo(
+    "0.0.0.0",
+    80
+)[0][-1]
+
+server = socket.socket()
+
+server.setsockopt(
+    socket.SOL_SOCKET,
+    socket.SO_REUSEADDR,
+    1
+)
+
+server.bind(address)
+server.listen(1)
+
+print("Web server is running...")</code></pre></div></div></section><section data-id="a537c848d8e5"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="2bc47200c397"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 3 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 21px; top: 83.5px;" data-name="Text 1" data-block-id="34c79f74a3de"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Initial the servo position</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 136px; left: 36px; top: 147.5px;" data-name="Code 1" data-block-id="9102f3962f5a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># INITIAL SERVO POSITION
+
+
+move_servo(________)
+
+</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 286px; height: auto; left: 790px; top: 128px;" data-name="Text 2" data-block-id="726ff0aa87e0"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Main Program&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 613px; height: 442px; left: 612px; top: 200px;" data-name="Code 2" data-block-id="ada1c48d2a11"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 14;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">while True:
+
+    client = None
+
+    try:
+        client, client_address = (
+            server.accept()
+        )
+
+        request = client.recv(1024)
+        request = request.decode()
+
+        request_line = request.split(
+            "\r\n"
+        )[0]
+
+        print("Request:", request_line)
+
+
+  
+        # RECEIVE SLIDER ANGLE
+ 
+
+        if "GET /servo?angle=" in request_line:
+
+            try:
+                start = ________
+                end = ________
+                angle_text = ________
+                servo_angle = int(________)
+                move_servo(________)
+
+                client.send(
+                    "HTTP/1.1 204 No Content\r\n"
+                )
+
+                client.send(
+                    "Connection: close\r\n"
+                )
+
+                client.send("\r\n")
+
+            except Exception as error:
+                print(
+                    "Servo control error:",
+                    error
+                )
+
+        # SEND MAIN WEBPAGE
+
+
+        else:
+
+            webpage = create_webpage(
+                servo_angle
+            )
+
+            client.send(
+                "HTTP/1.1 200 OK\r\n"
+            )
+
+            client.send(
+                "Content-Type: text/html\r\n"
+            )
+
+            client.send(
+                "Connection: close\r\n"
+            )
+
+            client.send("\r\n")
+
+            client.sendall(webpage)
+
+
+    except Exception as error:
+
+        print(
+            "Server error:",
+            error
+        )
+
+
+    finally:
+
+        if client is not None:
+            client.close()</code></pre></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3688368,"slug":"web-server-control-lab-4dc982","title":"Web Server Control Lab","description":"","width":1280,"height":720,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/382ea17cff7afcd00eea6d44ff77ea0f/thumb.jpg?1789011453","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"lite","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":7,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1789021845114,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>

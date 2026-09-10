@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Copy of Web Server Control Lab"}' />
+		<title>Copy of Web Server Control Lab</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="4b7ad81c4695">
+					
+				<div class="sl-block" data-block-type="text" style="width: 940px; left: 170px; top: 57.5px; height: auto;" data-name="text-06e6d3" data-block-id="d023af4604b5"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Web Server Control Lab</h1></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 170px; top: 201.743px;" data-block-id="10fc5e3988e1"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 4 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 1053px; height: auto; left: 197px; top: 315px;" data-name="Text 1" data-block-id="6161849c5072"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p><strong>Task 4 - Custom Text to LCD (15 pts)</strong></p>
+
+<p>•<span>&nbsp;</span>Add a textbox and a Send button to the web page.</p>
+
+<p>•<span>&nbsp;</span>Text entered by the user must appear on the LCD.</p>
+
+<p>•<span>&nbsp;</span>Text longer than 16 characters should scroll across the LCD.</p>
+
+<p>•<span>&nbsp;</span><strong>Evidence</strong>: Short video showing text sent from the browser to the LCD</p></div></div></section><section data-id="9e75ac111101"><div class="sl-block" data-block-type="image" style="width: 870px; height: 547px; left: 205px; top: 124.5px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="2a1a6f8694da"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="870" data-natural-height="547" data-lazy-loaded="" data-src="web-server-control-lab-6b5f1f/9983752609d5d3d9fe9d928044b317e8.png"></div></div><div class="sl-block" data-block-type="text" style="width: 647.619px; height: auto; left: 284.609px; top: 44.5238px;" data-name="Text 1" data-block-id="860389eea5f2"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>The webpage should display similar to this&nbsp;</p></div></div></section><section data-id="4bf6dffc2b3a"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="d93bfa1e24fa"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>Task 4</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 281px; height: auto; left: 77px; top: 89.5px;" data-name="Text 1" data-block-id="d08eeb91802e"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Import the library</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 136px; left: 29px; top: 148px;" data-name="Code 1" data-block-id="d3e8966796ef"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">import network
+import socket
+import time
+
+from machine import Pin, SoftI2C
+from machine_i2c_lcd import I2cLcd
+</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 238px; height: auto; left: 804px; top: 195.25px;" data-name="Text 2" data-block-id="9f8b9a32f1fd"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Wifi Setting</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 109px; left: 662px; top: 263.75px;" data-name="Code 2" data-block-id="df1c44a5953a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 14;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># WIFI SETTINGS
+
+ssid = "---"
+password = "---"</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 192px; height: auto; left: 166px; top: 333px;" data-name="Text 3" data-block-id="7c2a56e54cd1"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Servo Setup</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 266px; left: 48px; top: 391.5px;" data-name="Code 3" data-block-id="4578a35a509c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 16;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># LCD SETUP
+
+I2C_ADDR = ________ ## Add the LCD Address
+
+i2c = SoftI2C(
+    sda=Pin(21),
+    scl=Pin(22),
+    freq=400000
+)
+
+lcd = I2cLcd(
+    i2c,
+    I2C_ADDR,
+    2,
+    16
+)
+
+lcd.clear()
+### Display the "IoT LAB" on the first row
+________
+
+### Display the "Task 2" on the second row
+________
+
+time.sleep(2)
+
+lcd.clear()</code></pre></div></div></section><section data-id="e786c4afbcbb"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="73e9b978d591"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>Task 4</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 134px; top: 77.5px;" data-name="Text 1" data-block-id="12474c6bd9e6"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>DECODE TEXT FROM URL Function&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 845px; height: 570px; left: 236.5px; top: 135.5px;" data-name="Code 1" data-block-id="bae05800da42"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">### DECODE TEXT FROM URL
+
+
+
+def url_decode(text):
+
+    result = bytearray()
+    index = 0
+
+    while index &lt; len(text):
+
+        if text[index] == "+":
+
+            # Convert + to a space
+            result.append(32)
+            index += 1
+
+        elif text[index] == "%":
+
+            try:
+                hex_value = text[
+                    index + 1:index + 3
+                ]
+
+                result.append(
+                    int(hex_value, 16)
+                )
+
+                index += 3
+
+            except:
+                index += 1
+
+        else:
+
+            result.extend(
+                text[index].encode()
+            )
+
+            index += 1
+
+    try:
+        return result.decode("utf-8")
+
+    except:
+        return str(result)</code></pre></div></div></section><section data-id="47c858f8ffaa"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="45b64d125cbf"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>Task 4</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 504px; height: auto; left: 427px; top: 75.5px;" data-name="Text 1" data-block-id="c6e455869288"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Display the text on the LCD</p></div></div><div class="sl-block" data-block-type="code" style="width: 900px; height: 533px; left: 167px; top: 125px;" data-name="Code 1" data-block-id="1bfde884ba7a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def display_message(message):
+	lcd.clear()
+	### write a code in here to diplay the message on the LCD with lcd.putstr() if the lenght of the message is less than 16. 
+    ### If the message is more than 16, use lcd.scroll_text() to display the message
+    ________</code></pre></div></div></section><section data-id="698d4da2afc4"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="e039a4a86719"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>Task 4</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 281px; height: auto; left: 487px; top: 87.5px;" data-name="Text 1" data-block-id="76a399966334"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Webpage Function</p></div></div><div class="sl-block" data-block-type="code" style="width: 948px; height: 548px; left: 199px; top: 136.5px;" data-name="Code 1" data-block-id="800a15b43d94"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># CREATE WEBPAGE
+
+def create_webpage():
+
+    html = """
+&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+    &lt;title&gt;ESP32 LCD Control&lt;/title&gt;
+
+    &lt;meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1"&gt;
+
+    &lt;style&gt;
+
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: ________;
+            padding: 20px;
+        }
+
+        h1 {
+            color: ________;
+        }
+
+        .card {
+            background-color: white;
+            width: ________;
+            margin: ________ ________;
+            padding: ________;
+            border-radius: ________;
+
+            box-shadow:
+                0 2px 8px
+                rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            width: 260px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #0066cc;
+            border: none;
+            color: white;
+            padding: ________ ________;
+            border-radius: ________;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: ________;
+        }
+
+        #status {
+            color: #28a745;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+    &lt;/style&gt;
+
+    &lt;script&gt;
+
+        function sendMessage() {
+
+            var message =
+                document.getElementById(
+                    "message"
+                ).value;
+
+            if (message == "") {
+
+                document.getElementById(
+                    "status"
+                ).innerHTML =
+                    "Please enter a message.";
+
+                return;
+            }
+
+            fetch(
+                "/message?text=" +
+                encodeURIComponent(message)
+            );
+
+            document.getElementById(
+                "status"
+            ).innerHTML =
+                "Message sent to LCD";
+        }
+
+    &lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;________&lt;/h1&gt;
+
+    &lt;div  ### Add class card with the input to insert the message
+    	________
+
+        &lt;br&gt;
+
+        &lt;button onclick="sendMessage()"&gt;
+            Send
+        &lt;/button&gt;
+
+        &lt;p id="status"&gt;&lt;/p&gt;
+
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+"""
+
+    return html
+
+</code></pre></div></div></section><section data-id="a537c848d8e5"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="2bc47200c397"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);"><p><strong>Task 4 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 302px; height: auto; left: 521px; top: 69.5px;" data-name="Text 1" data-block-id="34c79f74a3de"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>WIFI Connection&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 1014px; height: 559px; left: 178.5px; top: 119.5px;" data-name="Code 1" data-block-id="9102f3962f5a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">
+wifi = network.WLAN(
+    network.STA_IF
+)
+
+wifi.active(True)
+
+if not wifi.isconnected():
+
+    print("Connecting to Wi-Fi...")
+
+    wifi.connect(
+        ssid,
+        password
+    )
+
+    while not wifi.isconnected():
+
+        print(".", end="")
+        time.sleep(1)
+
+
+ip = wifi.ifconfig()[0]
+
+print()
+print("Wi-Fi connected!")
+print("ESP32 IP address:", ip)
+print("Open this address:")
+print("http://" + ip)
+
+
+# ==============================
+# START WEB SERVER
+# ==============================
+
+address = socket.getaddrinfo(
+    "0.0.0.0",
+    80
+)[0][-1]
+
+server = socket.socket()
+
+server.setsockopt(
+    socket.SOL_SOCKET,
+    socket.SO_REUSEADDR,
+    1
+)
+
+server.bind(address)
+server.listen(1)
+
+print("Web server is running...")
+
+</code></pre></div></div></section><section data-id="70339122284e"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 178.5px; top: 0px;" data-block-id="5dfefb2e646c"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 4 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 302px; height: auto; left: 526px; top: 69.5px;" data-name="Text 1" data-block-id="94bfd1ce1e58"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Main Program</p></div></div><div class="sl-block" data-block-type="code" style="width: 1014px; height: 559px; left: 178.5px; top: 119.5px;" data-name="Code 1" data-block-id="2cc88d035f27"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># MAIN PROGRAM
+while True:
+
+    client = None
+
+    try:
+        client, client_address = (
+            server.accept()
+        )
+
+        request = client.recv(1024)
+        request = request.decode()
+
+        request_line = request.split(
+            "\r\n"
+        )[0]
+
+        print("Request:", request_line)
+
+
+      
+        # RECEIVE CUSTOM TEXT
+     
+
+        if "GET /message?text=" in request_line:
+
+            start = ________
+
+            end = ________
+
+            encoded_message =________
+
+            message = ________
+
+            print("Message:", message)
+
+            # Respond before scrolling
+            client.send(
+                "HTTP/1.1 204 No Content\r\n"
+            )
+
+            client.send(
+                "Connection: close\r\n"
+            )
+
+            client.send("\r\n")
+
+            client.close()
+            client = None
+
+            # Display or scroll the message
+            ________
+
+
+    
+        # SEND WEBPAGE
+    
+
+        else:
+
+            webpage = create_webpage()
+
+            client.send(
+                "HTTP/1.1 200 OK\r\n"
+            )
+
+            client.send(
+                "Content-Type: text/html\r\n"
+            )
+
+            client.send(
+                "Connection: close\r\n"
+            )
+
+            client.send("\r\n")
+
+            client.sendall(webpage)
+
+
+    except Exception as error:
+
+        print(
+            "Server error:",
+            error
+        )
+
+
+    finally:
+
+        if client is not None:
+            client.close()</code></pre></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3688370,"slug":"web-server-control-lab-6b5f1f","title":"Copy of Web Server Control Lab","description":"","width":1280,"height":720,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/8e0f40e9942275c291c99d35eaaa1cc8/thumb.jpg?1789012701","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"lite","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":8,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1789021733898,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>

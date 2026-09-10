@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Web Server Control Lab"}' />
+		<title>Web Server Control Lab</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="6527f80e1473">
+					
+				<div class="sl-block" data-block-type="text" style="width: 940px; left: 154.5px; top: 62.5px; height: auto;" data-name="text-06e6d3" data-block-id="8b3eed5e323a"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;" data-placeholder-text="Text"><h1>Web Server Control Lab</h1></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 154.5px; top: 206.743px;" data-block-id="d8cb8213a37d"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1 </strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 862.143px; height: 304px; left: 193.429px; top: 302.219px;" data-name="Text 1" data-block-id="f3e5251999ab" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Task 1- Sensor Monitoring (15 pts)</p>
+
+<ul>
+	<li>Read temperature and humidity from the DHT11.</li>
+	<li>Measure distance using the HC-SR04 ultrasonic sensor.</li>
+	<li>Display all sensor values on the webpage.</li>
+	<li>Refresh the readings every 1–2 seconds.</li>
+	<li><strong>Evidence:</strong>&nbsp;Screenshot showing the sensor readings on the webpage.</li>
+</ul></div></div></section><section data-id="22d3bdd2f4bc"><div class="sl-block" data-block-type="image" style="width: 468.636px; height: 533.095px; left: 368.767px; top: 171.429px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="fbe1871d0d5c"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="807" data-natural-height="918" data-lazy-loaded="" data-src="web-server-control-lab/60a611466df525f4c4b4d9efe92c569c.png"></div></div><div class="sl-block" data-block-type="text" style="width: 647.619px; height: auto; left: 287.609px; top: 69.5238px;" data-name="Text 1" data-block-id="7fd0592e7800"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>The webpage should display similar to this&nbsp;</p></div></div></section><section data-id="5c681e56f79d"><div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 514px; height: 187px; left: 49px; top: 122px;" data-block-id="b94b3b9452bf"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">import network
+import socket
+import time
+import dht
+
+from machine import Pin, time_pulse_us</code></pre></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="c0b096c25764"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 268px; height: auto; left: 141px; top: 71.5px;" data-name="Text 1" data-block-id="60e22108bdd7"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Import the library</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 106px; left: 664px; top: 370px;" data-name="Code 2" data-block-id="9e9708f56ffe"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 13;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">## WIFI Setup
+
+ssid = "________"
+password = "________"</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 171px; height: auto; left: 828.5px; top: 321px;" data-name="Text 2" data-block-id="85df07d6fe21"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>WIFI Setup</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 172px; left: 49px; top: 517px;" data-name="Code 3" data-block-id="210883041bcd"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 15;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># DHT11 data pin
+dht_sensor = ________
+
+# HC-SR04 pins
+trig = ________
+echo = ________</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 287px; height: auto; left: 141px; top: 469px;" data-name="Text 3" data-block-id="5ce5c34bcb9c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;" data-placeholder-text="Text"><p>Sensor Pin Setup</p></div></div></section><section data-id="dc722ffca04a"><div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 749px; height: 582.5px; left: 278px; top: 144.5px;" data-block-id="4d95b93f6757"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 10;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">
+def read_distance():
+    try:
+        # set Trigger to off for 2us
+        
+  		________
+
+        # set Trigger to on for 10us
+        
+       	________
+        
+        # set Trigger to off again 
+        
+        ________
+
+        # Measure the ECHO pulse
+        duration = time_pulse_us(echo, 1, 30000)
+
+        # make a codition if the duration less than 0 return None
+        ________
+
+        # Convert time to distance in centimetres with the formular d = v*t/2
+        ________
+
+        return distance
+
+    except Exception as error:
+        print("Ultrasonic error:", error)
+        return None</code></pre></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="1e1b61676971"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 727.5px; height: auto; left: 278px; top: 85.5px;" data-name="Text 1" data-block-id="7407db08a8e5"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Create a read distance function from the ultrasonic</p></div></div></section><section data-id="65bde6601ae2"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="e3a912699d93"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1</strong></p></div></div><div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 635.5px; height: 345.5px; left: 368.25px; top: 188.5px;" data-block-id="fb059eaae67c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def read_dht11():
+    try:
+    	# Call the object from the dht library 
+        dht_sensor.measure()
+        
+		
+        temperature = ________
+        humidity = ________
+
+        return temperature, humidity
+
+    except Exception as error:
+        print("DHT11 error:", error)
+        return None, None
+</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 727.5px; height: auto; left: 276.25px; top: 115.5px;" data-name="Text 1" data-block-id="1d46c037f7f3"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Create a read temperature and humidity Function&nbsp;</p></div></div></section><section data-id="06aa3d9a5d60"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="6b304ec05c3c"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 426px; height: auto; left: 465px; top: 78.5px;" data-name="Text 1" data-block-id="abf761e48e98"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Create a webpage Function</p></div></div><div class="sl-block" data-block-type="code" style="width: 1005px; height: 554px; left: 196px; top: 137.5px;" data-name="Code 1" data-block-id="1b734239435b"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 12;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;" class="xml"><code data-line-numbers="">def create_webpage(temperature, humidity, distance):
+
+    if temperature is None:
+        temperature_text = "Sensor error"
+    else:
+        temperature_text = str(temperature) + " &amp;deg;C"
+
+    if humidity is None:
+        humidity_text = "Sensor error"
+    else:
+        humidity_text = str(humidity) + " %"
+
+    if distance is None:
+        distance_text = "Out of range"
+    else:
+        distance_text = "{:.1f} cm".format(distance)
+
+    html = """
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;ESP32 Sensor Monitoring&lt;/title&gt;
+
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1"&gt;
+
+    &lt;meta http-equiv="refresh" content="2"&gt;
+
+    &lt;style&gt;
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: ________
+        }
+
+        .card {
+            background-color: white;
+            width: ________;
+            margin: ________ ________;
+            padding: ________;
+            border-radius: ________;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .value {
+            color: ________;
+            font-size: ________;
+            font-weight: bold;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;---&lt;/h1&gt;
+
+    &lt;div 
+         ________ ##complete this part by using the class card and display the temerature and humidity--
+    &lt;/div&gt;
+
+    &lt;div 
+         ________ ##Complete this part by using the class card and distance from the ultrasonic sensor---
+    &lt;/div&gt;
+
+  
+&lt;/body&gt;
+
+&lt;/html&gt;
+"""
+
+    html = html.replace(
+        "TEMPERATURE_VALUE",
+        temperature_text
+    )
+
+    html = html.replace(
+        "HUMIDITY_VALUE",
+        humidity_text
+    )
+
+    html = html.replace(
+        "DISTANCE_VALUE",
+        distance_text
+    )
+
+    return html</code></pre></div></div></section><section data-id="5ab41a0205d6"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="fc30065727b9"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 262px; height: auto; left: 449px; top: 102.5px;" data-name="Text 1" data-block-id="47c468a5f450"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Connect to WIFI&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 780px; height: 521px; left: 204px; top: 153.5px;" data-name="Code 1" data-block-id="d943de7ea184"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 12;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">wifi = network.WLAN(network.STA_IF)
+wifi.active(True)
+
+if not wifi.isconnected():
+    print("Connecting to Wi-Fi...")
+    wifi.connect(ssid, password)
+
+    while not wifi.isconnected():
+        print(".", end="")
+        time.sleep(1)
+
+ip = wifi.ifconfig()[0]
+
+print()
+print("Wi-Fi connected!")
+print("ESP32 IP address:", ip)
+print("Open this address in your browser:")
+print("http://" + ip)
+
+
+# ==============================
+# START WEB SERVER
+# ==============================
+
+address = socket.getaddrinfo(
+    "0.0.0.0",
+    80
+)[0][-1]
+
+server = socket.socket()
+
+server.setsockopt(
+    socket.SOL_SOCKET,
+    socket.SO_REUSEADDR,
+    1
+)
+
+server.bind(address)
+server.listen(1)
+
+print("Web server is running...")
+
+</code></pre></div></div></section><section data-id="06bde97f0d46"><div class="sl-block" data-block-type="code" data-name="Code 1" style="width: 818px; height: 520px; left: 250px; top: 169px;" data-block-id="09fc57d71ad9"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 10;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">while True:
+
+    client = None
+
+    try:
+        client, client_address = server.accept()
+
+        print("Browser connected:", client_address)
+
+        # Receive browser request
+        request = client.recv(1024)
+        print("Request received")
+
+        # Read sensors
+        temperature, humidity = ________
+        distance = ________
+
+        print("Temperature:", temperature)
+        print("Humidity:", humidity)
+        print("Distance:", distance)
+
+        # Create webpage
+        webpage = ________
+
+        # Send HTTP response
+        client.send("HTTP/1.1 200 OK\r\n")
+        client.send("Content-Type: text/html\r\n")
+        client.send("Connection: close\r\n")
+        client.send("\r\n")
+        client.sendall(webpage)
+
+    except Exception as error:
+        print("Server error:", error)
+
+    finally:
+        if client is not None:
+            client.close()</code></pre></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="d2552f5d4710"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 1</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 234px; height: auto; left: 517px; top: 106.5px;" data-name="Text 1" data-block-id="75bfe1024000"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Main Program</p></div></div></section><section data-id="eb5865b8679c"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="03dbc6f0c0b8"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 2</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 1081px; height: auto; left: 129px; top: 128.5px;" data-name="Text 1" data-block-id="3ea4668ba2a6"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11; font-size: 75%;" data-placeholder-text="Text"><p><strong>Task 2 – Sensor Data to LCD (15 pts)</strong></p>
+
+<ul>
+	<li>Add two toggle buttons to the webpage:</li>
+	<li>Show/Hide Distance<strong>:</strong><br>
+	Click <strong>Show Distance</strong>&nbsp;to display the ultrasonic distance on LCD line 1. The button then changes to <strong>Hide Distance</strong>. Click it again to clear LCD line 1.</li>
+	<li><strong>S</strong>how/Hide Temperature:<br>
+	Click <strong>Show Temperature</strong>&nbsp;to display the temperature on LCD line 2. The button then changes to <strong>Hide Temperature</strong>. Click it again to clear LCD line 2.</li>
+	<li><strong>Evidence:</strong><br>
+	Submit a short video showing both buttons changing between <strong>Show</strong>&nbsp;and <strong>Hide</strong>, with the corresponding values appearing and disappearing on the LCD.</li>
+</ul></div></div></section><section data-id="785aa5e09ec9"><div class="sl-block" data-block-type="image" style="width: 372.707px; height: 574.761px; left: 437.508px; top: 145.239px;" data-name="Image 1" data-block-id="8f897e17bfb4"><div class="sl-block-content" style="z-index: 10;"><img class="" data-natural-width="819" data-natural-height="1263" data-src="web-server-control-lab/b55156f8ea3e5fefaf6ef17887109bd3.png"></div></div><div class="sl-block" data-block-type="text" style="width: 647.619px; height: auto; left: 300.052px; top: 62.3809px;" data-name="Text 1" data-block-id="b218408c4980"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>The webpage should display similar to this&nbsp;</p></div></div></section><section data-id="1b2e99785e23"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="8dca2d221ba8"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 2</strong></p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 166px; left: 44px; top: 127px;" data-name="Code 1" data-block-id="21aa5080b24a"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 11;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers=""># Library ADDITION
+
+from machine import SoftI2C
+from machine_i2c_lcd import I2cLcd</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 44px; top: 73.5px;" data-name="Text 1" data-block-id="53945f6ab23d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;" data-placeholder-text="Text"><p>Add LCD Library to Task 1 code</p></div></div><div class="sl-block" data-block-type="text" style="width: 243px; height: auto; left: 756px; top: 184px;" data-name="Text 2" data-block-id="364d169482f3"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Add LCD SETUP</p></div></div><div class="sl-block" data-block-type="code" style="width: 622px; height: 447px; left: 609px; top: 231px;" data-name="Code 2" data-block-id="db1fa212b5d5"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 14;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">I2C_ADDR = 0x27
+
+i2c = SoftI2C(
+    sda=Pin(21),
+    scl=Pin(22),
+    freq=400000
+)
+
+lcd = I2cLcd(
+    i2c,
+    I2C_ADDR,
+    2,
+    16
+)
+
+lcd.clear()
+
+
+### Display the text -&gt; IoT Class on the first row
+________
+### Display the text -&gt; Lab 2 &amp; Task 2 on the second Row
+________
+
+time.sleep(2)
+
+lcd.clear()</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 31px; top: 488.5px;" data-name="Text 3" data-block-id="af1b598aff66"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;" data-placeholder-text="Text"><p>Set the Show state to False</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 149px; left: 58px; top: 547px;" data-name="Code 3" data-block-id="44fae32bae44"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 16;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">
+show_distance = False
+show_temperature = False
+</code></pre></div></div></section><section data-id="04350bcd8137"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="5a3c56fe7993"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 2</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 22px; top: 81.5px;" data-name="Text 1" data-block-id="027ab170bc08"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Add a function to clear the ROW</p></div></div><div class="sl-block" data-block-type="code" style="width: 500px; height: 217px; left: 65px; top: 143px;" data-name="Code 1" data-block-id="338e8c2164b0"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 12;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def clear_lcd_row(row):
+
+    lcd.move_to(0, row)
+
+    # 16 spaces clear the entire row
+    lcd.putstr("                ")</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 680px; top: 198.5px;" data-name="Text 2" data-block-id="febcfd6b95f9"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;" data-placeholder-text="Text"><p>Add a function to display the Distance</p></div></div><div class="sl-block" data-block-type="code" style="width: 623px; height: 219.5px; left: 640px; top: 263.5px;" data-name="Code 2" data-block-id="d77d2e96081f"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 15;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def display_distance(distance):
+
+    
+    ### write a code to display the distance if the distance is
+    ### None display "Distance Error"  and if not display the
+    ### Ultrasonic Distance on the First Row of the LCD
+    ________</code></pre></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 15px; top: 444px;" data-name="Text 3" data-block-id="7f17324f1c0d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;" data-placeholder-text="Text"><p>Add a function to display the Temperature</p></div></div><div class="sl-block" data-block-type="code" style="width: 664px; height: 243px; left: 31.619px; top: 509px;" data-name="Code 3" data-block-id="616932caf74c"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="osx-grey" style="z-index: 16;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def display_temperature(temperature):
+
+    
+    ### write a code to display the Temperature if the Temperature is
+    ### None display "Temp Error"  and if not display the
+    ### Temperature Reading on the Second Row of the LCD
+    ________</code></pre></div></div></section><section data-id="6dd700c8cbe5"><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="3e4c1e633a30"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 10; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 2</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 240px; top: 95.5px;" data-name="Text 1" data-block-id="a3b464ba4551"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;" data-placeholder-text="Text"><p>Create a webpage Function&nbsp;</p></div></div><div class="sl-block" data-block-type="code" style="width: 963px; height: 540px; left: 179px; top: 152px;" data-name="Code 1" data-block-id="20eafcafe5a7"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="xml" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">def create_webpage(
+    temperature,
+    humidity,
+    distance,
+    show_distance,
+    show_temperature
+):
+
+    if temperature is None:
+        temperature_text = "Sensor error"
+    else:
+        temperature_text = (
+            str(temperature) + " &amp;deg;C"
+        )
+
+    if humidity is None:
+        humidity_text = "Sensor error"
+    else:
+        humidity_text = (
+            str(humidity) + " %"
+        )
+
+    if distance is None:
+        distance_text = "Out of range"
+    else:
+        distance_text = (
+            "{:.1f} cm".format(distance)
+        )
+
+    # TASK 3 ADDITION
+    if show_distance:
+        distance_button_text = "Hide Distance"
+        distance_button_class = "hide-button"
+    else:
+        distance_button_text = "Show Distance"
+        distance_button_class = "show-button"
+
+    # TASK 3 ADDITION
+    if show_temperature:
+        temperature_button_text = (
+            "Hide Temperature"
+        )
+
+        temperature_button_class = (
+            "hide-button"
+        )
+
+    else:
+        temperature_button_text = (
+            "Show Temperature"
+        )
+
+        temperature_button_class = (
+            "show-button"
+        )
+
+    html = """
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;ESP32 Sensor Monitoring&lt;/title&gt;
+
+    &lt;meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1"&gt;
+
+    &lt;meta http-equiv="refresh"
+          content="2; URL=/"&gt;
+
+    &lt;style&gt;
+        body {
+            font-family: Arial;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: ________;
+        }
+
+        .card {
+            background-color: white;
+            width: ________;
+            margin: ________ ________;
+            padding: ________;
+            border-radius: ________;
+
+            box-shadow:
+                0 2px 8px
+                rgba(0, 0, 0, 0.2);
+        }
+
+        .value {
+            color: ________;
+            font-size: ________;
+            font-weight: bold;
+        }
+
+        button {
+            border: none;
+            color: white;
+            padding: ________ ________;
+            margin: ________;
+            border-radius: ________;
+            font-size: ________;
+            cursor: pointer;
+        }
+
+        .show-button {
+            background-color: ________;
+        }
+
+        .hide-button {
+            background-color: ________;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;________&lt;/h1&gt;
+
+    &lt;div 
+    &lt;/div&gt;
+
+    &lt;div 
+    &lt;/div&gt;
+
+
+    &lt;!-- TASK 3 ADDITION --&gt;
+
+    &lt;div class="card"&gt;
+
+        &lt;h2&gt;LCD Control&lt;/h2&gt;
+
+        &lt;a href="/?distance=toggle"&gt;
+
+            ________###  Add the button to displace distance on the LCD here
+
+        &lt;/a&gt;
+
+        &lt;a href="/?temperature=toggle"&gt;
+
+            ________ ###  Add the Button to display the Temperature on the LCD Here
+
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+
+
+    
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+"""
+
+    html = html.replace(
+        "TEMPERATURE_VALUE",
+        temperature_text
+    )
+
+    html = html.replace(
+        "HUMIDITY_VALUE",
+        humidity_text
+    )
+
+    html = html.replace(
+        "DISTANCE_VALUE",
+        distance_text
+    )
+
+    # TASK 2 ADDITION
+    html = html.replace(
+        "DISTANCE_BUTTON_TEXT",
+        distance_button_text
+    )
+
+    html = html.replace(
+        "TEMPERATURE_BUTTON_TEXT",
+        temperature_button_text
+    )
+
+    html = html.replace(
+        "DISTANCE_BUTTON_CLASS",
+        distance_button_class
+    )
+
+    html = html.replace(
+        "TEMPERATURE_BUTTON_CLASS",
+        temperature_button_class
+    )
+
+    return html</code></pre></div></div></section><section data-id="1b68fb2ef3e4"><div class="sl-block" data-block-type="text" style="width: 221px; height: auto; left: 529.5px; top: 66.5px;" data-name="Text 1" data-block-id="4694dcd30b7b"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 10;" data-placeholder-text="Text"><p>Main Program</p></div></div><div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 1270.5px; left: 9.5px; top: 0px;" data-block-id="ffeecaaf624f"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-placeholder-text="Text"><p><strong>Task 2</strong></p></div></div><div class="sl-block" data-block-type="code" style="width: 911px; height: 653.048px; left: 234.762px; top: 113.5px;" data-name="Code 1" data-block-id="7e3c57a6abf2"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 12;"><pre class="cpp" style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">while True:
+
+    client = None
+
+    try:
+        client, client_address = server.accept()
+
+        print("Browser connected:", client_address)
+
+        # Receive and decode browser request
+        request = client.recv(1024).decode()
+
+        print("Request received")
+
+        # Read sensors
+        temperature, humidity = ________### call the dht reading function
+        distance = ________### call the ultrasonic distance reading function
+
+        print("Temperature:", temperature)
+        print("Humidity:", humidity)
+        print("Distance:", distance)
+
+
+        
+        # TASK 2: DISTANCE BUTTON
+        
+
+        if "/?distance=toggle" in request:
+
+            show_distance = not show_distance
+
+            if show_distance:
+
+                # Display the current distance on the LCD
+                display_distance(________________)
+
+                print("Distance shown on LCD")
+
+            else:
+
+                # Clear LCD line 1
+                # Remember: LCD row numbering starts from 0
+                clear_lcd_row(________________)
+
+                print("Distance hidden")
+
+
+    
+        # TASK 2: TEMPERATURE BUTTON
+      
+
+        elif "/?temperature=toggle" in request:
+
+            show_temperature = not show_temperature
+
+            if show_temperature:
+
+                # Display the current temperature on the LCD
+                display_temperature(________)
+
+                print("Temperature shown on LCD")
+
+            else:
+
+                # Clear LCD line 2
+                # Remember: LCD row numbering starts from 0
+                clear_lcd_row(________)
+
+                print("Temperature hidden")
+
+
+        # Update the values while they are shown
+        if show_distance:
+            display_distance(distance)
+
+        if show_temperature:
+            display_temperature(temperature)
+
+
+        # Create webpage
+        webpage = ________ ###  call the function create the webpage
+
+
+        # Send HTTP response
+        client.send("HTTP/1.1 200 OK\r\n")
+        client.send("Content-Type: text/html\r\n")
+        client.send("Connection: close\r\n")
+        client.send("\r\n")
+        client.sendall(webpage)
+
+
+    except Exception as error:
+        print("Server error:", error)
+
+
+    finally:
+        if client is not None:
+            client.close()</code></pre></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3687878,"slug":"web-server-control-lab","title":"Web Server Control Lab","description":"","width":1280,"height":720,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/25fdd100b54ac1b2e4731bae3c524cdb/thumb.jpg?1789019251","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"lite","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":null,"slide_number":null,"slide_count":14,"rtl":false,"version":2,"collaborative":true,"deck_user_editor_limit":1,"data_updated_at":1789021722838,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
