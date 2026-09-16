@@ -749,7 +749,7 @@ Training loss alone does not establish performance on new data. That requires ev
 
 ## 24. Plotting Training Loss
 
-![Training loss over 40 epochs](images/fashion/outputs/training_loss.png)
+![Training loss over 40 epochs](/images/fashion/outputs/training_loss.png)
 
 *Training loss falls quickly in the first few epochs and then decreases more slowly, from about 0.76 to about 0.38. These values are read approximately from the plotted curve.*
 
@@ -840,7 +840,7 @@ A model can have reasonable overall accuracy while performing poorly on a partic
 
 ## 30. Confusion Matrix
 
-![Fashion-MNIST confusion matrix for ten clothing classes](images/fashion/outputs/confusion_matrix.png)
+![Fashion-MNIST confusion matrix for ten clothing classes](/images/fashion/outputs/confusion_matrix.png)
 
 *Rows are actual classes and columns are predictions. The diagonal contains 8,597 correct predictions out of 10,000 test images.*
 
@@ -858,7 +858,7 @@ Use the matrix to identify specific confusions rather than guessing from accurac
 
 ## 31. One-Versus-Rest ROC Curves
 
-![One-versus-rest ROC curves with per-class AUC values](images/fashion/outputs/roc_curves.png)
+![One-versus-rest ROC curves with per-class AUC values](/images/fashion/outputs/roc_curves.png)
 
 *All ten curves lie above the random-ranking diagonal. Shirt has the lowest displayed AUC (0.944); Trouser and Ankle boot each have a displayed AUC of 0.998. Values in the legend are rounded.*
 
@@ -912,7 +912,7 @@ Comparing with this baseline helps show whether the trained model has learned us
 
 ## 34. Displaying Test Predictions
 
-![Nine clothing images with true and predicted labels](images/fashion/outputs/predictions.png)
+![Nine clothing images with true and predicted labels](/images/fashion/outputs/predictions.png)
 
 *Eight of these nine examples are correct. The T-shirt/top in the second row is predicted as Bag. This small display illustrates predictions; overall test accuracy is 85.97%.*
 
