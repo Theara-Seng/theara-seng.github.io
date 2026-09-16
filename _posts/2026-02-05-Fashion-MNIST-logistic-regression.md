@@ -1,24 +1,3 @@
----
-title: "Fashion-MNIST Classification using PyTorch: A Complete Multiclass Logistic Regression Project"
-date: 2026-02-05
-permalink: /posts/2026-02-05-Fashion-MNIST-logistic-regression
-tags:
-
-    - PyTorch
-    - Deep Learning
-    - CNN
-    - ResNet18
-    - Transfer Learning
-    - Computer Vision
-    - Image Classification
-    - Multiclass Classification
-    - Python
-    - Torchvision
-    - Logistic Regression
-
----
-    
-<!-- This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.  -->
 # Fashion-MNIST Classification using PyTorch: A Complete Multiclass Logistic Regression Project
 
 ## 1. Introduction
@@ -770,6 +749,11 @@ Training loss alone does not establish performance on new data. That requires ev
 
 ## 24. Plotting Training Loss
 
+![Training loss over 40 epochs](images/fashion/outputs/training_loss.png)
+
+*Training loss falls quickly in the first few epochs and then decreases more slowly, from about 0.76 to about 0.38. These values are read approximately from the plotted curve.*
+
+
 The loss graph displays epoch number on the horizontal axis and training loss on the vertical axis. It is also saved as `outputs/training_loss.png`.
 
 The current graph contains only training loss; there is no validation curve in the supplied code. It cannot, by itself, tell us whether the model is overfitting.
@@ -856,6 +840,11 @@ A model can have reasonable overall accuracy while performing poorly on a partic
 
 ## 30. Confusion Matrix
 
+![Fashion-MNIST confusion matrix for ten clothing classes](images/fashion/outputs/confusion_matrix.png)
+
+*Rows are actual classes and columns are predictions. The diagonal contains 8,597 correct predictions out of 10,000 test images.*
+
+
 The confusion matrix compares actual and predicted labels:
 
 - Rows represent actual categories.
@@ -868,6 +857,11 @@ For example, the entry in the actual Shirt row and predicted T-shirt/top column 
 Use the matrix to identify specific confusions rather than guessing from accuracy alone. The figure is saved as `outputs/confusion_matrix.png`.
 
 ## 31. One-Versus-Rest ROC Curves
+
+![One-versus-rest ROC curves with per-class AUC values](images/fashion/outputs/roc_curves.png)
+
+*All ten curves lie above the random-ranking diagonal. Shirt has the lowest displayed AUC (0.944); Trouser and Ankle boot each have a displayed AUC of 0.998. Values in the legend are rounded.*
+
 
 Binary classification has one positive class. Here, we create a separate binary comparison for each clothing category.
 
@@ -917,6 +911,11 @@ In the balanced Fashion-MNIST dataset, the classes are tied in frequency. The im
 Comparing with this baseline helps show whether the trained model has learned useful information beyond always choosing one category. It does not prove suitability for real-world use.
 
 ## 34. Displaying Test Predictions
+
+![Nine clothing images with true and predicted labels](images/fashion/outputs/predictions.png)
+
+*Eight of these nine examples are correct. The T-shirt/top in the second row is predicted as Bag. This small display illustrates predictions; overall test accuracy is 85.97%.*
+
 
 The script selects nine test images using a fixed NumPy random seed:
 
@@ -1006,21 +1005,66 @@ Resizing alone does not make a photograph match Fashion-MNIST. A person wearing 
 
 No separate `predict.py` is included in the two-file project presented above; the training script's sample predictions use held-out test images.
 
-## 38. Interpreting Results from This Version
+## 38. Results from the Supplied Run
 
-This tutorial documents the supplied settings: learning rate **0.0005**, **40 epochs**, and weight decay **0.0001**.
+The uploaded `evaluation.txt` reports these results:
 
-Measured metrics for this exact configuration have not been supplied here. Run the code and use its printed results and `evaluation.txt` for your report. Results from earlier runs with different settings should be identified separately.
+| Metric | Value |
+|---|---:|
+| Test accuracy | **85.97%** |
+| Correct predictions | **8,597 / 10,000** |
+| Incorrect predictions | **1,403 / 10,000** |
+| Most-frequent-class baseline accuracy | **10.00%** |
 
-When discussing a run, record:
+The tutorial code uses learning rate **0.0005**, **40 epochs**, and weight decay **0.0001**. The supplied figures show the results of the accompanying run; no training was rerun to create this page.
 
-- The hyperparameters and test accuracy.
-- Precision, recall, and F1 for each category.
-- The most common confusions.
-- The baseline accuracy and mean one-versus-rest AUC.
-- Whether the examples used for testing were held out during training.
+### Classification report
 
-Do not infer accuracy from the loss value or report an AUC as an accuracy percentage.
+```text
+Test accuracy: 0.8597
+Baseline accuracy: 0.1000
+
+              precision    recall  f1-score   support
+
+ T-shirt/top       0.80      0.82      0.81      1000
+     Trouser       0.96      0.98      0.97      1000
+    Pullover       0.77      0.77      0.77      1000
+       Dress       0.86      0.89      0.88      1000
+        Coat       0.78      0.81      0.79      1000
+      Sandal       0.94      0.92      0.93      1000
+       Shirt       0.67      0.59      0.63      1000
+     Sneaker       0.90      0.92      0.91      1000
+         Bag       0.95      0.95      0.95      1000
+  Ankle boot       0.94      0.94      0.94      1000
+
+    accuracy                           0.86     10000
+   macro avg       0.86      0.86      0.86     10000
+weighted avg       0.86      0.86      0.86     10000
+```
+
+The classification report rounds accuracy to `0.86`; the more precise value printed separately is `0.8597`, or **85.97%**.
+
+### What the confusion matrix shows
+
+- **Trouser:** 977 of 1,000 examples are correctly classified, giving 97.7% recall.
+- **Bag:** 951 of 1,000 examples are correctly classified.
+- **Shirt:** 592 of 1,000 examples are correctly classified, giving 59.2% recall. This is the lowest recall among these classes.
+- Of the actual shirts, 152 are predicted as T-shirt/top, 105 as Pullover, and 93 as Coat.
+- Of the actual pullovers, 114 are predicted as Coat.
+
+These counts show that errors are concentrated in some visually similar categories. Overall accuracy alone hides these differences.
+
+### Interpreting the ROC results
+
+The ROC legend reports high one-versus-rest AUC values, but these measure ranking rather than top-class accuracy. For example, Shirt's displayed AUC is 0.944 even though its recall is only 59.2% under the final argmax decision.
+
+The exact mean AUC is not included in `evaluation.txt`. Read it from the training program's terminal output if needed; do not present an average calculated from rounded legend values as the exact logged result.
+
+### Download the output files
+
+[Download the evaluation report](assets/fashion-mnist/outputs/evaluation.txt) · [Download the trained model weights](assets/fashion-mnist/outputs/fashion_logistic_model.pth)
+
+The `.pth` file is a downloadable model artifact; a browser does not execute it as an image or chart. Use the matching PyTorch architecture and preprocessing described above to load it.
 
 ## 39. Comparing with the Breast-Cancer Project
 
