@@ -112,8 +112,8 @@ Students may use the following tools and platforms:
 | [Motor Control]({{ site.baseurl }}/Slides/robotics/motor_control)  | Practice 1| — | PWM speed & position |
 | [Remote Control (Joystick & Button)]({{ site.baseurl }}/Slides/robotics/Remote_Control)   |  [Lab 1 - Remote Control](/files/Robotic/Lab1_Remote_update.pdf) | [Assignment 1](https://github.com/Theara-Seng/Robotic_Spring_2026/tree/main/Finger_counter) | Basic navigation logic |
 | [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 2 – IR Control](/files/Robotic/Lab2_IR_Remote.pdf) | Solution 2 | Command decoding |
-| [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | [Lab 3 - Dabble_control](/files/Robotic/Lab4_Dabble_Robot_Control.pdf) | -| Wireless robot control |
-<!-- | [Ultrasonic-Servo Motor]({{ site.baseurl }}/Slides/robotics/Ultrasonic_Servo)  |  | Solution 4 | Servo + distance mapping | -->
+| [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | [Lab 3 - Dabble_control](/files/Robotic/Lab3-Dabble_app_Control.pdf) | -| Wireless robot control |
+
 | [Web Server Control]({{ site.baseurl }}/Slides/robotics/Web_server)| [Lab4 - MIT_Web_Control](/files/Robotic/Lab5_mit_app_web.pdf) | Solution 3 | Real-time browser control |
 | [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing |
 | **Midterm Assessment** | Practical Test | — | Core skills evaluation |
