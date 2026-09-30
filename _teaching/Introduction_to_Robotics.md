@@ -114,7 +114,7 @@ Students may use the following tools and platforms:
 | [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 2 – IR Control](/files/Robotic/Lab2_IR_Remote.pdf) | Solution 2 | Command decoding |
 | [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | [Lab 3 - Dabble_control](/files/Robotic/Lab3-Dabble_app_Control.pdf) |  [Assignment 1]({{ site.baseurl }}/Slides/robotics/assignment/assignment1)| Wireless robot control |
 
-| [Web Server Control]({{ site.baseurl }}/Slides/robotics/Web_server)| [Lab4 - MIT_Web_Control](/files/Robotic/Lab5_mit_app_web.pdf) | Solution 3 | Real-time browser control |
+| [Serial Communication]({{ site.baseurl }}/Slides/robotics/serial_communication)| - | - | Communication |
 | [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing |
 | **Midterm Assessment** | Practical Test | — | Core skills evaluation |
 | [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment |

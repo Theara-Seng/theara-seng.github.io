@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover, minimal-ui">
+		<meta charset="utf-8">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="manifest" href='data:application/manifest+json,{"display": "standalone", "name": "Serial Communication"}' />
+		<title>Serial Communication</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="ded2d9fdb101fea93d9e6894b065db5f"><div class="sl-block" data-block-type="text" style="width: 896px; left: 224px; top: 97.5px; height: auto;" data-block-id="0fc705c272150f7b2c82975095be3720" data-name="text-06e6d3"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10;"><h1>Serial Communication</h1></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-03b43f" style="height: auto; width: 923px; left: 197px; top: 228.5px;" data-block-id="3da7df1032c958cc5f5fe6935a93fd16"><div class="sl-block-content" data-placeholder-tag="p" style="z-index: 11; font-size: 150%; color: rgb(74, 134, 232);" data-qb-tmp-id="lt-833746" data-gramm="false"><p><strong>ICT 361: Introduction to Robotics</strong></p></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-c4b797" style="width: 570.3px; height: 142.515px; left: 383.2px; top: 345.743px; min-width: 1px; min-height: 1px;" data-block-id="a080bfcb8f7c105714bb705ea5853f01"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="2377" data-natural-height="594" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/434a42285fc45e349f3f77541d9a16f9.png"></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-b64f6b" style="height: auto; width: 600px; left: 361.5px; top: 545.5px;" data-block-id="80331c911739fce968e6266e4fb25f5c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 150%; color: rgb(12, 52, 61);"><p><span style="font-size:1.2em">Mr. Seng Theara</span></p></div></div></section><section data-id="7e8ef8632861c76c991988a1e4182c83" data-auto-animate="" data-auto-animate-restart="" data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)">
+
+<div class="sl-block" data-block-type="line" data-name="line-d7d289" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 834.333px; top: 355px;" data-block-id="633d23b43795a224a5ac1b504040db74"><div class="sl-block-style" style="z-index: 12; opacity: 0;"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="47" data-line-y2="207" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="47" height="207" viewBox="0 0 47 207"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L46.557 205.05"></path><path stroke="#000000" stroke-width="2" d="M 51.356 199.087 L 46.834 206.267 L 39.654 201.744 L 46.834 206.267" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L47 207"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L47 207"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-fb0e2e" style="height: auto; width: 185px; left: 788.833px; top: 577.5px;" data-block-id="86e67a139abafe44e2f5b1da5f417c51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 1%;"><p>4 Buttons</p></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 185px; left: 322.833px; top: 577.5px;" data-name="text-e3e4a7" data-block-id="1cd9ad746dcff55a1c8738b9f85dcf31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 1%;"><p>Joystick</p></div></div>
+<div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 437.833px; top: 418px;" data-name="line-f904e0" data-block-id="49b556c2a0048182e40541b9cbad4205"><div class="sl-block-style" style="z-index: 15; opacity: 0;"><div class="sl-block-content" data-line-x1="25" data-line-y1="0" data-line-x2="0" data-line-y2="159.5" data-line-color="#000000" data-line-width="1px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="25" height="159.5" viewBox="0 0 25 159.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="1" stroke-linecap="round" d="M25 0 L0.155 158.512"></path><path stroke="#000000" stroke-width="1" d="M 7.012 153.514 L 0.155 158.512 L -4.844 151.655 L 0.155 158.512" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M25 0 L0 159.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M25 0 L0 159.5"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 1075px; left: 73px; top: 306px; height: auto;" data-name="text-841241" data-block-id="58dfb365b464ea9a756c97a0e8f1a46b"><div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 11;"><h1>PC-&gt;ESP32</h1></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="4c5e5341ff2732b4a82dd0175c2997a9">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 857px; left: 3px; top: 10px; height: auto;" data-name="text-4fd29b" data-block-id="3e887c79ec33719ad0c8cff3b06a1560">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>PC to ESP32 Communication</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-61ab79" style="width: 582.769px; height: 378.8px; left: 24px; top: 163.2px; min-width: 1px; min-height: 1px;" data-block-id="0684c5cd3ae5"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div><div class="sl-block" data-block-type="image" style="width: 469.333px; height: 352px; left: 771.667px; top: 157.1px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="fb25fc298cec"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1200" data-natural-height="900" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/128ba9f3767d1b4bf360e1cade53be3a.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 604px; top: 261px;" data-name="Line 1" data-block-id="b0e050328b74"><div class="sl-block-content" data-line-x1="170" data-line-y1="0" data-line-x2="0" data-line-y2="1" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="170" height="1" viewBox="0 0 170 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M170 0 L2 0.988"></path><path stroke="#000000" stroke-width="2" d="M 6.787 6.96 L 0.752 0.996 L 6.716 -5.04 L 0.752 0.996" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M170 0 L0 1"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M170 0 L0 1"></path></svg></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 608.333px; top: 291px;" data-name="Line 2" data-block-id="ed9288e68e6d"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="162" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="162" height="1" viewBox="0 0 162 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L160 0"></path><path stroke="#000000" stroke-width="2" d="M 155.248 -6 L 161.248 0 L 155.248 6 L 161.248 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L162 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L162 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="a927a78e09ce2ba53b58b85afbacc768">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 519px; left: 20px; top: 22px; height: auto;" data-name="text-4fd29b" data-block-id="f4f276a3b70bc4a6eb9e35bc9aa7163c">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>ESP32 Coding</strong></h1></div>
+</div>
+
+<div class="sl-block" data-block-type="code" style="width: 578px; height: 378px; left: 62px; top: 144px;" data-name="Code 1" data-block-id="26da3474b1d2"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">void setup() {
+  Serial.begin(115200);
+  Serial.println("Type a message and press Send:");
+}
+
+void loop() {
+  // Check whether data has arrived from the PC
+  if (Serial.available() &gt; 0) {
+
+    String message = Serial.readStringUntil('\n');
+
+    message.trim();
+
+    // Send the received message back to the PC
+    Serial.print("ESP32 received: ");
+    Serial.println(message);
+  }
+}</code></pre></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 564.333px; top: 124px;" data-name="Line 1" data-block-id="bcea6ed425ef"><div class="sl-block-content" data-line-x1="0" data-line-y1="48" data-line-x2="190" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="190" height="48" viewBox="0 0 190 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 48 L188.061 0.49"></path><path stroke="#000000" stroke-width="2" d="M 181.984 -4.163 L 189.271 0.184 L 184.923 7.471 L 189.271 0.184" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 48 L190 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 48 L190 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 461px; height: auto; left: 779.333px; top: 78px;" data-name="Text 1" data-block-id="da1e0bc5368d"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>Upload this code to esp32 and then open serial monitor on the arduino IDE with baudrate 115200</p></div></div><div class="sl-block" data-block-type="image" style="width: 525px; height: 196px; left: 715.333px; top: 293px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="1d8a8c49ad2c"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="525" data-natural-height="196" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/e009e2e3dd3bfd3077b47516bacd581b.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 627px; top: 373px;" data-name="Line 2" data-block-id="0267dbe8c181"><div class="sl-block-content" data-line-x1="102" data-line-y1="0" data-line-x2="0" data-line-y2="204" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="102" height="204" viewBox="0 0 102 204"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M102 0 L0.894 202.211"></path><path stroke="#000000" stroke-width="2" d="M 8.386 200.644 L 0.336 203.327 L -2.347 195.278 L 0.336 203.327" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M102 0 L0 204"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M102 0 L0 204"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 479.333px; top: 604px;" data-name="Text 2" data-block-id="95f3aac6c212"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;"><p>When we enter the message here and press enter, the ESP32 will receive the command</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="fc8f14954592">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 519px; left: 351px; top: 48px; height: auto;" data-name="text-4fd29b" data-block-id="d36b2dc87a01">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Practice</strong></h1></div>
+</div>
+
+<div class="sl-block" data-block-type="text" style="width: 929px; height: auto; left: 184.5px; top: 181px;" data-name="Text 1" data-block-id="d1729ea8ba9c"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Write a program that allows you to control the robot by sending commands from the PC’s Serial Monitor to the ESP32.</p>
+
+<p>The ESP32 should receive and respond to these commands:</p>
+
+<ul>
+	<li><strong>forward</strong>&nbsp;—&gt; Move forward.</li>
+	<li><strong>backward</strong>&nbsp;—&gt; Move backward.</li>
+	<li><strong>left</strong>&nbsp;—&gt; Turn left.</li>
+	<li><strong>right</strong>&nbsp;— Turn right.</li>
+	<li><strong>stop</strong>&nbsp;—&gt; Stop moving.</li>
+</ul>
+
+<p>Test each command to confirm that the robot responds correctly.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="28db44e69ca8">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 519px; left: 20px; top: 22px; height: auto;" data-name="text-4fd29b" data-block-id="eb7740cafa23">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>ESP32 Coding</strong></h1></div>
+</div>
+
+<div class="sl-block" data-block-type="code" style="width: 578px; height: 378px; left: 62px; top: 144px;" data-name="Code 1" data-block-id="c92cb385483f"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">void setup() {
+  Serial.begin(115200);
+
+  Serial.println("Enter a command such as FORWARD,50");
+}
+
+void loop() {
+  if (Serial.available() &gt; 0) {
+    String message = Serial.readStringUntil('\n');
+    message.trim();
+
+    // Find the comma separating direction and speed
+    int commaPosition = message.indexOf(',');
+
+    if (commaPosition == -1) {
+      Serial.println("Error: use FORWARD,50");
+      return;
+    }
+
+    // Extract the two parts
+    String direction = message.substring(0, commaPosition);
+    String speedText = message.substring(commaPosition + 1);
+
+    direction.trim();
+    direction.toUpperCase();
+    speedText.trim();
+
+    
+
+    // Check that speed contains 1–3 digits
+    if (speedText.length() == 0 || speedText.length() &gt; 2) {
+      Serial.println("Error: enter a speed from 0 to 100");
+      return;
+    }
+
+    for (unsigned int i = 0; i &lt; speedText.length(); i++) {
+      if (speedText[i] &lt; '0' || speedText[i] &gt; '9') {
+        Serial.println("Error: speed must be a whole number");
+        return;
+      }
+    }
+
+    // Convert the text into an integer
+    int speed = speedText.toInt();
+
+    Serial.print("Direction: ");
+    Serial.println(direction);
+
+    Serial.print("Speed: ");
+    Serial.println(speed);
+ 
+
+   
+  }
+}</code></pre></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 564.333px; top: 172px;" data-name="Line 1" data-block-id="d3b80fd4aecc"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="169" data-line-y2="35" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="169" height="35" viewBox="0 0 169 35"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L167.042 34.594"></path><path stroke="#000000" stroke-width="2" d="M 163.605 27.755 L 168.264 34.848 L 161.172 39.506 L 168.264 34.848" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L169 35"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L169 35"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 461px; height: auto; left: 763.333px; top: 136.5px;" data-name="Text 1" data-block-id="189c8a41ebba"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>From this code, we want to receive the command from the PC in both directions and speeds.</p></div></div><div class="sl-block" data-block-type="image" style="width: 558.684px; height: 220px; left: 707.816px; top: 333px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="fe2299ff7cdf"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="579" data-natural-height="228" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/eddfa524bdd3faeab0795841a4713559.png"></div></div><div class="sl-block" data-block-type="text" style="width: 722px; height: auto; left: 417px; top: 585.5px;" data-name="Text 2" data-block-id="1fad28e7d889"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 15;"><p>From the serial monitor, you have to Enter a command such as<strong>&nbsp;FORWARD,50</strong>. If you don't do this, the esp32 will not receive the command</p></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 624.333px; top: 508px;" data-name="Line 2" data-block-id="4d71d83db821"><div class="sl-block-content" data-line-x1="89" data-line-y1="0" data-line-x2="0" data-line-y2="74" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="89" height="74" viewBox="0 0 89 74"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M89 0 L1.538 72.721"></path><path stroke="#000000" stroke-width="2" d="M 9.028 74.297 L 0.578 73.519 L 1.356 65.07 L 0.578 73.519" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M89 0 L0 74"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M89 0 L0 74"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="b19dc162bf84fa02749ce3d44828011d">
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 430.333px; left: 385px; top: 36px; height: auto;" data-name="text-4fd29b" data-block-id="282b0e4d0a219f294ae9fe72fb93cb5d">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Practice</strong></h1></div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 999px; height: 186px; left: 152px; top: 174px;" data-name="Text 1" data-block-id="81e591d46f2f" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Modify your previous program to control both the robot’s direction and speed. Send commands in the format <code>direction,speed</code>, such as <code>forward,50</code>&nbsp;or <code>backward,30</code>, where speed ranges from 0 to 100. Use <code>stop,0</code>&nbsp;to stop the robot.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="49a40b082e0e">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 519px; left: 14px; top: 19px; height: auto;" data-name="text-4fd29b" data-block-id="9df7a118f6a0">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Python Coding</strong></h1></div>
+</div>
+
+<div class="sl-block" data-block-type="code" style="width: 578px; height: 378px; left: 73px; top: 204px;" data-name="Code 1" data-block-id="779bc2d3629d"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">import serial
+import time
+
+esp32 = serial.Serial("COM7", 115200)
+time.sleep(2)  # Allow ESP32 to restart
+
+try:
+    esp32.write(b"FORWARD,50\n")
+    time.sleep(3)
+
+    esp32.write(b"BACKWARD,50\n")
+    time.sleep(2)
+
+finally:
+    esp32.write(b"STOP,0\n")
+    esp32.flush()
+    esp32.close()</code></pre></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 362px; top: 107px;" data-name="Line 1" data-block-id="54ea2360c35f"><div class="sl-block-content" data-line-x1="0" data-line-y1="153" data-line-x2="325.333" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="325.333" height="153" viewBox="0 0 325.333 153"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 153 L323.523 0.851"></path><path stroke="#000000" stroke-width="2" d="M 316.67 -2.556 L 324.653 0.32 L 321.777 8.303 L 324.653 0.32" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 153 L325.333 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 153 L325.333 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 696px; top: 77.5px;" data-name="Text 1" data-block-id="fdc2c83f00e3"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>Go to visual code, and write a Python file to run this script. Change the COM port based on your COM port connected to esp32</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="105060aecda3">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 975px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="cdcc93d98f7e">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Finger Control Robot Movement</strong></h1></div>
+</div>
+
+<div class="sl-block" data-block-type="text" style="width: 464.286px; height: auto; left: 803.214px; top: 143.5px;" data-name="Text 1" data-block-id="daccc80594d5"><a class="sl-block-style" style="z-index: 11;" href="https://theara-seng.github.io/posts/2026-01-01-Finger_count" target="_blank"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Click on this link&nbsp;</p></div></a></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 364.5px; top: 167.5px;" data-name="Line 1" data-block-id="d2781caf26a6"><div class="sl-block-content" data-line-x1="428.6547619047619" data-line-y1="0" data-line-x2="0" data-line-y2="97" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="428.6547619047619" height="97" viewBox="0 0 428.6547619047619 97"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M428.655 0 L1.951 96.559"></path><path stroke="#000000" stroke-width="2" d="M 7.91 101.362 L 0.733 96.834 L 5.261 89.658 L 0.733 96.834" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M428.655 0 L0 97"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M428.655 0 L0 97"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 175px; top: 264.5px;" data-name="Text 2" data-block-id="c252432287d8"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>From this link-&gt;</p>
+
+<ul>
+	<li>Detect 1-&gt; robot move forward</li>
+	<li>Detect 2-&gt; <span style="color:rgb(0, 0, 0)">robot move backward</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Detect 3-&gt; Turn Left</span></li>
+	<li><span style="color:rgb(0, 0, 0)">Detect 4-&gt; Turn Right</span></li>
+</ul></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="8b31334920c2">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="8ed897d65dfa">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry pi to ESP32 Communication</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" data-name="image-61ab79" style="width: 582.769px; height: 378.8px; left: 24px; top: 163.2px; min-width: 1px; min-height: 1px;" data-block-id="8afe663e586c"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1280" data-natural-height="832" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/1cfa39a6a5ad8fc237394649ac63a928.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 604px; top: 261px;" data-name="Line 1" data-block-id="f5e2873be7b4"><div class="sl-block-content" data-line-x1="170" data-line-y1="0" data-line-x2="0" data-line-y2="1" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="170" height="1" viewBox="0 0 170 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M170 0 L2 0.988"></path><path stroke="#000000" stroke-width="2" d="M 6.787 6.96 L 0.752 0.996 L 6.716 -5.04 L 0.752 0.996" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M170 0 L0 1"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M170 0 L0 1"></path></svg></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; left: 608.333px; top: 291px;" data-name="Line 2" data-block-id="0faee6f49982"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="162" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="162" height="1" viewBox="0 0 162 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L160 0"></path><path stroke="#000000" stroke-width="2" d="M 155.248 -6 L 161.248 0 L 155.248 6 L 161.248 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L162 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L162 0"></path></svg></div></div><div class="sl-block" data-block-type="image" style="width: 306.954px; height: 490px; left: 872.523px; top: 90.477px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="902d3f80e6b6"><div class="sl-block-style" style="z-index: 14; transform: rotate(90deg);"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="360" data-natural-height="480" data-crop-x="0.25" data-crop-y="0.127083" data-crop-width="0.605556" data-crop-height="0.725" style="left: -127px; top: -86px; width: 507px; height: 676px;" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/eb116df6fee5f047972e2b2cfe1a7d30.png"></div></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="8ba65425db4c">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 0px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="6d090ca77520">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 268.115px; height: 428px; left: 107.942px; top: 34.0575px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="c8810a235539"><div class="sl-block-style" style="z-index: 11; transform: rotate(90deg);"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="360" data-natural-height="480" data-crop-x="0.25" data-crop-y="0.127083" data-crop-width="0.605556" data-crop-height="0.725" style="left: -111px; top: -75px; width: 443px; height: 590px;" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/eb116df6fee5f047972e2b2cfe1a7d30.png"></div></div></div><div class="sl-block" data-block-type="image" style="width: 785.998px; height: 349.955px; left: 485.002px; top: 130.474px; min-width: 1px; min-height: 1px;" data-name="Image 2" data-block-id="327d3464240a"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1963" data-natural-height="874" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/ed0b6b06d85a03f0253b19a7395d8c83.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 498.333px; top: 303px;" data-name="Line 2" data-block-id="5e0c0a478017"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="82.00000000000006" data-line-y2="275.5" data-line-color="#f1c232" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="82.00000000000006" height="275.5" viewBox="0 0 82.00000000000006 275.5"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#f1c232" stroke-width="2" stroke-linecap="round" d="M0 0 L81.429 273.583"></path><path stroke="#f1c232" stroke-width="2" d="M 85.825 267.317 L 81.786 274.779 L 74.323 270.74 L 81.786 274.779" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L82 275.5"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L82 275.5"></path></svg></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 600px; top: 229.903px;" data-name="Line 3" data-block-id="aa41c8074495"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="40" data-line-y2="342" data-line-color="#f1c232" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="40" height="342" viewBox="0 0 40 342"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#f1c232" stroke-width="2" stroke-linecap="round" d="M0 0 L39.768 340.014"></path><path stroke="#f1c232" stroke-width="2" d="M 45.175 334.597 L 39.913 341.253 L 33.256 335.991 L 39.913 341.253" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L40 342"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L40 342"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: 1px; left: 424px; top: 578.5px;" data-name="Text 1" data-block-id="78462cb2367b" data-text-layout="fixed"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;"><p>Go to <strong>Extensions </strong>in Visual Studio and install the <strong>Remote-SSH</strong></p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="7282fad1e5f9">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="c99295172965">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 924.986px; height: 406.456px; left: 143.507px; top: 270.772px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="67cea87df94c"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1857" data-natural-height="816" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/c0b30799f6e14efe2955591f2c901e1a.png"></div></div><div class="sl-block" data-block-type="text" style="width: 1111px; height: auto; left: 35.5px; top: 111.5px;" data-name="Text 1" data-block-id="e89da0b04b11"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;"><p>Type <strong>CTRL+Shift+P</strong>&nbsp;and then search for <strong>Remote-SSH: Add New SSH Host</strong></p></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 620.333px; top: 147px;" data-name="Line 1" data-block-id="522ea844679d"><div class="sl-block-content" data-line-x1="60" data-line-y1="0" data-line-x2="0" data-line-y2="154" data-line-color="#f1c232" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="60" height="154" viewBox="0 0 60 154"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#f1c232" stroke-width="2" stroke-linecap="round" d="M60 0 L0.726 152.136"></path><path stroke="#f1c232" stroke-width="2" d="M 8.042 149.887 L 0.273 153.299 L -3.14 145.531 L 0.273 153.299" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M60 0 L0 154"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M60 0 L0 154"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="c870912cae60">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="113e21968b98">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1111px; height: auto; left: 42.5px; top: 161.5px;" data-name="Text 1" data-block-id="4b8c2f95c288"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Type <strong>ssh aupp@raspberry-pi-IP, </strong>then press<strong>&nbsp;Enter. </strong>The password should be <strong>aupp</strong>.</p></div></div><div class="sl-block" data-block-type="image" style="width: 1280px; height: 185.884px; left: 2.84217e-14px; top: 267.058px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="93e6cd8047ae"><div class="sl-block-content" style="z-index: 12;"><img class="" data-natural-width="1329" data-natural-height="193" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/19327296c671e403fac306a7ec11894d.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 371.333px; top: 123px;" data-name="Line 1" data-block-id="0c460c974654"><div class="sl-block-content" data-line-x1="0" data-line-y1="48" data-line-x2="176" data-line-y2="0" data-line-color="#f1c232" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="176" height="48" viewBox="0 0 176 48"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#f1c232" stroke-width="2" stroke-linecap="round" d="M0 48 L174.07 0.526"></path><path stroke="#f1c232" stroke-width="2" d="M 167.907 -4.012 L 175.275 0.198 L 171.065 7.565 L 175.275 0.198" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 48 L176 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 48 L176 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 701px; height: auto; left: 547.333px; top: 98.5px;" data-name="Text 2" data-block-id="2712230b8614"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;"><p>Check your Raspberry Pi IP; it should be 10.30.0.X.</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="79571da571ca">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="f885da0fb625">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 566px; height: 482px; left: 380.404px; top: 150.914px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="344cca83af53"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="566" data-natural-height="482" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/639ee7a21a927ee377cb84e6ba85f9b1.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 240px; top: 399.787px;" data-name="Line 1" data-block-id="3bbf9990ef4b"><div class="sl-block-content" data-line-x1="142.553" data-line-y1="34.043000000000006" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="142.553" height="34.043000000000006" viewBox="0 0 142.553 34.043000000000006"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M142.553 34.043 L1.945 0.465"></path><path stroke="#000000" stroke-width="2" d="M 5.174 7.404 L 0.731 0.175 L 7.961 -4.268 L 0.731 0.175" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M142.553 34.043 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M142.553 34.043 L0 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 291.489px; height: auto; left: 19.7875px; top: 204.787px;" data-name="Text 1" data-block-id="096ebb5ebf41"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>Go to <strong>Remote Explorer</strong>&nbsp;and click the arrow to ssh through this IP of your raspberry PI</p></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 284.68px; top: 292.34px;" data-name="Line 2" data-block-id="98638d54563d"><div class="sl-block-content" data-line-x1="184.043" data-line-y1="12.766" data-line-x2="0" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="184.043" height="12.766" viewBox="0 0 184.043 12.766"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M184.043 12.766 L1.995 0.138"></path><path stroke="#000000" stroke-width="2" d="M 6.32 6.453 L 0.75 0.052 L 7.151 -5.518 L 0.75 0.052" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M184.043 12.766 L0 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M184.043 12.766 L0 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="7641c2d3c9bc">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="da99485d577d">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 582.708px; height: 560.012px; left: 32.6881px; top: 104.463px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="4c613f5df05e"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="1181" data-natural-height="1135" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/48fc015288c96fcb548dc7d025456755.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 37.8721px; top: 287.979px;" data-name="Line 1" data-block-id="ccc7e1a148c1"><div class="sl-block-content" data-line-x1="0" data-line-y1="368.191" data-line-x2="644.6809999999999" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="644.6809999999999" height="368.191" viewBox="0 0 644.6809999999999 368.191"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 368.191 L642.944 0.992"></path><path stroke="#000000" stroke-width="2" d="M 635.842 -1.862 L 644.028 0.373 L 641.794 8.559 L 644.028 0.373" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 368.191 L644.681 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 368.191 L644.681 0"></path></svg></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 75.1061px; top: 196.596px;" data-name="Line 2" data-block-id="ccbf87034023"><div class="sl-block-content" data-line-x1="0" data-line-y1="0" data-line-x2="567.0219999999999" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="567.0219999999999" height="1" viewBox="0 0 567.0219999999999 1"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 0 L565.022 0"></path><path stroke="#000000" stroke-width="2" d="M 560.27 -6 L 566.27 0 L 560.27 6 L 566.27 0" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 0 L567.022 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 0 L567.022 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 462.766px; height: auto; left: 649.575px; top: 170.979px;" data-name="Text 1" data-block-id="3ddcabc46203"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 14;"><p>when it successful connected, you will see this. Then click on the <strong>Open Folder</strong></p></div></div><div class="sl-block" data-block-type="image" style="width: 639.998px; height: 241.138px; left: 655.958px; top: 328.101px; min-width: 1px; min-height: 1px;" data-name="Image 2" data-block-id="eb95f97257c5"><div class="sl-block-content" style="z-index: 15;"><img class="" data-natural-width="1335" data-natural-height="503" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/7282ac756d2aac343fe7a93f1e9378a6.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 969.787px; top: 475.319px;" data-name="Line 3" data-block-id="04e4ac5f4c93"><div class="sl-block-content" data-line-x1="5.319" data-line-y1="0" data-line-x2="0" data-line-y2="108.511" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="5.319" height="108.511" viewBox="0 0 5.319 108.511"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M5.319 0 L0.098 106.513"></path><path stroke="#000000" stroke-width="2" d="M 6.323 102.061 L 0.037 107.76 L -5.662 101.473 L 0.037 107.76" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M5.319 0 L0 108.511"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M5.319 0 L0 108.511"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 669.787px; top: 586.475px;" data-name="Text 2" data-block-id="109076ff5a16"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 17;"><p>Using <strong>Documents Folder</strong>&nbsp;to store your code and files</p></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="1e61d160b662">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="ac628f45bb88">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="image" style="width: 446.237px; height: 291.83px; left: 97.3829px; top: 133.766px; min-width: 1px; min-height: 1px;" data-name="Image 1" data-block-id="20fbec742006"><div class="sl-block-content" style="z-index: 11;"><img class="" data-natural-width="578" data-natural-height="378" data-lazy-loaded="" data-src="ultrasonic-servo-754bea/685108f9658e6830b5a7be8115202272.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 403.404px; top: 155.107px;" data-name="Line 1" data-block-id="3030ac1f1a52"><div class="sl-block-content" data-line-x1="0" data-line-y1="47.872" data-line-x2="268.085" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="268.085" height="47.872" viewBox="0 0 268.085 47.872"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 47.872 L266.116 0.352"></path><path stroke="#000000" stroke-width="2" d="M 260.383 -4.72 L 267.345 0.132 L 262.493 7.094 L 267.345 0.132" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 47.872 L268.085 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 47.872 L268.085 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 680px; top: 133.766px;" data-name="Text 1" data-block-id="477f135c0dd8"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>Create New <strong>Python File </strong></p></div></div><div class="sl-block" data-block-type="image" style="width: 678.489px; height: 200.411px; left: 579.171px; top: 347.028px;" data-name="Image 2" data-block-id="09ac6bb39cef"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="887" data-natural-height="262" data-src="ultrasonic-servo-754bea/5d954aeffe3dd0c5cbaeb37c25a750c0.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 729.362px; top: 181.702px;" data-name="Line 2" data-block-id="24aa1aaf2931"><div class="sl-block-content" data-line-x1="0" data-line-y1="279.787" data-line-x2="90.426" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="90.426" height="279.787" viewBox="0 0 90.426 279.787"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 279.787 L89.811 1.903"></path><path stroke="#000000" stroke-width="2" d="M 82.64 4.579 L 90.195 0.715 L 94.059 8.27 L 90.195 0.715" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 279.787 L90.426 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 279.787 L90.426 0"></path></svg></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="b90762b4c4f0">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="3fdac8663c71">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 824.468px; height: auto; left: 80.4255px; top: 116.384px;" data-name="Text 1" data-block-id="3aa57bc2cbb1"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 11;"><p>Go to <strong>Terminal</strong>&nbsp;and Create a <strong>virtual environment</strong></p></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 231.489px; top: 176.67px;" data-name="Text 2" data-block-id="50d95c112f29"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 12;"><ul>
+	<li>python3 -m venv myenv</li>
+	<li>source myenv/bin/activate</li>
+</ul></div></div><div class="sl-block" data-block-type="image" style="width: 1038.74px; height: 102.171px; left: 93.8151px; top: 395.085px;" data-name="Image 1" data-block-id="0e7a6f4bc91f"><div class="sl-block-content" style="z-index: 13;"><img class="" data-natural-width="671" data-natural-height="66" data-src="ultrasonic-servo-754bea/6f18a9e520bfda4a976082a2eb00646c.png"></div></div></section><section data-auto-animate-easing="cubic-bezier(0.755, 0.050, 0.855, 0.060)" data-auto-animate="" data-id="e4dabea898d6">
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="width: 1154px; left: 14px; top: 0px; height: auto;" data-name="text-4fd29b" data-block-id="801c0ee45f71">
+    <div class="sl-block-content" data-placeholder-tag="h1" style="z-index: 10; font-size: 76%;"><h1><strong>Raspberry Pi Remote Setup</strong></h1></div>
+</div>
+
+
+
+<div class="sl-block" data-block-type="code" style="width: 612.766px; height: 504.255px; left: 0px; top: 122.766px;" data-name="Code 1" data-block-id="ea84628b6ec4"><div class="sl-block-content notranslate" data-highlight-theme="monokai" data-code-frame="none" style="z-index: 11;"><pre style="font-size: 16px; line-height: 19px; tab-size: 4;"><code data-line-numbers="">
+import cv2
+from flask import Flask, Response
+
+app = Flask(__name__)
+
+# Open USB camera
+cap = cv2.VideoCapture(0, cv2.CAP_V4L2)
+
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+if not cap.isOpened():
+    print("Error: Cannot open USB camera!")
+    exit()
+
+
+def generate_frames():
+    while True:
+        success, frame = cap.read()
+
+        if not success:
+            print("Failed to capture frame")
+            break
+
+        # Convert frame to JPEG
+        ret, buffer = cv2.imencode(".jpg", frame)
+
+        if not ret:
+            continue
+
+        frame_bytes = buffer.tobytes()
+
+        yield (
+            b"--frame\r\n"
+            b"Content-Type: image/jpeg\r\n\r\n"
+            + frame_bytes
+            + b"\r\n"
+        )
+
+
+@app.route("/")
+def index():
+    return """
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Raspberry Pi USB Camera&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body style="text-align:center; font-family:Arial;"&gt;
+        &lt;h2&gt;Raspberry Pi USB Camera Live Stream&lt;/h2&gt;
+        &lt;img src="/video_feed" width="640"&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    """
+
+
+@app.route("/video_feed")
+def video_feed():
+    return Response(
+        generate_frames(),
+        mimetype="multipart/x-mixed-replace; boundary=frame"
+    )
+
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, threaded=True)
+</code></pre></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 550.085px; top: 175.553px;" data-name="Line 1" data-block-id="d7e4f0165968"><div class="sl-block-content" data-line-x1="0" data-line-y1="31.915" data-line-x2="208.08500000000004" data-line-y2="0" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="208.08500000000004" height="31.915" viewBox="0 0 208.08500000000004 31.915"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M0 31.915 L206.108 0.303"></path><path stroke="#000000" stroke-width="2" d="M 200.502 -4.907 L 207.342 0.114 L 202.321 6.954 L 207.342 0.114" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M0 31.915 L208.085 0"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M0 31.915 L208.085 0"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 480.851px; height: auto; left: 758.085px; top: 152.553px;" data-name="Text 1" data-block-id="ec40556423f1"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 13;"><p>Test the camera Code using flask</p></div></div><div class="sl-block" data-block-type="image" style="width: 560.612px; height: 283.199px; left: 661.213px; top: 258.851px;" data-name="Image 1" data-block-id="bd46fed80c22"><div class="sl-block-content" style="z-index: 14;"><img class="" data-natural-width="1647" data-natural-height="832" data-src="ultrasonic-servo-754bea/ab6330ea40d07d0a1981630026a48b8b.png"></div></div><div class="sl-block" data-block-type="line" style="width: auto; height: auto; min-width: 0px; min-height: 0px; left: 891.064px; top: 528.511px;" data-name="Line 2" data-block-id="6e2219f7f9f9"><div class="sl-block-content" data-line-x1="29.787" data-line-y1="0" data-line-x2="0" data-line-y2="59.574" data-line-color="#000000" data-line-width="2px" data-line-start-type="none" data-line-end-type="line-arrow" data-line-style="solid-rounded" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="xMidYMid" width="29.787" height="59.574" viewBox="0 0 29.787 59.574"><path class="line-element" fill="rgba(0,0,0,0)" stroke="#000000" stroke-width="2" stroke-linecap="round" d="M29.787 0 L0.894 57.785"></path><path stroke="#000000" stroke-width="2" d="M 8.386 56.218 L 0.336 58.901 L -2.347 50.852 L 0.336 58.901" stroke-linecap="round" stroke-linejoin="round" class="line-end"></path><path class="line-skeleton" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" d="M29.787 0 L0 59.574"></path><path class="line-hitarea" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0)" stroke-width="15" d="M29.787 0 L0 59.574"></path></svg></div></div><div class="sl-block" data-block-type="text" style="width: 600px; height: auto; left: 640px; top: 593.05px;" data-name="Text 2" data-block-id="d74cba7d8b63"><div class="sl-block-content" data-placeholder-tag="p" style="text-align: left; z-index: 16;"><p>Click on the IP in the terminal; it will link you to a camera web page live stream&nbsp;</p></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":3692062,"slug":"ultrasonic-servo-754bea","title":"Serial Communication","description":"","width":1280,"height":720,"margin":0.05,"visibility":"self","published_at":null,"sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/ebbf738ce7c5d57515537429df0fb60a/thumb.jpg?1790754446","view_count":0,"user":{"id":3038423,"username":"thearaseng-1","name":"theara seng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a/ACg8ocIoM5OoVA1oH8H5D0o1pSgB08GSpaeVAS7vjjFhKWHkmzgG=s96-c","account_type":"lite","team_id":null,"settings":{"id":57653253,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":18,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1790754446113,"content_version":226,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"language":"en","source_deck_id":null,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				scrollActivationWidth: null,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+
+	</body>
+</html>
