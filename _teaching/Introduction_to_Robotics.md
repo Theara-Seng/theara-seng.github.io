@@ -114,12 +114,12 @@ Students may use the following tools and platforms:
 | [IR Remote Control]({{ site.baseurl }}/Slides/robotics/IR_Remote) | [Lab 2 – IR Control](/files/Robotic/Lab2_IR_Remote.pdf) | Solution 2 | Command decoding |
 | [Dabble Mobile App Control]({{ site.baseurl }}/Slides/robotics/Dabble_App) | [Lab 3 - Dabble_control](/files/Robotic/Lab3-Dabble_app_Control.pdf) |  [Assignment 1]({{ site.baseurl }}/Slides/robotics/assignment/assignment1)| Wireless robot control |
 
-| [Serial Communication]({{ site.baseurl }}/Slides/robotics/serial_communication)| - | - | Communication |
-| [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing |
+| [Serial Communication]({{ site.baseurl }}/Slides/robotics/serial_communication)| [Lab 4- Rasberry pi-control] | - | Communication |
+<!-- | [Serial Monitor Control](/robotics/serial-control/) | Practice Lab | — | Debug & command parsing | -->
 | **Midterm Assessment** | Practical Test | — | Core skills evaluation |
-| [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment |
-| [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Lab 7 – Gesture Control | Solution 7 | Vision-based navigation |
-| [Line Detection using HSV]({{ site.baseurl }}/Slides/robotics/hsv_robotic) | Practice Lab | — | Robust color detection |
+<!-- | [Raspberry Pi Setup](/robotics/raspberry-pi-setup/) | Installation Task | — | Vision-ready environment | -->
+<!-- | [Finger Count Detection (MediaPipe)](/robotics/finger-detection/) | Lab 7 – Gesture Control | Solution 7 | Vision-based navigation | -->
+| [Line Detection using HSV]({{ site.baseurl }}/Slides/robotics/hsv_robotic) | [Lab 5]| — | Robust color detection |
 | [YOLOv8-lite on Raspberry Pi](/posts/2026-01-01-object_detection)|  — |  —| Performance trade-offs |
 | [Mini Project – Vision Robot](/robotics/vision-robot/) | Mini Project 2 | Demo | Line + vision fusion |
 | [Prototype Verification](/robotics/prototype-testing/) | System Testing | — | Stability & robustness |
