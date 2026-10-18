@@ -11,4 +11,9 @@ location: "Phnom Penh, Cambodia"
 
 ---
 
-Introduction to Internet of Things introduces students to the design and implementation of connected systems using sensors, actuators, embedded devices, cloud platforms, and user interfaces. The course emphasizes hands-on labs and real-world IoT applications such as smart homes, environmental monitoring, and industrial automation.
+This course is an overview of information technology (IT) and introduces students to a variety of IT areas. The course includes the following topics: office applications, basic computer hardware, networking and security, information systems, and e-commerce. Problem-based learning will be used to improve skills such as teamwork, written and oral communication, problem-solving, troubleshooting, and project management.
+
+| Topic | Lab | Assignment | Task |
+|------|-----|----------|--------|
+| [Self Introduction]({{ site.baseurl }}/Slides/ITEC/self_introduction/) | | – | …Loading |
+| [Introduction to World of Computers]({{ site.baseurl }}/Slides/ITEC/Introduction_woc/) | | – | …Loading |
