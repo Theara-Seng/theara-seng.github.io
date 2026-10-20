@@ -17,3 +17,4 @@ This course is an overview of information technology (IT) and introduces student
 |------|-----|----------|--------|
 | [Self Introduction]({{ site.baseurl }}/Slides/ITEC/self_introduction/) | | – | …Loading |
 | [Introduction to World of Computers]({{ site.baseurl }}/Slides/ITEC/Introduction_woc/) | | – | …Loading |
+| [Processing and Memory]({{ site.baseurl }}/Slides/ITEC/processing_memory) | | – | …Loading |
