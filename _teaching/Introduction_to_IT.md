@@ -19,3 +19,4 @@ This course is an overview of information technology (IT) and introduces student
 | [Introduction to World of Computers]({{ site.baseurl }}/Slides/ITEC/Introduction_woc/) | | – | …Loading |
 | [Processing and Memory]({{ site.baseurl }}/Slides/ITEC/processing_memory) | | – | …Loading |
 | [storage]({{ site.baseurl }}/Slides/ITEC/storage) | | – | …Loading |
+| [System Software]({{ site.baseurl }}/Slides/ITEC/system_software) | | – | …Loading |
